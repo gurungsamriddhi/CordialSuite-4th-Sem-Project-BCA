@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\visualbasic\\CordialSuite\\CordialSuite.vbproj",
+      "projectUniqueName": "E:\\CordialSuite\\CordialSuite.vbproj",
       "projectName": "CordialSuite",
-      "projectPath": "E:\\visualbasic\\CordialSuite\\CordialSuite.vbproj",
+      "projectPath": "E:\\CordialSuite\\CordialSuite.vbproj",
       "packagesPath": "C:\\Users\\uSer\\.nuget\\packages\\",
-      "outputPath": "E:\\visualbasic\\CordialSuite\\obj\\",
+      "outputPath": "E:\\CordialSuite\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\uSer\\AppData\\Roaming\\NuGet\\NuGet.Config",

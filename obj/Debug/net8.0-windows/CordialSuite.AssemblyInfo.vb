@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("CordialSuite"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebe942fe4e9c8d50431ee384e5ea73b17c2085e9"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("CordialSuite"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("CordialSuite"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

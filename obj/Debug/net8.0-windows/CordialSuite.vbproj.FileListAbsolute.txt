@@ -17,8 +17,6 @@ E:\visualbasic\CordialSuite\obj\Debug\net8.0-windows\ref\CordialSuite.dll
 E:\visualbasic\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form2.resources
 E:\visualbasic\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form3.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.frontfp_form1.resources
-E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form2.resources
-E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form3.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.vbproj.GenerateResource.cache
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.GeneratedMSBuildEditorConfig.editorconfig
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.AssemblyInfoInputs.cache
@@ -27,3 +25,16 @@ E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.vbproj.CoreCompileInputs.c
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.dll
 E:\CordialSuite\obj\Debug\net8.0-windows\refint\CordialSuite.dll
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.pdb
+E:\CordialSuite\bin\Debug\net8.0-windows\CordialSuite.exe
+E:\CordialSuite\bin\Debug\net8.0-windows\CordialSuite.deps.json
+E:\CordialSuite\bin\Debug\net8.0-windows\CordialSuite.runtimeconfig.json
+E:\CordialSuite\bin\Debug\net8.0-windows\CordialSuite.dll
+E:\CordialSuite\bin\Debug\net8.0-windows\CordialSuite.pdb
+E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form_options.resources
+E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Resources.resources
+E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.sourcelink.json
+E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.genruntimeconfig.cache
+E:\CordialSuite\obj\Debug\net8.0-windows\ref\CordialSuite.dll
+E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form1.resources
+E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form2.resources
+E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Registerform.resources

@@ -22,16 +22,16 @@ Partial Class frontfp_form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        components = New ComponentModel.Container()
         Lbl_displayfp = New Label()
         SuspendLayout()
         ' 
         ' Lbl_displayfp
         ' 
         Lbl_displayfp.AutoSize = True
+        Lbl_displayfp.BackColor = Color.Transparent
         Lbl_displayfp.Font = New Font("Tahoma", 55.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lbl_displayfp.ForeColor = SystemColors.GradientInactiveCaption
-        Lbl_displayfp.Location = New Point(200, 191)
+        Lbl_displayfp.Location = New Point(191, 183)
         Lbl_displayfp.Name = "Lbl_displayfp"
         Lbl_displayfp.Size = New Size(612, 111)
         Lbl_displayfp.TabIndex = 0
@@ -40,15 +40,16 @@ Partial Class frontfp_form1
         ' 
         ' frontfp_form1
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        ClientSize = New Size(942, 493)
+        ClientSize = New Size(947, 536)
         Controls.Add(Lbl_displayfp)
-        FormBorderStyle = FormBorderStyle.FixedDialog
+        ForeColor = SystemColors.Control
+        FormBorderStyle = FormBorderStyle.None
         Name = "frontfp_form1"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Form1"
+        Text = "DsiplayFP"
         ResumeLayout(False)
         PerformLayout()
     End Sub
