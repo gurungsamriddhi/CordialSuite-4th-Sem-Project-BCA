@@ -32,6 +32,7 @@ Partial Class Registerform
         LabelUsername = New Label()
         LabelPassword = New Label()
         Panelregister = New Panel()
+        DOBdtp = New DateTimePicker()
         Panel5 = New Panel()
         Panel6 = New Panel()
         Panel7 = New Panel()
@@ -46,7 +47,6 @@ Partial Class Registerform
         gender_combobx = New ComboBox()
         ln_txtbx = New TextBox()
         As_txtbx = New TextBox()
-        dob_txtbx = New TextBox()
         Phone_txtbx = New TextBox()
         username_txtbx = New TextBox()
         password_txtbx = New TextBox()
@@ -67,7 +67,7 @@ Partial Class Registerform
         LabelName.FlatStyle = FlatStyle.Flat
         LabelName.Font = New Font("Tahoma", 10.8F)
         LabelName.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelName.Location = New Point(191, 40)
+        LabelName.Location = New Point(191, 89)
         LabelName.Name = "LabelName"
         LabelName.Size = New Size(96, 24)
         LabelName.TabIndex = 0
@@ -81,7 +81,7 @@ Partial Class Registerform
         LabelDOB.FlatStyle = FlatStyle.Flat
         LabelDOB.Font = New Font("Tahoma", 10.8F)
         LabelDOB.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelDOB.Location = New Point(576, 116)
+        LabelDOB.Location = New Point(576, 163)
         LabelDOB.Name = "LabelDOB"
         LabelDOB.Size = New Size(113, 24)
         LabelDOB.TabIndex = 1
@@ -95,7 +95,7 @@ Partial Class Registerform
         Label2.FlatStyle = FlatStyle.Flat
         Label2.Font = New Font("Tahoma", 10.8F)
         Label2.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Label2.Location = New Point(576, 342)
+        Label2.Location = New Point(576, 390)
         Label2.Name = "Label2"
         Label2.Size = New Size(154, 24)
         Label2.TabIndex = 2
@@ -109,7 +109,7 @@ Partial Class Registerform
         LabelAddress.FlatStyle = FlatStyle.Flat
         LabelAddress.Font = New Font("Tahoma", 10.8F)
         LabelAddress.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelAddress.Location = New Point(191, 116)
+        LabelAddress.Location = New Point(191, 163)
         LabelAddress.Name = "LabelAddress"
         LabelAddress.Size = New Size(74, 24)
         LabelAddress.TabIndex = 3
@@ -124,7 +124,7 @@ Partial Class Registerform
         LabelPhonenumber.Font = New Font("Tahoma", 10.8F)
         LabelPhonenumber.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         LabelPhonenumber.ImageAlign = ContentAlignment.TopRight
-        LabelPhonenumber.Location = New Point(576, 190)
+        LabelPhonenumber.Location = New Point(576, 237)
         LabelPhonenumber.Name = "LabelPhonenumber"
         LabelPhonenumber.Size = New Size(121, 24)
         LabelPhonenumber.TabIndex = 4
@@ -138,7 +138,7 @@ Partial Class Registerform
         LabelRole.FlatStyle = FlatStyle.Flat
         LabelRole.Font = New Font("Tahoma", 10.8F)
         LabelRole.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelRole.Location = New Point(576, 268)
+        LabelRole.Location = New Point(576, 312)
         LabelRole.Name = "LabelRole"
         LabelRole.Size = New Size(46, 24)
         LabelRole.TabIndex = 5
@@ -152,7 +152,7 @@ Partial Class Registerform
         LabelGender.FlatStyle = FlatStyle.Flat
         LabelGender.Font = New Font("Tahoma", 10.8F)
         LabelGender.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelGender.Location = New Point(191, 190)
+        LabelGender.Location = New Point(191, 236)
         LabelGender.Name = "LabelGender"
         LabelGender.Size = New Size(68, 24)
         LabelGender.TabIndex = 6
@@ -166,7 +166,7 @@ Partial Class Registerform
         LabelUsername.FlatStyle = FlatStyle.Flat
         LabelUsername.Font = New Font("Tahoma", 10.8F)
         LabelUsername.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelUsername.Location = New Point(191, 268)
+        LabelUsername.Location = New Point(191, 313)
         LabelUsername.Name = "LabelUsername"
         LabelUsername.Size = New Size(90, 24)
         LabelUsername.TabIndex = 7
@@ -180,7 +180,7 @@ Partial Class Registerform
         LabelPassword.FlatStyle = FlatStyle.Flat
         LabelPassword.Font = New Font("Tahoma", 10.8F)
         LabelPassword.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelPassword.Location = New Point(191, 342)
+        LabelPassword.Location = New Point(191, 390)
         LabelPassword.Name = "LabelPassword"
         LabelPassword.Size = New Size(86, 24)
         LabelPassword.TabIndex = 8
@@ -190,6 +190,7 @@ Partial Class Registerform
         ' Panelregister
         ' 
         Panelregister.BackColor = Color.Azure
+        Panelregister.Controls.Add(DOBdtp)
         Panelregister.Controls.Add(Panel5)
         Panelregister.Controls.Add(Panel6)
         Panelregister.Controls.Add(Panel7)
@@ -204,7 +205,6 @@ Partial Class Registerform
         Panelregister.Controls.Add(gender_combobx)
         Panelregister.Controls.Add(ln_txtbx)
         Panelregister.Controls.Add(As_txtbx)
-        Panelregister.Controls.Add(dob_txtbx)
         Panelregister.Controls.Add(Phone_txtbx)
         Panelregister.Controls.Add(username_txtbx)
         Panelregister.Controls.Add(password_txtbx)
@@ -227,13 +227,28 @@ Partial Class Registerform
         Panelregister.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Panelregister.Location = New Point(0, 0)
         Panelregister.Name = "Panelregister"
-        Panelregister.Size = New Size(947, 536)
+        Panelregister.Size = New Size(956, 566)
         Panelregister.TabIndex = 0
+        ' 
+        ' DOBdtp
+        ' 
+        DOBdtp.CalendarFont = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DOBdtp.CalendarForeColor = SystemColors.Control
+        DOBdtp.CalendarMonthBackground = Color.FromArgb(CByte(10), CByte(7), CByte(47))
+        DOBdtp.CalendarTitleBackColor = SystemColors.Control
+        DOBdtp.CalendarTitleForeColor = SystemColors.Control
+        DOBdtp.CalendarTrailingForeColor = SystemColors.Control
+        DOBdtp.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DOBdtp.Format = DateTimePickerFormat.Short
+        DOBdtp.Location = New Point(576, 191)
+        DOBdtp.Name = "DOBdtp"
+        DOBdtp.Size = New Size(202, 28)
+        DOBdtp.TabIndex = 25
         ' 
         ' Panel5
         ' 
         Panel5.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel5.Location = New Point(560, 294)
+        Panel5.Location = New Point(560, 339)
         Panel5.Name = "Panel5"
         Panel5.Size = New Size(15, 28)
         Panel5.TabIndex = 24
@@ -241,7 +256,7 @@ Partial Class Registerform
         ' Panel6
         ' 
         Panel6.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel6.Location = New Point(560, 369)
+        Panel6.Location = New Point(560, 417)
         Panel6.Name = "Panel6"
         Panel6.Size = New Size(15, 28)
         Panel6.TabIndex = 24
@@ -249,7 +264,7 @@ Partial Class Registerform
         ' Panel7
         ' 
         Panel7.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel7.Location = New Point(560, 218)
+        Panel7.Location = New Point(560, 264)
         Panel7.Name = "Panel7"
         Panel7.Size = New Size(15, 28)
         Panel7.TabIndex = 24
@@ -257,7 +272,7 @@ Partial Class Registerform
         ' Panel8
         ' 
         Panel8.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel8.Location = New Point(560, 143)
+        Panel8.Location = New Point(560, 190)
         Panel8.Name = "Panel8"
         Panel8.Size = New Size(15, 28)
         Panel8.TabIndex = 24
@@ -265,7 +280,7 @@ Partial Class Registerform
         ' Panel9
         ' 
         Panel9.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel9.Location = New Point(560, 67)
+        Panel9.Location = New Point(560, 116)
         Panel9.Name = "Panel9"
         Panel9.Size = New Size(15, 28)
         Panel9.TabIndex = 24
@@ -273,7 +288,7 @@ Partial Class Registerform
         ' Panel10
         ' 
         Panel10.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel10.Location = New Point(177, 369)
+        Panel10.Location = New Point(177, 417)
         Panel10.Name = "Panel10"
         Panel10.Size = New Size(15, 28)
         Panel10.TabIndex = 24
@@ -281,7 +296,7 @@ Partial Class Registerform
         ' Panel11
         ' 
         Panel11.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel11.Location = New Point(177, 295)
+        Panel11.Location = New Point(177, 342)
         Panel11.Name = "Panel11"
         Panel11.Size = New Size(15, 28)
         Panel11.TabIndex = 24
@@ -289,7 +304,7 @@ Partial Class Registerform
         ' Panel12
         ' 
         Panel12.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel12.Location = New Point(177, 218)
+        Panel12.Location = New Point(177, 264)
         Panel12.Name = "Panel12"
         Panel12.Size = New Size(15, 28)
         Panel12.TabIndex = 24
@@ -297,7 +312,7 @@ Partial Class Registerform
         ' Panel13
         ' 
         Panel13.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel13.Location = New Point(177, 143)
+        Panel13.Location = New Point(177, 190)
         Panel13.Name = "Panel13"
         Panel13.Size = New Size(15, 28)
         Panel13.TabIndex = 24
@@ -305,7 +320,7 @@ Partial Class Registerform
         ' Panel3
         ' 
         Panel3.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel3.Location = New Point(177, 67)
+        Panel3.Location = New Point(177, 116)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(15, 28)
         Panel3.TabIndex = 23
@@ -317,7 +332,7 @@ Partial Class Registerform
         role_combobx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         role_combobx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         role_combobx.FormattingEnabled = True
-        role_combobx.Location = New Point(576, 294)
+        role_combobx.Location = New Point(576, 338)
         role_combobx.Name = "role_combobx"
         role_combobx.Size = New Size(202, 29)
         role_combobx.TabIndex = 22
@@ -329,7 +344,7 @@ Partial Class Registerform
         gender_combobx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         gender_combobx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         gender_combobx.FormattingEnabled = True
-        gender_combobx.Location = New Point(191, 217)
+        gender_combobx.Location = New Point(191, 264)
         gender_combobx.Name = "gender_combobx"
         gender_combobx.Size = New Size(202, 29)
         gender_combobx.TabIndex = 21
@@ -339,7 +354,7 @@ Partial Class Registerform
         ln_txtbx.BackColor = SystemColors.InactiveBorder
         ln_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ln_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        ln_txtbx.Location = New Point(576, 67)
+        ln_txtbx.Location = New Point(576, 116)
         ln_txtbx.Name = "ln_txtbx"
         ln_txtbx.Size = New Size(202, 28)
         ln_txtbx.TabIndex = 20
@@ -349,27 +364,17 @@ Partial Class Registerform
         As_txtbx.BackColor = SystemColors.InactiveBorder
         As_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         As_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        As_txtbx.Location = New Point(191, 143)
+        As_txtbx.Location = New Point(191, 190)
         As_txtbx.Name = "As_txtbx"
         As_txtbx.Size = New Size(202, 28)
         As_txtbx.TabIndex = 19
-        ' 
-        ' dob_txtbx
-        ' 
-        dob_txtbx.BackColor = SystemColors.InactiveBorder
-        dob_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        dob_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        dob_txtbx.Location = New Point(576, 143)
-        dob_txtbx.Name = "dob_txtbx"
-        dob_txtbx.Size = New Size(202, 28)
-        dob_txtbx.TabIndex = 18
         ' 
         ' Phone_txtbx
         ' 
         Phone_txtbx.BackColor = SystemColors.InactiveBorder
         Phone_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Phone_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Phone_txtbx.Location = New Point(576, 218)
+        Phone_txtbx.Location = New Point(576, 264)
         Phone_txtbx.Name = "Phone_txtbx"
         Phone_txtbx.Size = New Size(202, 28)
         Phone_txtbx.TabIndex = 17
@@ -379,7 +384,7 @@ Partial Class Registerform
         username_txtbx.BackColor = SystemColors.InactiveBorder
         username_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         username_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        username_txtbx.Location = New Point(191, 296)
+        username_txtbx.Location = New Point(191, 342)
         username_txtbx.Name = "username_txtbx"
         username_txtbx.Size = New Size(202, 28)
         username_txtbx.TabIndex = 16
@@ -389,7 +394,7 @@ Partial Class Registerform
         password_txtbx.BackColor = SystemColors.InactiveBorder
         password_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         password_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        password_txtbx.Location = New Point(191, 369)
+        password_txtbx.Location = New Point(191, 417)
         password_txtbx.Name = "password_txtbx"
         password_txtbx.Size = New Size(202, 28)
         password_txtbx.TabIndex = 15
@@ -399,7 +404,7 @@ Partial Class Registerform
         confirmpw_txtbx.BackColor = SystemColors.InactiveBorder
         confirmpw_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         confirmpw_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        confirmpw_txtbx.Location = New Point(576, 369)
+        confirmpw_txtbx.Location = New Point(576, 417)
         confirmpw_txtbx.Name = "confirmpw_txtbx"
         confirmpw_txtbx.Size = New Size(202, 28)
         confirmpw_txtbx.TabIndex = 14
@@ -409,9 +414,9 @@ Partial Class Registerform
         Panel2.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Panel2.BorderStyle = BorderStyle.Fixed3D
         Panel2.Dock = DockStyle.Bottom
-        Panel2.Location = New Point(0, 522)
+        Panel2.Location = New Point(0, 552)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(947, 14)
+        Panel2.Size = New Size(956, 14)
         Panel2.TabIndex = 13
         ' 
         ' Panel1
@@ -421,7 +426,7 @@ Partial Class Registerform
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(947, 14)
+        Panel1.Size = New Size(956, 14)
         Panel1.TabIndex = 12
         ' 
         ' Button1
@@ -433,7 +438,7 @@ Partial Class Registerform
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Tahoma", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = SystemColors.InactiveBorder
-        Button1.Location = New Point(375, 440)
+        Button1.Location = New Point(363, 475)
         Button1.Name = "Button1"
         Button1.Size = New Size(212, 52)
         Button1.TabIndex = 11
@@ -445,7 +450,7 @@ Partial Class Registerform
         fn_txtbx.BackColor = SystemColors.InactiveBorder
         fn_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         fn_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        fn_txtbx.Location = New Point(191, 67)
+        fn_txtbx.Location = New Point(191, 116)
         fn_txtbx.Name = "fn_txtbx"
         fn_txtbx.Size = New Size(202, 28)
         fn_txtbx.TabIndex = 10
@@ -457,7 +462,7 @@ Partial Class Registerform
         LabelLastname.FlatStyle = FlatStyle.Flat
         LabelLastname.Font = New Font("Tahoma", 10.8F)
         LabelLastname.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelLastname.Location = New Point(576, 40)
+        LabelLastname.Location = New Point(576, 89)
         LabelLastname.Name = "LabelLastname"
         LabelLastname.Size = New Size(95, 24)
         LabelLastname.TabIndex = 9
@@ -466,11 +471,11 @@ Partial Class Registerform
         ' 
         ' Registerform
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         AutoValidate = AutoValidate.Disable
         BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        ClientSize = New Size(947, 536)
+        ClientSize = New Size(956, 566)
         Controls.Add(Panelregister)
         Name = "Registerform"
         StartPosition = FormStartPosition.CenterScreen
@@ -498,7 +503,6 @@ Partial Class Registerform
     Friend WithEvents gender_combobx As ComboBox
     Friend WithEvents ln_txtbx As TextBox
     Friend WithEvents As_txtbx As TextBox
-    Friend WithEvents dob_txtbx As TextBox
     Friend WithEvents Phone_txtbx As TextBox
     Friend WithEvents username_txtbx As TextBox
     Friend WithEvents password_txtbx As TextBox
@@ -514,4 +518,5 @@ Partial Class Registerform
     Friend WithEvents Panel12 As Panel
     Friend WithEvents Panel13 As Panel
     Friend WithEvents Panel3 As Panel
+    Friend WithEvents DOBdtp As DateTimePicker
 End Class
