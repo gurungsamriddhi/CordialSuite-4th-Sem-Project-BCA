@@ -31,7 +31,7 @@ Partial Class frontfp_form1
         Lbl_displayfp.BackColor = Color.Transparent
         Lbl_displayfp.Font = New Font("Tahoma", 55.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lbl_displayfp.ForeColor = SystemColors.GradientInactiveCaption
-        Lbl_displayfp.Location = New Point(191, 183)
+        Lbl_displayfp.Location = New Point(183, 191)
         Lbl_displayfp.Name = "Lbl_displayfp"
         Lbl_displayfp.Size = New Size(612, 111)
         Lbl_displayfp.TabIndex = 0
@@ -46,7 +46,6 @@ Partial Class frontfp_form1
         ClientSize = New Size(947, 536)
         Controls.Add(Lbl_displayfp)
         ForeColor = SystemColors.Control
-        FormBorderStyle = FormBorderStyle.None
         Name = "frontfp_form1"
         StartPosition = FormStartPosition.CenterScreen
         Text = "DsiplayFP"
@@ -54,6 +53,7 @@ Partial Class frontfp_form1
         PerformLayout()
     End Sub
 
-    Friend WithEvents Lbl_displayfp As Label
+    Friend WithEvents Lbl_displayfp As label
+
 
 End Class

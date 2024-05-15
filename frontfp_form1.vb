@@ -9,7 +9,7 @@ Public Class frontfp_form1
 
 
     Private Sub Lbl_displayfp_Click(sender As Object, e As EventArgs) Handles Lbl_displayfp.Click
-        Dim options As New Form_options()
+        Dim options As New Form2_options()
         LoadForm(options, Me)
     End Sub
 End Class
