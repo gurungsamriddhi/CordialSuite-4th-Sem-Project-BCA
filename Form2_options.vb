@@ -14,6 +14,8 @@ Public Class Form2_options
     End Sub
 
     Private Sub Login_btn_Click(sender As Object, e As EventArgs) Handles Login_btn.Click
+        Me.Hide()
+        form2.Show()
 
     End Sub
 
