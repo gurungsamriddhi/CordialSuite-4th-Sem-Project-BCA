@@ -56,3 +56,4 @@ C:\Project\CordialSuite\obj\Debug\net8.0-windows\refint\CordialSuite.dll
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.pdb
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.genruntimeconfig.cache
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\ref\CordialSuite.dll
+C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form1.resources
