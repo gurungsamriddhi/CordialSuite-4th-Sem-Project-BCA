@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    Private Sub txtuser_TextChanged(sender As Object, e As EventArgs) Handles txtuser.TextChanged
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim username, password As String
         username = txtuser.Text
         password = txtpassword.Text
@@ -8,9 +8,7 @@
         Else
             MessageBox.Show("Error", "information", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
-    End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
     End Sub
 End Class

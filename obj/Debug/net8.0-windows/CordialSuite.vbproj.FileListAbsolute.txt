@@ -46,7 +46,6 @@ C:\Project\CordialSuite\bin\Debug\net8.0-windows\CordialSuite.pdb
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.dashboard.resources
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form2_options.resources
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.frontfp_form1.resources
-C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Loginform.resources
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Resources.resources
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Registerform.resources
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.vbproj.GenerateResource.cache
