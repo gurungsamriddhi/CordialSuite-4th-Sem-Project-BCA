@@ -16,9 +16,6 @@
     <Compile Update="frontfp_form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Loginform.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="registerform.vb">
       <SubType>Form</SubType>
     </Compile>
