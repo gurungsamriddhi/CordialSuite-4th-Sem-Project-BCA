@@ -233,11 +233,11 @@ Partial Class Registerform
         ' DOBdtp
         ' 
         DOBdtp.CalendarFont = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DOBdtp.CalendarForeColor = SystemColors.Control
-        DOBdtp.CalendarMonthBackground = Color.FromArgb(CByte(10), CByte(7), CByte(47))
-        DOBdtp.CalendarTitleBackColor = SystemColors.Control
-        DOBdtp.CalendarTitleForeColor = SystemColors.Control
-        DOBdtp.CalendarTrailingForeColor = SystemColors.Control
+        DOBdtp.CalendarForeColor = SystemColors.GradientInactiveCaption
+        DOBdtp.CalendarMonthBackground = SystemColors.GradientInactiveCaption
+        DOBdtp.CalendarTitleBackColor = SystemColors.GradientActiveCaption
+        DOBdtp.CalendarTitleForeColor = SystemColors.GradientInactiveCaption
+        DOBdtp.CalendarTrailingForeColor = SystemColors.GradientInactiveCaption
         DOBdtp.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         DOBdtp.Format = DateTimePickerFormat.Short
         DOBdtp.Location = New Point(576, 191)
@@ -438,7 +438,7 @@ Partial Class Registerform
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Tahoma", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = SystemColors.InactiveBorder
-        Button1.Location = New Point(363, 475)
+        Button1.Location = New Point(363, 461)
         Button1.Name = "Button1"
         Button1.Size = New Size(212, 52)
         Button1.TabIndex = 11

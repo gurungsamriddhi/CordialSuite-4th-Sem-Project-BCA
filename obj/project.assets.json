@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mamat\\.nuget\\packages\\": {}
+    "C:\\Users\\uSer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\CordialSuite\\CordialSuite.vbproj",
+      "projectUniqueName": "E:\\CordialSuite\\CordialSuite.vbproj",
       "projectName": "CordialSuite",
-      "projectPath": "C:\\Project\\CordialSuite\\CordialSuite.vbproj",
-      "packagesPath": "C:\\Users\\mamat\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\CordialSuite\\obj\\",
+      "projectPath": "E:\\CordialSuite\\CordialSuite.vbproj",
+      "packagesPath": "C:\\Users\\uSer\\.nuget\\packages\\",
+      "outputPath": "E:\\CordialSuite\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mamat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\uSer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -69,7 +69,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

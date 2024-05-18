@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frontfp_form1
+Partial Class splay
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -40,7 +40,7 @@ Partial Class frontfp_form1
         ' 
         ' frontfp_form1
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         ClientSize = New Size(947, 536)
@@ -53,7 +53,7 @@ Partial Class frontfp_form1
         PerformLayout()
     End Sub
 
-    Friend WithEvents Lbl_displayfp As label
+    Friend WithEvents Lbl_displayfp As Label
 
 
 End Class

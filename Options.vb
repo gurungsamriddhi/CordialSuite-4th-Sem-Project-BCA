@@ -1,21 +1,21 @@
 ﻿
 Imports Utility
-Public Class Form2_options
+Public Class Options
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
 
     Private Sub Register_btn_Click(sender As Object, e As EventArgs) Handles Register_btn.Click
-        'frontfp_form1.Hide()
+        splay.Hide()
         Me.Hide()
 
         Registerform.Show()
     End Sub
 
     Private Sub Login_btn_Click(sender As Object, e As EventArgs) Handles Login_btn.Click
-        Me.Hide()
-        Form1.Show()
+        'Me.Hide()
+        ' Form1.Show()
 
     End Sub
 

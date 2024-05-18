@@ -1,19 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="dashboard.vb">
+    <Compile Update="loginform.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.vb">
+    <Compile Update="userdashboard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form2.vb">
+    <Compile Update="Options.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form2_options.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="frontfp_form1.vb">
+    <Compile Update="splay.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="registerform.vb">

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form2_options
+Partial Class Options
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.

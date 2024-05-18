@@ -1,7 +1,7 @@
 ﻿
 Imports Utility
 
-Public Class frontfp_form1
+Public Class splay
     Private Sub frontfp_form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -9,7 +9,10 @@ Public Class frontfp_form1
 
 
     Private Sub Lbl_displayfp_Click(sender As Object, e As EventArgs) Handles Lbl_displayfp.Click
-        Dim options As New Form2_options()
+        'Dim userdashboard As New userdashboard()
+        ' LoadForm(userdashboard, Me)
+        Dim options As New Registerform()
         LoadForm(options, Me)
+
     End Sub
 End Class

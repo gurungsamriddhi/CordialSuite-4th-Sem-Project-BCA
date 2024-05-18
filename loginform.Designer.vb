@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class loginform
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -32,66 +32,70 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Tahoma", 14F, FontStyle.Bold)
+        Label1.Font = New Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.Control
-        Label1.Location = New Point(247, 80)
-        Label1.Margin = New Padding(3, 2, 3, 2)
+        Label1.Location = New Point(279, 147)
+        Label1.Margin = New Padding(3)
         Label1.Name = "Label1"
-        Label1.Size = New Size(105, 23)
+        Label1.Size = New Size(112, 24)
         Label1.TabIndex = 0
         Label1.Text = "Username"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Tahoma", 14F, FontStyle.Bold)
+        Label2.Font = New Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = SystemColors.Control
-        Label2.Location = New Point(247, 162)
+        Label2.Location = New Point(279, 307)
         Label2.Name = "Label2"
-        Label2.Size = New Size(102, 23)
+        Label2.Size = New Size(107, 24)
         Label2.TabIndex = 1
         Label2.Text = "Password"
         ' 
         ' txtuser
         ' 
         txtuser.Font = New Font("Segoe UI", 14F)
-        txtuser.Location = New Point(380, 80)
+        txtuser.Location = New Point(397, 260)
+        txtuser.Margin = New Padding(3, 4, 3, 4)
         txtuser.Name = "txtuser"
-        txtuser.Size = New Size(100, 32)
+        txtuser.Size = New Size(260, 39)
         txtuser.TabIndex = 2
         ' 
         ' txtpassword
         ' 
         txtpassword.Font = New Font("Segoe UI", 14F)
-        txtpassword.Location = New Point(380, 162)
+        txtpassword.Location = New Point(397, 307)
+        txtpassword.Margin = New Padding(3, 4, 3, 4)
         txtpassword.Name = "txtpassword"
-        txtpassword.Size = New Size(100, 32)
+        txtpassword.Size = New Size(260, 39)
         txtpassword.TabIndex = 3
         ' 
         ' Button1
         ' 
         Button1.Font = New Font("Tahoma", 14F, FontStyle.Bold)
         Button1.ForeColor = SystemColors.Control
-        Button1.Location = New Point(405, 229)
+        Button1.Location = New Point(451, 377)
+        Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(75, 32)
+        Button1.Size = New Size(108, 43)
         Button1.TabIndex = 4
         Button1.Text = "Login"
         Button1.UseVisualStyleBackColor = False
         ' 
-        ' Form1
+        ' loginform
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        ClientSize = New Size(829, 402)
+        ClientSize = New Size(947, 536)
         Controls.Add(Button1)
         Controls.Add(txtpassword)
         Controls.Add(txtuser)
         Controls.Add(Label2)
         Controls.Add(Label1)
         ForeColor = Color.Transparent
-        Name = "Form1"
+        Margin = New Padding(3, 4, 3, 4)
+        Name = "loginform"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form1"
         ResumeLayout(False)

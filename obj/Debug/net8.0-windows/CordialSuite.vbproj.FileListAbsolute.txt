@@ -16,7 +16,6 @@ E:\visualbasic\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.genruntimeconf
 E:\visualbasic\CordialSuite\obj\Debug\net8.0-windows\ref\CordialSuite.dll
 E:\visualbasic\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form2.resources
 E:\visualbasic\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form3.resources
-E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.frontfp_form1.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Resources.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Registerform.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.vbproj.GenerateResource.cache
@@ -35,8 +34,6 @@ E:\CordialSuite\obj\Debug\net8.0-windows\refint\CordialSuite.dll
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.pdb
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.genruntimeconfig.cache
 E:\CordialSuite\obj\Debug\net8.0-windows\ref\CordialSuite.dll
-E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form2_options.resources
-E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.dashboard.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Loginform.resources
 C:\Project\CordialSuite\bin\Debug\net8.0-windows\CordialSuite.exe
 C:\Project\CordialSuite\bin\Debug\net8.0-windows\CordialSuite.deps.json
@@ -61,3 +58,6 @@ C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.genruntimeconfig.c
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\ref\CordialSuite.dll
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form1.resources
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.form2.resources
+E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Options.resources
+E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.splay.resources
+E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.userdashboard.resources
