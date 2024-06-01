@@ -1,14 +1,5 @@
-﻿Public Class loginform
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim username, password As String
-        username = txtuser.Text
-        password = txtpassword.Text
-        If (username.Equals("admin") And password.Equals("admin")) Then
-            MessageBox.Show("Login Success", "information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Else
-            MessageBox.Show("Error", "information", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
-
+﻿Public Class Loginform
+    Private Sub Loginform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

@@ -30,25 +30,25 @@ Partial Class splay
         Lbl_displayfp.AutoSize = True
         Lbl_displayfp.BackColor = Color.Transparent
         Lbl_displayfp.Font = New Font("Tahoma", 55.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lbl_displayfp.ForeColor = SystemColors.GradientInactiveCaption
-        Lbl_displayfp.Location = New Point(183, 191)
+        Lbl_displayfp.ForeColor = SystemColors.ControlLightLight
+        Lbl_displayfp.Location = New Point(231, 210)
         Lbl_displayfp.Name = "Lbl_displayfp"
         Lbl_displayfp.Size = New Size(612, 111)
         Lbl_displayfp.TabIndex = 0
         Lbl_displayfp.Text = "CordialSuite"
         Lbl_displayfp.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' frontfp_form1
+        ' splay
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        ClientSize = New Size(947, 536)
+        ClientSize = New Size(1021, 585)
         Controls.Add(Lbl_displayfp)
         ForeColor = SystemColors.Control
-        Name = "frontfp_form1"
+        Name = "splay"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "DsiplayFP"
+        Text = "CordialSuite"
         ResumeLayout(False)
         PerformLayout()
     End Sub

@@ -33,16 +33,6 @@ Partial Class Registerform
         LabelPassword = New Label()
         Panelregister = New Panel()
         DOBdtp = New DateTimePicker()
-        Panel5 = New Panel()
-        Panel6 = New Panel()
-        Panel7 = New Panel()
-        Panel8 = New Panel()
-        Panel9 = New Panel()
-        Panel10 = New Panel()
-        Panel11 = New Panel()
-        Panel12 = New Panel()
-        Panel13 = New Panel()
-        Panel3 = New Panel()
         role_combobx = New ComboBox()
         gender_combobx = New ComboBox()
         ln_txtbx = New TextBox()
@@ -63,13 +53,12 @@ Partial Class Registerform
         ' 
         LabelName.AutoSize = True
         LabelName.BackColor = Color.Transparent
-        LabelName.BorderStyle = BorderStyle.Fixed3D
         LabelName.FlatStyle = FlatStyle.Flat
-        LabelName.Font = New Font("Tahoma", 10.8F)
-        LabelName.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelName.Location = New Point(191, 89)
+        LabelName.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LabelName.ForeColor = SystemColors.ControlLightLight
+        LabelName.Location = New Point(191, 87)
         LabelName.Name = "LabelName"
-        LabelName.Size = New Size(96, 24)
+        LabelName.Size = New Size(93, 23)
         LabelName.TabIndex = 0
         LabelName.Text = "First Name"
         LabelName.TextAlign = ContentAlignment.MiddleCenter
@@ -77,13 +66,12 @@ Partial Class Registerform
         ' LabelDOB
         ' 
         LabelDOB.AutoSize = True
-        LabelDOB.BorderStyle = BorderStyle.Fixed3D
         LabelDOB.FlatStyle = FlatStyle.Flat
-        LabelDOB.Font = New Font("Tahoma", 10.8F)
-        LabelDOB.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelDOB.Location = New Point(576, 163)
+        LabelDOB.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LabelDOB.ForeColor = SystemColors.ControlLightLight
+        LabelDOB.Location = New Point(576, 160)
         LabelDOB.Name = "LabelDOB"
-        LabelDOB.Size = New Size(113, 24)
+        LabelDOB.Size = New Size(108, 23)
         LabelDOB.TabIndex = 1
         LabelDOB.Text = "Date of Birth"
         LabelDOB.TextAlign = ContentAlignment.MiddleCenter
@@ -91,13 +79,12 @@ Partial Class Registerform
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.BorderStyle = BorderStyle.Fixed3D
         Label2.FlatStyle = FlatStyle.Flat
-        Label2.Font = New Font("Tahoma", 10.8F)
-        Label2.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Label2.Location = New Point(576, 390)
+        Label2.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        Label2.ForeColor = SystemColors.ControlLightLight
+        Label2.Location = New Point(576, 388)
         Label2.Name = "Label2"
-        Label2.Size = New Size(154, 24)
+        Label2.Size = New Size(149, 23)
         Label2.TabIndex = 2
         Label2.Text = "Confirm Password"
         Label2.TextAlign = ContentAlignment.MiddleCenter
@@ -105,13 +92,12 @@ Partial Class Registerform
         ' LabelAddress
         ' 
         LabelAddress.AutoSize = True
-        LabelAddress.BorderStyle = BorderStyle.Fixed3D
         LabelAddress.FlatStyle = FlatStyle.Flat
-        LabelAddress.Font = New Font("Tahoma", 10.8F)
-        LabelAddress.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelAddress.Location = New Point(191, 163)
+        LabelAddress.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LabelAddress.ForeColor = SystemColors.ControlLightLight
+        LabelAddress.Location = New Point(189, 160)
         LabelAddress.Name = "LabelAddress"
-        LabelAddress.Size = New Size(74, 24)
+        LabelAddress.Size = New Size(70, 23)
         LabelAddress.TabIndex = 3
         LabelAddress.Text = "Address"
         LabelAddress.TextAlign = ContentAlignment.MiddleCenter
@@ -119,14 +105,13 @@ Partial Class Registerform
         ' LabelPhonenumber
         ' 
         LabelPhonenumber.AutoSize = True
-        LabelPhonenumber.BorderStyle = BorderStyle.Fixed3D
         LabelPhonenumber.FlatStyle = FlatStyle.Flat
-        LabelPhonenumber.Font = New Font("Tahoma", 10.8F)
+        LabelPhonenumber.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
         LabelPhonenumber.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         LabelPhonenumber.ImageAlign = ContentAlignment.TopRight
-        LabelPhonenumber.Location = New Point(576, 237)
+        LabelPhonenumber.Location = New Point(560, 235)
         LabelPhonenumber.Name = "LabelPhonenumber"
-        LabelPhonenumber.Size = New Size(121, 24)
+        LabelPhonenumber.Size = New Size(119, 23)
         LabelPhonenumber.TabIndex = 4
         LabelPhonenumber.Text = "Phonenumber"
         LabelPhonenumber.TextAlign = ContentAlignment.MiddleCenter
@@ -134,13 +119,12 @@ Partial Class Registerform
         ' LabelRole
         ' 
         LabelRole.AutoSize = True
-        LabelRole.BorderStyle = BorderStyle.Fixed3D
         LabelRole.FlatStyle = FlatStyle.Flat
-        LabelRole.Font = New Font("Tahoma", 10.8F)
-        LabelRole.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        LabelRole.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LabelRole.ForeColor = SystemColors.ControlLightLight
         LabelRole.Location = New Point(576, 312)
         LabelRole.Name = "LabelRole"
-        LabelRole.Size = New Size(46, 24)
+        LabelRole.Size = New Size(44, 23)
         LabelRole.TabIndex = 5
         LabelRole.Text = "Role"
         LabelRole.TextAlign = ContentAlignment.MiddleCenter
@@ -148,13 +132,12 @@ Partial Class Registerform
         ' LabelGender
         ' 
         LabelGender.AutoSize = True
-        LabelGender.BorderStyle = BorderStyle.Fixed3D
         LabelGender.FlatStyle = FlatStyle.Flat
-        LabelGender.Font = New Font("Tahoma", 10.8F)
-        LabelGender.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelGender.Location = New Point(191, 236)
+        LabelGender.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LabelGender.ForeColor = SystemColors.ControlLightLight
+        LabelGender.Location = New Point(189, 234)
         LabelGender.Name = "LabelGender"
-        LabelGender.Size = New Size(68, 24)
+        LabelGender.Size = New Size(66, 23)
         LabelGender.TabIndex = 6
         LabelGender.Text = "Gender"
         LabelGender.TextAlign = ContentAlignment.MiddleCenter
@@ -162,13 +145,12 @@ Partial Class Registerform
         ' LabelUsername
         ' 
         LabelUsername.AutoSize = True
-        LabelUsername.BorderStyle = BorderStyle.Fixed3D
         LabelUsername.FlatStyle = FlatStyle.Flat
-        LabelUsername.Font = New Font("Tahoma", 10.8F)
-        LabelUsername.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelUsername.Location = New Point(191, 313)
+        LabelUsername.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LabelUsername.ForeColor = SystemColors.ControlLightLight
+        LabelUsername.Location = New Point(191, 312)
         LabelUsername.Name = "LabelUsername"
-        LabelUsername.Size = New Size(90, 24)
+        LabelUsername.Size = New Size(87, 23)
         LabelUsername.TabIndex = 7
         LabelUsername.Text = "Username"
         LabelUsername.TextAlign = ContentAlignment.MiddleCenter
@@ -176,31 +158,19 @@ Partial Class Registerform
         ' LabelPassword
         ' 
         LabelPassword.AutoSize = True
-        LabelPassword.BorderStyle = BorderStyle.Fixed3D
         LabelPassword.FlatStyle = FlatStyle.Flat
-        LabelPassword.Font = New Font("Tahoma", 10.8F)
-        LabelPassword.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelPassword.Location = New Point(191, 390)
+        LabelPassword.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LabelPassword.ForeColor = SystemColors.ControlLightLight
+        LabelPassword.Location = New Point(189, 388)
         LabelPassword.Name = "LabelPassword"
-        LabelPassword.Size = New Size(86, 24)
+        LabelPassword.Size = New Size(82, 23)
         LabelPassword.TabIndex = 8
         LabelPassword.Text = "Password"
         LabelPassword.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Panelregister
         ' 
-        Panelregister.BackColor = Color.Azure
         Panelregister.Controls.Add(DOBdtp)
-        Panelregister.Controls.Add(Panel5)
-        Panelregister.Controls.Add(Panel6)
-        Panelregister.Controls.Add(Panel7)
-        Panelregister.Controls.Add(Panel8)
-        Panelregister.Controls.Add(Panel9)
-        Panelregister.Controls.Add(Panel10)
-        Panelregister.Controls.Add(Panel11)
-        Panelregister.Controls.Add(Panel12)
-        Panelregister.Controls.Add(Panel13)
-        Panelregister.Controls.Add(Panel3)
         Panelregister.Controls.Add(role_combobx)
         Panelregister.Controls.Add(gender_combobx)
         Panelregister.Controls.Add(ln_txtbx)
@@ -227,7 +197,7 @@ Partial Class Registerform
         Panelregister.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Panelregister.Location = New Point(0, 0)
         Panelregister.Name = "Panelregister"
-        Panelregister.Size = New Size(956, 566)
+        Panelregister.Size = New Size(970, 590)
         Panelregister.TabIndex = 0
         ' 
         ' DOBdtp
@@ -238,175 +208,95 @@ Partial Class Registerform
         DOBdtp.CalendarTitleBackColor = SystemColors.GradientActiveCaption
         DOBdtp.CalendarTitleForeColor = SystemColors.GradientInactiveCaption
         DOBdtp.CalendarTrailingForeColor = SystemColors.GradientInactiveCaption
-        DOBdtp.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DOBdtp.Font = New Font("Segoe UI", 10.2F)
         DOBdtp.Format = DateTimePickerFormat.Short
-        DOBdtp.Location = New Point(576, 191)
+        DOBdtp.Location = New Point(576, 187)
         DOBdtp.Name = "DOBdtp"
-        DOBdtp.Size = New Size(202, 28)
+        DOBdtp.Size = New Size(202, 30)
         DOBdtp.TabIndex = 25
-        ' 
-        ' Panel5
-        ' 
-        Panel5.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel5.Location = New Point(560, 339)
-        Panel5.Name = "Panel5"
-        Panel5.Size = New Size(15, 28)
-        Panel5.TabIndex = 24
-        ' 
-        ' Panel6
-        ' 
-        Panel6.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel6.Location = New Point(560, 417)
-        Panel6.Name = "Panel6"
-        Panel6.Size = New Size(15, 28)
-        Panel6.TabIndex = 24
-        ' 
-        ' Panel7
-        ' 
-        Panel7.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel7.Location = New Point(560, 264)
-        Panel7.Name = "Panel7"
-        Panel7.Size = New Size(15, 28)
-        Panel7.TabIndex = 24
-        ' 
-        ' Panel8
-        ' 
-        Panel8.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel8.Location = New Point(560, 190)
-        Panel8.Name = "Panel8"
-        Panel8.Size = New Size(15, 28)
-        Panel8.TabIndex = 24
-        ' 
-        ' Panel9
-        ' 
-        Panel9.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel9.Location = New Point(560, 116)
-        Panel9.Name = "Panel9"
-        Panel9.Size = New Size(15, 28)
-        Panel9.TabIndex = 24
-        ' 
-        ' Panel10
-        ' 
-        Panel10.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel10.Location = New Point(177, 417)
-        Panel10.Name = "Panel10"
-        Panel10.Size = New Size(15, 28)
-        Panel10.TabIndex = 24
-        ' 
-        ' Panel11
-        ' 
-        Panel11.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel11.Location = New Point(177, 342)
-        Panel11.Name = "Panel11"
-        Panel11.Size = New Size(15, 28)
-        Panel11.TabIndex = 24
-        ' 
-        ' Panel12
-        ' 
-        Panel12.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel12.Location = New Point(177, 264)
-        Panel12.Name = "Panel12"
-        Panel12.Size = New Size(15, 28)
-        Panel12.TabIndex = 24
-        ' 
-        ' Panel13
-        ' 
-        Panel13.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel13.Location = New Point(177, 190)
-        Panel13.Name = "Panel13"
-        Panel13.Size = New Size(15, 28)
-        Panel13.TabIndex = 24
-        ' 
-        ' Panel3
-        ' 
-        Panel3.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panel3.Location = New Point(177, 116)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(15, 28)
-        Panel3.TabIndex = 23
         ' 
         ' role_combobx
         ' 
-        role_combobx.BackColor = Color.White
+        role_combobx.BackColor = SystemColors.ControlLightLight
         role_combobx.FlatStyle = FlatStyle.Flat
-        role_combobx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        role_combobx.Font = New Font("Segoe UI", 10.2F)
         role_combobx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         role_combobx.FormattingEnabled = True
-        role_combobx.Location = New Point(576, 338)
+        role_combobx.Location = New Point(576, 334)
         role_combobx.Name = "role_combobx"
-        role_combobx.Size = New Size(202, 29)
+        role_combobx.Size = New Size(202, 31)
         role_combobx.TabIndex = 22
         ' 
         ' gender_combobx
         ' 
-        gender_combobx.BackColor = Color.White
+        gender_combobx.BackColor = SystemColors.ControlLightLight
         gender_combobx.FlatStyle = FlatStyle.Flat
-        gender_combobx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        gender_combobx.Font = New Font("Segoe UI", 10.2F)
         gender_combobx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         gender_combobx.FormattingEnabled = True
-        gender_combobx.Location = New Point(191, 264)
+        gender_combobx.Location = New Point(191, 260)
         gender_combobx.Name = "gender_combobx"
-        gender_combobx.Size = New Size(202, 29)
+        gender_combobx.Size = New Size(202, 31)
         gender_combobx.TabIndex = 21
         ' 
         ' ln_txtbx
         ' 
-        ln_txtbx.BackColor = SystemColors.InactiveBorder
-        ln_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ln_txtbx.BackColor = SystemColors.ControlLightLight
+        ln_txtbx.Font = New Font("Segoe UI", 10.2F)
         ln_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        ln_txtbx.Location = New Point(576, 116)
+        ln_txtbx.Location = New Point(576, 112)
         ln_txtbx.Name = "ln_txtbx"
-        ln_txtbx.Size = New Size(202, 28)
+        ln_txtbx.Size = New Size(202, 30)
         ln_txtbx.TabIndex = 20
         ' 
         ' As_txtbx
         ' 
-        As_txtbx.BackColor = SystemColors.InactiveBorder
-        As_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        As_txtbx.BackColor = SystemColors.ControlLightLight
+        As_txtbx.Font = New Font("Segoe UI", 10.2F)
         As_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        As_txtbx.Location = New Point(191, 190)
+        As_txtbx.Location = New Point(191, 186)
         As_txtbx.Name = "As_txtbx"
-        As_txtbx.Size = New Size(202, 28)
+        As_txtbx.Size = New Size(202, 30)
         As_txtbx.TabIndex = 19
         ' 
         ' Phone_txtbx
         ' 
-        Phone_txtbx.BackColor = SystemColors.InactiveBorder
-        Phone_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Phone_txtbx.BackColor = SystemColors.ControlLightLight
+        Phone_txtbx.Font = New Font("Segoe UI", 10.2F)
         Phone_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Phone_txtbx.Location = New Point(576, 264)
+        Phone_txtbx.Location = New Point(576, 260)
         Phone_txtbx.Name = "Phone_txtbx"
-        Phone_txtbx.Size = New Size(202, 28)
+        Phone_txtbx.Size = New Size(202, 30)
         Phone_txtbx.TabIndex = 17
         ' 
         ' username_txtbx
         ' 
-        username_txtbx.BackColor = SystemColors.InactiveBorder
-        username_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        username_txtbx.BackColor = SystemColors.ControlLightLight
+        username_txtbx.Font = New Font("Segoe UI", 10.2F)
         username_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        username_txtbx.Location = New Point(191, 342)
+        username_txtbx.Location = New Point(191, 338)
         username_txtbx.Name = "username_txtbx"
-        username_txtbx.Size = New Size(202, 28)
+        username_txtbx.Size = New Size(202, 30)
         username_txtbx.TabIndex = 16
         ' 
         ' password_txtbx
         ' 
-        password_txtbx.BackColor = SystemColors.InactiveBorder
-        password_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        password_txtbx.BackColor = SystemColors.ControlLightLight
+        password_txtbx.Font = New Font("Segoe UI", 10.2F)
         password_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        password_txtbx.Location = New Point(191, 417)
+        password_txtbx.Location = New Point(191, 413)
         password_txtbx.Name = "password_txtbx"
-        password_txtbx.Size = New Size(202, 28)
+        password_txtbx.Size = New Size(202, 30)
         password_txtbx.TabIndex = 15
         ' 
         ' confirmpw_txtbx
         ' 
-        confirmpw_txtbx.BackColor = SystemColors.InactiveBorder
-        confirmpw_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        confirmpw_txtbx.BackColor = SystemColors.ControlLightLight
+        confirmpw_txtbx.Font = New Font("Segoe UI", 10.2F)
         confirmpw_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        confirmpw_txtbx.Location = New Point(576, 417)
+        confirmpw_txtbx.Location = New Point(576, 414)
         confirmpw_txtbx.Name = "confirmpw_txtbx"
-        confirmpw_txtbx.Size = New Size(202, 28)
+        confirmpw_txtbx.Size = New Size(202, 30)
         confirmpw_txtbx.TabIndex = 14
         ' 
         ' Panel2
@@ -414,57 +304,57 @@ Partial Class Registerform
         Panel2.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Panel2.BorderStyle = BorderStyle.Fixed3D
         Panel2.Dock = DockStyle.Bottom
-        Panel2.Location = New Point(0, 552)
+        Panel2.Location = New Point(0, 576)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(956, 14)
+        Panel2.Size = New Size(970, 14)
         Panel2.TabIndex = 13
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Panel1.BackColor = SystemColors.ControlLightLight
         Panel1.BorderStyle = BorderStyle.Fixed3D
         Panel1.Dock = DockStyle.Top
+        Panel1.ForeColor = SystemColors.ControlLightLight
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(956, 14)
+        Panel1.Size = New Size(970, 30)
         Panel1.TabIndex = 12
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.FromArgb(CByte(10), CByte(6), CByte(47))
+        Button1.BackColor = SystemColors.ControlLightLight
         Button1.FlatAppearance.BorderColor = SystemColors.GradientActiveCaption
-        Button1.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        Button1.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        Button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        Button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Tahoma", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = SystemColors.InactiveBorder
-        Button1.Location = New Point(363, 461)
+        Button1.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Button1.Location = New Point(389, 478)
         Button1.Name = "Button1"
-        Button1.Size = New Size(212, 52)
+        Button1.Size = New Size(211, 47)
         Button1.TabIndex = 11
         Button1.Text = "Register"
         Button1.UseVisualStyleBackColor = False
         ' 
         ' fn_txtbx
         ' 
-        fn_txtbx.BackColor = SystemColors.InactiveBorder
-        fn_txtbx.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        fn_txtbx.BackColor = SystemColors.ControlLightLight
+        fn_txtbx.Font = New Font("Segoe UI", 10.2F)
         fn_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        fn_txtbx.Location = New Point(191, 116)
+        fn_txtbx.Location = New Point(191, 112)
         fn_txtbx.Name = "fn_txtbx"
-        fn_txtbx.Size = New Size(202, 28)
+        fn_txtbx.Size = New Size(202, 30)
         fn_txtbx.TabIndex = 10
         ' 
         ' LabelLastname
         ' 
         LabelLastname.AutoSize = True
-        LabelLastname.BorderStyle = BorderStyle.Fixed3D
         LabelLastname.FlatStyle = FlatStyle.Flat
-        LabelLastname.Font = New Font("Tahoma", 10.8F)
-        LabelLastname.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        LabelLastname.Location = New Point(576, 89)
+        LabelLastname.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LabelLastname.ForeColor = SystemColors.ControlLightLight
+        LabelLastname.Location = New Point(576, 87)
         LabelLastname.Name = "LabelLastname"
-        LabelLastname.Size = New Size(95, 24)
+        LabelLastname.Size = New Size(91, 23)
         LabelLastname.TabIndex = 9
         LabelLastname.Text = "Last Name"
         LabelLastname.TextAlign = ContentAlignment.MiddleCenter
@@ -475,11 +365,11 @@ Partial Class Registerform
         AutoScaleMode = AutoScaleMode.Font
         AutoValidate = AutoValidate.Disable
         BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        ClientSize = New Size(956, 566)
+        ClientSize = New Size(970, 590)
         Controls.Add(Panelregister)
         Name = "Registerform"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Registrationform"
+        Text = "Registration"
         Panelregister.ResumeLayout(False)
         Panelregister.PerformLayout()
         ResumeLayout(False)
@@ -506,17 +396,7 @@ Partial Class Registerform
     Friend WithEvents Phone_txtbx As TextBox
     Friend WithEvents username_txtbx As TextBox
     Friend WithEvents password_txtbx As TextBox
-    Friend WithEvents confirmpw_txtbx As TextBox
     Friend WithEvents role_combobx As ComboBox
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents Panel7 As Panel
-    Friend WithEvents Panel8 As Panel
-    Friend WithEvents Panel9 As Panel
-    Friend WithEvents Panel10 As Panel
-    Friend WithEvents Panel11 As Panel
-    Friend WithEvents Panel12 As Panel
-    Friend WithEvents Panel13 As Panel
-    Friend WithEvents Panel3 As Panel
     Friend WithEvents DOBdtp As DateTimePicker
+    Friend WithEvents confirmpw_txtbx As TextBox
 End Class

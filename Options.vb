@@ -1,7 +1,7 @@
 ﻿
-Imports Utility
 Public Class Options
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Private Sub Options_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
@@ -14,8 +14,9 @@ Public Class Options
     End Sub
 
     Private Sub Login_btn_Click(sender As Object, e As EventArgs) Handles Login_btn.Click
+        'splay.Hide()
         'Me.Hide()
-        ' Form1.Show()
+        'loginform.Show()
 
     End Sub
 
@@ -23,4 +24,7 @@ Public Class Options
 
     End Sub
 
+    Private Sub PanelLogin_Paint(sender As Object, e As PaintEventArgs) Handles PanelLogin.Paint
+
+    End Sub
 End Class

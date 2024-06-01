@@ -1,16 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="loginform.vb">
+    <Compile Update="addguestform.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="userdashboard.vb">
+    <Compile Update="newguest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="billing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="checkin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="checkout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="loginform.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Options.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="splay.vb">
+    <Compile Update="rooms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Userdashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Splay.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="registerform.vb">
