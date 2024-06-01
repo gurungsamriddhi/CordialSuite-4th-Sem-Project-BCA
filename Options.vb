@@ -7,16 +7,15 @@ Public Class Options
 
 
     Private Sub Register_btn_Click(sender As Object, e As EventArgs) Handles Register_btn.Click
-        splay.Hide()
-        Me.Hide()
 
-        Registerform.Show()
+        Dim registration As New Registerform()
+        Utility.LoadForm(registration, Me)
+
     End Sub
 
     Private Sub Login_btn_Click(sender As Object, e As EventArgs) Handles Login_btn.Click
-        'splay.Hide()
-        'Me.Hide()
-        'loginform.Show()
+        Dim login As New Loginform()
+        LoadForm(login, Me)
 
     End Sub
 

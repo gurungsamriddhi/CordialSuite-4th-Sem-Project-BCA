@@ -66,4 +66,4 @@ E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.billing.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.checkin.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.checkout.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.rooms.resources
-E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Paneladdguest.resources
+E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Newguestform.resources

@@ -107,9 +107,9 @@ Partial Class Registerform
         LabelPhonenumber.AutoSize = True
         LabelPhonenumber.FlatStyle = FlatStyle.Flat
         LabelPhonenumber.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
-        LabelPhonenumber.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        LabelPhonenumber.ForeColor = SystemColors.ControlLightLight
         LabelPhonenumber.ImageAlign = ContentAlignment.TopRight
-        LabelPhonenumber.Location = New Point(560, 235)
+        LabelPhonenumber.Location = New Point(576, 234)
         LabelPhonenumber.Name = "LabelPhonenumber"
         LabelPhonenumber.Size = New Size(119, 23)
         LabelPhonenumber.TabIndex = 4
@@ -170,6 +170,7 @@ Partial Class Registerform
         ' 
         ' Panelregister
         ' 
+        Panelregister.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(70))
         Panelregister.Controls.Add(DOBdtp)
         Panelregister.Controls.Add(role_combobx)
         Panelregister.Controls.Add(gender_combobx)
@@ -212,31 +213,34 @@ Partial Class Registerform
         DOBdtp.Format = DateTimePickerFormat.Short
         DOBdtp.Location = New Point(576, 187)
         DOBdtp.Name = "DOBdtp"
-        DOBdtp.Size = New Size(202, 30)
+        DOBdtp.Size = New Size(235, 30)
         DOBdtp.TabIndex = 25
         ' 
         ' role_combobx
         ' 
-        role_combobx.BackColor = SystemColors.ControlLightLight
-        role_combobx.FlatStyle = FlatStyle.Flat
+        role_combobx.BackColor = SystemColors.Menu
+        role_combobx.FlatStyle = FlatStyle.System
         role_combobx.Font = New Font("Segoe UI", 10.2F)
         role_combobx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         role_combobx.FormattingEnabled = True
+        role_combobx.Items.AddRange(New Object() {"Admin", "User"})
         role_combobx.Location = New Point(576, 334)
         role_combobx.Name = "role_combobx"
-        role_combobx.Size = New Size(202, 31)
+        role_combobx.Size = New Size(235, 31)
         role_combobx.TabIndex = 22
         ' 
         ' gender_combobx
         ' 
-        gender_combobx.BackColor = SystemColors.ControlLightLight
-        gender_combobx.FlatStyle = FlatStyle.Flat
+        gender_combobx.AutoCompleteCustomSource.AddRange(New String() {"Female", "Male", "Others"})
+        gender_combobx.BackColor = SystemColors.Menu
+        gender_combobx.FlatStyle = FlatStyle.System
         gender_combobx.Font = New Font("Segoe UI", 10.2F)
         gender_combobx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         gender_combobx.FormattingEnabled = True
+        gender_combobx.Items.AddRange(New Object() {"Female", "Male", "Others"})
         gender_combobx.Location = New Point(191, 260)
         gender_combobx.Name = "gender_combobx"
-        gender_combobx.Size = New Size(202, 31)
+        gender_combobx.Size = New Size(235, 31)
         gender_combobx.TabIndex = 21
         ' 
         ' ln_txtbx
@@ -246,7 +250,7 @@ Partial Class Registerform
         ln_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         ln_txtbx.Location = New Point(576, 112)
         ln_txtbx.Name = "ln_txtbx"
-        ln_txtbx.Size = New Size(202, 30)
+        ln_txtbx.Size = New Size(235, 30)
         ln_txtbx.TabIndex = 20
         ' 
         ' As_txtbx
@@ -256,7 +260,7 @@ Partial Class Registerform
         As_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         As_txtbx.Location = New Point(191, 186)
         As_txtbx.Name = "As_txtbx"
-        As_txtbx.Size = New Size(202, 30)
+        As_txtbx.Size = New Size(235, 30)
         As_txtbx.TabIndex = 19
         ' 
         ' Phone_txtbx
@@ -266,7 +270,7 @@ Partial Class Registerform
         Phone_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Phone_txtbx.Location = New Point(576, 260)
         Phone_txtbx.Name = "Phone_txtbx"
-        Phone_txtbx.Size = New Size(202, 30)
+        Phone_txtbx.Size = New Size(235, 30)
         Phone_txtbx.TabIndex = 17
         ' 
         ' username_txtbx
@@ -276,7 +280,7 @@ Partial Class Registerform
         username_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         username_txtbx.Location = New Point(191, 338)
         username_txtbx.Name = "username_txtbx"
-        username_txtbx.Size = New Size(202, 30)
+        username_txtbx.Size = New Size(235, 30)
         username_txtbx.TabIndex = 16
         ' 
         ' password_txtbx
@@ -286,7 +290,7 @@ Partial Class Registerform
         password_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         password_txtbx.Location = New Point(191, 413)
         password_txtbx.Name = "password_txtbx"
-        password_txtbx.Size = New Size(202, 30)
+        password_txtbx.Size = New Size(235, 30)
         password_txtbx.TabIndex = 15
         ' 
         ' confirmpw_txtbx
@@ -296,7 +300,7 @@ Partial Class Registerform
         confirmpw_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         confirmpw_txtbx.Location = New Point(576, 414)
         confirmpw_txtbx.Name = "confirmpw_txtbx"
-        confirmpw_txtbx.Size = New Size(202, 30)
+        confirmpw_txtbx.Size = New Size(235, 30)
         confirmpw_txtbx.TabIndex = 14
         ' 
         ' Panel2
@@ -329,9 +333,9 @@ Partial Class Registerform
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Button1.Location = New Point(389, 478)
+        Button1.Location = New Point(405, 490)
         Button1.Name = "Button1"
-        Button1.Size = New Size(211, 47)
+        Button1.Size = New Size(215, 47)
         Button1.TabIndex = 11
         Button1.Text = "Register"
         Button1.UseVisualStyleBackColor = False
@@ -343,7 +347,7 @@ Partial Class Registerform
         fn_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         fn_txtbx.Location = New Point(191, 112)
         fn_txtbx.Name = "fn_txtbx"
-        fn_txtbx.Size = New Size(202, 30)
+        fn_txtbx.Size = New Size(235, 30)
         fn_txtbx.TabIndex = 10
         ' 
         ' LabelLastname
