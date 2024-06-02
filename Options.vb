@@ -7,23 +7,28 @@ Public Class Options
 
 
     Private Sub Register_btn_Click(sender As Object, e As EventArgs) Handles Register_btn.Click
+        Dim register As New Registerform
+        register.Show()
+        Me.Hide()
 
-        Dim registration As New Registerform()
-        Utility.LoadForm(registration, Me)
 
     End Sub
 
     Private Sub Login_btn_Click(sender As Object, e As EventArgs) Handles Login_btn.Click
-        Dim login As New Loginform()
-        LoadForm(login, Me)
-
+        Dim login As New Loginform
+        login.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub Exit_btn_Click(sender As Object, e As EventArgs) Handles Exit_btn.Click
+    Private Sub Exit_btn_Click(sender As Object, e As EventArgs)
 
     End Sub
 
     Private Sub PanelLogin_Paint(sender As Object, e As PaintEventArgs) Handles PanelLogin.Paint
 
+    End Sub
+
+    Private Sub Options_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        End
     End Sub
 End Class
