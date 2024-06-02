@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CordialSuite\\CordialSuite.vbproj": {}
+    "C:\\Project\\CordialSuite\\CordialSuite.vbproj": {}
   },
   "projects": {
-    "E:\\CordialSuite\\CordialSuite.vbproj": {
+    "C:\\Project\\CordialSuite\\CordialSuite.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CordialSuite\\CordialSuite.vbproj",
+        "projectUniqueName": "C:\\Project\\CordialSuite\\CordialSuite.vbproj",
         "projectName": "CordialSuite",
-        "projectPath": "E:\\CordialSuite\\CordialSuite.vbproj",
-        "packagesPath": "C:\\Users\\uSer\\.nuget\\packages\\",
-        "outputPath": "E:\\CordialSuite\\obj\\",
+        "projectPath": "C:\\Project\\CordialSuite\\CordialSuite.vbproj",
+        "packagesPath": "C:\\Users\\mamat\\.nuget\\packages\\",
+        "outputPath": "C:\\Project\\CordialSuite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\uSer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mamat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
