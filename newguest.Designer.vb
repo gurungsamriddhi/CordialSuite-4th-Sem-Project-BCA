@@ -44,6 +44,7 @@ Partial Class newguestform
         Lblgfirstname = New Label()
         Panel1 = New Panel()
         Lblnewg = New Label()
+        closebtn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -149,7 +150,7 @@ Partial Class newguestform
         newguestbtn.FlatStyle = FlatStyle.Flat
         newguestbtn.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         newguestbtn.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        newguestbtn.Location = New Point(347, 458)
+        newguestbtn.Location = New Point(344, 458)
         newguestbtn.Name = "newguestbtn"
         newguestbtn.Size = New Size(199, 41)
         newguestbtn.TabIndex = 11
@@ -280,6 +281,7 @@ Partial Class newguestform
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Lblnewg)
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
@@ -297,6 +299,21 @@ Partial Class newguestform
         Lblnewg.Size = New Size(122, 28)
         Lblnewg.TabIndex = 23
         Lblnewg.Text = "NEW GUEST"
+        ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = SystemColors.ControlLightLight
+        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold)
+        closebtn.Location = New Point(600, 7)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(47, 34)
+        closebtn.TabIndex = 23
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
         ' 
         ' newguestform
         ' 
@@ -355,4 +372,5 @@ Partial Class newguestform
     Friend WithEvents Lblgfirstname As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Lblnewg As Label
+    Friend WithEvents closebtn As Button
 End Class

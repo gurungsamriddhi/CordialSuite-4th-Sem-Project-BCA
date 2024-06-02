@@ -22,4 +22,8 @@ Public Class Splay
         optionsform.Show()
         Me.Hide()
     End Sub
+
+    Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
+        Me.Dispose()
+    End Sub
 End Class

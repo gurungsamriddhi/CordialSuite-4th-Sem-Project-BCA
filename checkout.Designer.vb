@@ -24,12 +24,14 @@ Partial Class checkout
     Private Sub InitializeComponent()
         Panelgco = New Panel()
         Lblgcheckout = New Label()
+        closebtn = New Button()
         Panelgco.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panelgco
         ' 
         Panelgco.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Panelgco.Controls.Add(closebtn)
         Panelgco.Controls.Add(Lblgcheckout)
         Panelgco.Dock = DockStyle.Top
         Panelgco.Location = New Point(0, 0)
@@ -48,6 +50,21 @@ Partial Class checkout
         Lblgcheckout.TabIndex = 10
         Lblgcheckout.Text = "GUEST CHECK-OUT"
         ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = SystemColors.ControlLightLight
+        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold)
+        closebtn.Location = New Point(770, 8)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(47, 34)
+        closebtn.TabIndex = 26
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
+        ' 
         ' checkout
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -64,4 +81,5 @@ Partial Class checkout
 
     Friend WithEvents Panelgco As Panel
     Friend WithEvents Lblgcheckout As Label
+    Friend WithEvents closebtn As Button
 End Class

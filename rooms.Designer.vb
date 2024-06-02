@@ -24,12 +24,14 @@ Partial Class rooms
     Private Sub InitializeComponent()
         Panel1 = New Panel()
         Lblroominfo = New Label()
+        closebtn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Lblroominfo)
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
@@ -48,6 +50,21 @@ Partial Class rooms
         Lblroominfo.TabIndex = 1
         Lblroominfo.Text = "ROOM INFORMATION"
         ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = SystemColors.ControlLightLight
+        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold)
+        closebtn.Location = New Point(770, 8)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(47, 34)
+        closebtn.TabIndex = 27
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
+        ' 
         ' rooms
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -64,4 +81,5 @@ Partial Class rooms
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Lblroominfo As Label
+    Friend WithEvents closebtn As Button
 End Class

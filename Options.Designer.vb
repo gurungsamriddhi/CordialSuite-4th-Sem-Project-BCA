@@ -25,9 +25,9 @@ Partial Class Options
         Paneloptions = New Panel()
         Login_btn = New Button()
         Register_btn = New Button()
-        Paneldesign1 = New Panel()
         PanelRegister = New Panel()
         PanelLogin = New Panel()
+        closebtn = New Button()
         Paneloptions.SuspendLayout()
         SuspendLayout()
         ' 
@@ -73,15 +73,6 @@ Partial Class Options
         Register_btn.Text = "Register"
         Register_btn.UseVisualStyleBackColor = True
         ' 
-        ' Paneldesign1
-        ' 
-        Paneldesign1.BackColor = SystemColors.ControlLightLight
-        Paneldesign1.Dock = DockStyle.Top
-        Paneldesign1.Location = New Point(0, 0)
-        Paneldesign1.Name = "Paneldesign1"
-        Paneldesign1.Size = New Size(1021, 21)
-        Paneldesign1.TabIndex = 1
-        ' 
         ' PanelRegister
         ' 
         PanelRegister.BackColor = SystemColors.ControlLightLight
@@ -98,17 +89,33 @@ Partial Class Options
         PanelLogin.Size = New Size(18, 66)
         PanelLogin.TabIndex = 4
         ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = Color.Transparent
+        closebtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
+        closebtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = SystemColors.ControlLightLight
+        closebtn.Location = New Point(962, 12)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(47, 34)
+        closebtn.TabIndex = 5
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
+        ' 
         ' Options
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         ClientSize = New Size(1021, 585)
+        Controls.Add(closebtn)
         Controls.Add(PanelLogin)
         Controls.Add(PanelRegister)
-        Controls.Add(Paneldesign1)
         Controls.Add(Paneloptions)
         ForeColor = Color.Transparent
+        FormBorderStyle = FormBorderStyle.None
         Name = "Options"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Options"
@@ -119,8 +126,8 @@ Partial Class Options
     Friend WithEvents Paneloptions As Panel
     Friend WithEvents Register_btn As Button
     Friend WithEvents Login_btn As Button
-    Friend WithEvents Paneldesign1 As Panel
     Friend WithEvents PanelRegister As Panel
     Friend WithEvents PanelLogin As Panel
     Friend WithEvents label1 As label
+    Friend WithEvents closebtn As Button
 End Class

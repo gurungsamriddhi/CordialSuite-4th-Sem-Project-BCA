@@ -28,7 +28,10 @@ Public Class Options
 
     End Sub
 
-    Private Sub Options_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+
+
+    Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
+        Me.Dispose()
         End
     End Sub
 End Class

@@ -23,20 +23,36 @@ Partial Class splay
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Lbl_displayfp = New Label()
+        closebtn = New Button()
         SuspendLayout()
         ' 
         ' Lbl_displayfp
         ' 
         Lbl_displayfp.AutoSize = True
         Lbl_displayfp.BackColor = Color.Transparent
-        Lbl_displayfp.Font = New Font("Tahoma", 55.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl_displayfp.Font = New Font("Tahoma", 48F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lbl_displayfp.ForeColor = SystemColors.ControlLightLight
-        Lbl_displayfp.Location = New Point(231, 210)
+        Lbl_displayfp.Location = New Point(244, 220)
         Lbl_displayfp.Name = "Lbl_displayfp"
-        Lbl_displayfp.Size = New Size(612, 111)
+        Lbl_displayfp.Size = New Size(532, 97)
         Lbl_displayfp.TabIndex = 0
         Lbl_displayfp.Text = "CordialSuite"
         Lbl_displayfp.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = Color.Transparent
+        closebtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
+        closebtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = SystemColors.ControlLightLight
+        closebtn.Location = New Point(962, 12)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(47, 34)
+        closebtn.TabIndex = 1
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
         ' 
         ' splay
         ' 
@@ -44,8 +60,10 @@ Partial Class splay
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         ClientSize = New Size(1021, 585)
+        Controls.Add(closebtn)
         Controls.Add(Lbl_displayfp)
         ForeColor = SystemColors.Control
+        FormBorderStyle = FormBorderStyle.None
         Name = "splay"
         StartPosition = FormStartPosition.CenterScreen
         Text = "CordialSuite"
@@ -54,6 +72,7 @@ Partial Class splay
     End Sub
 
     Friend WithEvents Lbl_displayfp As Label
+    Friend WithEvents closebtn As Button
 
 
 End Class
