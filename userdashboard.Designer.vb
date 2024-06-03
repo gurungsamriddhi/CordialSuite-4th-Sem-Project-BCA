@@ -31,6 +31,7 @@ Partial Class userdashboard
         billingbtn = New Button()
         addguestbtn = New Button()
         diffformpanel = New Panel()
+        closebtn = New Button()
         guestpanel2 = New Panel()
         roompanel2 = New Panel()
         roompanel1 = New Panel()
@@ -192,6 +193,7 @@ Partial Class userdashboard
         ' diffformpanel
         ' 
         diffformpanel.BackColor = SystemColors.Control
+        diffformpanel.Controls.Add(closebtn)
         diffformpanel.Controls.Add(guestpanel2)
         diffformpanel.Controls.Add(roompanel2)
         diffformpanel.Controls.Add(roompanel1)
@@ -201,6 +203,21 @@ Partial Class userdashboard
         diffformpanel.Name = "diffformpanel"
         diffformpanel.Size = New Size(829, 585)
         diffformpanel.TabIndex = 2
+        ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        closebtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
+        closebtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = SystemColors.ControlLightLight
+        closebtn.Location = New Point(779, 3)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(47, 34)
+        closebtn.TabIndex = 7
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
         ' 
         ' guestpanel2
         ' 
@@ -420,7 +437,9 @@ Partial Class userdashboard
         ClientSize = New Size(1021, 585)
         Controls.Add(diffformpanel)
         Controls.Add(Paneluser)
+        FormBorderStyle = FormBorderStyle.None
         Name = "userdashboard"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Userdashboard"
         Paneluser.ResumeLayout(False)
         diffformpanel.ResumeLayout(False)
@@ -460,4 +479,5 @@ Partial Class userdashboard
     Friend WithEvents Lblavailablerooms As Label
     Friend WithEvents Lbltotalrooms As Label
     Friend WithEvents Lbloccupied As Label
+    Friend WithEvents closebtn As Button
 End Class

@@ -44,6 +44,7 @@ Partial Class checkin
         Panelgci = New Panel()
         checkinbtn = New Button()
         clearbtn = New Button()
+        closebtn = New Button()
         CType(NUDnguest, ComponentModel.ISupportInitialize).BeginInit()
         Panelgci.SuspendLayout()
         SuspendLayout()
@@ -150,7 +151,7 @@ Partial Class checkin
         ' Lblgcheckin
         ' 
         Lblgcheckin.AutoSize = True
-        Lblgcheckin.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lblgcheckin.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lblgcheckin.ForeColor = SystemColors.ControlLightLight
         Lblgcheckin.Location = New Point(330, 9)
         Lblgcheckin.Name = "Lblgcheckin"
@@ -240,6 +241,7 @@ Partial Class checkin
         ' Panelgci
         ' 
         Panelgci.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Panelgci.Controls.Add(closebtn)
         Panelgci.Controls.Add(Lblgcheckin)
         Panelgci.Dock = DockStyle.Top
         Panelgci.Location = New Point(0, 0)
@@ -254,7 +256,7 @@ Partial Class checkin
         checkinbtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
         checkinbtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
         checkinbtn.FlatStyle = FlatStyle.Flat
-        checkinbtn.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        checkinbtn.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         checkinbtn.ForeColor = SystemColors.ControlLightLight
         checkinbtn.Location = New Point(276, 502)
         checkinbtn.Name = "checkinbtn"
@@ -270,7 +272,7 @@ Partial Class checkin
         clearbtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
         clearbtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
         clearbtn.FlatStyle = FlatStyle.Flat
-        clearbtn.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        clearbtn.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         clearbtn.ForeColor = SystemColors.ControlLightLight
         clearbtn.Location = New Point(478, 502)
         clearbtn.Name = "clearbtn"
@@ -279,9 +281,24 @@ Partial Class checkin
         clearbtn.Text = "Clear"
         clearbtn.UseVisualStyleBackColor = False
         ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = SystemColors.ControlLightLight
+        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold)
+        closebtn.Location = New Point(770, 8)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(47, 34)
+        closebtn.TabIndex = 26
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
+        ' 
         ' checkin
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(829, 585)
         Controls.Add(clearbtn)
@@ -337,4 +354,5 @@ Partial Class checkin
     Friend WithEvents Panelgci As Panel
     Friend WithEvents checkinbtn As Button
     Friend WithEvents clearbtn As Button
+    Friend WithEvents closebtn As Button
 End Class

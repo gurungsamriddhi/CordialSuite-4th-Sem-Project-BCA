@@ -24,12 +24,14 @@ Partial Class billing
     Private Sub InitializeComponent()
         Panel1 = New Panel()
         Lblbilling = New Label()
+        closebtn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Lblbilling)
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
@@ -48,6 +50,21 @@ Partial Class billing
         Lblbilling.TabIndex = 1
         Lblbilling.Text = "BILLING"
         ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = SystemColors.ControlLightLight
+        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold)
+        closebtn.Location = New Point(770, 8)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(47, 34)
+        closebtn.TabIndex = 25
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
+        ' 
         ' billing
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -64,4 +81,5 @@ Partial Class billing
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Lblbilling As Label
+    Friend WithEvents closebtn As Button
 End Class

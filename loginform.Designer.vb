@@ -31,6 +31,7 @@ Partial Class loginform
         CheckBox1 = New CheckBox()
         Linkregister = New LinkLabel()
         Linkforgotpw = New LinkLabel()
+        closebtn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -105,7 +106,7 @@ Partial Class loginform
         Panel1.Controls.Add(txtbxpassword)
         Panel1.Controls.Add(lblpassword)
         Panel1.Controls.Add(Lblusername)
-        Panel1.Location = New Point(253, 43)
+        Panel1.Location = New Point(281, 68)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(459, 448)
         Panel1.TabIndex = 5
@@ -149,14 +150,31 @@ Partial Class loginform
         Linkforgotpw.TabStop = True
         Linkforgotpw.Text = "Forgot Password?"
         ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = Color.Transparent
+        closebtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
+        closebtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = SystemColors.ControlLightLight
+        closebtn.Location = New Point(962, 12)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(47, 34)
+        closebtn.TabIndex = 6
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
+        ' 
         ' Loginform
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        ClientSize = New Size(988, 590)
+        ClientSize = New Size(1021, 585)
+        Controls.Add(closebtn)
         Controls.Add(Panel1)
         ForeColor = Color.Transparent
+        FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 4, 3, 4)
         Name = "Loginform"
         StartPosition = FormStartPosition.CenterScreen
@@ -175,4 +193,5 @@ Partial Class loginform
     Friend WithEvents Linkregister As LinkLabel
     Friend WithEvents Linkforgotpw As LinkLabel
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents closebtn As Button
 End Class
