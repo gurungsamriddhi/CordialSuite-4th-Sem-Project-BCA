@@ -23,43 +23,24 @@ Partial Class Options
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Paneloptions = New Panel()
-        Exit_btn = New Button()
         Login_btn = New Button()
         Register_btn = New Button()
-        PanelExit = New Panel()
-        Paneldesign1 = New Panel()
         PanelRegister = New Panel()
         PanelLogin = New Panel()
+        closebtn = New Button()
         Paneloptions.SuspendLayout()
         SuspendLayout()
         ' 
         ' Paneloptions
         ' 
         Paneloptions.BackColor = Color.Transparent
-        Paneloptions.Controls.Add(Exit_btn)
         Paneloptions.Controls.Add(Login_btn)
         Paneloptions.Controls.Add(Register_btn)
         Paneloptions.Font = New Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Paneloptions.Location = New Point(379, 168)
+        Paneloptions.Location = New Point(360, 223)
         Paneloptions.Name = "Paneloptions"
-        Paneloptions.Size = New Size(316, 211)
+        Paneloptions.Size = New Size(316, 139)
         Paneloptions.TabIndex = 0
-        ' 
-        ' Exit_btn
-        ' 
-        Exit_btn.AutoSize = True
-        Exit_btn.FlatAppearance.BorderColor = SystemColors.Control
-        Exit_btn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        Exit_btn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
-        Exit_btn.FlatStyle = FlatStyle.Flat
-        Exit_btn.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold)
-        Exit_btn.ForeColor = SystemColors.ControlLightLight
-        Exit_btn.Location = New Point(0, 145)
-        Exit_btn.Name = "Exit_btn"
-        Exit_btn.Size = New Size(316, 66)
-        Exit_btn.TabIndex = 2
-        Exit_btn.Text = "Exit"
-        Exit_btn.UseVisualStyleBackColor = True
         ' 
         ' Login_btn
         ' 
@@ -92,27 +73,10 @@ Partial Class Options
         Register_btn.Text = "Register"
         Register_btn.UseVisualStyleBackColor = True
         ' 
-        ' PanelExit
-        ' 
-        PanelExit.BackColor = SystemColors.ControlLightLight
-        PanelExit.Location = New Point(364, 313)
-        PanelExit.Name = "PanelExit"
-        PanelExit.Size = New Size(18, 66)
-        PanelExit.TabIndex = 3
-        ' 
-        ' Paneldesign1
-        ' 
-        Paneldesign1.BackColor = SystemColors.ControlLightLight
-        Paneldesign1.Dock = DockStyle.Top
-        Paneldesign1.Location = New Point(0, 0)
-        Paneldesign1.Name = "Paneldesign1"
-        Paneldesign1.Size = New Size(1021, 21)
-        Paneldesign1.TabIndex = 1
-        ' 
         ' PanelRegister
         ' 
         PanelRegister.BackColor = SystemColors.ControlLightLight
-        PanelRegister.Location = New Point(364, 168)
+        PanelRegister.Location = New Point(345, 223)
         PanelRegister.Name = "PanelRegister"
         PanelRegister.Size = New Size(18, 66)
         PanelRegister.TabIndex = 2
@@ -120,10 +84,25 @@ Partial Class Options
         ' PanelLogin
         ' 
         PanelLogin.BackColor = SystemColors.ControlLightLight
-        PanelLogin.Location = New Point(364, 241)
+        PanelLogin.Location = New Point(345, 296)
         PanelLogin.Name = "PanelLogin"
         PanelLogin.Size = New Size(18, 66)
         PanelLogin.TabIndex = 4
+        ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = Color.Transparent
+        closebtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
+        closebtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = SystemColors.ControlLightLight
+        closebtn.Location = New Point(962, 12)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(47, 34)
+        closebtn.TabIndex = 5
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
         ' 
         ' Options
         ' 
@@ -131,27 +110,24 @@ Partial Class Options
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         ClientSize = New Size(1021, 585)
-        Controls.Add(PanelExit)
+        Controls.Add(closebtn)
         Controls.Add(PanelLogin)
         Controls.Add(PanelRegister)
-        Controls.Add(Paneldesign1)
         Controls.Add(Paneloptions)
         ForeColor = Color.Transparent
+        FormBorderStyle = FormBorderStyle.None
         Name = "Options"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Options"
         Paneloptions.ResumeLayout(False)
-        Paneloptions.PerformLayout()
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents Paneloptions As Panel
     Friend WithEvents Register_btn As Button
-    Friend WithEvents Exit_btn As Button
     Friend WithEvents Login_btn As Button
-    Friend WithEvents Paneldesign1 As Panel
-    Friend WithEvents PanelExit As Panel
     Friend WithEvents PanelRegister As Panel
     Friend WithEvents PanelLogin As Panel
     Friend WithEvents label1 As label
+    Friend WithEvents closebtn As Button
 End Class

@@ -40,9 +40,6 @@ C:\Project\CordialSuite\bin\Debug\net8.0-windows\CordialSuite.deps.json
 C:\Project\CordialSuite\bin\Debug\net8.0-windows\CordialSuite.runtimeconfig.json
 C:\Project\CordialSuite\bin\Debug\net8.0-windows\CordialSuite.dll
 C:\Project\CordialSuite\bin\Debug\net8.0-windows\CordialSuite.pdb
-C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.dashboard.resources
-C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form2_options.resources
-C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.frontfp_form1.resources
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Resources.resources
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Registerform.resources
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.vbproj.GenerateResource.cache
@@ -56,8 +53,6 @@ C:\Project\CordialSuite\obj\Debug\net8.0-windows\refint\CordialSuite.dll
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.pdb
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.genruntimeconfig.cache
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\ref\CordialSuite.dll
-C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Form1.resources
-C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.form2.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Options.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.splay.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.userdashboard.resources
@@ -67,3 +62,13 @@ E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.checkin.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.checkout.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.rooms.resources
 E:\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Newguestform.resources
+C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.addguestform.resources
+C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Billing.resources
+C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.checkin.resources
+C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.checkout.resources
+C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Loginform.resources
+C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Newguestform.resources
+C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Options.resources
+C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Rooms.resources
+C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Splay.resources
+C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Userdashboard.resources
