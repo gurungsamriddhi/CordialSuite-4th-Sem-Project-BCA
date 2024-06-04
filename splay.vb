@@ -2,10 +2,17 @@
 
 
 
-Public Class Splay
-    Private Sub Splay_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+'Imports System.Security.Cryptography
 
-    End Sub
+Public Class Splay
+    'Dim sql As New SQLcontrol
+
+    'Private Sub Splay_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    '   MsgBox("Hell world")
+    'If sql.hasconnection = True Then
+    '       MsgBox("Connection SUccessful")
+    'End If
+    'end Sub
 
 
 
@@ -23,7 +30,7 @@ Public Class Splay
         Me.Hide()
     End Sub
 
-    Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
+    Private Sub Closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
         Me.Dispose()
     End Sub
 End Class

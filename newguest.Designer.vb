@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class newguestform
+Partial Class newguest_form
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -30,7 +30,7 @@ Partial Class newguestform
         Lblgemail = New Label()
         LglguestID = New Label()
         clearbtn = New Button()
-        newguestbtn = New Button()
+        addnewguestbtn = New Button()
         gfirstnametxtbx = New TextBox()
         GuestIDtxtbx = New TextBox()
         emailtxtbx = New TextBox()
@@ -43,8 +43,8 @@ Partial Class newguestform
         Lblglastname = New Label()
         Lblgfirstname = New Label()
         Panel1 = New Panel()
-        Lblnewg = New Label()
         closebtn = New Button()
+        Lblnewg = New Label()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -141,21 +141,21 @@ Partial Class newguestform
         clearbtn.Text = "Clear"
         clearbtn.UseVisualStyleBackColor = False
         ' 
-        ' newguestbtn
+        ' addnewguestbtn
         ' 
-        newguestbtn.BackColor = SystemColors.ControlLightLight
-        newguestbtn.FlatAppearance.BorderColor = SystemColors.ButtonShadow
-        newguestbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        newguestbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        newguestbtn.FlatStyle = FlatStyle.Flat
-        newguestbtn.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        newguestbtn.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        newguestbtn.Location = New Point(344, 458)
-        newguestbtn.Name = "newguestbtn"
-        newguestbtn.Size = New Size(199, 41)
-        newguestbtn.TabIndex = 11
-        newguestbtn.Text = "Add New Guest"
-        newguestbtn.UseVisualStyleBackColor = False
+        addnewguestbtn.BackColor = SystemColors.ControlLightLight
+        addnewguestbtn.FlatAppearance.BorderColor = SystemColors.ButtonShadow
+        addnewguestbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        addnewguestbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        addnewguestbtn.FlatStyle = FlatStyle.Flat
+        addnewguestbtn.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        addnewguestbtn.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        addnewguestbtn.Location = New Point(344, 458)
+        addnewguestbtn.Name = "addnewguestbtn"
+        addnewguestbtn.Size = New Size(199, 41)
+        addnewguestbtn.TabIndex = 11
+        addnewguestbtn.Text = "Add New Guest"
+        addnewguestbtn.UseVisualStyleBackColor = False
         ' 
         ' gfirstnametxtbx
         ' 
@@ -289,17 +289,6 @@ Partial Class newguestform
         Panel1.Size = New Size(659, 47)
         Panel1.TabIndex = 22
         ' 
-        ' Lblnewg
-        ' 
-        Lblnewg.AutoSize = True
-        Lblnewg.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lblnewg.ForeColor = SystemColors.ControlLightLight
-        Lblnewg.Location = New Point(268, 9)
-        Lblnewg.Name = "Lblnewg"
-        Lblnewg.Size = New Size(122, 28)
-        Lblnewg.TabIndex = 23
-        Lblnewg.Text = "NEW GUEST"
-        ' 
         ' closebtn
         ' 
         closebtn.BackColor = SystemColors.ControlLightLight
@@ -315,7 +304,18 @@ Partial Class newguestform
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
         ' 
-        ' newguestform
+        ' Lblnewg
+        ' 
+        Lblnewg.AutoSize = True
+        Lblnewg.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lblnewg.ForeColor = SystemColors.ControlLightLight
+        Lblnewg.Location = New Point(268, 9)
+        Lblnewg.Name = "Lblnewg"
+        Lblnewg.Size = New Size(122, 28)
+        Lblnewg.TabIndex = 23
+        Lblnewg.Text = "NEW GUEST"
+        ' 
+        ' newguest_form
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
@@ -331,7 +331,7 @@ Partial Class newguestform
         Controls.Add(emailtxtbx)
         Controls.Add(GuestIDtxtbx)
         Controls.Add(gfirstnametxtbx)
-        Controls.Add(newguestbtn)
+        Controls.Add(addnewguestbtn)
         Controls.Add(clearbtn)
         Controls.Add(Lblglastname)
         Controls.Add(LglguestID)
@@ -343,7 +343,7 @@ Partial Class newguestform
         Controls.Add(LblgGender)
         Controls.Add(Lblgfirstname)
         FormBorderStyle = FormBorderStyle.None
-        Name = "newguestform"
+        Name = "newguest_form"
         Text = "addguest"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
@@ -358,7 +358,7 @@ Partial Class newguestform
     Friend WithEvents Lblgemail As Label
     Friend WithEvents LglguestID As Label
     Friend WithEvents clearbtn As Button
-    Friend WithEvents newguestbtn As Button
+    Friend WithEvents addnewguestbtn As Button
     Friend WithEvents gfirstnametxtbx As TextBox
     Friend WithEvents GuestIDtxtbx As TextBox
     Friend WithEvents emailtxtbx As TextBox

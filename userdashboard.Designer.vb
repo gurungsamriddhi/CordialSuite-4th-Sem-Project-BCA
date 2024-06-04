@@ -50,6 +50,8 @@ Partial Class userdashboard
         maleg_label = New Label()
         femaleg_label = New Label()
         guest_totlabel = New Label()
+        Label1 = New Label()
+        Lbl_currentuser = New Label()
         Paneluser.SuspendLayout()
         diffformpanel.SuspendLayout()
         roompanel1.SuspendLayout()
@@ -59,6 +61,8 @@ Partial Class userdashboard
         ' Paneluser
         ' 
         Paneluser.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Paneluser.Controls.Add(Label1)
+        Paneluser.Controls.Add(Lbl_currentuser)
         Paneluser.Controls.Add(logoutbtn)
         Paneluser.Controls.Add(statusbtn)
         Paneluser.Controls.Add(checkoutbtn)
@@ -429,6 +433,34 @@ Partial Class userdashboard
         guest_totlabel.TabIndex = 3
         guest_totlabel.Text = "TOTAL NO. OF GUESTS"
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Label1.FlatStyle = FlatStyle.Flat
+        Label1.Font = New Font("Tahoma", 10.8F)
+        Label1.ForeColor = SystemColors.ControlLightLight
+        Label1.Location = New Point(44, 42)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(86, 22)
+        Label1.TabIndex = 13
+        Label1.Text = "username"
+        Label1.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' Lbl_currentuser
+        ' 
+        Lbl_currentuser.AutoSize = True
+        Lbl_currentuser.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Lbl_currentuser.FlatStyle = FlatStyle.Flat
+        Lbl_currentuser.Font = New Font("Tahoma", 10.8F)
+        Lbl_currentuser.ForeColor = SystemColors.ControlLightLight
+        Lbl_currentuser.Location = New Point(29, 15)
+        Lbl_currentuser.Name = "Lbl_currentuser"
+        Lbl_currentuser.Size = New Size(115, 22)
+        Lbl_currentuser.TabIndex = 12
+        Lbl_currentuser.Text = "Current User:"
+        Lbl_currentuser.TextAlign = ContentAlignment.TopCenter
+        ' 
         ' userdashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -442,6 +474,7 @@ Partial Class userdashboard
         StartPosition = FormStartPosition.CenterScreen
         Text = "Userdashboard"
         Paneluser.ResumeLayout(False)
+        Paneluser.PerformLayout()
         diffformpanel.ResumeLayout(False)
         roompanel1.ResumeLayout(False)
         roompanel1.PerformLayout()
@@ -480,4 +513,6 @@ Partial Class userdashboard
     Friend WithEvents Lbltotalrooms As Label
     Friend WithEvents Lbloccupied As Label
     Friend WithEvents closebtn As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Lbl_currentuser As Label
 End Class

@@ -44,4 +44,10 @@ Public Class Userdashboard
         Me.Dispose()
         End
     End Sub
+    Private Sub logoutbtn_Click(sender As Object, e As EventArgs) Handles logoutbtn.Click
+        Me.Close()
+        Loginform.Show()
+        Loginform.txtbxusername.Clear()
+        Loginform.txtbxpassword.Clear()
+    End Sub
 End Class

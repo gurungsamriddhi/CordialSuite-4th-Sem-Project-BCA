@@ -15,8 +15,14 @@
 
 
 
-    Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
+    Private Sub Closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
         Me.Dispose()
         End
+    End Sub
+
+    Private Sub Linkregister_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Linktoregister.LinkClicked
+        Dim register As New Registerform
+        Registerform.Show()
+        Me.Hide()
     End Sub
 End Class

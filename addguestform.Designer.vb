@@ -22,34 +22,34 @@ Partial Class addguestform
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        paneladdg = New Panel()
+        pnlguestlist = New Panel()
         DataGridViewGuestlist = New DataGridView()
         Panel1 = New Panel()
+        closebtn = New Button()
         Lblguestlist = New Label()
         searchtxtbx = New TextBox()
         searchbtn = New Button()
-        Paneladdgform = New Panel()
+        Pnloptions = New Panel()
         newguestbtn = New Button()
         guestlistbtn = New Button()
-        closebtn = New Button()
-        paneladdg.SuspendLayout()
+        pnlguestlist.SuspendLayout()
         CType(DataGridViewGuestlist, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
-        Paneladdgform.SuspendLayout()
+        Pnloptions.SuspendLayout()
         SuspendLayout()
         ' 
-        ' paneladdg
+        ' pnlguestlist
         ' 
-        paneladdg.BackColor = SystemColors.Control
-        paneladdg.Controls.Add(DataGridViewGuestlist)
-        paneladdg.Controls.Add(Panel1)
-        paneladdg.Controls.Add(searchtxtbx)
-        paneladdg.Controls.Add(searchbtn)
-        paneladdg.Dock = DockStyle.Fill
-        paneladdg.Location = New Point(158, 0)
-        paneladdg.Name = "paneladdg"
-        paneladdg.Size = New Size(671, 585)
-        paneladdg.TabIndex = 1
+        pnlguestlist.BackColor = SystemColors.Control
+        pnlguestlist.Controls.Add(DataGridViewGuestlist)
+        pnlguestlist.Controls.Add(Panel1)
+        pnlguestlist.Controls.Add(searchtxtbx)
+        pnlguestlist.Controls.Add(searchbtn)
+        pnlguestlist.Dock = DockStyle.Fill
+        pnlguestlist.Location = New Point(158, 0)
+        pnlguestlist.Name = "pnlguestlist"
+        pnlguestlist.Size = New Size(671, 585)
+        pnlguestlist.TabIndex = 1
         ' 
         ' DataGridViewGuestlist
         ' 
@@ -72,6 +72,21 @@ Partial Class addguestform
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(671, 50)
         Panel1.TabIndex = 4
+        ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = SystemColors.ControlLightLight
+        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 12.0F, FontStyle.Bold)
+        closebtn.Location = New Point(621, 5)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(47, 34)
+        closebtn.TabIndex = 24
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
         ' 
         ' Lblguestlist
         ' 
@@ -110,16 +125,16 @@ Partial Class addguestform
         searchbtn.Text = "Search"
         searchbtn.UseVisualStyleBackColor = False
         ' 
-        ' Paneladdgform
+        ' Pnloptions
         ' 
-        Paneladdgform.BackColor = SystemColors.ControlLight
-        Paneladdgform.Controls.Add(newguestbtn)
-        Paneladdgform.Controls.Add(guestlistbtn)
-        Paneladdgform.Dock = DockStyle.Left
-        Paneladdgform.Location = New Point(0, 0)
-        Paneladdgform.Name = "Paneladdgform"
-        Paneladdgform.Size = New Size(158, 585)
-        Paneladdgform.TabIndex = 0
+        Pnloptions.BackColor = SystemColors.ControlLight
+        Pnloptions.Controls.Add(newguestbtn)
+        Pnloptions.Controls.Add(guestlistbtn)
+        Pnloptions.Dock = DockStyle.Left
+        Pnloptions.Location = New Point(0, 0)
+        Pnloptions.Name = "Pnloptions"
+        Pnloptions.Size = New Size(158, 585)
+        Pnloptions.TabIndex = 0
         ' 
         ' newguestbtn
         ' 
@@ -155,41 +170,26 @@ Partial Class addguestform
         guestlistbtn.Text = "Guest List"
         guestlistbtn.UseVisualStyleBackColor = False
         ' 
-        ' closebtn
-        ' 
-        closebtn.BackColor = SystemColors.ControlLightLight
-        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold)
-        closebtn.Location = New Point(621, 5)
-        closebtn.Name = "closebtn"
-        closebtn.Size = New Size(47, 34)
-        closebtn.TabIndex = 24
-        closebtn.Text = "X"
-        closebtn.UseVisualStyleBackColor = False
-        ' 
         ' addguestform
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(829, 585)
-        Controls.Add(paneladdg)
-        Controls.Add(Paneladdgform)
+        Controls.Add(pnlguestlist)
+        Controls.Add(Pnloptions)
         FormBorderStyle = FormBorderStyle.None
         Name = "addguestform"
         Text = "addguestform"
-        paneladdg.ResumeLayout(False)
-        paneladdg.PerformLayout()
+        pnlguestlist.ResumeLayout(False)
+        pnlguestlist.PerformLayout()
         CType(DataGridViewGuestlist, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
-        Paneladdgform.ResumeLayout(False)
+        Pnloptions.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
-    Friend WithEvents paneladdg As Panel
-    Friend WithEvents Paneladdgform As Panel
+    Friend WithEvents pnlguestlist As Panel
+    Friend WithEvents Pnloptions As Panel
     Friend WithEvents newguestbtn As Button
     Friend WithEvents guestlistbtn As Button
     Friend WithEvents searchtxtbx As TextBox
