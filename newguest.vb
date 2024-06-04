@@ -4,7 +4,7 @@
 
 Public Class Newguest_form
     'Dim con As New sqlconnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\uSer\OneDrive\Documents\CordialSuiteDB.mdf;Integrated Security=True;Connect Timeout=30")
-    Private Sub Newguestbtn_Click(sender As Object, e As EventArgs) Handles addnewguestbtn.Click
+    Private Sub Newguestbtn_Click(sender As Object, e As EventArgs) Handles addnewguest_btn.Click
 
     End Sub
 
