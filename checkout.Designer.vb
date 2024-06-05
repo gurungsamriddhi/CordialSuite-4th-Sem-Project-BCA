@@ -23,9 +23,12 @@ Partial Class checkout
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panelgco = New Panel()
-        Lblgcheckout = New Label()
         closebtn = New Button()
+        Lblgcheckout = New Label()
+        DGV_guestcheckout = New DataGridView()
+        checkout_btn = New Button()
         Panelgco.SuspendLayout()
+        CType(DGV_guestcheckout, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panelgco
@@ -38,17 +41,6 @@ Partial Class checkout
         Panelgco.Name = "Panelgco"
         Panelgco.Size = New Size(829, 47)
         Panelgco.TabIndex = 22
-        ' 
-        ' Lblgcheckout
-        ' 
-        Lblgcheckout.AutoSize = True
-        Lblgcheckout.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lblgcheckout.ForeColor = SystemColors.ControlLightLight
-        Lblgcheckout.Location = New Point(321, 9)
-        Lblgcheckout.Name = "Lblgcheckout"
-        Lblgcheckout.Size = New Size(187, 28)
-        Lblgcheckout.TabIndex = 10
-        Lblgcheckout.Text = "GUEST CHECK-OUT"
         ' 
         ' closebtn
         ' 
@@ -65,21 +57,62 @@ Partial Class checkout
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
         ' 
+        ' Lblgcheckout
+        ' 
+        Lblgcheckout.AutoSize = True
+        Lblgcheckout.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lblgcheckout.ForeColor = SystemColors.ControlLightLight
+        Lblgcheckout.Location = New Point(321, 9)
+        Lblgcheckout.Name = "Lblgcheckout"
+        Lblgcheckout.Size = New Size(187, 28)
+        Lblgcheckout.TabIndex = 10
+        Lblgcheckout.Text = "GUEST CHECK-OUT"
+        ' 
+        ' DGV_guestcheckout
+        ' 
+        DGV_guestcheckout.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DGV_guestcheckout.Location = New Point(51, 94)
+        DGV_guestcheckout.Name = "DGV_guestcheckout"
+        DGV_guestcheckout.RowHeadersWidth = 51
+        DGV_guestcheckout.Size = New Size(722, 354)
+        DGV_guestcheckout.TabIndex = 23
+        ' 
+        ' checkout_btn
+        ' 
+        checkout_btn.BackColor = SystemColors.ControlLightLight
+        checkout_btn.FlatAppearance.BorderSize = 0
+        checkout_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        checkout_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        checkout_btn.FlatStyle = FlatStyle.Flat
+        checkout_btn.Font = New Font("Calisto MT", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        checkout_btn.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        checkout_btn.Location = New Point(351, 475)
+        checkout_btn.Name = "checkout_btn"
+        checkout_btn.Size = New Size(132, 42)
+        checkout_btn.TabIndex = 24
+        checkout_btn.Text = "Check Out"
+        checkout_btn.UseVisualStyleBackColor = False
+        ' 
         ' checkout
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(829, 585)
+        Controls.Add(checkout_btn)
+        Controls.Add(DGV_guestcheckout)
         Controls.Add(Panelgco)
         FormBorderStyle = FormBorderStyle.None
         Name = "checkout"
         Text = "checkout"
         Panelgco.ResumeLayout(False)
         Panelgco.PerformLayout()
+        CType(DGV_guestcheckout, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents Panelgco As Panel
     Friend WithEvents Lblgcheckout As Label
     Friend WithEvents closebtn As Button
+    Friend WithEvents DGV_guestcheckout As DataGridView
+    Friend WithEvents checkout_btn As Button
 End Class

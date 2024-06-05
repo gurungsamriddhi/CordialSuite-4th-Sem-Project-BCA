@@ -20,17 +20,7 @@ Public Class Options
         Me.Hide()
     End Sub
 
-    Private Sub Exit_btn_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub PanelLogin_Paint(sender As Object, e As PaintEventArgs) Handles PanelLogin.Paint
-
-    End Sub
-
-
-
-    Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
+    Private Sub Closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
         Me.Dispose()
         End
     End Sub

@@ -23,6 +23,8 @@ Partial Class userdashboard
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Paneluser = New Panel()
+        Labelusername = New Label()
+        Lbl_currentuser = New Label()
         logoutbtn = New Button()
         statusbtn = New Button()
         checkoutbtn = New Button()
@@ -30,7 +32,7 @@ Partial Class userdashboard
         roomsbtn = New Button()
         billingbtn = New Button()
         addguestbtn = New Button()
-        diffformpanel = New Panel()
+        pnlhotel_status = New Panel()
         closebtn = New Button()
         guestpanel2 = New Panel()
         roompanel2 = New Panel()
@@ -43,7 +45,7 @@ Partial Class userdashboard
         Lbltotalrooms = New Label()
         Lbloccupied = New Label()
         guestpanel1 = New Panel()
-        Label1guests = New Label()
+        Lbl1guests = New Label()
         inttotfg = New Label()
         inttotmg = New Label()
         inttotguests = New Label()
@@ -51,7 +53,7 @@ Partial Class userdashboard
         femaleg_label = New Label()
         guest_totlabel = New Label()
         Paneluser.SuspendLayout()
-        diffformpanel.SuspendLayout()
+        pnlhotel_status.SuspendLayout()
         roompanel1.SuspendLayout()
         guestpanel1.SuspendLayout()
         SuspendLayout()
@@ -59,6 +61,8 @@ Partial Class userdashboard
         ' Paneluser
         ' 
         Paneluser.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Paneluser.Controls.Add(Labelusername)
+        Paneluser.Controls.Add(Lbl_currentuser)
         Paneluser.Controls.Add(logoutbtn)
         Paneluser.Controls.Add(statusbtn)
         Paneluser.Controls.Add(checkoutbtn)
@@ -72,6 +76,34 @@ Partial Class userdashboard
         Paneluser.Name = "Paneluser"
         Paneluser.Size = New Size(168, 439)
         Paneluser.TabIndex = 0
+        ' 
+        ' Label1
+        ' 
+        Labelusername.AutoSize = True
+        Labelusername.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Labelusername.FlatStyle = FlatStyle.Flat
+        Labelusername.Font = New Font("Tahoma", 10.8F)
+        Labelusername.ForeColor = SystemColors.ControlLightLight
+        Labelusername.Location = New Point(54, 40)
+        Labelusername.Name = "Label1"
+        Labelusername.Size = New Size(86, 22)
+        Labelusername.TabIndex = 11
+        Labelusername.Text = "username"
+        Labelusername.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' Lbl_currentuser
+        ' 
+        Lbl_currentuser.AutoSize = True
+        Lbl_currentuser.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Lbl_currentuser.FlatStyle = FlatStyle.Flat
+        Lbl_currentuser.Font = New Font("Tahoma", 10.8F)
+        Lbl_currentuser.ForeColor = SystemColors.ControlLightLight
+        Lbl_currentuser.Location = New Point(39, 13)
+        Lbl_currentuser.Name = "Lbl_currentuser"
+        Lbl_currentuser.Size = New Size(115, 22)
+        Lbl_currentuser.TabIndex = 10
+        Lbl_currentuser.Text = "Current User:"
+        Lbl_currentuser.TextAlign = ContentAlignment.TopCenter
         ' 
         ' logoutbtn
         ' 
@@ -198,8 +230,9 @@ Partial Class userdashboard
         addguestbtn.Text = "Add Guest"
         addguestbtn.UseVisualStyleBackColor = False
         ' 
-        ' diffformpanel
+        ' pnlhotel_status
         ' 
+<<<<<<< HEAD
         diffformpanel.BackColor = SystemColors.Control
         diffformpanel.Controls.Add(closebtn)
         diffformpanel.Controls.Add(guestpanel2)
@@ -212,6 +245,19 @@ Partial Class userdashboard
         diffformpanel.Name = "diffformpanel"
         diffformpanel.Size = New Size(725, 439)
         diffformpanel.TabIndex = 2
+=======
+        pnlhotel_status.BackColor = SystemColors.Control
+        pnlhotel_status.Controls.Add(closebtn)
+        pnlhotel_status.Controls.Add(guestpanel2)
+        pnlhotel_status.Controls.Add(roompanel2)
+        pnlhotel_status.Controls.Add(roompanel1)
+        pnlhotel_status.Controls.Add(guestpanel1)
+        pnlhotel_status.Dock = DockStyle.Fill
+        pnlhotel_status.Location = New Point(192, 0)
+        pnlhotel_status.Name = "pnlhotel_status"
+        pnlhotel_status.Size = New Size(829, 585)
+        pnlhotel_status.TabIndex = 2
+>>>>>>> master
         ' 
         ' closebtn
         ' 
@@ -219,7 +265,11 @@ Partial Class userdashboard
         closebtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
         closebtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
         closebtn.FlatStyle = FlatStyle.Flat
+<<<<<<< HEAD
         closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+=======
+        closebtn.Font = New Font("Lucida Fax", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+>>>>>>> master
         closebtn.ForeColor = SystemColors.ControlLightLight
         closebtn.Location = New Point(682, 2)
         closebtn.Margin = New Padding(3, 2, 3, 2)
@@ -314,7 +364,7 @@ Partial Class userdashboard
         ' 
         Lblavailablerooms.AutoSize = True
         Lblavailablerooms.FlatStyle = FlatStyle.Flat
-        Lblavailablerooms.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Lblavailablerooms.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lblavailablerooms.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Lblavailablerooms.Location = New Point(8, 94)
         Lblavailablerooms.Name = "Lblavailablerooms"
@@ -326,7 +376,7 @@ Partial Class userdashboard
         ' 
         Lbltotalrooms.AutoSize = True
         Lbltotalrooms.FlatStyle = FlatStyle.Flat
-        Lbltotalrooms.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Lbltotalrooms.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbltotalrooms.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Lbltotalrooms.Location = New Point(8, 50)
         Lbltotalrooms.Name = "Lbltotalrooms"
@@ -338,7 +388,7 @@ Partial Class userdashboard
         ' 
         Lbloccupied.AutoSize = True
         Lbloccupied.FlatStyle = FlatStyle.Flat
-        Lbloccupied.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Lbloccupied.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbloccupied.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Lbloccupied.Location = New Point(8, 73)
         Lbloccupied.Name = "Lbloccupied"
@@ -350,7 +400,7 @@ Partial Class userdashboard
         ' 
         guestpanel1.BackColor = SystemColors.ButtonHighlight
         guestpanel1.BorderStyle = BorderStyle.Fixed3D
-        guestpanel1.Controls.Add(Label1guests)
+        guestpanel1.Controls.Add(Lbl1guests)
         guestpanel1.Controls.Add(inttotfg)
         guestpanel1.Controls.Add(inttotmg)
         guestpanel1.Controls.Add(inttotguests)
@@ -363,8 +413,9 @@ Partial Class userdashboard
         guestpanel1.Size = New Size(239, 129)
         guestpanel1.TabIndex = 5
         ' 
-        ' Label1guests
+        ' Lbl1guests
         ' 
+<<<<<<< HEAD
         Label1guests.AutoSize = True
         Label1guests.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1guests.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
@@ -373,6 +424,16 @@ Partial Class userdashboard
         Label1guests.Size = New Size(60, 19)
         Label1guests.TabIndex = 9
         Label1guests.Text = "GUESTS"
+=======
+        Lbl1guests.AutoSize = True
+        Lbl1guests.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl1guests.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Lbl1guests.Location = New Point(84, 19)
+        Lbl1guests.Name = "Lbl1guests"
+        Lbl1guests.Size = New Size(70, 23)
+        Lbl1guests.TabIndex = 9
+        Lbl1guests.Text = "GUESTS"
+>>>>>>> master
         ' 
         ' inttotfg
         ' 
@@ -411,7 +472,7 @@ Partial Class userdashboard
         ' 
         maleg_label.AutoSize = True
         maleg_label.FlatStyle = FlatStyle.Flat
-        maleg_label.Font = New Font("Segoe UI", 9F)
+        maleg_label.Font = New Font("Segoe UI", 9.0F)
         maleg_label.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         maleg_label.Location = New Point(3, 94)
         maleg_label.Name = "maleg_label"
@@ -423,7 +484,7 @@ Partial Class userdashboard
         ' 
         femaleg_label.AutoSize = True
         femaleg_label.FlatStyle = FlatStyle.Flat
-        femaleg_label.Font = New Font("Segoe UI", 9F)
+        femaleg_label.Font = New Font("Segoe UI", 9.0F)
         femaleg_label.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         femaleg_label.Location = New Point(3, 73)
         femaleg_label.Name = "femaleg_label"
@@ -435,7 +496,7 @@ Partial Class userdashboard
         ' 
         guest_totlabel.AutoSize = True
         guest_totlabel.FlatStyle = FlatStyle.Flat
-        guest_totlabel.Font = New Font("Segoe UI", 9F)
+        guest_totlabel.Font = New Font("Segoe UI", 9.0F)
         guest_totlabel.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         guest_totlabel.Location = New Point(3, 50)
         guest_totlabel.Name = "guest_totlabel"
@@ -445,11 +506,19 @@ Partial Class userdashboard
         ' 
         ' userdashboard
         ' 
+<<<<<<< HEAD
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonFace
         ClientSize = New Size(893, 439)
         Controls.Add(diffformpanel)
+=======
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ButtonFace
+        ClientSize = New Size(1021, 585)
+        Controls.Add(pnlhotel_status)
+>>>>>>> master
         Controls.Add(Paneluser)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 2, 3, 2)
@@ -457,7 +526,8 @@ Partial Class userdashboard
         StartPosition = FormStartPosition.CenterScreen
         Text = "Userdashboard"
         Paneluser.ResumeLayout(False)
-        diffformpanel.ResumeLayout(False)
+        Paneluser.PerformLayout()
+        pnlhotel_status.ResumeLayout(False)
         roompanel1.ResumeLayout(False)
         roompanel1.PerformLayout()
         guestpanel1.ResumeLayout(False)
@@ -472,7 +542,7 @@ Partial Class userdashboard
     Friend WithEvents roomsbtn As Button
     Friend WithEvents billingbtn As Button
     Friend WithEvents addguestbtn As Button
-    Friend WithEvents diffformpanel As Panel
+    Friend WithEvents pnlhotel_status As Panel
     Friend WithEvents guestpanel1 As Panel
     Friend WithEvents roompanel2 As Panel
     Friend WithEvents roompanel1 As Panel
@@ -490,9 +560,11 @@ Partial Class userdashboard
     Friend WithEvents inttotguests As Label
     Friend WithEvents logoutbtn As Button
     Friend WithEvents Label2rooms As Label
-    Friend WithEvents Label1guests As Label
+    Friend WithEvents Lbl1guests As Label
     Friend WithEvents Lblavailablerooms As Label
     Friend WithEvents Lbltotalrooms As Label
     Friend WithEvents Lbloccupied As Label
     Friend WithEvents closebtn As Button
+    Friend WithEvents Lbl_currentuser As Label
+    Friend WithEvents Labelusername As Label
 End Class

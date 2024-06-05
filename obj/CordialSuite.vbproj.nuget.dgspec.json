@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\mamata\\CordialSuite\\CordialSuite.vbproj": {}
   },
   "projects": {
@@ -12,9 +13,22 @@
         "projectPath": "C:\\mamata\\CordialSuite\\CordialSuite.vbproj",
         "packagesPath": "C:\\Users\\mamat\\.nuget\\packages\\",
         "outputPath": "C:\\mamata\\CordialSuite\\obj\\",
+=======
+    "E:\\NewCordialSuite\\CordialSuite.vbproj": {}
+  },
+  "projects": {
+    "E:\\NewCordialSuite\\CordialSuite.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\NewCordialSuite\\CordialSuite.vbproj",
+        "projectName": "CordialSuite",
+        "projectPath": "E:\\NewCordialSuite\\CordialSuite.vbproj",
+        "packagesPath": "C:\\Users\\uSer\\.nuget\\packages\\",
+        "outputPath": "E:\\NewCordialSuite\\obj\\",
+>>>>>>> master
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mamat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\uSer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +36,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,6 +59,24 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -63,7 +96,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

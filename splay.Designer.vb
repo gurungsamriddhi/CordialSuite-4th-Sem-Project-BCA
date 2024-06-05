@@ -32,7 +32,7 @@ Partial Class splay
         Lbl_displayfp.BackColor = Color.Transparent
         Lbl_displayfp.Font = New Font("Tahoma", 48F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lbl_displayfp.ForeColor = SystemColors.ControlLightLight
-        Lbl_displayfp.Location = New Point(244, 220)
+        Lbl_displayfp.Location = New Point(242, 233)
         Lbl_displayfp.Name = "Lbl_displayfp"
         Lbl_displayfp.Size = New Size(532, 97)
         Lbl_displayfp.TabIndex = 0
