@@ -25,4 +25,16 @@
         Registerform.Show()
         Me.Hide()
     End Sub
+
+    Private Sub CheckBoxshowpw_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBoxshowpw.CheckedChanged
+        If CheckBoxshowpw.Checked Then
+            txtbxpassword.UseSystemPasswordChar = False ' Show password
+        Else
+            txtbxpassword.UseSystemPasswordChar = True ' Hide password
+        End If
+    End Sub
+
+    Private Sub Linkforgotpw_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Linkforgotpw.LinkClicked
+
+    End Sub
 End Class

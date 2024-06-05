@@ -76,6 +76,7 @@ Partial Class loginform
         txtbxpassword.Size = New Size(260, 35)
         txtbxpassword.TabIndex = 3
         txtbxpassword.TextAlign = HorizontalAlignment.Center
+        txtbxpassword.UseSystemPasswordChar = True
         ' 
         ' Btnlogin
         ' 
@@ -94,7 +95,7 @@ Partial Class loginform
         Btnlogin.Text = "Login"
         Btnlogin.UseVisualStyleBackColor = False
         ' 
-        ' Panel1
+        ' PnlLogin
         ' 
         PnlLogin.BackColor = Color.LightCyan
         PnlLogin.BorderStyle = BorderStyle.Fixed3D
@@ -107,31 +108,31 @@ Partial Class loginform
         PnlLogin.Controls.Add(lblpassword)
         PnlLogin.Controls.Add(Lblusername)
         PnlLogin.Location = New Point(281, 68)
-        PnlLogin.Name = "Panel1"
+        PnlLogin.Name = "PnlLogin"
         PnlLogin.Size = New Size(459, 448)
         PnlLogin.TabIndex = 5
         ' 
-        ' CheckBox1
+        ' CheckBoxshowpw
         ' 
         CheckBoxshowpw.AutoSize = True
         CheckBoxshowpw.BackColor = Color.Transparent
-        CheckBoxshowpw.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        CheckBoxshowpw.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         CheckBoxshowpw.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         CheckBoxshowpw.Location = New Point(109, 246)
-        CheckBoxshowpw.Name = "CheckBox1"
+        CheckBoxshowpw.Name = "CheckBoxshowpw"
         CheckBoxshowpw.Size = New Size(136, 24)
         CheckBoxshowpw.TabIndex = 7
         CheckBoxshowpw.Text = "Show password"
         CheckBoxshowpw.UseVisualStyleBackColor = False
         ' 
-        ' Linkregister
+        ' Linktoregister
         ' 
         Linktoregister.ActiveLinkColor = Color.MidnightBlue
         Linktoregister.AutoSize = True
-        Linktoregister.Font = New Font("Segoe UI", 9.0F)
+        Linktoregister.Font = New Font("Segoe UI", 9F)
         Linktoregister.LinkColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Linktoregister.Location = New Point(133, 396)
-        Linktoregister.Name = "Linkregister"
+        Linktoregister.Name = "Linktoregister"
         Linktoregister.Size = New Size(217, 20)
         Linktoregister.TabIndex = 6
         Linktoregister.TabStop = True
@@ -141,7 +142,7 @@ Partial Class loginform
         ' 
         Linkforgotpw.ActiveLinkColor = Color.MidnightBlue
         Linkforgotpw.AutoSize = True
-        Linkforgotpw.Font = New Font("Segoe UI", 9.0F)
+        Linkforgotpw.Font = New Font("Segoe UI", 9F)
         Linkforgotpw.LinkColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Linkforgotpw.Location = New Point(173, 366)
         Linkforgotpw.Name = "Linkforgotpw"
@@ -156,7 +157,7 @@ Partial Class loginform
         closebtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
         closebtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
         closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         closebtn.ForeColor = SystemColors.ControlLightLight
         closebtn.Location = New Point(962, 12)
         closebtn.Name = "closebtn"
@@ -167,7 +168,7 @@ Partial Class loginform
         ' 
         ' Loginform
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         ClientSize = New Size(1021, 585)
