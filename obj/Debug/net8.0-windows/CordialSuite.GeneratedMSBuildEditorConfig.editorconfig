@@ -14,10 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CordialSuite
-<<<<<<< HEAD
-build_property.ProjectDir = C:\mamata\CordialSuite\
-=======
 build_property.ProjectDir = E:\NewCordialSuite\
->>>>>>> fa7a83c580f9b045b71efcad3bcad63a7e71e13a
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

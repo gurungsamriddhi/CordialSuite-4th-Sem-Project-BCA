@@ -4,8 +4,8 @@
     End Sub
 
     Private Sub Btnlogin_Click(sender As Object, e As EventArgs) Handles Btnlogin.Click
-        Dim ChooseDashboardform As New ChooseDashboard
-        ChooseDashboardform.Show()
+        Dim userdashboardform As New userdashboard
+        userdashboardform.Show()
         Me.Hide()
 
 
