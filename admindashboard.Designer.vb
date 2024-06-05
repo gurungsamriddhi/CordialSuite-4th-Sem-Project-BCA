@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class userdashboard
+Partial Class admindashboard
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,14 +24,12 @@ Partial Class userdashboard
     Private Sub InitializeComponent()
         Paneluser = New Panel()
         logoutbtn = New Button()
-        statusbtn = New Button()
-        checkoutbtn = New Button()
-        checkinbtn = New Button()
-        roomsbtn = New Button()
-        billingbtn = New Button()
-        addguestbtn = New Button()
-        diffformpanel = New Panel()
-        closebtn = New Button()
+        Button1 = New Button()
+        Button2 = New Button()
+        Button3 = New Button()
+        Button4 = New Button()
+        Button5 = New Button()
+        Panel1 = New Panel()
         guestpanel2 = New Panel()
         roompanel2 = New Panel()
         roompanel1 = New Panel()
@@ -50,8 +48,9 @@ Partial Class userdashboard
         maleg_label = New Label()
         femaleg_label = New Label()
         guest_totlabel = New Label()
+        closebtn = New Button()
         Paneluser.SuspendLayout()
-        diffformpanel.SuspendLayout()
+        Panel1.SuspendLayout()
         roompanel1.SuspendLayout()
         guestpanel1.SuspendLayout()
         SuspendLayout()
@@ -60,18 +59,17 @@ Partial Class userdashboard
         ' 
         Paneluser.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
         Paneluser.Controls.Add(logoutbtn)
-        Paneluser.Controls.Add(statusbtn)
-        Paneluser.Controls.Add(checkoutbtn)
-        Paneluser.Controls.Add(checkinbtn)
-        Paneluser.Controls.Add(roomsbtn)
-        Paneluser.Controls.Add(billingbtn)
-        Paneluser.Controls.Add(addguestbtn)
+        Paneluser.Controls.Add(Button1)
+        Paneluser.Controls.Add(Button2)
+        Paneluser.Controls.Add(Button3)
+        Paneluser.Controls.Add(Button4)
+        Paneluser.Controls.Add(Button5)
         Paneluser.Dock = DockStyle.Left
         Paneluser.Location = New Point(0, 0)
         Paneluser.Margin = New Padding(3, 2, 3, 2)
         Paneluser.Name = "Paneluser"
-        Paneluser.Size = New Size(168, 439)
-        Paneluser.TabIndex = 0
+        Paneluser.Size = New Size(177, 423)
+        Paneluser.TabIndex = 19
         ' 
         ' logoutbtn
         ' 
@@ -82,172 +80,137 @@ Partial Class userdashboard
         logoutbtn.FlatStyle = FlatStyle.Flat
         logoutbtn.Font = New Font("Tahoma", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         logoutbtn.ForeColor = SystemColors.Control
-        logoutbtn.Location = New Point(25, 404)
+        logoutbtn.Location = New Point(21, 324)
         logoutbtn.Margin = New Padding(3, 2, 3, 2)
         logoutbtn.Name = "logoutbtn"
-        logoutbtn.Size = New Size(118, 26)
+        logoutbtn.Size = New Size(118, 35)
         logoutbtn.TabIndex = 9
         logoutbtn.Text = "Log Out"
         logoutbtn.UseVisualStyleBackColor = False
         ' 
-        ' statusbtn
+        ' Button1
         ' 
-        statusbtn.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        statusbtn.FlatAppearance.BorderColor = SystemColors.Control
-        statusbtn.FlatAppearance.BorderSize = 2
-        statusbtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        statusbtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
-        statusbtn.FlatStyle = FlatStyle.Flat
-        statusbtn.Font = New Font("Tahoma", 10.8F)
-        statusbtn.ForeColor = SystemColors.Control
-        statusbtn.Location = New Point(19, 94)
-        statusbtn.Margin = New Padding(3, 2, 3, 2)
-        statusbtn.Name = "statusbtn"
-        statusbtn.Size = New Size(128, 30)
-        statusbtn.TabIndex = 8
-        statusbtn.Text = "Hotel Status"
-        statusbtn.UseVisualStyleBackColor = False
+        Button1.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Button1.FlatAppearance.BorderColor = SystemColors.Control
+        Button1.FlatAppearance.BorderSize = 2
+        Button1.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
+        Button1.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Tahoma", 10.8F)
+        Button1.ForeColor = SystemColors.Control
+        Button1.Location = New Point(19, 94)
+        Button1.Margin = New Padding(3, 2, 3, 2)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(128, 30)
+        Button1.TabIndex = 8
+        Button1.Text = "Hotel Status"
+        Button1.UseVisualStyleBackColor = False
         ' 
-        ' checkoutbtn
+        ' Button2
         ' 
-        checkoutbtn.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        checkoutbtn.FlatAppearance.BorderColor = SystemColors.Control
-        checkoutbtn.FlatAppearance.BorderSize = 2
-        checkoutbtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        checkoutbtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
-        checkoutbtn.FlatStyle = FlatStyle.Flat
-        checkoutbtn.Font = New Font("Tahoma", 10.8F)
-        checkoutbtn.ForeColor = SystemColors.Control
-        checkoutbtn.Location = New Point(19, 232)
-        checkoutbtn.Margin = New Padding(3, 2, 3, 2)
-        checkoutbtn.Name = "checkoutbtn"
-        checkoutbtn.Size = New Size(128, 30)
-        checkoutbtn.TabIndex = 7
-        checkoutbtn.Text = "Check-out"
-        checkoutbtn.UseVisualStyleBackColor = False
+        Button2.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Button2.FlatAppearance.BorderColor = SystemColors.Control
+        Button2.FlatAppearance.BorderSize = 2
+        Button2.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
+        Button2.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Tahoma", 10.8F)
+        Button2.ForeColor = SystemColors.Control
+        Button2.Location = New Point(19, 232)
+        Button2.Margin = New Padding(3, 2, 3, 2)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(128, 30)
+        Button2.TabIndex = 7
+        Button2.Text = "Transaction"
+        Button2.UseVisualStyleBackColor = False
         ' 
-        ' checkinbtn
+        ' Button3
         ' 
-        checkinbtn.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        checkinbtn.FlatAppearance.BorderColor = SystemColors.Control
-        checkinbtn.FlatAppearance.BorderSize = 2
-        checkinbtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        checkinbtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
-        checkinbtn.FlatStyle = FlatStyle.Flat
-        checkinbtn.Font = New Font("Tahoma", 10.8F)
-        checkinbtn.ForeColor = SystemColors.Control
-        checkinbtn.Location = New Point(19, 163)
-        checkinbtn.Margin = New Padding(3, 2, 3, 2)
-        checkinbtn.Name = "checkinbtn"
-        checkinbtn.Size = New Size(128, 30)
-        checkinbtn.TabIndex = 6
-        checkinbtn.Text = "Check-in"
-        checkinbtn.UseVisualStyleBackColor = False
+        Button3.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Button3.FlatAppearance.BorderColor = SystemColors.Control
+        Button3.FlatAppearance.BorderSize = 2
+        Button3.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
+        Button3.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.Font = New Font("Tahoma", 10.8F)
+        Button3.ForeColor = SystemColors.Control
+        Button3.Location = New Point(19, 163)
+        Button3.Margin = New Padding(3, 2, 3, 2)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(128, 30)
+        Button3.TabIndex = 6
+        Button3.Text = "View Employee"
+        Button3.UseVisualStyleBackColor = False
         ' 
-        ' roomsbtn
+        ' Button4
         ' 
-        roomsbtn.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        roomsbtn.FlatAppearance.BorderColor = SystemColors.Control
-        roomsbtn.FlatAppearance.BorderSize = 2
-        roomsbtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        roomsbtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
-        roomsbtn.FlatStyle = FlatStyle.Flat
-        roomsbtn.Font = New Font("Tahoma", 10.8F)
-        roomsbtn.ForeColor = SystemColors.Control
-        roomsbtn.Location = New Point(19, 197)
-        roomsbtn.Margin = New Padding(3, 2, 3, 2)
-        roomsbtn.Name = "roomsbtn"
-        roomsbtn.Size = New Size(128, 30)
-        roomsbtn.TabIndex = 5
-        roomsbtn.Text = "Rooms"
-        roomsbtn.UseVisualStyleBackColor = False
+        Button4.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Button4.FlatAppearance.BorderColor = SystemColors.Control
+        Button4.FlatAppearance.BorderSize = 2
+        Button4.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
+        Button4.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        Button4.FlatStyle = FlatStyle.Flat
+        Button4.Font = New Font("Tahoma", 10.8F)
+        Button4.ForeColor = SystemColors.Control
+        Button4.Location = New Point(19, 197)
+        Button4.Margin = New Padding(3, 2, 3, 2)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(128, 30)
+        Button4.TabIndex = 5
+        Button4.Text = "Rooms"
+        Button4.UseVisualStyleBackColor = False
         ' 
-        ' billingbtn
+        ' Button5
         ' 
-        billingbtn.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        billingbtn.FlatAppearance.BorderColor = SystemColors.Control
-        billingbtn.FlatAppearance.BorderSize = 2
-        billingbtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        billingbtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
-        billingbtn.FlatStyle = FlatStyle.Flat
-        billingbtn.Font = New Font("Tahoma", 10.8F)
-        billingbtn.ForeColor = SystemColors.Control
-        billingbtn.Location = New Point(19, 266)
-        billingbtn.Margin = New Padding(3, 2, 3, 2)
-        billingbtn.Name = "billingbtn"
-        billingbtn.Size = New Size(128, 30)
-        billingbtn.TabIndex = 4
-        billingbtn.Text = "Billing"
-        billingbtn.UseVisualStyleBackColor = False
+        Button5.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Button5.FlatAppearance.BorderColor = SystemColors.Control
+        Button5.FlatAppearance.BorderSize = 2
+        Button5.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
+        Button5.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        Button5.FlatStyle = FlatStyle.Flat
+        Button5.Font = New Font("Tahoma", 10.8F)
+        Button5.ForeColor = SystemColors.Control
+        Button5.Location = New Point(19, 128)
+        Button5.Margin = New Padding(3, 2, 3, 2)
+        Button5.Name = "Button5"
+        Button5.RightToLeft = RightToLeft.No
+        Button5.Size = New Size(128, 30)
+        Button5.TabIndex = 3
+        Button5.Text = "View Guest"
+        Button5.UseVisualStyleBackColor = False
         ' 
-        ' addguestbtn
+        ' Panel1
         ' 
-        addguestbtn.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        addguestbtn.FlatAppearance.BorderColor = SystemColors.Control
-        addguestbtn.FlatAppearance.BorderSize = 2
-        addguestbtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        addguestbtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
-        addguestbtn.FlatStyle = FlatStyle.Flat
-        addguestbtn.Font = New Font("Tahoma", 10.8F)
-        addguestbtn.ForeColor = SystemColors.Control
-        addguestbtn.Location = New Point(19, 128)
-        addguestbtn.Margin = New Padding(3, 2, 3, 2)
-        addguestbtn.Name = "addguestbtn"
-        addguestbtn.Size = New Size(128, 30)
-        addguestbtn.TabIndex = 3
-        addguestbtn.Text = "Add Guest"
-        addguestbtn.UseVisualStyleBackColor = False
-        ' 
-        ' diffformpanel
-        ' 
-        diffformpanel.BackColor = SystemColors.Control
-        diffformpanel.Controls.Add(closebtn)
-        diffformpanel.Controls.Add(guestpanel2)
-        diffformpanel.Controls.Add(roompanel2)
-        diffformpanel.Controls.Add(roompanel1)
-        diffformpanel.Controls.Add(guestpanel1)
-        diffformpanel.Dock = DockStyle.Fill
-        diffformpanel.Location = New Point(168, 0)
-        diffformpanel.Margin = New Padding(3, 2, 3, 2)
-        diffformpanel.Name = "diffformpanel"
-        diffformpanel.Size = New Size(725, 439)
-        diffformpanel.TabIndex = 2
-        ' 
-        ' closebtn
-        ' 
-        closebtn.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        closebtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        closebtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
-        closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        closebtn.ForeColor = SystemColors.ControlLightLight
-        closebtn.Location = New Point(682, 2)
-        closebtn.Margin = New Padding(3, 2, 3, 2)
-        closebtn.Name = "closebtn"
-        closebtn.Size = New Size(41, 26)
-        closebtn.TabIndex = 7
-        closebtn.Text = "X"
-        closebtn.UseVisualStyleBackColor = False
+        Panel1.Controls.Add(closebtn)
+        Panel1.Controls.Add(guestpanel2)
+        Panel1.Controls.Add(roompanel2)
+        Panel1.Controls.Add(roompanel1)
+        Panel1.Controls.Add(guestpanel1)
+        Panel1.Dock = DockStyle.Fill
+        Panel1.Location = New Point(177, 0)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(694, 423)
+        Panel1.TabIndex = 10
         ' 
         ' guestpanel2
         ' 
         guestpanel2.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
         guestpanel2.BorderStyle = BorderStyle.Fixed3D
-        guestpanel2.Location = New Point(80, 123)
+        guestpanel2.Location = New Point(67, 148)
         guestpanel2.Margin = New Padding(3, 2, 3, 2)
         guestpanel2.Name = "guestpanel2"
         guestpanel2.Size = New Size(239, 18)
-        guestpanel2.TabIndex = 0
+        guestpanel2.TabIndex = 7
         ' 
         ' roompanel2
         ' 
         roompanel2.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
         roompanel2.BorderStyle = BorderStyle.Fixed3D
-        roompanel2.Location = New Point(404, 123)
+        roompanel2.Location = New Point(391, 148)
         roompanel2.Margin = New Padding(3, 2, 3, 2)
         roompanel2.Name = "roompanel2"
         roompanel2.Size = New Size(239, 18)
-        roompanel2.TabIndex = 1
+        roompanel2.TabIndex = 8
         ' 
         ' roompanel1
         ' 
@@ -260,11 +223,11 @@ Partial Class userdashboard
         roompanel1.Controls.Add(Lblavailablerooms)
         roompanel1.Controls.Add(Lbltotalrooms)
         roompanel1.Controls.Add(Lbloccupied)
-        roompanel1.Location = New Point(404, 137)
+        roompanel1.Location = New Point(391, 162)
         roompanel1.Margin = New Padding(3, 2, 3, 2)
         roompanel1.Name = "roompanel1"
         roompanel1.Size = New Size(239, 129)
-        roompanel1.TabIndex = 6
+        roompanel1.TabIndex = 10
         ' 
         ' Label2rooms
         ' 
@@ -357,11 +320,11 @@ Partial Class userdashboard
         guestpanel1.Controls.Add(maleg_label)
         guestpanel1.Controls.Add(femaleg_label)
         guestpanel1.Controls.Add(guest_totlabel)
-        guestpanel1.Location = New Point(80, 137)
+        guestpanel1.Location = New Point(67, 162)
         guestpanel1.Margin = New Padding(3, 2, 3, 2)
         guestpanel1.Name = "guestpanel1"
         guestpanel1.Size = New Size(239, 129)
-        guestpanel1.TabIndex = 5
+        guestpanel1.TabIndex = 9
         ' 
         ' Label1guests
         ' 
@@ -443,56 +406,66 @@ Partial Class userdashboard
         guest_totlabel.TabIndex = 3
         guest_totlabel.Text = "TOTAL NO. OF GUESTS"
         ' 
-        ' userdashboard
+        ' closebtn
+        ' 
+        closebtn.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        closebtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
+        closebtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = SystemColors.ControlLightLight
+        closebtn.Location = New Point(652, 2)
+        closebtn.Margin = New Padding(3, 2, 3, 2)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(41, 26)
+        closebtn.TabIndex = 11
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
+        ' 
+        ' admindashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = SystemColors.ButtonFace
-        ClientSize = New Size(893, 439)
-        Controls.Add(diffformpanel)
+        ClientSize = New Size(871, 423)
+        ControlBox = False
+        Controls.Add(Panel1)
         Controls.Add(Paneluser)
-        FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(3, 2, 3, 2)
-        Name = "userdashboard"
-        StartPosition = FormStartPosition.CenterScreen
-        Text = "Userdashboard"
+        MaximizeBox = False
+        MinimizeBox = False
+        Name = "admindashboard"
         Paneluser.ResumeLayout(False)
-        diffformpanel.ResumeLayout(False)
+        Panel1.ResumeLayout(False)
         roompanel1.ResumeLayout(False)
         roompanel1.PerformLayout()
         guestpanel1.ResumeLayout(False)
         guestpanel1.PerformLayout()
         ResumeLayout(False)
     End Sub
-
     Friend WithEvents Paneluser As Panel
-    Friend WithEvents statusbtn As Button
-    Friend WithEvents checkoutbtn As Button
-    Friend WithEvents checkinbtn As Button
-    Friend WithEvents roomsbtn As Button
-    Friend WithEvents billingbtn As Button
-    Friend WithEvents addguestbtn As Button
-    Friend WithEvents diffformpanel As Panel
-    Friend WithEvents guestpanel1 As Panel
+    Friend WithEvents logoutbtn As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents guestpanel2 As Panel
     Friend WithEvents roompanel2 As Panel
     Friend WithEvents roompanel1 As Panel
-    Friend WithEvents guestpanel2 As Panel
-    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
-    Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
-    Friend WithEvents guest_totlabel As Label
-    Friend WithEvents maleg_label As Label
-    Friend WithEvents femaleg_label As Label
+    Friend WithEvents Label2rooms As Label
     Friend WithEvents intavailablerooms As Label
     Friend WithEvents intoccupiedrooms As Label
     Friend WithEvents inttotrooms As Label
-    Friend WithEvents inttotfg As Label
-    Friend WithEvents inttotmg As Label
-    Friend WithEvents inttotguests As Label
-    Friend WithEvents logoutbtn As Button
-    Friend WithEvents Label2rooms As Label
-    Friend WithEvents Label1guests As Label
     Friend WithEvents Lblavailablerooms As Label
     Friend WithEvents Lbltotalrooms As Label
     Friend WithEvents Lbloccupied As Label
+    Friend WithEvents guestpanel1 As Panel
+    Friend WithEvents Label1guests As Label
+    Friend WithEvents inttotfg As Label
+    Friend WithEvents inttotmg As Label
+    Friend WithEvents inttotguests As Label
+    Friend WithEvents maleg_label As Label
+    Friend WithEvents femaleg_label As Label
+    Friend WithEvents guest_totlabel As Label
     Friend WithEvents closebtn As Button
 End Class

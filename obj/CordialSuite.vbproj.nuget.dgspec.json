@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Project\\CordialSuite\\CordialSuite.vbproj": {}
+    "C:\\mamata\\CordialSuite\\CordialSuite.vbproj": {}
   },
   "projects": {
-    "C:\\Project\\CordialSuite\\CordialSuite.vbproj": {
+    "C:\\mamata\\CordialSuite\\CordialSuite.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Project\\CordialSuite\\CordialSuite.vbproj",
+        "projectUniqueName": "C:\\mamata\\CordialSuite\\CordialSuite.vbproj",
         "projectName": "CordialSuite",
-        "projectPath": "C:\\Project\\CordialSuite\\CordialSuite.vbproj",
+        "projectPath": "C:\\mamata\\CordialSuite\\CordialSuite.vbproj",
         "packagesPath": "C:\\Users\\mamat\\.nuget\\packages\\",
-        "outputPath": "C:\\Project\\CordialSuite\\obj\\",
+        "outputPath": "C:\\mamata\\CordialSuite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mamat\\AppData\\Roaming\\NuGet\\NuGet.Config",

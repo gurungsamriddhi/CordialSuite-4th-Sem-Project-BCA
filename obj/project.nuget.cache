@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QyrDC0QMaJ7iEkb+tHuFNtxOie01rOZ4GZkH1iljRhaM+y5s3Su2D8mZpB5ag3gm/7L3vgoSur4Mo4YgukA0eg==",
+  "dgSpecHash": "wS+bRuvHfbXkYUikYu7EpjGDrteOAHxNSvjBOvV18FA6D7gm8Lpz5ym62oLSNrzearQYXfrECDOkqM8inkHbVw==",
   "success": true,
-  "projectFilePath": "C:\\Project\\CordialSuite\\CordialSuite.vbproj",
+  "projectFilePath": "C:\\mamata\\CordialSuite\\CordialSuite.vbproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Project\\CordialSuite\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

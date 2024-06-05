@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\CordialSuite\\CordialSuite.vbproj",
+      "projectUniqueName": "C:\\mamata\\CordialSuite\\CordialSuite.vbproj",
       "projectName": "CordialSuite",
-      "projectPath": "C:\\Project\\CordialSuite\\CordialSuite.vbproj",
+      "projectPath": "C:\\mamata\\CordialSuite\\CordialSuite.vbproj",
       "packagesPath": "C:\\Users\\mamat\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\CordialSuite\\obj\\",
+      "outputPath": "C:\\mamata\\CordialSuite\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mamat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,13 +72,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Project\\CordialSuite\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
