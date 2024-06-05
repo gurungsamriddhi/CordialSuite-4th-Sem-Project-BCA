@@ -7,9 +7,6 @@
     <Compile Update="billing.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="checkin - Copy.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="checkin.vb">
       <SubType>Form</SubType>
     </Compile>
