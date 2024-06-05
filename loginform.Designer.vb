@@ -75,7 +75,6 @@ Partial Class loginform
         txtbxpassword.Name = "txtbxpassword"
         txtbxpassword.Size = New Size(260, 35)
         txtbxpassword.TabIndex = 3
-        txtbxpassword.TextAlign = HorizontalAlignment.Center
         txtbxpassword.UseSystemPasswordChar = True
         ' 
         ' Btnlogin

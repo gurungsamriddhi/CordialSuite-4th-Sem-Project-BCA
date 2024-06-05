@@ -64,7 +64,6 @@
 
   <ItemGroup>
     <Folder Include="service\" />
-    <Folder Include="controllers\" />
   </ItemGroup>
 
 </Project>

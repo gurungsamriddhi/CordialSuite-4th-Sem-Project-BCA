@@ -71,11 +71,29 @@
             MessageBox.Show("Please fill out all the fields correctly.")
             Exit Sub
         End If
+        Dim newUser As New User()
+        newUser.FirstName = user_firstname
+        newUser.LastName = user_lastname
+        newUser.Address = user_address
+        newUser.DateOfBirth = user_dateofbirth
+        newUser.UserType = user_type
+        newUser.Gender = user_gender
+        newUser.PhoneNumber = user_phone
+        newUser.Username = user_username
+        newUser.Password = user_password
 
-        ' If all validations pass, proceed to the next stage
-        Dim loginform As New Loginform
-        loginform.Show()
-        Me.Hide()
+        ' Call UserController method to register the user
+        Dim userController As New UserController()
+        Dim registrationResult As Boolean = userController.RegisterUser(newUser)
+
+        If registrationResult Then
+            MessageBox.Show("User registered successfully.")
+            Dim loginform As New Loginform
+            loginform.Show()
+            Me.Hide()
+        Else
+            MessageBox.Show("User registration failed. Please try again.")
+        End If
     End Sub
 
 

@@ -358,7 +358,7 @@ Partial Class Registerform
         userDOB_dtp.Name = "userDOB_dtp"
         userDOB_dtp.Size = New Size(235, 30)
         userDOB_dtp.TabIndex = 25
-        userDOB_dtp.Value = New Date(2024, 6, 24, 23, 59, 59, 0)
+        userDOB_dtp.Value = New Date(2024, 6, 5, 0, 0, 0, 0)
         ' 
         ' usertype_cmbbx
         ' 
