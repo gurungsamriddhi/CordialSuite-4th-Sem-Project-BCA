@@ -50,6 +50,9 @@ Public Class Userdashboard
         Dispose()
         End
     End Sub
+<<<<<<< HEAD
+
+=======
     Private Sub Logoutbtn_Click(sender As Object, e As EventArgs) Handles logoutbtn.Click
         ' Display a MessageBox asking the user if they want to logout
         Dim result As DialogResult = MessageBox.Show("Do you want to logout?", "Logout Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -65,5 +68,6 @@ Public Class Userdashboard
             Loginform.txtbxpassword.Clear()
         End If
     End Sub
+>>>>>>> master
 
 End Class

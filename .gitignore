@@ -1,21 +1,21 @@
-# Build Folders
+# Ignore build output directories
 bin/
 obj/
 
-# User-specific files
+# Ignore user-specific files
 *.user
 *.suo
 *.userosscache
 *.userprefs
 
-# Build Artifacts
+# Ignore build artifacts
 *.dll
 *.exe
 *.pdb
 *.cache
 *.log
 
-# Visual Studio files
+# Visual Studio specific files
 .vs/
 .vscode/
 **/*.code-workspace
@@ -24,73 +24,19 @@ obj/
 *.nupkg
 project.assets.json
 project.nuget.cache
-# NuGet v3's project.json files produces more ignore patterns
-project.lock.json
-project.fragment.lock.json
-artifacts/
 
-# Resharper files
-_ReSharper*/
-*.ReSharper
+# Intermediate files
+*.dgspec.json
+*.editorconfig
+*.genruntimeconfig.cache
+*.sourcelink.json
+*.CoreCompileInputs.cache
+*.FileListAbsolute.txt
+*.GenerateResource.cache
 
-# DotCover is a code coverage tool
-*.dotCover
+# Apphost
+apphost.exe
 
-# TeamCity is a build CI tool
-_TeamCity*
-teamcity-settings.xml
-
-# Coverity is a static analysis tool
-coverity/
-
-# StyleCop is a static code analysis tool
-*.StyleCop
-
-# Backup & report files from converting an old project file
-# to a newer Visual Studio version. Backup files are not needed,
-# because we have source control and the report files can be
-# captured in the build logs
-UpgradeLog*.htm
-UpgradeLog*.xml
-*_UpgradeReport_Files/
-
-# SQL Server files
-*.mdf
-*.ldf
-
-# Business Intelligence projects
-*.rdl.data
-*.bim.layout
-*.bim_*.settings
-
-# Microsoft Azure Web App publish settings. 
-# Sensitive information is stored in these
-PublishProfiles/
-
-# Node.js
-node_modules/
-
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# VS Code
-.vscode/
-
-# Tooling
-.eslintcache
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
+# Ref files
+ref/
+refint/
