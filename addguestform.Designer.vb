@@ -56,7 +56,7 @@ Partial Class addguestform
         DataGridViewGuestlist.AllowUserToOrderColumns = True
         DataGridViewGuestlist.BackgroundColor = SystemColors.ControlLight
         DataGridViewGuestlist.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewGuestlist.Location = New Point(19, 145)
+        DataGridViewGuestlist.Location = New Point(19, 172)
         DataGridViewGuestlist.Name = "DataGridViewGuestlist"
         DataGridViewGuestlist.RowHeadersWidth = 51
         DataGridViewGuestlist.Size = New Size(640, 401)
@@ -104,7 +104,7 @@ Partial Class addguestform
         searchtxtbx.BackColor = SystemColors.ControlLightLight
         searchtxtbx.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         searchtxtbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        searchtxtbx.Location = New Point(196, 78)
+        searchtxtbx.Location = New Point(192, 78)
         searchtxtbx.Name = "searchtxtbx"
         searchtxtbx.Size = New Size(234, 31)
         searchtxtbx.TabIndex = 3

@@ -150,11 +150,11 @@ Partial Class newguest_form
         addnewguest_btn.FlatStyle = FlatStyle.Flat
         addnewguest_btn.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         addnewguest_btn.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        addnewguest_btn.Location = New Point(344, 458)
+        addnewguest_btn.Location = New Point(348, 458)
         addnewguest_btn.Name = "addnewguest_btn"
-        addnewguest_btn.Size = New Size(199, 41)
+        addnewguest_btn.Size = New Size(106, 41)
         addnewguest_btn.TabIndex = 11
-        addnewguest_btn.Text = "Add New Guest"
+        addnewguest_btn.Text = "Add "
         addnewguest_btn.UseVisualStyleBackColor = False
         ' 
         ' gfirstname_txtbx
