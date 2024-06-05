@@ -1,13 +1,18 @@
 ﻿
 
+Imports System.Diagnostics.Eventing.Reader
+
 Public Class Userdashboard
 
     Public Sub Switchpanel(ByVal panel As Form)
 
-        diffformpanel.Controls.Clear()
+        pnlhotel_status.Controls.Clear()
         panel.TopLevel = False
-        diffformpanel.Controls.Add(panel)
+        pnlhotel_status.Controls.Add(panel)
         panel.Show()
+
+
+
     End Sub
 
 
@@ -32,16 +37,33 @@ Public Class Userdashboard
         Switchpanel(billing)
     End Sub
 
-    Private Sub statusbtn_Click(sender As Object, e As EventArgs) Handles statusbtn.Click
+    Private Sub Statusbtn_Click(sender As Object, e As EventArgs) Handles statusbtn.Click
+
 
     End Sub
 
-    Private Sub userdashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Userdashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
-    Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
-        Me.Dispose()
+    Private Sub Closebtn_Click(sender As Object, e As EventArgs)
+        Dispose()
         End
     End Sub
+    Private Sub Logoutbtn_Click(sender As Object, e As EventArgs) Handles logoutbtn.Click
+        ' Display a MessageBox asking the user if they want to logout
+        Dim result As DialogResult = MessageBox.Show("Do you want to logout?", "Logout Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        ' Check the user's choice in the MessageBox
+        If result = DialogResult.Yes Then
+            ' Close the current form (Userdashboard)
+            Me.Close()
+
+            ' Show the Loginform and clear text boxes
+            Loginform.Show()
+            Loginform.txtbxusername.Clear()
+            Loginform.txtbxpassword.Clear()
+        End If
+    End Sub
+
 End Class

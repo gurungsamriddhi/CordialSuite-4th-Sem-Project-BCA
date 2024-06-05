@@ -24,15 +24,15 @@ Partial Class loginform
     Private Sub InitializeComponent()
         Lblusername = New Label()
         lblpassword = New Label()
-        txtbxuser = New TextBox()
+        txtbxusername = New TextBox()
         txtbxpassword = New TextBox()
         Btnlogin = New Button()
-        Panel1 = New Panel()
-        CheckBox1 = New CheckBox()
-        Linkregister = New LinkLabel()
+        PnlLogin = New Panel()
+        CheckBoxshowpw = New CheckBox()
+        Linktoregister = New LinkLabel()
         Linkforgotpw = New LinkLabel()
         closebtn = New Button()
-        Panel1.SuspendLayout()
+        PnlLogin.SuspendLayout()
         SuspendLayout()
         ' 
         ' Lblusername
@@ -58,14 +58,14 @@ Partial Class loginform
         lblpassword.TabIndex = 1
         lblpassword.Text = "Password"
         ' 
-        ' txtbxuser
+        ' txtbxusername
         ' 
-        txtbxuser.Font = New Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtbxuser.Location = New Point(109, 122)
-        txtbxuser.Margin = New Padding(3, 4, 3, 4)
-        txtbxuser.Name = "txtbxuser"
-        txtbxuser.Size = New Size(260, 35)
-        txtbxuser.TabIndex = 2
+        txtbxusername.Font = New Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtbxusername.Location = New Point(109, 122)
+        txtbxusername.Margin = New Padding(3, 4, 3, 4)
+        txtbxusername.Name = "txtbxusername"
+        txtbxusername.Size = New Size(260, 35)
+        txtbxusername.TabIndex = 2
         ' 
         ' txtbxpassword
         ' 
@@ -75,7 +75,7 @@ Partial Class loginform
         txtbxpassword.Name = "txtbxpassword"
         txtbxpassword.Size = New Size(260, 35)
         txtbxpassword.TabIndex = 3
-        txtbxpassword.TextAlign = HorizontalAlignment.Center
+        txtbxpassword.UseSystemPasswordChar = True
         ' 
         ' Btnlogin
         ' 
@@ -94,48 +94,48 @@ Partial Class loginform
         Btnlogin.Text = "Login"
         Btnlogin.UseVisualStyleBackColor = False
         ' 
-        ' Panel1
+        ' PnlLogin
         ' 
-        Panel1.BackColor = Color.LightCyan
-        Panel1.BorderStyle = BorderStyle.Fixed3D
-        Panel1.Controls.Add(CheckBox1)
-        Panel1.Controls.Add(Linkregister)
-        Panel1.Controls.Add(Linkforgotpw)
-        Panel1.Controls.Add(txtbxuser)
-        Panel1.Controls.Add(Btnlogin)
-        Panel1.Controls.Add(txtbxpassword)
-        Panel1.Controls.Add(lblpassword)
-        Panel1.Controls.Add(Lblusername)
-        Panel1.Location = New Point(281, 68)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(459, 448)
-        Panel1.TabIndex = 5
+        PnlLogin.BackColor = Color.LightCyan
+        PnlLogin.BorderStyle = BorderStyle.Fixed3D
+        PnlLogin.Controls.Add(CheckBoxshowpw)
+        PnlLogin.Controls.Add(Linktoregister)
+        PnlLogin.Controls.Add(Linkforgotpw)
+        PnlLogin.Controls.Add(txtbxusername)
+        PnlLogin.Controls.Add(Btnlogin)
+        PnlLogin.Controls.Add(txtbxpassword)
+        PnlLogin.Controls.Add(lblpassword)
+        PnlLogin.Controls.Add(Lblusername)
+        PnlLogin.Location = New Point(281, 68)
+        PnlLogin.Name = "PnlLogin"
+        PnlLogin.Size = New Size(459, 448)
+        PnlLogin.TabIndex = 5
         ' 
-        ' CheckBox1
+        ' CheckBoxshowpw
         ' 
-        CheckBox1.AutoSize = True
-        CheckBox1.BackColor = Color.Transparent
-        CheckBox1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        CheckBox1.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        CheckBox1.Location = New Point(109, 246)
-        CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(136, 24)
-        CheckBox1.TabIndex = 7
-        CheckBox1.Text = "Show password"
-        CheckBox1.UseVisualStyleBackColor = False
+        CheckBoxshowpw.AutoSize = True
+        CheckBoxshowpw.BackColor = Color.Transparent
+        CheckBoxshowpw.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        CheckBoxshowpw.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        CheckBoxshowpw.Location = New Point(109, 246)
+        CheckBoxshowpw.Name = "CheckBoxshowpw"
+        CheckBoxshowpw.Size = New Size(136, 24)
+        CheckBoxshowpw.TabIndex = 7
+        CheckBoxshowpw.Text = "Show password"
+        CheckBoxshowpw.UseVisualStyleBackColor = False
         ' 
-        ' Linkregister
+        ' Linktoregister
         ' 
-        Linkregister.ActiveLinkColor = Color.MidnightBlue
-        Linkregister.AutoSize = True
-        Linkregister.Font = New Font("Segoe UI", 9F)
-        Linkregister.LinkColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Linkregister.Location = New Point(133, 396)
-        Linkregister.Name = "Linkregister"
-        Linkregister.Size = New Size(217, 20)
-        Linkregister.TabIndex = 6
-        Linkregister.TabStop = True
-        Linkregister.Text = "Don't have an account?Register"
+        Linktoregister.ActiveLinkColor = Color.MidnightBlue
+        Linktoregister.AutoSize = True
+        Linktoregister.Font = New Font("Segoe UI", 9F)
+        Linktoregister.LinkColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Linktoregister.Location = New Point(133, 396)
+        Linktoregister.Name = "Linktoregister"
+        Linktoregister.Size = New Size(217, 20)
+        Linktoregister.TabIndex = 6
+        Linktoregister.TabStop = True
+        Linktoregister.Text = "Don't have an account?Register"
         ' 
         ' Linkforgotpw
         ' 
@@ -172,26 +172,26 @@ Partial Class loginform
         BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         ClientSize = New Size(1021, 585)
         Controls.Add(closebtn)
-        Controls.Add(Panel1)
+        Controls.Add(PnlLogin)
         ForeColor = Color.Transparent
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 4, 3, 4)
         Name = "Loginform"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Login"
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
+        PnlLogin.ResumeLayout(False)
+        PnlLogin.PerformLayout()
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents Lblusername As Label
     Friend WithEvents lblpassword As Label
-    Friend WithEvents txtbxuser As TextBox
+    Friend WithEvents txtbxusername As TextBox
     Friend WithEvents txtbxpassword As TextBox
     Friend WithEvents Btnlogin As Button
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Linkregister As LinkLabel
+    Friend WithEvents PnlLogin As Panel
+    Friend WithEvents Linktoregister As LinkLabel
     Friend WithEvents Linkforgotpw As LinkLabel
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents CheckBoxshowpw As CheckBox
     Friend WithEvents closebtn As Button
 End Class

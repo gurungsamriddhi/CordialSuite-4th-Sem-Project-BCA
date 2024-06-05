@@ -22,98 +22,109 @@ Partial Class Registerform
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        LabelName = New Label()
-        LabelDOB = New Label()
-        Label2 = New Label()
-        LabelAddress = New Label()
-        LabelPhonenumber = New Label()
+        LblFirstname = New Label()
+        LblDOB = New Label()
+        LblConfirmpw = New Label()
+        LblAddress = New Label()
+        LblPhonenumber = New Label()
         LblUsertype = New Label()
-        LabelGender = New Label()
-        LabelUsername = New Label()
-        LabelPassword = New Label()
-        Panelregister = New Panel()
-        DOBdtp = New DateTimePicker()
-        usertype_combobx = New ComboBox()
-        gender_combobx = New ComboBox()
-        ln_txtbx = New TextBox()
-        As_txtbx = New TextBox()
-        Phone_txtbx = New TextBox()
+        LblGender = New Label()
+        LblUsername = New Label()
+        LblPassword = New Label()
+        Pnlregister = New Panel()
+        Lbl_msggender = New Label()
+        Lbl_msgaddress = New Label()
+        Lbl_msgDOB = New Label()
+        Lbl_msglastname = New Label()
+        Lbl_msgphone = New Label()
+        Lbl_msgconfirmpw = New Label()
+        Lbl_msgpassword = New Label()
+        Lbl_msgusername = New Label()
+        Lbl_msgusertype = New Label()
+        Lbl_msgfirstname = New Label()
+        Linktologin = New LinkLabel()
+        closebtn = New Button()
+        userDOB_dtp = New DateTimePicker()
+        usertype_cmbbx = New ComboBox()
+        gender_cmbbx = New ComboBox()
+        userln_txtbx = New TextBox()
+        userAddress_txtbx = New TextBox()
+        userPhone_txtbx = New TextBox()
         username_txtbx = New TextBox()
         password_txtbx = New TextBox()
         confirmpw_txtbx = New TextBox()
         Registerbtn = New Button()
-        fn_txtbx = New TextBox()
-        LabelLastname = New Label()
-        closebtn = New Button()
-        Panelregister.SuspendLayout()
+        userfn_txtbx = New TextBox()
+        LblLastname = New Label()
+        Pnlregister.SuspendLayout()
         SuspendLayout()
         ' 
-        ' LabelName
+        ' LblFirstname
         ' 
-        LabelName.AutoSize = True
-        LabelName.BackColor = Color.Transparent
-        LabelName.FlatStyle = FlatStyle.Flat
-        LabelName.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
-        LabelName.ForeColor = SystemColors.ControlLightLight
-        LabelName.Location = New Point(191, 78)
-        LabelName.Name = "LabelName"
-        LabelName.Size = New Size(93, 23)
-        LabelName.TabIndex = 0
-        LabelName.Text = "First Name"
-        LabelName.TextAlign = ContentAlignment.MiddleCenter
+        LblFirstname.AutoSize = True
+        LblFirstname.BackColor = Color.Transparent
+        LblFirstname.FlatStyle = FlatStyle.Flat
+        LblFirstname.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LblFirstname.ForeColor = SystemColors.ControlLightLight
+        LblFirstname.Location = New Point(191, 53)
+        LblFirstname.Name = "LblFirstname"
+        LblFirstname.Size = New Size(93, 23)
+        LblFirstname.TabIndex = 0
+        LblFirstname.Text = "First Name"
+        LblFirstname.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' LabelDOB
+        ' LblDOB
         ' 
-        LabelDOB.AutoSize = True
-        LabelDOB.FlatStyle = FlatStyle.Flat
-        LabelDOB.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
-        LabelDOB.ForeColor = SystemColors.ControlLightLight
-        LabelDOB.Location = New Point(576, 151)
-        LabelDOB.Name = "LabelDOB"
-        LabelDOB.Size = New Size(108, 23)
-        LabelDOB.TabIndex = 1
-        LabelDOB.Text = "Date of Birth"
-        LabelDOB.TextAlign = ContentAlignment.MiddleCenter
+        LblDOB.AutoSize = True
+        LblDOB.FlatStyle = FlatStyle.Flat
+        LblDOB.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LblDOB.ForeColor = SystemColors.ControlLightLight
+        LblDOB.Location = New Point(576, 141)
+        LblDOB.Name = "LblDOB"
+        LblDOB.Size = New Size(108, 23)
+        LblDOB.TabIndex = 1
+        LblDOB.Text = "Date of Birth"
+        LblDOB.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label2
+        ' LblConfirmpw
         ' 
-        Label2.AutoSize = True
-        Label2.FlatStyle = FlatStyle.Flat
-        Label2.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
-        Label2.ForeColor = SystemColors.ControlLightLight
-        Label2.Location = New Point(576, 379)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(149, 23)
-        Label2.TabIndex = 2
-        Label2.Text = "Confirm Password"
-        Label2.TextAlign = ContentAlignment.MiddleCenter
+        LblConfirmpw.AutoSize = True
+        LblConfirmpw.FlatStyle = FlatStyle.Flat
+        LblConfirmpw.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LblConfirmpw.ForeColor = SystemColors.ControlLightLight
+        LblConfirmpw.Location = New Point(576, 412)
+        LblConfirmpw.Name = "LblConfirmpw"
+        LblConfirmpw.Size = New Size(149, 23)
+        LblConfirmpw.TabIndex = 2
+        LblConfirmpw.Text = "Confirm Password"
+        LblConfirmpw.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' LabelAddress
+        ' LblAddress
         ' 
-        LabelAddress.AutoSize = True
-        LabelAddress.FlatStyle = FlatStyle.Flat
-        LabelAddress.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
-        LabelAddress.ForeColor = SystemColors.ControlLightLight
-        LabelAddress.Location = New Point(189, 151)
-        LabelAddress.Name = "LabelAddress"
-        LabelAddress.Size = New Size(70, 23)
-        LabelAddress.TabIndex = 3
-        LabelAddress.Text = "Address"
-        LabelAddress.TextAlign = ContentAlignment.MiddleCenter
+        LblAddress.AutoSize = True
+        LblAddress.FlatStyle = FlatStyle.Flat
+        LblAddress.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LblAddress.ForeColor = SystemColors.ControlLightLight
+        LblAddress.Location = New Point(189, 141)
+        LblAddress.Name = "LblAddress"
+        LblAddress.Size = New Size(70, 23)
+        LblAddress.TabIndex = 3
+        LblAddress.Text = "Address"
+        LblAddress.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' LabelPhonenumber
+        ' LblPhonenumber
         ' 
-        LabelPhonenumber.AutoSize = True
-        LabelPhonenumber.FlatStyle = FlatStyle.Flat
-        LabelPhonenumber.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
-        LabelPhonenumber.ForeColor = SystemColors.ControlLightLight
-        LabelPhonenumber.ImageAlign = ContentAlignment.TopRight
-        LabelPhonenumber.Location = New Point(576, 225)
-        LabelPhonenumber.Name = "LabelPhonenumber"
-        LabelPhonenumber.Size = New Size(119, 23)
-        LabelPhonenumber.TabIndex = 4
-        LabelPhonenumber.Text = "Phonenumber"
-        LabelPhonenumber.TextAlign = ContentAlignment.MiddleCenter
+        LblPhonenumber.AutoSize = True
+        LblPhonenumber.FlatStyle = FlatStyle.Flat
+        LblPhonenumber.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LblPhonenumber.ForeColor = SystemColors.ControlLightLight
+        LblPhonenumber.ImageAlign = ContentAlignment.TopRight
+        LblPhonenumber.Location = New Point(576, 227)
+        LblPhonenumber.Name = "LblPhonenumber"
+        LblPhonenumber.Size = New Size(119, 23)
+        LblPhonenumber.TabIndex = 4
+        LblPhonenumber.Text = "Phonenumber"
+        LblPhonenumber.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' LblUsertype
         ' 
@@ -121,224 +132,200 @@ Partial Class Registerform
         LblUsertype.FlatStyle = FlatStyle.Flat
         LblUsertype.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
         LblUsertype.ForeColor = SystemColors.ControlLightLight
-        LblUsertype.Location = New Point(576, 303)
+        LblUsertype.Location = New Point(576, 318)
         LblUsertype.Name = "LblUsertype"
         LblUsertype.Size = New Size(85, 23)
         LblUsertype.TabIndex = 5
         LblUsertype.Text = "User Type"
         LblUsertype.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' LabelGender
+        ' LblGender
         ' 
-        LabelGender.AutoSize = True
-        LabelGender.FlatStyle = FlatStyle.Flat
-        LabelGender.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
-        LabelGender.ForeColor = SystemColors.ControlLightLight
-        LabelGender.Location = New Point(189, 225)
-        LabelGender.Name = "LabelGender"
-        LabelGender.Size = New Size(66, 23)
-        LabelGender.TabIndex = 6
-        LabelGender.Text = "Gender"
-        LabelGender.TextAlign = ContentAlignment.MiddleCenter
+        LblGender.AutoSize = True
+        LblGender.FlatStyle = FlatStyle.Flat
+        LblGender.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LblGender.ForeColor = SystemColors.ControlLightLight
+        LblGender.Location = New Point(189, 227)
+        LblGender.Name = "LblGender"
+        LblGender.Size = New Size(66, 23)
+        LblGender.TabIndex = 6
+        LblGender.Text = "Gender"
+        LblGender.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' LabelUsername
+        ' LblUsername
         ' 
-        LabelUsername.AutoSize = True
-        LabelUsername.FlatStyle = FlatStyle.Flat
-        LabelUsername.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
-        LabelUsername.ForeColor = SystemColors.ControlLightLight
-        LabelUsername.Location = New Point(191, 303)
-        LabelUsername.Name = "LabelUsername"
-        LabelUsername.Size = New Size(87, 23)
-        LabelUsername.TabIndex = 7
-        LabelUsername.Text = "Username"
-        LabelUsername.TextAlign = ContentAlignment.MiddleCenter
+        LblUsername.AutoSize = True
+        LblUsername.FlatStyle = FlatStyle.Flat
+        LblUsername.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LblUsername.ForeColor = SystemColors.ControlLightLight
+        LblUsername.Location = New Point(189, 318)
+        LblUsername.Name = "LblUsername"
+        LblUsername.Size = New Size(87, 23)
+        LblUsername.TabIndex = 7
+        LblUsername.Text = "Username"
+        LblUsername.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' LabelPassword
+        ' LblPassword
         ' 
-        LabelPassword.AutoSize = True
-        LabelPassword.FlatStyle = FlatStyle.Flat
-        LabelPassword.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
-        LabelPassword.ForeColor = SystemColors.ControlLightLight
-        LabelPassword.Location = New Point(189, 379)
-        LabelPassword.Name = "LabelPassword"
-        LabelPassword.Size = New Size(82, 23)
-        LabelPassword.TabIndex = 8
-        LabelPassword.Text = "Password"
-        LabelPassword.TextAlign = ContentAlignment.MiddleCenter
+        LblPassword.AutoSize = True
+        LblPassword.FlatStyle = FlatStyle.Flat
+        LblPassword.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LblPassword.ForeColor = SystemColors.ControlLightLight
+        LblPassword.Location = New Point(189, 412)
+        LblPassword.Name = "LblPassword"
+        LblPassword.Size = New Size(82, 23)
+        LblPassword.TabIndex = 8
+        LblPassword.Text = "Password"
+        LblPassword.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Panelregister
+        ' Pnlregister
         ' 
-        Panelregister.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(70))
-        Panelregister.Controls.Add(closebtn)
-        Panelregister.Controls.Add(DOBdtp)
-        Panelregister.Controls.Add(usertype_combobx)
-        Panelregister.Controls.Add(gender_combobx)
-        Panelregister.Controls.Add(ln_txtbx)
-        Panelregister.Controls.Add(As_txtbx)
-        Panelregister.Controls.Add(Phone_txtbx)
-        Panelregister.Controls.Add(username_txtbx)
-        Panelregister.Controls.Add(password_txtbx)
-        Panelregister.Controls.Add(confirmpw_txtbx)
-        Panelregister.Controls.Add(Registerbtn)
-        Panelregister.Controls.Add(fn_txtbx)
-        Panelregister.Controls.Add(LabelLastname)
-        Panelregister.Controls.Add(LabelPassword)
-        Panelregister.Controls.Add(LabelUsername)
-        Panelregister.Controls.Add(LabelGender)
-        Panelregister.Controls.Add(LblUsertype)
-        Panelregister.Controls.Add(LabelPhonenumber)
-        Panelregister.Controls.Add(LabelAddress)
-        Panelregister.Controls.Add(Label2)
-        Panelregister.Controls.Add(LabelDOB)
-        Panelregister.Controls.Add(LabelName)
-        Panelregister.Dock = DockStyle.Fill
-        Panelregister.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Panelregister.Location = New Point(0, 0)
-        Panelregister.Name = "Panelregister"
-        Panelregister.Size = New Size(970, 590)
-        Panelregister.TabIndex = 0
+        Pnlregister.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(70))
+        Pnlregister.Controls.Add(Lbl_msggender)
+        Pnlregister.Controls.Add(Lbl_msgaddress)
+        Pnlregister.Controls.Add(Lbl_msgDOB)
+        Pnlregister.Controls.Add(Lbl_msglastname)
+        Pnlregister.Controls.Add(Lbl_msgphone)
+        Pnlregister.Controls.Add(Lbl_msgconfirmpw)
+        Pnlregister.Controls.Add(Lbl_msgpassword)
+        Pnlregister.Controls.Add(Lbl_msgusername)
+        Pnlregister.Controls.Add(Lbl_msgusertype)
+        Pnlregister.Controls.Add(Lbl_msgfirstname)
+        Pnlregister.Controls.Add(Linktologin)
+        Pnlregister.Controls.Add(closebtn)
+        Pnlregister.Controls.Add(userDOB_dtp)
+        Pnlregister.Controls.Add(usertype_cmbbx)
+        Pnlregister.Controls.Add(gender_cmbbx)
+        Pnlregister.Controls.Add(userln_txtbx)
+        Pnlregister.Controls.Add(userAddress_txtbx)
+        Pnlregister.Controls.Add(userPhone_txtbx)
+        Pnlregister.Controls.Add(username_txtbx)
+        Pnlregister.Controls.Add(password_txtbx)
+        Pnlregister.Controls.Add(confirmpw_txtbx)
+        Pnlregister.Controls.Add(Registerbtn)
+        Pnlregister.Controls.Add(userfn_txtbx)
+        Pnlregister.Controls.Add(LblLastname)
+        Pnlregister.Controls.Add(LblPassword)
+        Pnlregister.Controls.Add(LblUsername)
+        Pnlregister.Controls.Add(LblGender)
+        Pnlregister.Controls.Add(LblUsertype)
+        Pnlregister.Controls.Add(LblPhonenumber)
+        Pnlregister.Controls.Add(LblAddress)
+        Pnlregister.Controls.Add(LblConfirmpw)
+        Pnlregister.Controls.Add(LblDOB)
+        Pnlregister.Controls.Add(LblFirstname)
+        Pnlregister.Dock = DockStyle.Fill
+        Pnlregister.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Pnlregister.Location = New Point(0, 0)
+        Pnlregister.Name = "Pnlregister"
+        Pnlregister.Size = New Size(970, 590)
+        Pnlregister.TabIndex = 0
         ' 
-        ' DOBdtp
+        ' Lbl_msggender
         ' 
-        DOBdtp.CalendarFont = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DOBdtp.CalendarForeColor = SystemColors.GradientInactiveCaption
-        DOBdtp.CalendarMonthBackground = SystemColors.GradientInactiveCaption
-        DOBdtp.CalendarTitleBackColor = SystemColors.GradientActiveCaption
-        DOBdtp.CalendarTitleForeColor = SystemColors.GradientInactiveCaption
-        DOBdtp.CalendarTrailingForeColor = SystemColors.GradientInactiveCaption
-        DOBdtp.Font = New Font("Segoe UI", 10.2F)
-        DOBdtp.Format = DateTimePickerFormat.Short
-        DOBdtp.Location = New Point(576, 178)
-        DOBdtp.Name = "DOBdtp"
-        DOBdtp.Size = New Size(235, 30)
-        DOBdtp.TabIndex = 25
+        Lbl_msggender.AutoSize = True
+        Lbl_msggender.ForeColor = SystemColors.ControlLightLight
+        Lbl_msggender.Location = New Point(189, 279)
+        Lbl_msggender.Name = "Lbl_msggender"
+        Lbl_msggender.Size = New Size(0, 20)
+        Lbl_msggender.TabIndex = 38
         ' 
-        ' usertype_combobx
+        ' Lbl_msgaddress
         ' 
-        usertype_combobx.BackColor = SystemColors.Menu
-        usertype_combobx.FlatStyle = FlatStyle.System
-        usertype_combobx.Font = New Font("Segoe UI", 10.2F)
-        usertype_combobx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        usertype_combobx.FormattingEnabled = True
-        usertype_combobx.Items.AddRange(New Object() {"Admin", "User"})
-        usertype_combobx.Location = New Point(576, 325)
-        usertype_combobx.Name = "usertype_combobx"
-        usertype_combobx.Size = New Size(235, 31)
-        usertype_combobx.TabIndex = 22
+        Lbl_msgaddress.AutoSize = True
+        Lbl_msgaddress.ForeColor = SystemColors.ControlLightLight
+        Lbl_msgaddress.Location = New Point(191, 192)
+        Lbl_msgaddress.Name = "Lbl_msgaddress"
+        Lbl_msgaddress.Size = New Size(0, 20)
+        Lbl_msgaddress.TabIndex = 37
         ' 
-        ' gender_combobx
+        ' Lbl_msgDOB
         ' 
-        gender_combobx.AutoCompleteCustomSource.AddRange(New String() {"Female", "Male", "Others"})
-        gender_combobx.BackColor = SystemColors.Menu
-        gender_combobx.FlatStyle = FlatStyle.System
-        gender_combobx.Font = New Font("Segoe UI", 10.2F)
-        gender_combobx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        gender_combobx.FormattingEnabled = True
-        gender_combobx.Items.AddRange(New Object() {"Female", "Male", "Others"})
-        gender_combobx.Location = New Point(191, 251)
-        gender_combobx.Name = "gender_combobx"
-        gender_combobx.Size = New Size(235, 31)
-        gender_combobx.TabIndex = 21
+        Lbl_msgDOB.AutoSize = True
+        Lbl_msgDOB.ForeColor = SystemColors.ControlLightLight
+        Lbl_msgDOB.Location = New Point(576, 192)
+        Lbl_msgDOB.Name = "Lbl_msgDOB"
+        Lbl_msgDOB.Size = New Size(0, 20)
+        Lbl_msgDOB.TabIndex = 36
         ' 
-        ' ln_txtbx
+        ' Lbl_msglastname
         ' 
-        ln_txtbx.BackColor = SystemColors.ControlLightLight
-        ln_txtbx.Font = New Font("Segoe UI", 10.2F)
-        ln_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        ln_txtbx.Location = New Point(576, 103)
-        ln_txtbx.Name = "ln_txtbx"
-        ln_txtbx.Size = New Size(235, 30)
-        ln_txtbx.TabIndex = 20
+        Lbl_msglastname.AutoSize = True
+        Lbl_msglastname.ForeColor = SystemColors.ControlLightLight
+        Lbl_msglastname.Location = New Point(576, 105)
+        Lbl_msglastname.Name = "Lbl_msglastname"
+        Lbl_msglastname.Size = New Size(0, 20)
+        Lbl_msglastname.TabIndex = 35
         ' 
-        ' As_txtbx
+        ' Lbl_msgphone
         ' 
-        As_txtbx.BackColor = SystemColors.ControlLightLight
-        As_txtbx.Font = New Font("Segoe UI", 10.2F)
-        As_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        As_txtbx.Location = New Point(191, 177)
-        As_txtbx.Name = "As_txtbx"
-        As_txtbx.Size = New Size(235, 30)
-        As_txtbx.TabIndex = 19
+        Lbl_msgphone.AutoSize = True
+        Lbl_msgphone.ForeColor = SystemColors.ControlLightLight
+        Lbl_msgphone.Location = New Point(576, 279)
+        Lbl_msgphone.Name = "Lbl_msgphone"
+        Lbl_msgphone.Size = New Size(0, 20)
+        Lbl_msgphone.TabIndex = 34
         ' 
-        ' Phone_txtbx
+        ' Lbl_msgconfirmpw
         ' 
-        Phone_txtbx.BackColor = SystemColors.ControlLightLight
-        Phone_txtbx.Font = New Font("Segoe UI", 10.2F)
-        Phone_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Phone_txtbx.Location = New Point(576, 251)
-        Phone_txtbx.Name = "Phone_txtbx"
-        Phone_txtbx.Size = New Size(235, 30)
-        Phone_txtbx.TabIndex = 17
+        Lbl_msgconfirmpw.AutoSize = True
+        Lbl_msgconfirmpw.ForeColor = SystemColors.ControlLightLight
+        Lbl_msgconfirmpw.Location = New Point(576, 465)
+        Lbl_msgconfirmpw.Name = "Lbl_msgconfirmpw"
+        Lbl_msgconfirmpw.Size = New Size(0, 20)
+        Lbl_msgconfirmpw.TabIndex = 33
         ' 
-        ' username_txtbx
+        ' Lbl_msgpassword
         ' 
-        username_txtbx.BackColor = SystemColors.ControlLightLight
-        username_txtbx.Font = New Font("Segoe UI", 10.2F)
-        username_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        username_txtbx.Location = New Point(191, 329)
-        username_txtbx.Name = "username_txtbx"
-        username_txtbx.Size = New Size(235, 30)
-        username_txtbx.TabIndex = 16
+        Lbl_msgpassword.AutoSize = True
+        Lbl_msgpassword.ForeColor = SystemColors.ControlLightLight
+        Lbl_msgpassword.Location = New Point(189, 465)
+        Lbl_msgpassword.Name = "Lbl_msgpassword"
+        Lbl_msgpassword.Size = New Size(0, 20)
+        Lbl_msgpassword.TabIndex = 32
         ' 
-        ' password_txtbx
+        ' Lbl_msgusername
         ' 
-        password_txtbx.BackColor = SystemColors.ControlLightLight
-        password_txtbx.Font = New Font("Segoe UI", 10.2F)
-        password_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        password_txtbx.Location = New Point(191, 404)
-        password_txtbx.Name = "password_txtbx"
-        password_txtbx.Size = New Size(235, 30)
-        password_txtbx.TabIndex = 15
+        Lbl_msgusername.AutoSize = True
+        Lbl_msgusername.ForeColor = SystemColors.ControlLightLight
+        Lbl_msgusername.Location = New Point(191, 371)
+        Lbl_msgusername.Name = "Lbl_msgusername"
+        Lbl_msgusername.Size = New Size(0, 20)
+        Lbl_msgusername.TabIndex = 31
         ' 
-        ' confirmpw_txtbx
+        ' Lbl_msgusertype
         ' 
-        confirmpw_txtbx.BackColor = SystemColors.ControlLightLight
-        confirmpw_txtbx.Font = New Font("Segoe UI", 10.2F)
-        confirmpw_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        confirmpw_txtbx.Location = New Point(576, 405)
-        confirmpw_txtbx.Name = "confirmpw_txtbx"
-        confirmpw_txtbx.Size = New Size(235, 30)
-        confirmpw_txtbx.TabIndex = 14
+        Lbl_msgusertype.AutoSize = True
+        Lbl_msgusertype.ForeColor = SystemColors.ControlLightLight
+        Lbl_msgusertype.Location = New Point(576, 371)
+        Lbl_msgusertype.Name = "Lbl_msgusertype"
+        Lbl_msgusertype.Size = New Size(0, 20)
+        Lbl_msgusertype.TabIndex = 30
         ' 
-        ' Registerbtn
+        ' Lbl_msgfirstname
         ' 
-        Registerbtn.BackColor = SystemColors.ControlLightLight
-        Registerbtn.FlatAppearance.BorderColor = SystemColors.GradientActiveCaption
-        Registerbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        Registerbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        Registerbtn.FlatStyle = FlatStyle.Flat
-        Registerbtn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Registerbtn.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Registerbtn.Location = New Point(392, 490)
-        Registerbtn.Name = "Registerbtn"
-        Registerbtn.Size = New Size(215, 47)
-        Registerbtn.TabIndex = 11
-        Registerbtn.Text = "Register"
-        Registerbtn.UseVisualStyleBackColor = False
+        Lbl_msgfirstname.AutoSize = True
+        Lbl_msgfirstname.ForeColor = SystemColors.ControlLightLight
+        Lbl_msgfirstname.Location = New Point(191, 105)
+        Lbl_msgfirstname.Name = "Lbl_msgfirstname"
+        Lbl_msgfirstname.Size = New Size(0, 20)
+        Lbl_msgfirstname.TabIndex = 29
         ' 
-        ' fn_txtbx
+        ' Linktologin
         ' 
-        fn_txtbx.BackColor = SystemColors.ControlLightLight
-        fn_txtbx.Font = New Font("Segoe UI", 10.2F)
-        fn_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        fn_txtbx.Location = New Point(191, 103)
-        fn_txtbx.Name = "fn_txtbx"
-        fn_txtbx.Size = New Size(235, 30)
-        fn_txtbx.TabIndex = 10
-        ' 
-        ' LabelLastname
-        ' 
-        LabelLastname.AutoSize = True
-        LabelLastname.FlatStyle = FlatStyle.Flat
-        LabelLastname.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
-        LabelLastname.ForeColor = SystemColors.ControlLightLight
-        LabelLastname.Location = New Point(576, 78)
-        LabelLastname.Name = "LabelLastname"
-        LabelLastname.Size = New Size(91, 23)
-        LabelLastname.TabIndex = 9
-        LabelLastname.Text = "Last Name"
-        LabelLastname.TextAlign = ContentAlignment.MiddleCenter
+        Linktologin.ActiveLinkColor = Color.DeepPink
+        Linktologin.AutoSize = True
+        Linktologin.BackColor = Color.Transparent
+        Linktologin.DisabledLinkColor = Color.Purple
+        Linktologin.Font = New Font("Segoe UI", 9F)
+        Linktologin.ForeColor = SystemColors.ControlLightLight
+        Linktologin.LinkColor = SystemColors.ControlLightLight
+        Linktologin.Location = New Point(392, 550)
+        Linktologin.Name = "Linktologin"
+        Linktologin.Size = New Size(215, 20)
+        Linktologin.TabIndex = 28
+        Linktologin.TabStop = True
+        Linktologin.Text = "Already have an account?Login"
         ' 
         ' closebtn
         ' 
@@ -355,6 +342,150 @@ Partial Class Registerform
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
         ' 
+        ' userDOB_dtp
+        ' 
+        userDOB_dtp.CalendarFont = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        userDOB_dtp.CalendarForeColor = SystemColors.GradientInactiveCaption
+        userDOB_dtp.CalendarMonthBackground = SystemColors.GradientInactiveCaption
+        userDOB_dtp.CalendarTitleBackColor = SystemColors.GradientActiveCaption
+        userDOB_dtp.CalendarTitleForeColor = SystemColors.GradientInactiveCaption
+        userDOB_dtp.CalendarTrailingForeColor = SystemColors.GradientInactiveCaption
+        userDOB_dtp.Font = New Font("Segoe UI", 10.2F)
+        userDOB_dtp.Format = DateTimePickerFormat.Short
+        userDOB_dtp.Location = New Point(576, 163)
+        userDOB_dtp.MaxDate = New Date(2025, 1, 1, 0, 0, 0, 0)
+        userDOB_dtp.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
+        userDOB_dtp.Name = "userDOB_dtp"
+        userDOB_dtp.Size = New Size(235, 30)
+        userDOB_dtp.TabIndex = 25
+        userDOB_dtp.Value = New Date(2024, 6, 5, 0, 0, 0, 0)
+        ' 
+        ' usertype_cmbbx
+        ' 
+        usertype_cmbbx.BackColor = SystemColors.Menu
+        usertype_cmbbx.FlatStyle = FlatStyle.System
+        usertype_cmbbx.Font = New Font("Segoe UI", 10.2F)
+        usertype_cmbbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        usertype_cmbbx.FormattingEnabled = True
+        usertype_cmbbx.Items.AddRange(New Object() {"Admin", "User"})
+        usertype_cmbbx.Location = New Point(576, 341)
+        usertype_cmbbx.Name = "usertype_cmbbx"
+        usertype_cmbbx.Size = New Size(235, 31)
+        usertype_cmbbx.TabIndex = 22
+        ' 
+        ' gender_cmbbx
+        ' 
+        gender_cmbbx.AutoCompleteCustomSource.AddRange(New String() {"Female", "Male", "Others"})
+        gender_cmbbx.BackColor = SystemColors.Menu
+        gender_cmbbx.FlatStyle = FlatStyle.System
+        gender_cmbbx.Font = New Font("Segoe UI", 10.2F)
+        gender_cmbbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        gender_cmbbx.FormattingEnabled = True
+        gender_cmbbx.Items.AddRange(New Object() {"Female", "Male", "Others"})
+        gender_cmbbx.Location = New Point(191, 249)
+        gender_cmbbx.Name = "gender_cmbbx"
+        gender_cmbbx.Size = New Size(235, 31)
+        gender_cmbbx.TabIndex = 21
+        ' 
+        ' userln_txtbx
+        ' 
+        userln_txtbx.BackColor = SystemColors.ControlLightLight
+        userln_txtbx.Font = New Font("Segoe UI", 10.2F)
+        userln_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        userln_txtbx.Location = New Point(576, 75)
+        userln_txtbx.Name = "userln_txtbx"
+        userln_txtbx.Size = New Size(235, 30)
+        userln_txtbx.TabIndex = 20
+        ' 
+        ' userAddress_txtbx
+        ' 
+        userAddress_txtbx.BackColor = SystemColors.ControlLightLight
+        userAddress_txtbx.Font = New Font("Segoe UI", 10.2F)
+        userAddress_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        userAddress_txtbx.Location = New Point(191, 162)
+        userAddress_txtbx.Name = "userAddress_txtbx"
+        userAddress_txtbx.Size = New Size(235, 30)
+        userAddress_txtbx.TabIndex = 19
+        ' 
+        ' userPhone_txtbx
+        ' 
+        userPhone_txtbx.BackColor = SystemColors.ControlLightLight
+        userPhone_txtbx.Font = New Font("Segoe UI", 10.2F)
+        userPhone_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        userPhone_txtbx.Location = New Point(576, 248)
+        userPhone_txtbx.Name = "userPhone_txtbx"
+        userPhone_txtbx.Size = New Size(235, 30)
+        userPhone_txtbx.TabIndex = 17
+        ' 
+        ' username_txtbx
+        ' 
+        username_txtbx.BackColor = SystemColors.ControlLightLight
+        username_txtbx.Font = New Font("Segoe UI", 10.2F)
+        username_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        username_txtbx.Location = New Point(191, 342)
+        username_txtbx.Name = "username_txtbx"
+        username_txtbx.Size = New Size(235, 30)
+        username_txtbx.TabIndex = 16
+        ' 
+        ' password_txtbx
+        ' 
+        password_txtbx.BackColor = SystemColors.ControlLightLight
+        password_txtbx.Font = New Font("Segoe UI", 10.2F)
+        password_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        password_txtbx.Location = New Point(191, 435)
+        password_txtbx.Name = "password_txtbx"
+        password_txtbx.Size = New Size(235, 30)
+        password_txtbx.TabIndex = 15
+        ' 
+        ' confirmpw_txtbx
+        ' 
+        confirmpw_txtbx.BackColor = SystemColors.ControlLightLight
+        confirmpw_txtbx.Font = New Font("Segoe UI", 10.2F)
+        confirmpw_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        confirmpw_txtbx.Location = New Point(576, 435)
+        confirmpw_txtbx.Name = "confirmpw_txtbx"
+        confirmpw_txtbx.Size = New Size(235, 30)
+        confirmpw_txtbx.TabIndex = 14
+        ' 
+        ' Registerbtn
+        ' 
+        Registerbtn.BackColor = SystemColors.ControlLightLight
+        Registerbtn.FlatAppearance.BorderColor = SystemColors.GradientActiveCaption
+        Registerbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        Registerbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        Registerbtn.FlatStyle = FlatStyle.Flat
+        Registerbtn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Registerbtn.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Registerbtn.Location = New Point(392, 500)
+        Registerbtn.Name = "Registerbtn"
+        Registerbtn.Size = New Size(215, 47)
+        Registerbtn.TabIndex = 11
+        Registerbtn.Text = "Register"
+        Registerbtn.UseVisualStyleBackColor = False
+        ' 
+        ' userfn_txtbx
+        ' 
+        userfn_txtbx.BackColor = SystemColors.ControlLightLight
+        userfn_txtbx.Font = New Font("Segoe UI", 10.2F)
+        userfn_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        userfn_txtbx.Location = New Point(191, 75)
+        userfn_txtbx.Name = "userfn_txtbx"
+        userfn_txtbx.Size = New Size(235, 30)
+        userfn_txtbx.TabIndex = 10
+        ' 
+        ' LblLastname
+        ' 
+        LblLastname.AutoSize = True
+        LblLastname.FlatStyle = FlatStyle.Flat
+        LblLastname.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
+        LblLastname.ForeColor = SystemColors.ControlLightLight
+        LblLastname.Location = New Point(576, 53)
+        LblLastname.Name = "LblLastname"
+        LblLastname.Size = New Size(91, 23)
+        LblLastname.TabIndex = 9
+        LblLastname.Text = "Last Name"
+        LblLastname.TextAlign = ContentAlignment.MiddleCenter
+        ' 
         ' Registerform
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -362,37 +493,48 @@ Partial Class Registerform
         AutoValidate = AutoValidate.Disable
         BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         ClientSize = New Size(970, 590)
-        Controls.Add(Panelregister)
+        Controls.Add(Pnlregister)
         FormBorderStyle = FormBorderStyle.None
         Name = "Registerform"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Registration"
-        Panelregister.ResumeLayout(False)
-        Panelregister.PerformLayout()
+        Pnlregister.ResumeLayout(False)
+        Pnlregister.PerformLayout()
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents LabelName As Label
-    Friend WithEvents LabelDOB As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents LabelAddress As Label
-    Friend WithEvents LabelPhonenumber As Label
+    Friend WithEvents LblFirstname As Label
+    Friend WithEvents LblDOB As Label
+    Friend WithEvents LblConfirmpw As Label
+    Friend WithEvents LblAddress As Label
+    Friend WithEvents LblPhonenumber As Label
     Friend WithEvents LblUsertype As Label
-    Friend WithEvents LabelGender As Label
-    Friend WithEvents LabelUsername As Label
-    Friend WithEvents LabelPassword As Label
-    Friend WithEvents Panelregister As Panel
-    Friend WithEvents LabelLastname As Label
-    Friend WithEvents fn_txtbx As TextBox
+    Friend WithEvents LblGender As Label
+    Friend WithEvents LblUsername As Label
+    Friend WithEvents LblPassword As Label
+    Friend WithEvents Pnlregister As Panel
+    Friend WithEvents LblLastname As Label
+    Friend WithEvents userfn_txtbx As TextBox
     Friend WithEvents Registerbtn As Button
-    Friend WithEvents gender_combobx As ComboBox
-    Friend WithEvents ln_txtbx As TextBox
-    Friend WithEvents As_txtbx As TextBox
-    Friend WithEvents Phone_txtbx As TextBox
+    Friend WithEvents gender_cmbbx As ComboBox
+    Friend WithEvents userln_txtbx As TextBox
+    Friend WithEvents userAddress_txtbx As TextBox
+    Friend WithEvents userPhone_txtbx As TextBox
     Friend WithEvents username_txtbx As TextBox
     Friend WithEvents password_txtbx As TextBox
-    Friend WithEvents usertype_combobx As ComboBox
-    Friend WithEvents DOBdtp As DateTimePicker
+    Friend WithEvents usertype_cmbbx As ComboBox
+    Friend WithEvents userDOB_dtp As DateTimePicker
     Friend WithEvents confirmpw_txtbx As TextBox
     Friend WithEvents closebtn As Button
+    Friend WithEvents Linktologin As LinkLabel
+    Friend WithEvents Lbl_msgconfirmpw As Label
+    Friend WithEvents Lbl_msgpassword As Label
+    Friend WithEvents Lbl_msgusername As Label
+    Friend WithEvents Lbl_msgusertype As Label
+    Friend WithEvents Lbl_msgfirstname As Label
+    Friend WithEvents Lbl_msggender As Label
+    Friend WithEvents Lbl_msgaddress As Label
+    Friend WithEvents Lbl_msgDOB As Label
+    Friend WithEvents Lbl_msglastname As Label
+    Friend WithEvents Lbl_msgphone As Label
 End Class
