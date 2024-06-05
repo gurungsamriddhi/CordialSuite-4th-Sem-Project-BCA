@@ -7,9 +7,12 @@
     <Compile Update="admindashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="billing.vb">
       <SubType>Form</SubType>
     </Compile>
+=======
+>>>>>>> master
     <Compile Update="checkin.vb">
       <SubType>Form</SubType>
     </Compile>
