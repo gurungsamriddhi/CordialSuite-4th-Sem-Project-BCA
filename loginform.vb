@@ -35,10 +35,16 @@
         If userType = "Admin" Then
             Dim admindashboard As New AdminDashboard()
             admindashboard.Show()
+            admindashboard.Labeladminname.Text = loginusername
+
+
+
             Me.Hide()
         ElseIf userType = "User" Then
             Dim userdashboard As New userdashboard()
+
             userdashboard.Show()
+            userdashboard.Labelusername.Text = loginusername
             Me.Hide()
         Else
             MessageBox.Show("Invalid username or password. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)

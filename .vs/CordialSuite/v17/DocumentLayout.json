@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "E:\\NewCordialSuite\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\registerform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:registerform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\registerform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:registerform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\viewemployee.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:viewemployee.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
@@ -43,28 +67,8 @@
       "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:newguest.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\registerform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:registerform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\database\\entitymapper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:database\\entitymapper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\registerform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:registerform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:admindashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\models\\guest.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -73,10 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\models\\user.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:models\\user.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\models\\room.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -90,94 +90,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "registerform.vb",
               "DocumentMoniker": "E:\\NewCordialSuite\\registerform.vb",
               "RelativeDocumentMoniker": "registerform.vb",
               "ToolTip": "E:\\NewCordialSuite\\registerform.vb",
               "RelativeToolTip": "registerform.vb",
-              "ViewState": "AQIAABABAAAAAAAAAAAUwB8BAAAIAAAA",
+              "ViewState": "AQIAAAUBAAAAAAAAAAAuwB8BAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-08T13:00:59.867Z",
               "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Viewemployee.vb",
-              "DocumentMoniker": "E:\\NewCordialSuite\\Viewemployee.vb",
-              "RelativeDocumentMoniker": "Viewemployee.vb",
-              "ToolTip": "E:\\NewCordialSuite\\Viewemployee.vb*",
-              "RelativeToolTip": "Viewemployee.vb*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-08T16:57:30.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "checkout.vb [Design]",
-              "DocumentMoniker": "E:\\NewCordialSuite\\checkout.vb",
-              "RelativeDocumentMoniker": "checkout.vb",
-              "ToolTip": "E:\\NewCordialSuite\\checkout.vb [Design]*",
-              "RelativeToolTip": "checkout.vb [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-08T16:33:53.63Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "billing.vb [Design]",
-              "DocumentMoniker": "E:\\NewCordialSuite\\billing.vb",
-              "RelativeDocumentMoniker": "billing.vb",
-              "ToolTip": "E:\\NewCordialSuite\\billing.vb [Design]*",
-              "RelativeToolTip": "billing.vb [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-08T16:33:51.16Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "newguest.vb [Design]",
-              "DocumentMoniker": "E:\\NewCordialSuite\\newguest.vb",
-              "RelativeDocumentMoniker": "newguest.vb",
-              "ToolTip": "E:\\NewCordialSuite\\newguest.vb [Design]",
-              "RelativeToolTip": "newguest.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-08T16:33:46.977Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "registerform.vb [Design]",
-              "DocumentMoniker": "E:\\NewCordialSuite\\registerform.vb",
-              "RelativeDocumentMoniker": "registerform.vb",
-              "ToolTip": "E:\\NewCordialSuite\\registerform.vb [Design]",
-              "RelativeToolTip": "registerform.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-08T16:33:44.367Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Viewemployee.vb [Design]",
-              "DocumentMoniker": "E:\\NewCordialSuite\\Viewemployee.vb",
-              "RelativeDocumentMoniker": "Viewemployee.vb",
-              "ToolTip": "E:\\NewCordialSuite\\Viewemployee.vb [Design]*",
-              "RelativeToolTip": "Viewemployee.vb [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-08T16:32:49.851Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -209,7 +136,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 6,
+              "Title": "Viewemployee.vb",
+              "DocumentMoniker": "E:\\NewCordialSuite\\Viewemployee.vb",
+              "RelativeDocumentMoniker": "Viewemployee.vb",
+              "ToolTip": "E:\\NewCordialSuite\\Viewemployee.vb",
+              "RelativeToolTip": "Viewemployee.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-08T16:57:30.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "checkout.vb [Design]",
+              "DocumentMoniker": "E:\\NewCordialSuite\\checkout.vb",
+              "RelativeDocumentMoniker": "checkout.vb",
+              "ToolTip": "E:\\NewCordialSuite\\checkout.vb [Design]",
+              "RelativeToolTip": "checkout.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-08T16:33:53.63Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "billing.vb [Design]",
+              "DocumentMoniker": "E:\\NewCordialSuite\\billing.vb",
+              "RelativeDocumentMoniker": "billing.vb",
+              "ToolTip": "E:\\NewCordialSuite\\billing.vb [Design]",
+              "RelativeToolTip": "billing.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-08T16:33:51.16Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "newguest.vb [Design]",
+              "DocumentMoniker": "E:\\NewCordialSuite\\newguest.vb",
+              "RelativeDocumentMoniker": "newguest.vb",
+              "ToolTip": "E:\\NewCordialSuite\\newguest.vb [Design]",
+              "RelativeToolTip": "newguest.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-08T16:33:46.977Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "registerform.vb [Design]",
+              "DocumentMoniker": "E:\\NewCordialSuite\\registerform.vb",
+              "RelativeDocumentMoniker": "registerform.vb",
+              "ToolTip": "E:\\NewCordialSuite\\registerform.vb [Design]",
+              "RelativeToolTip": "registerform.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-08T16:33:44.367Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Viewemployee.vb [Design]",
+              "DocumentMoniker": "E:\\NewCordialSuite\\Viewemployee.vb",
+              "RelativeDocumentMoniker": "Viewemployee.vb",
+              "ToolTip": "E:\\NewCordialSuite\\Viewemployee.vb [Design]",
+              "RelativeToolTip": "Viewemployee.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-08T16:32:49.851Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "user.vb",
               "DocumentMoniker": "E:\\NewCordialSuite\\models\\user.vb",
               "RelativeDocumentMoniker": "models\\user.vb",
@@ -222,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "guest.vb",
               "DocumentMoniker": "E:\\NewCordialSuite\\models\\guest.vb",
               "RelativeDocumentMoniker": "models\\guest.vb",
@@ -235,50 +235,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "AdminDashboard.vb",
               "DocumentMoniker": "E:\\NewCordialSuite\\AdminDashboard.vb",
               "RelativeDocumentMoniker": "AdminDashboard.vb",
-              "ToolTip": "E:\\NewCordialSuite\\AdminDashboard.vb*",
-              "RelativeToolTip": "AdminDashboard.vb*",
-              "ViewState": "AQIAADcAAAAAAAAAAAAAAEMAAAALAAAA",
+              "ToolTip": "E:\\NewCordialSuite\\AdminDashboard.vb",
+              "RelativeToolTip": "AdminDashboard.vb",
+              "ViewState": "AQIAAAEAAAAAAAAAAAA5wA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-08T13:46:14.113Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
               "Title": "AdminDashboard.vb [Design]",
               "DocumentMoniker": "E:\\NewCordialSuite\\AdminDashboard.vb",
               "RelativeDocumentMoniker": "AdminDashboard.vb",
-              "ToolTip": "E:\\NewCordialSuite\\AdminDashboard.vb [Design]*",
-              "RelativeToolTip": "AdminDashboard.vb [Design]*",
+              "ToolTip": "E:\\NewCordialSuite\\AdminDashboard.vb [Design]",
+              "RelativeToolTip": "AdminDashboard.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-08T13:46:07.38Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "loginform.vb",
               "DocumentMoniker": "E:\\NewCordialSuite\\loginform.vb",
               "RelativeDocumentMoniker": "loginform.vb",
-              "ToolTip": "E:\\NewCordialSuite\\loginform.vb",
-              "RelativeToolTip": "loginform.vb",
-              "ViewState": "AQIAABQAAAAAAAAAAAAUwCYAAAAcAAAA",
+              "ToolTip": "E:\\NewCordialSuite\\loginform.vb*",
+              "RelativeToolTip": "loginform.vb*",
+              "ViewState": "AQIAABwAAAAAAAAAAAAkwDAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-08T13:41:33.237Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 1,
               "Title": "loginform.vb [Design]",
               "DocumentMoniker": "E:\\NewCordialSuite\\loginform.vb",
               "RelativeDocumentMoniker": "loginform.vb",
-              "ToolTip": "E:\\NewCordialSuite\\loginform.vb [Design]",
-              "RelativeToolTip": "loginform.vb [Design]",
+              "ToolTip": "E:\\NewCordialSuite\\loginform.vb [Design]*",
+              "RelativeToolTip": "loginform.vb [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-08T13:41:31.699Z",
               "EditorCaption": " [Design]"
@@ -298,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "reservations.vb",
               "DocumentMoniker": "E:\\NewCordialSuite\\models\\reservations.vb",
               "RelativeDocumentMoniker": "models\\reservations.vb",
@@ -311,12 +311,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "UserService.vb",
               "DocumentMoniker": "E:\\NewCordialSuite\\service\\UserService.vb",
               "RelativeDocumentMoniker": "service\\UserService.vb",
-              "ToolTip": "E:\\NewCordialSuite\\service\\UserService.vb*",
-              "RelativeToolTip": "service\\UserService.vb*",
+              "ToolTip": "E:\\NewCordialSuite\\service\\UserService.vb",
+              "RelativeToolTip": "service\\UserService.vb",
               "ViewState": "AQIAAEgAAAAAAAAAAAAAAFYAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-08T13:06:46.461Z",
@@ -324,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "usercontext.vb",
               "DocumentMoniker": "E:\\NewCordialSuite\\database\\usercontext.vb",
               "RelativeDocumentMoniker": "database\\usercontext.vb",
@@ -337,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "EntityMapper.vb",
               "DocumentMoniker": "E:\\NewCordialSuite\\database\\EntityMapper.vb",
               "RelativeDocumentMoniker": "database\\EntityMapper.vb",
@@ -350,12 +350,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "UserController.vb",
               "DocumentMoniker": "E:\\NewCordialSuite\\controllers\\UserController.vb",
               "RelativeDocumentMoniker": "controllers\\UserController.vb",
-              "ToolTip": "E:\\NewCordialSuite\\controllers\\UserController.vb*",
-              "RelativeToolTip": "controllers\\UserController.vb*",
+              "ToolTip": "E:\\NewCordialSuite\\controllers\\UserController.vb",
+              "RelativeToolTip": "controllers\\UserController.vb",
               "ViewState": "AQIAABEAAAAAAAAAAAAkwB0AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-08T12:57:11.882Z",
@@ -363,12 +363,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "Viewemployee.Designer.vb",
               "DocumentMoniker": "E:\\NewCordialSuite\\Viewemployee.Designer.vb",
               "RelativeDocumentMoniker": "Viewemployee.Designer.vb",
-              "ToolTip": "E:\\NewCordialSuite\\Viewemployee.Designer.vb*",
-              "RelativeToolTip": "Viewemployee.Designer.vb*",
+              "ToolTip": "E:\\NewCordialSuite\\Viewemployee.Designer.vb",
+              "RelativeToolTip": "Viewemployee.Designer.vb",
               "ViewState": "AQIAACEAAAAANDMzMzMLwC4AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-08T05:00:55.235Z",
