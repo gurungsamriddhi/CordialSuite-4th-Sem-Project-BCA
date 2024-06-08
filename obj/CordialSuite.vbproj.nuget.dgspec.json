@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Project\\CordialSuite\\CordialSuite.vbproj": {}
+    "E:\\NewCordialSuite\\CordialSuite.vbproj": {}
   },
   "projects": {
-    "C:\\Project\\CordialSuite\\CordialSuite.vbproj": {
+    "E:\\NewCordialSuite\\CordialSuite.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Project\\CordialSuite\\CordialSuite.vbproj",
+        "projectUniqueName": "E:\\NewCordialSuite\\CordialSuite.vbproj",
         "projectName": "CordialSuite",
-        "projectPath": "C:\\Project\\CordialSuite\\CordialSuite.vbproj",
-        "packagesPath": "C:\\Users\\mamat\\.nuget\\packages\\",
-        "outputPath": "C:\\Project\\CordialSuite\\obj\\",
+        "projectPath": "E:\\NewCordialSuite\\CordialSuite.vbproj",
+        "packagesPath": "C:\\Users\\uSer\\.nuget\\packages\\",
+        "outputPath": "E:\\NewCordialSuite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mamat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\uSer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,10 +46,6 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
-            "FluentValidation.AspNetCore": {
-              "target": "Package",
-              "version": "[11.3.0, )"
-            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.1, )"
@@ -89,7 +86,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
