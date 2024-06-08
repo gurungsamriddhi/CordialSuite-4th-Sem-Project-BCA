@@ -1,20 +1,8 @@
 ﻿Public Class Loginform
+    Dim usercontroller As New UserController()
     Private Sub Loginform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
-
-    Private Sub Btnlogin_Click(sender As Object, e As EventArgs) Handles Btnlogin.Click
-        Dim userdashboardform As New userdashboard
-        userdashboardform.Show()
-        Me.Hide()
-
-
-    End Sub
-
-
-
-
-
     Private Sub Closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
         Me.Dispose()
         End
@@ -37,4 +25,33 @@
     Private Sub Linkforgotpw_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Linkforgotpw.LinkClicked
 
     End Sub
+
+    Private Sub Btnlogin_Click(sender As Object, e As EventArgs) Handles Btnlogin.Click
+        Dim loginusername As String = txtbxusername.Text.Trim()
+        Dim loginpassword As String = txtbxpassword.Text.Trim()
+
+        '    Dim authenticationresult = usercontroller.AuthenticateUser(loginusername, loginpassword)
+        '    If authenticationresult.Item1 Then
+        '        ' Authentication successful
+        '        Dim userType As String = authenticationresult.Item2
+        '        If userType = "Admin" Then
+        '            ' Redirect to admin dashboard or perform admin-specific actions
+        '            MessageBox.Show("Welcome, Admin!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        '        Else
+        '            ' Redirect to regular user dashboard or perform user-specific actions
+        '            MessageBox.Show("Welcome, User!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        '        End If
+        '    Else
+        '        ' Authentication failed
+        '        MessageBox.Show("Invalid username or password. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        '    End If
+        'End Sub
+
+
+
+        Dim userdashboardshow As New userdashboard()
+        userdashboard.Show()
+        Me.Hide()
+    End Sub
+
 End Class

@@ -73,19 +73,19 @@ Partial Class userdashboard
         Paneluser.Dock = DockStyle.Left
         Paneluser.Location = New Point(0, 0)
         Paneluser.Name = "Paneluser"
-        Paneluser.Size = New Size(192, 585)
+        Paneluser.Size = New Size(201, 585)
         Paneluser.TabIndex = 0
         ' 
-        ' Label1
+        ' Labelusername
         ' 
         Labelusername.AutoSize = True
         Labelusername.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Labelusername.FlatStyle = FlatStyle.Flat
-        Labelusername.Font = New Font("Tahoma", 10.8F)
+        Labelusername.Font = New Font("Tahoma", 10.2F)
         Labelusername.ForeColor = SystemColors.ControlLightLight
         Labelusername.Location = New Point(54, 40)
-        Labelusername.Name = "Label1"
-        Labelusername.Size = New Size(86, 22)
+        Labelusername.Name = "Labelusername"
+        Labelusername.Size = New Size(83, 21)
         Labelusername.TabIndex = 11
         Labelusername.Text = "username"
         Labelusername.TextAlign = ContentAlignment.TopCenter
@@ -95,11 +95,11 @@ Partial Class userdashboard
         Lbl_currentuser.AutoSize = True
         Lbl_currentuser.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Lbl_currentuser.FlatStyle = FlatStyle.Flat
-        Lbl_currentuser.Font = New Font("Tahoma", 10.8F)
+        Lbl_currentuser.Font = New Font("Tahoma", 10.2F)
         Lbl_currentuser.ForeColor = SystemColors.ControlLightLight
         Lbl_currentuser.Location = New Point(39, 13)
         Lbl_currentuser.Name = "Lbl_currentuser"
-        Lbl_currentuser.Size = New Size(115, 22)
+        Lbl_currentuser.Size = New Size(110, 21)
         Lbl_currentuser.TabIndex = 10
         Lbl_currentuser.Text = "Current User:"
         Lbl_currentuser.TextAlign = ContentAlignment.TopCenter
@@ -231,9 +231,9 @@ Partial Class userdashboard
         pnlhotel_status.Controls.Add(roompanel1)
         pnlhotel_status.Controls.Add(guestpanel1)
         pnlhotel_status.Dock = DockStyle.Fill
-        pnlhotel_status.Location = New Point(192, 0)
+        pnlhotel_status.Location = New Point(201, 0)
         pnlhotel_status.Name = "pnlhotel_status"
-        pnlhotel_status.Size = New Size(829, 585)
+        pnlhotel_status.Size = New Size(820, 585)
         pnlhotel_status.TabIndex = 2
         ' 
         ' closebtn
@@ -242,9 +242,9 @@ Partial Class userdashboard
         closebtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
         closebtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
         closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         closebtn.ForeColor = SystemColors.ControlLightLight
-        closebtn.Location = New Point(779, 3)
+        closebtn.Location = New Point(770, 3)
         closebtn.Name = "closebtn"
         closebtn.Size = New Size(47, 34)
         closebtn.TabIndex = 7
@@ -333,7 +333,7 @@ Partial Class userdashboard
         ' 
         Lblavailablerooms.AutoSize = True
         Lblavailablerooms.FlatStyle = FlatStyle.Flat
-        Lblavailablerooms.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Lblavailablerooms.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lblavailablerooms.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Lblavailablerooms.Location = New Point(9, 126)
         Lblavailablerooms.Name = "Lblavailablerooms"
@@ -345,7 +345,7 @@ Partial Class userdashboard
         ' 
         Lbltotalrooms.AutoSize = True
         Lbltotalrooms.FlatStyle = FlatStyle.Flat
-        Lbltotalrooms.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Lbltotalrooms.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbltotalrooms.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Lbltotalrooms.Location = New Point(9, 66)
         Lbltotalrooms.Name = "Lbltotalrooms"
@@ -357,7 +357,7 @@ Partial Class userdashboard
         ' 
         Lbloccupied.AutoSize = True
         Lbloccupied.FlatStyle = FlatStyle.Flat
-        Lbloccupied.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Lbloccupied.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbloccupied.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Lbloccupied.Location = New Point(9, 97)
         Lbloccupied.Name = "Lbloccupied"
@@ -429,7 +429,7 @@ Partial Class userdashboard
         ' 
         maleg_label.AutoSize = True
         maleg_label.FlatStyle = FlatStyle.Flat
-        maleg_label.Font = New Font("Segoe UI", 9.0F)
+        maleg_label.Font = New Font("Segoe UI", 9F)
         maleg_label.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         maleg_label.Location = New Point(3, 126)
         maleg_label.Name = "maleg_label"
@@ -441,7 +441,7 @@ Partial Class userdashboard
         ' 
         femaleg_label.AutoSize = True
         femaleg_label.FlatStyle = FlatStyle.Flat
-        femaleg_label.Font = New Font("Segoe UI", 9.0F)
+        femaleg_label.Font = New Font("Segoe UI", 9F)
         femaleg_label.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         femaleg_label.Location = New Point(3, 97)
         femaleg_label.Name = "femaleg_label"
@@ -453,7 +453,7 @@ Partial Class userdashboard
         ' 
         guest_totlabel.AutoSize = True
         guest_totlabel.FlatStyle = FlatStyle.Flat
-        guest_totlabel.Font = New Font("Segoe UI", 9.0F)
+        guest_totlabel.Font = New Font("Segoe UI", 9F)
         guest_totlabel.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         guest_totlabel.Location = New Point(3, 66)
         guest_totlabel.Name = "guest_totlabel"
@@ -463,7 +463,7 @@ Partial Class userdashboard
         ' 
         ' userdashboard
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonFace
         ClientSize = New Size(1021, 585)

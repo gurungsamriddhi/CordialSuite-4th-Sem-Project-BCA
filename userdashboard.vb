@@ -1,8 +1,5 @@
-﻿
-
-Imports System.Diagnostics.Eventing.Reader
-
-Public Class Userdashboard
+﻿Public Class Userdashboard
+    Private statusButtonClicked As Boolean = False
 
     Public Sub Switchpanel(ByVal panel As Form)
 
@@ -10,18 +7,10 @@ Public Class Userdashboard
         panel.TopLevel = False
         pnlhotel_status.Controls.Add(panel)
         panel.Show()
-
-
-
     End Sub
-
-
-
     Private Sub Addguestbtn_Click(sender As Object, e As EventArgs) Handles addguestbtn.Click
         Switchpanel(addguestform)
     End Sub
-
-
 
     Private Sub Roomsbtn_Click(sender As Object, e As EventArgs) Handles roomsbtn.Click
         Switchpanel(rooms)
@@ -38,17 +27,19 @@ Public Class Userdashboard
     End Sub
 
     Private Sub Statusbtn_Click(sender As Object, e As EventArgs) Handles statusbtn.Click
+        addguestform.Hide()
+        rooms.Hide()
+        checkin.Hide()
+        checkout.Hide()
+        billing.Hide()
 
+        pnlhotel_status.Controls.Clear()
+        pnlhotel_status.Show()
 
     End Sub
 
     Private Sub Userdashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
-
-    Private Sub Closebtn_Click(sender As Object, e As EventArgs)
-        Dispose()
-        End
     End Sub
     Private Sub Logoutbtn_Click(sender As Object, e As EventArgs) Handles logoutbtn.Click
         ' Display a MessageBox asking the user if they want to logout
@@ -66,4 +57,7 @@ Public Class Userdashboard
         End If
     End Sub
 
+    Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
+        Me.Dispose()
+    End Sub
 End Class

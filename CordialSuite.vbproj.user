@@ -4,6 +4,9 @@
     <Compile Update="addguestform.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AdminDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="billing.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -11,6 +14,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="checkout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChooseDashboard.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="loginform.vb">
@@ -25,13 +31,25 @@
     <Compile Update="registerform.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Revenue.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="rooms.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Splay.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Updateroom.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Userdashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Viewemployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewGuest.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\NewCordialSuite\\CordialSuite.vbproj": {}
+    "C:\\Project\\CordialSuite\\CordialSuite.vbproj": {}
   },
   "projects": {
-    "E:\\NewCordialSuite\\CordialSuite.vbproj": {
+    "C:\\Project\\CordialSuite\\CordialSuite.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\NewCordialSuite\\CordialSuite.vbproj",
+        "projectUniqueName": "C:\\Project\\CordialSuite\\CordialSuite.vbproj",
         "projectName": "CordialSuite",
-        "projectPath": "E:\\NewCordialSuite\\CordialSuite.vbproj",
-        "packagesPath": "C:\\Users\\uSer\\.nuget\\packages\\",
-        "outputPath": "E:\\NewCordialSuite\\obj\\",
+        "projectPath": "C:\\Project\\CordialSuite\\CordialSuite.vbproj",
+        "packagesPath": "C:\\Users\\mamat\\.nuget\\packages\\",
+        "outputPath": "C:\\Project\\CordialSuite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\uSer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mamat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,11 +45,19 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
               "target": "Package",
               "version": "[8.0.6, )"
             },
@@ -82,7 +89,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
