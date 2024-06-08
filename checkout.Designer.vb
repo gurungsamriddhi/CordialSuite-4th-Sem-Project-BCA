@@ -86,7 +86,7 @@ Partial Class checkout
         checkout_btn.FlatStyle = FlatStyle.Flat
         checkout_btn.Font = New Font("Calisto MT", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         checkout_btn.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        checkout_btn.Location = New Point(351, 475)
+        checkout_btn.Location = New Point(362, 495)
         checkout_btn.Name = "checkout_btn"
         checkout_btn.Size = New Size(132, 42)
         checkout_btn.TabIndex = 24

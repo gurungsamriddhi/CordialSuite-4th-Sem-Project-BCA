@@ -66,7 +66,7 @@ Partial Class Registerform
         LblFirstname.FlatStyle = FlatStyle.Flat
         LblFirstname.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
         LblFirstname.ForeColor = SystemColors.ControlLightLight
-        LblFirstname.Location = New Point(191, 53)
+        LblFirstname.Location = New Point(191, 48)
         LblFirstname.Name = "LblFirstname"
         LblFirstname.Size = New Size(93, 23)
         LblFirstname.TabIndex = 0
@@ -79,7 +79,7 @@ Partial Class Registerform
         LblDOB.FlatStyle = FlatStyle.Flat
         LblDOB.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
         LblDOB.ForeColor = SystemColors.ControlLightLight
-        LblDOB.Location = New Point(576, 141)
+        LblDOB.Location = New Point(576, 136)
         LblDOB.Name = "LblDOB"
         LblDOB.Size = New Size(108, 23)
         LblDOB.TabIndex = 1
@@ -92,7 +92,7 @@ Partial Class Registerform
         LblConfirmpw.FlatStyle = FlatStyle.Flat
         LblConfirmpw.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
         LblConfirmpw.ForeColor = SystemColors.ControlLightLight
-        LblConfirmpw.Location = New Point(576, 412)
+        LblConfirmpw.Location = New Point(576, 407)
         LblConfirmpw.Name = "LblConfirmpw"
         LblConfirmpw.Size = New Size(149, 23)
         LblConfirmpw.TabIndex = 2
@@ -105,7 +105,7 @@ Partial Class Registerform
         LblAddress.FlatStyle = FlatStyle.Flat
         LblAddress.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
         LblAddress.ForeColor = SystemColors.ControlLightLight
-        LblAddress.Location = New Point(189, 141)
+        LblAddress.Location = New Point(189, 136)
         LblAddress.Name = "LblAddress"
         LblAddress.Size = New Size(70, 23)
         LblAddress.TabIndex = 3
@@ -119,7 +119,7 @@ Partial Class Registerform
         LblPhonenumber.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
         LblPhonenumber.ForeColor = SystemColors.ControlLightLight
         LblPhonenumber.ImageAlign = ContentAlignment.TopRight
-        LblPhonenumber.Location = New Point(576, 227)
+        LblPhonenumber.Location = New Point(576, 222)
         LblPhonenumber.Name = "LblPhonenumber"
         LblPhonenumber.Size = New Size(119, 23)
         LblPhonenumber.TabIndex = 4
@@ -132,7 +132,7 @@ Partial Class Registerform
         LblUsertype.FlatStyle = FlatStyle.Flat
         LblUsertype.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
         LblUsertype.ForeColor = SystemColors.ControlLightLight
-        LblUsertype.Location = New Point(576, 318)
+        LblUsertype.Location = New Point(576, 313)
         LblUsertype.Name = "LblUsertype"
         LblUsertype.Size = New Size(85, 23)
         LblUsertype.TabIndex = 5
@@ -145,7 +145,7 @@ Partial Class Registerform
         LblGender.FlatStyle = FlatStyle.Flat
         LblGender.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
         LblGender.ForeColor = SystemColors.ControlLightLight
-        LblGender.Location = New Point(189, 227)
+        LblGender.Location = New Point(189, 222)
         LblGender.Name = "LblGender"
         LblGender.Size = New Size(66, 23)
         LblGender.TabIndex = 6
@@ -158,7 +158,7 @@ Partial Class Registerform
         LblUsername.FlatStyle = FlatStyle.Flat
         LblUsername.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
         LblUsername.ForeColor = SystemColors.ControlLightLight
-        LblUsername.Location = New Point(189, 318)
+        LblUsername.Location = New Point(189, 313)
         LblUsername.Name = "LblUsername"
         LblUsername.Size = New Size(87, 23)
         LblUsername.TabIndex = 7
@@ -171,7 +171,7 @@ Partial Class Registerform
         LblPassword.FlatStyle = FlatStyle.Flat
         LblPassword.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
         LblPassword.ForeColor = SystemColors.ControlLightLight
-        LblPassword.Location = New Point(189, 412)
+        LblPassword.Location = New Point(189, 407)
         LblPassword.Name = "LblPassword"
         LblPassword.Size = New Size(82, 23)
         LblPassword.TabIndex = 8
@@ -180,7 +180,7 @@ Partial Class Registerform
         ' 
         ' Pnlregister
         ' 
-        Pnlregister.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(70))
+        Pnlregister.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         Pnlregister.Controls.Add(Lbl_msggender)
         Pnlregister.Controls.Add(Lbl_msgaddress)
         Pnlregister.Controls.Add(Lbl_msgDOB)
@@ -225,7 +225,7 @@ Partial Class Registerform
         ' 
         Lbl_msggender.AutoSize = True
         Lbl_msggender.ForeColor = SystemColors.ControlLightLight
-        Lbl_msggender.Location = New Point(189, 279)
+        Lbl_msggender.Location = New Point(189, 274)
         Lbl_msggender.Name = "Lbl_msggender"
         Lbl_msggender.Size = New Size(0, 20)
         Lbl_msggender.TabIndex = 38
@@ -234,7 +234,7 @@ Partial Class Registerform
         ' 
         Lbl_msgaddress.AutoSize = True
         Lbl_msgaddress.ForeColor = SystemColors.ControlLightLight
-        Lbl_msgaddress.Location = New Point(191, 192)
+        Lbl_msgaddress.Location = New Point(191, 187)
         Lbl_msgaddress.Name = "Lbl_msgaddress"
         Lbl_msgaddress.Size = New Size(0, 20)
         Lbl_msgaddress.TabIndex = 37
@@ -243,7 +243,7 @@ Partial Class Registerform
         ' 
         Lbl_msgDOB.AutoSize = True
         Lbl_msgDOB.ForeColor = SystemColors.ControlLightLight
-        Lbl_msgDOB.Location = New Point(576, 192)
+        Lbl_msgDOB.Location = New Point(576, 187)
         Lbl_msgDOB.Name = "Lbl_msgDOB"
         Lbl_msgDOB.Size = New Size(0, 20)
         Lbl_msgDOB.TabIndex = 36
@@ -252,7 +252,7 @@ Partial Class Registerform
         ' 
         Lbl_msglastname.AutoSize = True
         Lbl_msglastname.ForeColor = SystemColors.ControlLightLight
-        Lbl_msglastname.Location = New Point(576, 105)
+        Lbl_msglastname.Location = New Point(576, 100)
         Lbl_msglastname.Name = "Lbl_msglastname"
         Lbl_msglastname.Size = New Size(0, 20)
         Lbl_msglastname.TabIndex = 35
@@ -261,7 +261,7 @@ Partial Class Registerform
         ' 
         Lbl_msgphone.AutoSize = True
         Lbl_msgphone.ForeColor = SystemColors.ControlLightLight
-        Lbl_msgphone.Location = New Point(576, 279)
+        Lbl_msgphone.Location = New Point(576, 274)
         Lbl_msgphone.Name = "Lbl_msgphone"
         Lbl_msgphone.Size = New Size(0, 20)
         Lbl_msgphone.TabIndex = 34
@@ -270,7 +270,7 @@ Partial Class Registerform
         ' 
         Lbl_msgconfirmpw.AutoSize = True
         Lbl_msgconfirmpw.ForeColor = SystemColors.ControlLightLight
-        Lbl_msgconfirmpw.Location = New Point(576, 465)
+        Lbl_msgconfirmpw.Location = New Point(576, 460)
         Lbl_msgconfirmpw.Name = "Lbl_msgconfirmpw"
         Lbl_msgconfirmpw.Size = New Size(0, 20)
         Lbl_msgconfirmpw.TabIndex = 33
@@ -279,7 +279,7 @@ Partial Class Registerform
         ' 
         Lbl_msgpassword.AutoSize = True
         Lbl_msgpassword.ForeColor = SystemColors.ControlLightLight
-        Lbl_msgpassword.Location = New Point(189, 465)
+        Lbl_msgpassword.Location = New Point(189, 460)
         Lbl_msgpassword.Name = "Lbl_msgpassword"
         Lbl_msgpassword.Size = New Size(0, 20)
         Lbl_msgpassword.TabIndex = 32
@@ -288,7 +288,7 @@ Partial Class Registerform
         ' 
         Lbl_msgusername.AutoSize = True
         Lbl_msgusername.ForeColor = SystemColors.ControlLightLight
-        Lbl_msgusername.Location = New Point(191, 371)
+        Lbl_msgusername.Location = New Point(191, 366)
         Lbl_msgusername.Name = "Lbl_msgusername"
         Lbl_msgusername.Size = New Size(0, 20)
         Lbl_msgusername.TabIndex = 31
@@ -297,7 +297,7 @@ Partial Class Registerform
         ' 
         Lbl_msgusertype.AutoSize = True
         Lbl_msgusertype.ForeColor = SystemColors.ControlLightLight
-        Lbl_msgusertype.Location = New Point(576, 371)
+        Lbl_msgusertype.Location = New Point(576, 366)
         Lbl_msgusertype.Name = "Lbl_msgusertype"
         Lbl_msgusertype.Size = New Size(0, 20)
         Lbl_msgusertype.TabIndex = 30
@@ -306,7 +306,7 @@ Partial Class Registerform
         ' 
         Lbl_msgfirstname.AutoSize = True
         Lbl_msgfirstname.ForeColor = SystemColors.ControlLightLight
-        Lbl_msgfirstname.Location = New Point(191, 105)
+        Lbl_msgfirstname.Location = New Point(191, 100)
         Lbl_msgfirstname.Name = "Lbl_msgfirstname"
         Lbl_msgfirstname.Size = New Size(0, 20)
         Lbl_msgfirstname.TabIndex = 29
@@ -352,7 +352,7 @@ Partial Class Registerform
         userDOB_dtp.CalendarTrailingForeColor = SystemColors.GradientInactiveCaption
         userDOB_dtp.Font = New Font("Segoe UI", 10.2F)
         userDOB_dtp.Format = DateTimePickerFormat.Short
-        userDOB_dtp.Location = New Point(576, 163)
+        userDOB_dtp.Location = New Point(576, 158)
         userDOB_dtp.MaxDate = New Date(2025, 1, 1, 0, 0, 0, 0)
         userDOB_dtp.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
         userDOB_dtp.Name = "userDOB_dtp"
@@ -368,7 +368,7 @@ Partial Class Registerform
         usertype_cmbbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         usertype_cmbbx.FormattingEnabled = True
         usertype_cmbbx.Items.AddRange(New Object() {"Admin", "User"})
-        usertype_cmbbx.Location = New Point(576, 341)
+        usertype_cmbbx.Location = New Point(576, 336)
         usertype_cmbbx.Name = "usertype_cmbbx"
         usertype_cmbbx.Size = New Size(235, 31)
         usertype_cmbbx.TabIndex = 22
@@ -382,7 +382,7 @@ Partial Class Registerform
         gender_cmbbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
         gender_cmbbx.FormattingEnabled = True
         gender_cmbbx.Items.AddRange(New Object() {"Female", "Male", "Others"})
-        gender_cmbbx.Location = New Point(191, 249)
+        gender_cmbbx.Location = New Point(191, 244)
         gender_cmbbx.Name = "gender_cmbbx"
         gender_cmbbx.Size = New Size(235, 31)
         gender_cmbbx.TabIndex = 21
@@ -392,7 +392,7 @@ Partial Class Registerform
         userln_txtbx.BackColor = SystemColors.ControlLightLight
         userln_txtbx.Font = New Font("Segoe UI", 10.2F)
         userln_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        userln_txtbx.Location = New Point(576, 75)
+        userln_txtbx.Location = New Point(576, 70)
         userln_txtbx.Name = "userln_txtbx"
         userln_txtbx.Size = New Size(235, 30)
         userln_txtbx.TabIndex = 20
@@ -402,7 +402,7 @@ Partial Class Registerform
         userAddress_txtbx.BackColor = SystemColors.ControlLightLight
         userAddress_txtbx.Font = New Font("Segoe UI", 10.2F)
         userAddress_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        userAddress_txtbx.Location = New Point(191, 162)
+        userAddress_txtbx.Location = New Point(191, 157)
         userAddress_txtbx.Name = "userAddress_txtbx"
         userAddress_txtbx.Size = New Size(235, 30)
         userAddress_txtbx.TabIndex = 19
@@ -412,7 +412,7 @@ Partial Class Registerform
         userPhone_txtbx.BackColor = SystemColors.ControlLightLight
         userPhone_txtbx.Font = New Font("Segoe UI", 10.2F)
         userPhone_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        userPhone_txtbx.Location = New Point(576, 248)
+        userPhone_txtbx.Location = New Point(576, 243)
         userPhone_txtbx.Name = "userPhone_txtbx"
         userPhone_txtbx.Size = New Size(235, 30)
         userPhone_txtbx.TabIndex = 17
@@ -422,7 +422,7 @@ Partial Class Registerform
         username_txtbx.BackColor = SystemColors.ControlLightLight
         username_txtbx.Font = New Font("Segoe UI", 10.2F)
         username_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        username_txtbx.Location = New Point(191, 342)
+        username_txtbx.Location = New Point(191, 337)
         username_txtbx.Name = "username_txtbx"
         username_txtbx.Size = New Size(235, 30)
         username_txtbx.TabIndex = 16
@@ -432,7 +432,7 @@ Partial Class Registerform
         password_txtbx.BackColor = SystemColors.ControlLightLight
         password_txtbx.Font = New Font("Segoe UI", 10.2F)
         password_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        password_txtbx.Location = New Point(191, 435)
+        password_txtbx.Location = New Point(191, 430)
         password_txtbx.Name = "password_txtbx"
         password_txtbx.Size = New Size(235, 30)
         password_txtbx.TabIndex = 15
@@ -442,7 +442,7 @@ Partial Class Registerform
         confirmpw_txtbx.BackColor = SystemColors.ControlLightLight
         confirmpw_txtbx.Font = New Font("Segoe UI", 10.2F)
         confirmpw_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        confirmpw_txtbx.Location = New Point(576, 435)
+        confirmpw_txtbx.Location = New Point(576, 430)
         confirmpw_txtbx.Name = "confirmpw_txtbx"
         confirmpw_txtbx.Size = New Size(235, 30)
         confirmpw_txtbx.TabIndex = 14
@@ -468,7 +468,7 @@ Partial Class Registerform
         userfn_txtbx.BackColor = SystemColors.ControlLightLight
         userfn_txtbx.Font = New Font("Segoe UI", 10.2F)
         userfn_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        userfn_txtbx.Location = New Point(191, 75)
+        userfn_txtbx.Location = New Point(191, 70)
         userfn_txtbx.Name = "userfn_txtbx"
         userfn_txtbx.Size = New Size(235, 30)
         userfn_txtbx.TabIndex = 10
@@ -479,7 +479,7 @@ Partial Class Registerform
         LblLastname.FlatStyle = FlatStyle.Flat
         LblLastname.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
         LblLastname.ForeColor = SystemColors.ControlLightLight
-        LblLastname.Location = New Point(576, 53)
+        LblLastname.Location = New Point(576, 48)
         LblLastname.Name = "LblLastname"
         LblLastname.Size = New Size(91, 23)
         LblLastname.TabIndex = 9

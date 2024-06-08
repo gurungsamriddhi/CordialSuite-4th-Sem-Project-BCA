@@ -23,8 +23,8 @@ Partial Class billing
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panel1 = New Panel()
-        Lblbilling = New Label()
         closebtn = New Button()
+        Lblbilling = New Label()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -36,8 +36,23 @@ Partial Class billing
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(829, 50)
+        Panel1.Size = New Size(820, 50)
         Panel1.TabIndex = 1
+        ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = SystemColors.ControlLightLight
+        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold)
+        closebtn.Location = New Point(761, 8)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(47, 34)
+        closebtn.TabIndex = 25
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
         ' 
         ' Lblbilling
         ' 
@@ -50,26 +65,11 @@ Partial Class billing
         Lblbilling.TabIndex = 1
         Lblbilling.Text = "BILLING"
         ' 
-        ' closebtn
-        ' 
-        closebtn.BackColor = SystemColors.ControlLightLight
-        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold)
-        closebtn.Location = New Point(770, 8)
-        closebtn.Name = "closebtn"
-        closebtn.Size = New Size(47, 34)
-        closebtn.TabIndex = 25
-        closebtn.Text = "X"
-        closebtn.UseVisualStyleBackColor = False
-        ' 
         ' billing
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(829, 585)
+        ClientSize = New Size(820, 585)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "billing"
