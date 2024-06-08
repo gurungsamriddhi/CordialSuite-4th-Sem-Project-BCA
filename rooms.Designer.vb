@@ -27,7 +27,9 @@ Partial Class rooms
         Lblroominfo = New Label()
         searchroom_txtbx = New TextBox()
         searchroom_btn = New Button()
+        Rooms_DGV = New DataGridView()
         Panel1.SuspendLayout()
+        CType(Rooms_DGV, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -38,7 +40,7 @@ Partial Class rooms
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(829, 50)
+        Panel1.Size = New Size(820, 50)
         Panel1.TabIndex = 0
         ' 
         ' closebtn
@@ -49,7 +51,7 @@ Partial Class rooms
         closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         closebtn.FlatStyle = FlatStyle.Flat
         closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold)
-        closebtn.Location = New Point(770, 8)
+        closebtn.Location = New Point(761, 8)
         closebtn.Name = "closebtn"
         closebtn.Size = New Size(47, 34)
         closebtn.TabIndex = 27
@@ -93,11 +95,23 @@ Partial Class rooms
         searchroom_btn.Text = "Search"
         searchroom_btn.UseVisualStyleBackColor = False
         ' 
+        ' Rooms_DGV
+        ' 
+        Rooms_DGV.AllowUserToOrderColumns = True
+        Rooms_DGV.BackgroundColor = SystemColors.ControlLight
+        Rooms_DGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Rooms_DGV.Location = New Point(105, 153)
+        Rooms_DGV.Name = "Rooms_DGV"
+        Rooms_DGV.RowHeadersWidth = 51
+        Rooms_DGV.Size = New Size(640, 401)
+        Rooms_DGV.TabIndex = 6
+        ' 
         ' rooms
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(829, 585)
+        ClientSize = New Size(820, 585)
+        Controls.Add(Rooms_DGV)
         Controls.Add(searchroom_btn)
         Controls.Add(searchroom_txtbx)
         Controls.Add(Panel1)
@@ -106,6 +120,7 @@ Partial Class rooms
         Text = "rooms"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
+        CType(Rooms_DGV, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -115,4 +130,5 @@ Partial Class rooms
     Friend WithEvents closebtn As Button
     Friend WithEvents searchroom_txtbx As TextBox
     Friend WithEvents searchroom_btn As Button
+    Friend WithEvents Rooms_DGV As DataGridView
 End Class

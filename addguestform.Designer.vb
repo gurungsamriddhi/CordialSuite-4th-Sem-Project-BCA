@@ -48,7 +48,7 @@ Partial Class addguestform
         pnlguestlist.Dock = DockStyle.Fill
         pnlguestlist.Location = New Point(158, 0)
         pnlguestlist.Name = "pnlguestlist"
-        pnlguestlist.Size = New Size(671, 585)
+        pnlguestlist.Size = New Size(662, 585)
         pnlguestlist.TabIndex = 1
         ' 
         ' DataGridViewGuestlist
@@ -56,7 +56,7 @@ Partial Class addguestform
         DataGridViewGuestlist.AllowUserToOrderColumns = True
         DataGridViewGuestlist.BackgroundColor = SystemColors.ControlLight
         DataGridViewGuestlist.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewGuestlist.Location = New Point(19, 172)
+        DataGridViewGuestlist.Location = New Point(6, 141)
         DataGridViewGuestlist.Name = "DataGridViewGuestlist"
         DataGridViewGuestlist.RowHeadersWidth = 51
         DataGridViewGuestlist.Size = New Size(640, 401)
@@ -70,7 +70,7 @@ Partial Class addguestform
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(671, 50)
+        Panel1.Size = New Size(662, 50)
         Panel1.TabIndex = 4
         ' 
         ' closebtn
@@ -80,8 +80,8 @@ Partial Class addguestform
         closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 12.0F, FontStyle.Bold)
-        closebtn.Location = New Point(621, 5)
+        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold)
+        closebtn.Location = New Point(603, 5)
         closebtn.Name = "closebtn"
         closebtn.Size = New Size(47, 34)
         closebtn.TabIndex = 24
@@ -172,9 +172,9 @@ Partial Class addguestform
         ' 
         ' addguestform
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(829, 585)
+        ClientSize = New Size(820, 585)
         Controls.Add(pnlguestlist)
         Controls.Add(Pnloptions)
         FormBorderStyle = FormBorderStyle.None

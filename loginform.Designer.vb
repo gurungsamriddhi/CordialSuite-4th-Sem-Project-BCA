@@ -96,7 +96,7 @@ Partial Class loginform
         ' 
         ' PnlLogin
         ' 
-        PnlLogin.BackColor = Color.LightCyan
+        PnlLogin.BackColor = Color.Gainsboro
         PnlLogin.BorderStyle = BorderStyle.Fixed3D
         PnlLogin.Controls.Add(CheckBoxshowpw)
         PnlLogin.Controls.Add(Linktoregister)

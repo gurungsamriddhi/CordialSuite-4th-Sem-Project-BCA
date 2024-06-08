@@ -32,20 +32,26 @@ Partial Class checkin
         Lblarrivaltime = New Label()
         Lblarrivaldate = New Label()
         Lblgcheckin = New Label()
-        DTPcheckoutdate = New DateTimePicker()
-        DTPcheckouttime = New DateTimePicker()
-        NUDnguest = New NumericUpDown()
-        DTParrivaldate = New DateTimePicker()
-        DTParrivaltime = New DateTimePicker()
-        GuestIDcombobx = New ComboBox()
-        Reserveddaystxtbx = New TextBox()
-        Nroomtxtbx = New TextBox()
-        Roomtypecombobx = New ComboBox()
+        checkoutdate_DTP = New DateTimePicker()
+        checkouttime_DTP = New DateTimePicker()
+        guestnumber_NUD = New NumericUpDown()
+        arrivaldate_DTP = New DateTimePicker()
+        arrivaltime_DTP = New DateTimePicker()
+        GuestID_cmbbx = New ComboBox()
+        Reserveddays_txtbx = New TextBox()
+        Roomtype_cmbbx = New ComboBox()
         Panelgci = New Panel()
+        closebtn = New Button()
         checkinbtn = New Button()
         clearbtn = New Button()
-        closebtn = New Button()
-        CType(NUDnguest, ComponentModel.ISupportInitialize).BeginInit()
+        Lbl_msgguestid = New Label()
+        Lbl_msgroomtype = New Label()
+        Lbl_msgdaysreserved = New Label()
+        roomno_cmbbxbx = New ComboBox()
+        Lbl_msgcheckout = New Label()
+        Lbl_msgarrivaldate = New Label()
+        Lbl_msgroomno = New Label()
+        CType(guestnumber_NUD, ComponentModel.ISupportInitialize).BeginInit()
         Panelgci.SuspendLayout()
         SuspendLayout()
         ' 
@@ -53,7 +59,7 @@ Partial Class checkin
         ' 
         Lblguestid.AutoSize = True
         Lblguestid.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Lblguestid.ForeColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
+        Lblguestid.ForeColor = Color.Blue
         Lblguestid.Location = New Point(50, 120)
         Lblguestid.Name = "Lblguestid"
         Lblguestid.Size = New Size(80, 23)
@@ -151,7 +157,7 @@ Partial Class checkin
         ' Lblgcheckin
         ' 
         Lblgcheckin.AutoSize = True
-        Lblgcheckin.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lblgcheckin.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lblgcheckin.ForeColor = SystemColors.ControlLightLight
         Lblgcheckin.Location = New Point(330, 9)
         Lblgcheckin.Name = "Lblgcheckin"
@@ -159,84 +165,84 @@ Partial Class checkin
         Lblgcheckin.TabIndex = 10
         Lblgcheckin.Text = "GUEST CHECK-IN"
         ' 
-        ' DTPcheckoutdate
+        ' checkoutdate_DTP
         ' 
-        DTPcheckoutdate.CalendarForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        DTPcheckoutdate.Location = New Point(181, 401)
-        DTPcheckoutdate.Name = "DTPcheckoutdate"
-        DTPcheckoutdate.Size = New Size(264, 27)
-        DTPcheckoutdate.TabIndex = 11
+        checkoutdate_DTP.CalendarForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        checkoutdate_DTP.Location = New Point(181, 401)
+        checkoutdate_DTP.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
+        checkoutdate_DTP.Name = "checkoutdate_DTP"
+        checkoutdate_DTP.Size = New Size(264, 27)
+        checkoutdate_DTP.TabIndex = 11
         ' 
-        ' DTPcheckouttime
+        ' checkouttime_DTP
         ' 
-        DTPcheckouttime.Format = DateTimePickerFormat.Time
-        DTPcheckouttime.Location = New Point(602, 400)
-        DTPcheckouttime.Name = "DTPcheckouttime"
-        DTPcheckouttime.Size = New Size(151, 27)
-        DTPcheckouttime.TabIndex = 12
+        checkouttime_DTP.Format = DateTimePickerFormat.Time
+        checkouttime_DTP.Location = New Point(602, 400)
+        checkouttime_DTP.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
+        checkouttime_DTP.Name = "checkouttime_DTP"
+        checkouttime_DTP.ShowUpDown = True
+        checkouttime_DTP.Size = New Size(151, 27)
+        checkouttime_DTP.TabIndex = 12
+        checkouttime_DTP.Value = New Date(2024, 6, 5, 21, 12, 0, 0)
         ' 
-        ' NUDnguest
+        ' guestnumber_NUD
         ' 
-        NUDnguest.Location = New Point(163, 258)
-        NUDnguest.Name = "NUDnguest"
-        NUDnguest.Size = New Size(150, 27)
-        NUDnguest.TabIndex = 13
-        NUDnguest.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        guestnumber_NUD.Location = New Point(163, 258)
+        guestnumber_NUD.Name = "guestnumber_NUD"
+        guestnumber_NUD.Size = New Size(150, 27)
+        guestnumber_NUD.TabIndex = 13
+        guestnumber_NUD.Value = New Decimal(New Integer() {1, 0, 0, 0})
         ' 
-        ' DTParrivaldate
+        ' arrivaldate_DTP
         ' 
-        DTParrivaldate.CalendarForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        DTParrivaldate.Location = New Point(157, 189)
-        DTParrivaldate.Name = "DTParrivaldate"
-        DTParrivaldate.Size = New Size(264, 27)
-        DTParrivaldate.TabIndex = 14
+        arrivaldate_DTP.CalendarForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        arrivaldate_DTP.Location = New Point(157, 189)
+        arrivaldate_DTP.MinDate = New Date(1909, 1, 1, 0, 0, 0, 0)
+        arrivaldate_DTP.Name = "arrivaldate_DTP"
+        arrivaldate_DTP.Size = New Size(264, 27)
+        arrivaldate_DTP.TabIndex = 14
+        arrivaldate_DTP.Value = New Date(2024, 6, 6, 0, 0, 0, 0)
         ' 
-        ' DTParrivaltime
+        ' arrivaltime_DTP
         ' 
-        DTParrivaltime.Format = DateTimePickerFormat.Time
-        DTParrivaltime.Location = New Point(602, 185)
-        DTParrivaltime.Name = "DTParrivaltime"
-        DTParrivaltime.Size = New Size(151, 27)
-        DTParrivaltime.TabIndex = 15
-        DTParrivaltime.Value = New Date(2024, 6, 1, 16, 36, 0, 0)
+        arrivaltime_DTP.Format = DateTimePickerFormat.Time
+        arrivaltime_DTP.Location = New Point(602, 185)
+        arrivaltime_DTP.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
+        arrivaltime_DTP.Name = "arrivaltime_DTP"
+        arrivaltime_DTP.ShowUpDown = True
+        arrivaltime_DTP.Size = New Size(151, 27)
+        arrivaltime_DTP.TabIndex = 15
+        arrivaltime_DTP.Value = New Date(2024, 6, 1, 16, 36, 0, 0)
         ' 
-        ' GuestIDcombobx
+        ' GuestID_cmbbx
         ' 
-        GuestIDcombobx.BackColor = SystemColors.ScrollBar
-        GuestIDcombobx.FlatStyle = FlatStyle.Flat
-        GuestIDcombobx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        GuestIDcombobx.FormattingEnabled = True
-        GuestIDcombobx.Location = New Point(148, 115)
-        GuestIDcombobx.Name = "GuestIDcombobx"
-        GuestIDcombobx.Size = New Size(100, 28)
-        GuestIDcombobx.TabIndex = 16
+        GuestID_cmbbx.BackColor = SystemColors.ScrollBar
+        GuestID_cmbbx.FlatStyle = FlatStyle.Flat
+        GuestID_cmbbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        GuestID_cmbbx.FormattingEnabled = True
+        GuestID_cmbbx.Location = New Point(148, 115)
+        GuestID_cmbbx.Name = "GuestID_cmbbx"
+        GuestID_cmbbx.Size = New Size(100, 28)
+        GuestID_cmbbx.TabIndex = 16
         ' 
-        ' Reserveddaystxtbx
+        ' Reserveddays_txtbx
         ' 
-        Reserveddaystxtbx.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Reserveddaystxtbx.Location = New Point(602, 258)
-        Reserveddaystxtbx.Name = "Reserveddaystxtbx"
-        Reserveddaystxtbx.Size = New Size(151, 30)
-        Reserveddaystxtbx.TabIndex = 17
+        Reserveddays_txtbx.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Reserveddays_txtbx.Location = New Point(602, 255)
+        Reserveddays_txtbx.Name = "Reserveddays_txtbx"
+        Reserveddays_txtbx.Size = New Size(151, 30)
+        Reserveddays_txtbx.TabIndex = 17
         ' 
-        ' Nroomtxtbx
+        ' Roomtype_cmbbx
         ' 
-        Nroomtxtbx.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Nroomtxtbx.Location = New Point(163, 326)
-        Nroomtxtbx.Name = "Nroomtxtbx"
-        Nroomtxtbx.Size = New Size(143, 30)
-        Nroomtxtbx.TabIndex = 19
-        ' 
-        ' Roomtypecombobx
-        ' 
-        Roomtypecombobx.BackColor = SystemColors.ScrollBar
-        Roomtypecombobx.FlatStyle = FlatStyle.Flat
-        Roomtypecombobx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        Roomtypecombobx.FormattingEnabled = True
-        Roomtypecombobx.Location = New Point(602, 328)
-        Roomtypecombobx.Name = "Roomtypecombobx"
-        Roomtypecombobx.Size = New Size(169, 28)
-        Roomtypecombobx.TabIndex = 20
+        Roomtype_cmbbx.BackColor = SystemColors.ScrollBar
+        Roomtype_cmbbx.FlatStyle = FlatStyle.Flat
+        Roomtype_cmbbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Roomtype_cmbbx.FormattingEnabled = True
+        Roomtype_cmbbx.Location = New Point(602, 328)
+        Roomtype_cmbbx.Name = "Roomtype_cmbbx"
+        Roomtype_cmbbx.Size = New Size(169, 28)
+        Roomtype_cmbbx.TabIndex = 20
         ' 
         ' Panelgci
         ' 
@@ -249,6 +255,21 @@ Partial Class checkin
         Panelgci.Size = New Size(829, 47)
         Panelgci.TabIndex = 21
         ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = SystemColors.ControlLightLight
+        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 12.0F, FontStyle.Bold)
+        closebtn.Location = New Point(770, 8)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(47, 34)
+        closebtn.TabIndex = 26
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
+        ' 
         ' checkinbtn
         ' 
         checkinbtn.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
@@ -256,7 +277,7 @@ Partial Class checkin
         checkinbtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
         checkinbtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
         checkinbtn.FlatStyle = FlatStyle.Flat
-        checkinbtn.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        checkinbtn.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         checkinbtn.ForeColor = SystemColors.ControlLightLight
         checkinbtn.Location = New Point(276, 502)
         checkinbtn.Name = "checkinbtn"
@@ -272,7 +293,7 @@ Partial Class checkin
         clearbtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
         clearbtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
         clearbtn.FlatStyle = FlatStyle.Flat
-        clearbtn.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        clearbtn.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         clearbtn.ForeColor = SystemColors.ControlLightLight
         clearbtn.Location = New Point(478, 502)
         clearbtn.Name = "clearbtn"
@@ -281,38 +302,94 @@ Partial Class checkin
         clearbtn.Text = "Clear"
         clearbtn.UseVisualStyleBackColor = False
         ' 
-        ' closebtn
+        ' Lbl_msgguestid
         ' 
-        closebtn.BackColor = SystemColors.ControlLightLight
-        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold)
-        closebtn.Location = New Point(770, 8)
-        closebtn.Name = "closebtn"
-        closebtn.Size = New Size(47, 34)
-        closebtn.TabIndex = 26
-        closebtn.Text = "X"
-        closebtn.UseVisualStyleBackColor = False
+        Lbl_msgguestid.AutoSize = True
+        Lbl_msgguestid.ForeColor = Color.Red
+        Lbl_msgguestid.Location = New Point(148, 146)
+        Lbl_msgguestid.Name = "Lbl_msgguestid"
+        Lbl_msgguestid.Size = New Size(0, 20)
+        Lbl_msgguestid.TabIndex = 25
+        ' 
+        ' Lbl_msgroomtype
+        ' 
+        Lbl_msgroomtype.AutoSize = True
+        Lbl_msgroomtype.ForeColor = Color.Red
+        Lbl_msgroomtype.Location = New Point(602, 359)
+        Lbl_msgroomtype.Name = "Lbl_msgroomtype"
+        Lbl_msgroomtype.Size = New Size(0, 20)
+        Lbl_msgroomtype.TabIndex = 27
+        ' 
+        ' Lbl_msgdaysreserved
+        ' 
+        Lbl_msgdaysreserved.AutoSize = True
+        Lbl_msgdaysreserved.ForeColor = Color.Red
+        Lbl_msgdaysreserved.Location = New Point(602, 291)
+        Lbl_msgdaysreserved.Name = "Lbl_msgdaysreserved"
+        Lbl_msgdaysreserved.Size = New Size(0, 20)
+        Lbl_msgdaysreserved.TabIndex = 28
+        ' 
+        ' roomno_cmbbxbx
+        ' 
+        roomno_cmbbxbx.BackColor = SystemColors.ScrollBar
+        roomno_cmbbxbx.FlatStyle = FlatStyle.Flat
+        roomno_cmbbxbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        roomno_cmbbxbx.FormattingEnabled = True
+        roomno_cmbbxbx.Location = New Point(157, 328)
+        roomno_cmbbxbx.Name = "roomno_cmbbxbx"
+        roomno_cmbbxbx.Size = New Size(169, 28)
+        roomno_cmbbxbx.TabIndex = 29
+        ' 
+        ' Lbl_msgcheckout
+        ' 
+        Lbl_msgcheckout.AutoSize = True
+        Lbl_msgcheckout.ForeColor = Color.Red
+        Lbl_msgcheckout.Location = New Point(181, 431)
+        Lbl_msgcheckout.Name = "Lbl_msgcheckout"
+        Lbl_msgcheckout.Size = New Size(0, 20)
+        Lbl_msgcheckout.TabIndex = 30
+        ' 
+        ' Lbl_msgarrivaldate
+        ' 
+        Lbl_msgarrivaldate.AutoSize = True
+        Lbl_msgarrivaldate.ForeColor = Color.Red
+        Lbl_msgarrivaldate.Location = New Point(158, 219)
+        Lbl_msgarrivaldate.Name = "Lbl_msgarrivaldate"
+        Lbl_msgarrivaldate.Size = New Size(0, 20)
+        Lbl_msgarrivaldate.TabIndex = 31
+        ' 
+        ' Lbl_msgroomno
+        ' 
+        Lbl_msgroomno.AutoSize = True
+        Lbl_msgroomno.ForeColor = Color.Red
+        Lbl_msgroomno.Location = New Point(156, 358)
+        Lbl_msgroomno.Name = "Lbl_msgroomno"
+        Lbl_msgroomno.Size = New Size(0, 20)
+        Lbl_msgroomno.TabIndex = 32
         ' 
         ' checkin
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(829, 585)
+        Controls.Add(Lbl_msgroomno)
+        Controls.Add(Lbl_msgarrivaldate)
+        Controls.Add(Lbl_msgcheckout)
+        Controls.Add(roomno_cmbbxbx)
+        Controls.Add(Lbl_msgdaysreserved)
+        Controls.Add(Lbl_msgroomtype)
+        Controls.Add(Lbl_msgguestid)
         Controls.Add(clearbtn)
         Controls.Add(checkinbtn)
         Controls.Add(Panelgci)
-        Controls.Add(Roomtypecombobx)
-        Controls.Add(Nroomtxtbx)
-        Controls.Add(Reserveddaystxtbx)
-        Controls.Add(GuestIDcombobx)
-        Controls.Add(DTParrivaltime)
-        Controls.Add(DTParrivaldate)
-        Controls.Add(NUDnguest)
-        Controls.Add(DTPcheckouttime)
-        Controls.Add(DTPcheckoutdate)
+        Controls.Add(Roomtype_cmbbx)
+        Controls.Add(Reserveddays_txtbx)
+        Controls.Add(GuestID_cmbbx)
+        Controls.Add(arrivaltime_DTP)
+        Controls.Add(arrivaldate_DTP)
+        Controls.Add(guestnumber_NUD)
+        Controls.Add(checkouttime_DTP)
+        Controls.Add(checkoutdate_DTP)
         Controls.Add(Lblarrivaldate)
         Controls.Add(Lblarrivaltime)
         Controls.Add(Lblnguests)
@@ -325,7 +402,7 @@ Partial Class checkin
         FormBorderStyle = FormBorderStyle.None
         Name = "checkin"
         Text = "checkin"
-        CType(NUDnguest, ComponentModel.ISupportInitialize).EndInit()
+        CType(guestnumber_NUD, ComponentModel.ISupportInitialize).EndInit()
         Panelgci.ResumeLayout(False)
         Panelgci.PerformLayout()
         ResumeLayout(False)
@@ -342,17 +419,24 @@ Partial Class checkin
     Friend WithEvents Lblarrivaltime As Label
     Friend WithEvents Lblarrivaldate As Label
     Friend WithEvents Lblgcheckin As Label
-    Friend WithEvents DTPcheckoutdate As DateTimePicker
-    Friend WithEvents DTPcheckouttime As DateTimePicker
-    Friend WithEvents NUDnguest As NumericUpDown
-    Friend WithEvents DTParrivaldate As DateTimePicker
-    Friend WithEvents DTParrivaltime As DateTimePicker
-    Friend WithEvents GuestIDcombobx As ComboBox
-    Friend WithEvents Reserveddaystxtbx As TextBox
-    Friend WithEvents Nroomtxtbx As TextBox
-    Friend WithEvents Roomtypecombobx As ComboBox
+    Friend WithEvents checkoutdate_DTP As DateTimePicker
+    Friend WithEvents checkouttime_DTP As DateTimePicker
+    Friend WithEvents guestnumber_NUD As NumericUpDown
+    Friend WithEvents arrivaldate_DTP As DateTimePicker
+    Friend WithEvents arrivaltime_DTP As DateTimePicker
+    Friend WithEvents GuestID_cmbbx As ComboBox
+    Friend WithEvents Reserveddays_txtbx As TextBox
+    Friend WithEvents Roomtype_cmbbx As ComboBox
     Friend WithEvents Panelgci As Panel
     Friend WithEvents checkinbtn As Button
     Friend WithEvents clearbtn As Button
     Friend WithEvents closebtn As Button
+    Friend WithEvents Lbl_msgguestid As Label
+    Friend WithEvents L As Label
+    Friend WithEvents Lbl_msgroomtype As Label
+    Friend WithEvents Lbl_msgdaysreserved As Label
+    Friend WithEvents roomno_cmbbxbx As ComboBox
+    Friend WithEvents Lbl_msgcheckout As Label
+    Friend WithEvents Lbl_msgarrivaldate As Label
+    Friend WithEvents Lbl_msgroomno As Label
 End Class
