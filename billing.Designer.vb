@@ -22,22 +22,22 @@ Partial Class billing
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Panel1 = New Panel()
+        Pnl_billing = New Panel()
         closebtn = New Button()
         Lblbilling = New Label()
-        Panel1.SuspendLayout()
+        Pnl_billing.SuspendLayout()
         SuspendLayout()
         ' 
-        ' Panel1
+        ' Pnl_billing
         ' 
-        Panel1.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        Panel1.Controls.Add(closebtn)
-        Panel1.Controls.Add(Lblbilling)
-        Panel1.Dock = DockStyle.Top
-        Panel1.Location = New Point(0, 0)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(820, 50)
-        Panel1.TabIndex = 1
+        Pnl_billing.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Pnl_billing.Controls.Add(closebtn)
+        Pnl_billing.Controls.Add(Lblbilling)
+        Pnl_billing.Dock = DockStyle.Top
+        Pnl_billing.Location = New Point(0, 0)
+        Pnl_billing.Name = "Pnl_billing"
+        Pnl_billing.Size = New Size(820, 50)
+        Pnl_billing.TabIndex = 1
         ' 
         ' closebtn
         ' 
@@ -70,16 +70,16 @@ Partial Class billing
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(820, 585)
-        Controls.Add(Panel1)
+        Controls.Add(Pnl_billing)
         FormBorderStyle = FormBorderStyle.None
         Name = "billing"
         Text = "billing"
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
+        Pnl_billing.ResumeLayout(False)
+        Pnl_billing.PerformLayout()
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Pnl_billing As Panel
     Friend WithEvents Lblbilling As Label
     Friend WithEvents closebtn As Button
 End Class

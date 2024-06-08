@@ -29,6 +29,7 @@ Partial Class Revenue
         Button5 = New Button()
         combobxperiod = New ComboBox()
         LblgGender = New Label()
+        closebtn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -43,8 +44,9 @@ Partial Class Revenue
         Panel1.Controls.Add(LblgGender)
         Panel1.Dock = DockStyle.Left
         Panel1.Location = New Point(0, 0)
+        Panel1.Margin = New Padding(3, 4, 3, 4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(168, 450)
+        Panel1.Size = New Size(192, 585)
         Panel1.TabIndex = 24
         ' 
         ' Button1
@@ -57,10 +59,9 @@ Partial Class Revenue
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Tahoma", 10.8F)
         Button1.ForeColor = SystemColors.Control
-        Button1.Location = New Point(7, 141)
-        Button1.Margin = New Padding(3, 2, 3, 2)
+        Button1.Location = New Point(8, 188)
         Button1.Name = "Button1"
-        Button1.Size = New Size(145, 30)
+        Button1.Size = New Size(166, 40)
         Button1.TabIndex = 27
         Button1.Text = "Total Income"
         Button1.UseVisualStyleBackColor = False
@@ -75,10 +76,9 @@ Partial Class Revenue
         Button2.FlatStyle = FlatStyle.Flat
         Button2.Font = New Font("Tahoma", 10.8F)
         Button2.ForeColor = SystemColors.Control
-        Button2.Location = New Point(7, 244)
-        Button2.Margin = New Padding(3, 2, 3, 2)
+        Button2.Location = New Point(8, 325)
         Button2.Name = "Button2"
-        Button2.Size = New Size(145, 30)
+        Button2.Size = New Size(166, 40)
         Button2.TabIndex = 26
         Button2.Text = "Total Transaction"
         Button2.UseVisualStyleBackColor = False
@@ -93,10 +93,9 @@ Partial Class Revenue
         Button3.FlatStyle = FlatStyle.Flat
         Button3.Font = New Font("Tahoma", 10.8F)
         Button3.ForeColor = SystemColors.Control
-        Button3.Location = New Point(7, 210)
-        Button3.Margin = New Padding(3, 2, 3, 2)
+        Button3.Location = New Point(8, 280)
         Button3.Name = "Button3"
-        Button3.Size = New Size(145, 30)
+        Button3.Size = New Size(166, 40)
         Button3.TabIndex = 25
         Button3.Text = "Profit/Loss"
         Button3.UseVisualStyleBackColor = False
@@ -111,11 +110,10 @@ Partial Class Revenue
         Button5.FlatStyle = FlatStyle.Flat
         Button5.Font = New Font("Tahoma", 10.8F)
         Button5.ForeColor = SystemColors.Control
-        Button5.Location = New Point(7, 175)
-        Button5.Margin = New Padding(3, 2, 3, 2)
+        Button5.Location = New Point(8, 233)
         Button5.Name = "Button5"
         Button5.RightToLeft = RightToLeft.No
-        Button5.Size = New Size(145, 30)
+        Button5.Size = New Size(166, 40)
         Button5.TabIndex = 23
         Button5.Text = "Total Expenses"
         Button5.UseVisualStyleBackColor = False
@@ -127,12 +125,11 @@ Partial Class Revenue
         combobxperiod.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         combobxperiod.ForeColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         combobxperiod.FormattingEnabled = True
-        combobxperiod.ItemHeight = 19
+        combobxperiod.ItemHeight = 23
         combobxperiod.Items.AddRange(New Object() {"Today", "Yesterday", "This Week", "This Month", "This Year"})
-        combobxperiod.Location = New Point(7, 27)
-        combobxperiod.Margin = New Padding(3, 2, 3, 2)
+        combobxperiod.Location = New Point(8, 36)
         combobxperiod.Name = "combobxperiod"
-        combobxperiod.Size = New Size(158, 27)
+        combobxperiod.Size = New Size(180, 31)
         combobxperiod.TabIndex = 22
         ' 
         ' LblgGender
@@ -140,19 +137,36 @@ Partial Class Revenue
         LblgGender.AutoSize = True
         LblgGender.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         LblgGender.ForeColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        LblgGender.Location = New Point(7, 8)
+        LblgGender.Location = New Point(8, 11)
         LblgGender.Name = "LblgGender"
-        LblgGender.Size = New Size(91, 19)
+        LblgGender.Size = New Size(108, 23)
         LblgGender.TabIndex = 21
         LblgGender.Text = "Select Period"
         ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = SystemColors.ControlLightLight
+        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        closebtn.Location = New Point(761, 4)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(47, 35)
+        closebtn.TabIndex = 25
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
+        ' 
         ' Revenue
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(820, 585)
+        Controls.Add(closebtn)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 4, 3, 4)
         Name = "Revenue"
         Text = "Revenue"
         Panel1.ResumeLayout(False)
@@ -167,4 +181,5 @@ Partial Class Revenue
     Friend WithEvents Button5 As Button
     Friend WithEvents combobxperiod As ComboBox
     Friend WithEvents LblgGender As Label
+    Friend WithEvents closebtn As Button
 End Class

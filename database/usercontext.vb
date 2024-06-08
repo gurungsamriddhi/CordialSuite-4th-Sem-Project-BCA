@@ -10,13 +10,14 @@ Public Class UserContext
 
         ' Configure entity properties and relationships if needed
         modelBuilder.Entity(Of User)().ToTable("users")
+        modelBuilder.Entity(Of User)().HasIndex(Function(u) u.Username).IsUnique()
     End Sub
 
     ' Create
     Public Sub AddUser(user As User)
         AddEntity(user)
-    End Sub
 
+    End Sub
     ' Read
     Public Function GetUserById(userId As Integer) As User
         Return Users.Find(userId)
@@ -30,6 +31,10 @@ Public Class UserContext
     Public Sub UpdateUser(user As User)
         UpdateEntity(user)
     End Sub
+    Public Function GetUserByUsername(username As String) As User
+        Return Users.FirstOrDefault(Function(u) u.Username = username)
+    End Function
+
 
     ' Delete
     Public Sub DeleteUser(user As User)

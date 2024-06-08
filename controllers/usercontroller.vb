@@ -17,4 +17,16 @@
     Public Sub DeleteUser(userId As Integer)
         _userService.DeleteUser(userId)
     End Sub
+
+    Public Function validusername(username As String) As Boolean
+        Return _userService.ValidateUsername(username)
+
+    End Function
+    Public Function authenticateuser(username As String, password As String) As String
+        Return _userService.authenticateuser(username, password)
+
+    End Function
+    Public Function GetUsersDataTable() As DataTable
+        Return _userService.getuserstable()
+    End Function
 End Class

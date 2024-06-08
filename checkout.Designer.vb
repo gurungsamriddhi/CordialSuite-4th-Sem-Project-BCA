@@ -39,7 +39,7 @@ Partial Class checkout
         Panelgco.Dock = DockStyle.Top
         Panelgco.Location = New Point(0, 0)
         Panelgco.Name = "Panelgco"
-        Panelgco.Size = New Size(829, 47)
+        Panelgco.Size = New Size(829, 50)
         Panelgco.TabIndex = 22
         ' 
         ' closebtn

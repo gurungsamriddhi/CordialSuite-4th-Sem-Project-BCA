@@ -3,7 +3,6 @@
 Public Class Registerform
     Public isValidInput As Boolean
     Dim userController As New UserController()
-    'Private userrepository As New UserRepository()
 
     Private Sub Registerbtn_Click(sender As Object, e As EventArgs) Handles Registerbtn.Click
         ' Retrieve and trim text inputs from textboxes
@@ -113,16 +112,20 @@ Public Class Registerform
     .Password = user_password
     }
 
-        Try
+
+
+        If userController.validusername(newUser.Username) Then
+            MessageBox.Show("Username already exists. Please choose a different username.")
+            username_txtbx.Clear()
+            username_txtbx.Focus()
+        Else
             userController.AddUser(newUser)
             MessageBox.Show("User registered successfully.")
-            Dim loginform As New Loginform
+            Dim loginform As New Loginform()
             loginform.Show()
             Me.Hide()
-        Catch ex As Exception
+        End If
 
-            MessageBox.Show("An error occurred while registering the user. Please try again.", ex.Message)
-        End Try
     End Sub
 
 

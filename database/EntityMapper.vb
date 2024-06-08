@@ -7,14 +7,18 @@ Public Class basedbcontext
 
     Protected Overrides Sub OnConfiguring(optionsBuilder As DbContextOptionsBuilder)
         If Not optionsBuilder.IsConfigured Then
-            optionsBuilder.UseSqlServer("data source=(localdb)\mssqllocaldb;attachdbfilename=e:\cordialsuitedb.mdf;integrated security=true;connect timeout=30")
+            optionsBuilder.UseSqlServer("data source=(localdb)\mssqllocaldb;attachdbfilename=e:\cordialsuitedb.mdf;integrated security=true;")
         End If
     End Sub
 
     Public Sub AddEntity(Of T As Class)(entity As T)
+
         MyBase.Set(Of T)().Add(entity)
+
         SaveChanges()
+
     End Sub
+
 
     Public Sub DeleteEntity(Of T As Class)(entity As T)
         MyBase.Set(Of T)().Remove(entity)

@@ -50,8 +50,8 @@
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Dispose()
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        Dispose
         End
     End Sub
 
@@ -61,5 +61,10 @@
 
     Private Sub AdminDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
+        Me.Dispose()
+        End
     End Sub
 End Class

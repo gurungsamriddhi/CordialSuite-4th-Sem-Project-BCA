@@ -54,9 +54,8 @@ Partial Class Updateroom
         Paneluser.Controls.Add(Button8)
         Paneluser.Dock = DockStyle.Left
         Paneluser.Location = New Point(0, 0)
-        Paneluser.Margin = New Padding(3, 2, 3, 2)
         Paneluser.Name = "Paneluser"
-        Paneluser.Size = New Size(168, 450)
+        Paneluser.Size = New Size(192, 585)
         Paneluser.TabIndex = 30
         ' 
         ' Button6
@@ -69,10 +68,9 @@ Partial Class Updateroom
         Button6.FlatStyle = FlatStyle.Flat
         Button6.Font = New Font("Tahoma", 10.8F)
         Button6.ForeColor = SystemColors.Control
-        Button6.Location = New Point(19, 163)
-        Button6.Margin = New Padding(3, 2, 3, 2)
+        Button6.Location = New Point(22, 217)
         Button6.Name = "Button6"
-        Button6.Size = New Size(128, 30)
+        Button6.Size = New Size(146, 40)
         Button6.TabIndex = 6
         Button6.Text = "Delete Room"
         Button6.UseVisualStyleBackColor = False
@@ -87,10 +85,9 @@ Partial Class Updateroom
         Button7.FlatStyle = FlatStyle.Flat
         Button7.Font = New Font("Tahoma", 10.8F)
         Button7.ForeColor = SystemColors.Control
-        Button7.Location = New Point(19, 197)
-        Button7.Margin = New Padding(3, 2, 3, 2)
+        Button7.Location = New Point(22, 263)
         Button7.Name = "Button7"
-        Button7.Size = New Size(128, 30)
+        Button7.Size = New Size(146, 40)
         Button7.TabIndex = 5
         Button7.Text = "Edit Rooms"
         Button7.UseVisualStyleBackColor = False
@@ -105,11 +102,10 @@ Partial Class Updateroom
         Button8.FlatStyle = FlatStyle.Flat
         Button8.Font = New Font("Tahoma", 10.8F)
         Button8.ForeColor = SystemColors.Control
-        Button8.Location = New Point(19, 128)
-        Button8.Margin = New Padding(3, 2, 3, 2)
+        Button8.Location = New Point(22, 171)
         Button8.Name = "Button8"
         Button8.RightToLeft = RightToLeft.No
-        Button8.Size = New Size(128, 30)
+        Button8.Size = New Size(146, 40)
         Button8.TabIndex = 3
         Button8.Text = "Update Room"
         Button8.UseVisualStyleBackColor = False
@@ -119,10 +115,9 @@ Partial Class Updateroom
         guestpanel2.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
         guestpanel2.BorderStyle = BorderStyle.Fixed3D
         guestpanel2.Controls.Add(Panel1)
-        guestpanel2.Location = New Point(282, 115)
-        guestpanel2.Margin = New Padding(3, 2, 3, 2)
+        guestpanel2.Location = New Point(322, 153)
         guestpanel2.Name = "guestpanel2"
-        guestpanel2.Size = New Size(239, 18)
+        guestpanel2.Size = New Size(273, 23)
         guestpanel2.TabIndex = 33
         ' 
         ' Panel1
@@ -131,9 +126,8 @@ Partial Class Updateroom
         Panel1.Controls.Add(Lblnewg)
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
-        Panel1.Margin = New Padding(3, 2, 3, 2)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(235, 35)
+        Panel1.Size = New Size(269, 47)
         Panel1.TabIndex = 26
         ' 
         ' Lblnewg
@@ -141,9 +135,9 @@ Partial Class Updateroom
         Lblnewg.AutoSize = True
         Lblnewg.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lblnewg.ForeColor = SystemColors.ControlLightLight
-        Lblnewg.Location = New Point(336, 7)
+        Lblnewg.Location = New Point(384, 9)
         Lblnewg.Name = "Lblnewg"
-        Lblnewg.Size = New Size(121, 21)
+        Lblnewg.Size = New Size(151, 28)
         Lblnewg.TabIndex = 23
         Lblnewg.Text = "ROOM UPDATE"
         ' 
@@ -157,10 +151,9 @@ Partial Class Updateroom
         guestpanel1.Controls.Add(maleg_label)
         guestpanel1.Controls.Add(femaleg_label)
         guestpanel1.Controls.Add(guest_totlabel)
-        guestpanel1.Location = New Point(282, 129)
-        guestpanel1.Margin = New Padding(3, 2, 3, 2)
+        guestpanel1.Location = New Point(322, 172)
         guestpanel1.Name = "guestpanel1"
-        guestpanel1.Size = New Size(239, 129)
+        guestpanel1.Size = New Size(273, 171)
         guestpanel1.TabIndex = 34
         ' 
         ' Label1guests
@@ -168,9 +161,9 @@ Partial Class Updateroom
         Label1guests.AutoSize = True
         Label1guests.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1guests.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Label1guests.Location = New Point(74, 14)
+        Label1guests.Location = New Point(85, 19)
         Label1guests.Name = "Label1guests"
-        Label1guests.Size = New Size(79, 19)
+        Label1guests.Size = New Size(96, 23)
         Label1guests.TabIndex = 9
         Label1guests.Text = "New Room"
         ' 
@@ -179,9 +172,9 @@ Partial Class Updateroom
         inttotmg.AutoSize = True
         inttotmg.Font = New Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         inttotmg.ForeColor = Color.FromArgb(CByte(0), CByte(0), CByte(192))
-        inttotmg.Location = New Point(178, 86)
+        inttotmg.Location = New Point(203, 115)
         inttotmg.Name = "inttotmg"
-        inttotmg.Size = New Size(54, 17)
+        inttotmg.Size = New Size(69, 21)
         inttotmg.TabIndex = 7
         inttotmg.Text = "Deluxe"
         ' 
@@ -190,9 +183,9 @@ Partial Class Updateroom
         inttotguests.AutoSize = True
         inttotguests.Font = New Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         inttotguests.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        inttotguests.Location = New Point(205, 50)
+        inttotguests.Location = New Point(234, 67)
         inttotguests.Name = "inttotguests"
-        inttotguests.Size = New Size(26, 17)
+        inttotguests.Size = New Size(32, 21)
         inttotguests.TabIndex = 6
         inttotguests.Text = "10"
         ' 
@@ -202,9 +195,9 @@ Partial Class Updateroom
         maleg_label.FlatStyle = FlatStyle.Flat
         maleg_label.Font = New Font("Segoe UI", 9F)
         maleg_label.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        maleg_label.Location = New Point(3, 86)
+        maleg_label.Location = New Point(3, 115)
         maleg_label.Name = "maleg_label"
-        maleg_label.Size = New Size(66, 15)
+        maleg_label.Size = New Size(84, 20)
         maleg_label.TabIndex = 5
         maleg_label.Text = "Room Type"
         ' 
@@ -214,9 +207,9 @@ Partial Class Updateroom
         femaleg_label.FlatStyle = FlatStyle.Flat
         femaleg_label.Font = New Font("Segoe UI", 9F)
         femaleg_label.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        femaleg_label.Location = New Point(3, 73)
+        femaleg_label.Location = New Point(3, 97)
         femaleg_label.Name = "femaleg_label"
-        femaleg_label.Size = New Size(0, 15)
+        femaleg_label.Size = New Size(0, 20)
         femaleg_label.TabIndex = 4
         ' 
         ' guest_totlabel
@@ -225,9 +218,9 @@ Partial Class Updateroom
         guest_totlabel.FlatStyle = FlatStyle.Flat
         guest_totlabel.Font = New Font("Segoe UI", 9F)
         guest_totlabel.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        guest_totlabel.Location = New Point(3, 50)
+        guest_totlabel.Location = New Point(3, 67)
         guest_totlabel.Name = "guest_totlabel"
-        guest_totlabel.Size = New Size(86, 15)
+        guest_totlabel.Size = New Size(107, 20)
         guest_totlabel.TabIndex = 3
         guest_totlabel.Text = "Room Number"
         ' 
@@ -237,10 +230,9 @@ Partial Class Updateroom
         Panel2.Controls.Add(closebtn)
         Panel2.Controls.Add(Label1)
         Panel2.Dock = DockStyle.Top
-        Panel2.Location = New Point(168, 0)
-        Panel2.Margin = New Padding(3, 2, 3, 2)
+        Panel2.Location = New Point(192, 0)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(464, 35)
+        Panel2.Size = New Size(628, 47)
         Panel2.TabIndex = 35
         ' 
         ' closebtn
@@ -251,10 +243,9 @@ Partial Class Updateroom
         closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         closebtn.FlatStyle = FlatStyle.Flat
         closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        closebtn.Location = New Point(420, 2)
-        closebtn.Margin = New Padding(3, 2, 3, 2)
+        closebtn.Location = New Point(578, 3)
         closebtn.Name = "closebtn"
-        closebtn.Size = New Size(41, 26)
+        closebtn.Size = New Size(47, 35)
         closebtn.TabIndex = 24
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
@@ -264,22 +255,23 @@ Partial Class Updateroom
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.ControlLightLight
-        Label1.Location = New Point(201, 7)
+        Label1.Location = New Point(239, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(121, 21)
+        Label1.Size = New Size(151, 28)
         Label1.TabIndex = 23
         Label1.Text = "ROOM UPDATE"
         ' 
         ' Updateroom
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(632, 450)
+        ClientSize = New Size(820, 585)
         Controls.Add(Panel2)
         Controls.Add(guestpanel2)
         Controls.Add(guestpanel1)
         Controls.Add(Paneluser)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 4, 3, 4)
         Name = "Updateroom"
         Text = "Updateroom"
         Paneluser.ResumeLayout(False)

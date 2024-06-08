@@ -30,28 +30,20 @@
         Dim loginusername As String = txtbxusername.Text.Trim()
         Dim loginpassword As String = txtbxpassword.Text.Trim()
 
-        '    Dim authenticationresult = usercontroller.AuthenticateUser(loginusername, loginpassword)
-        '    If authenticationresult.Item1 Then
-        '        ' Authentication successful
-        '        Dim userType As String = authenticationresult.Item2
-        '        If userType = "Admin" Then
-        '            ' Redirect to admin dashboard or perform admin-specific actions
-        '            MessageBox.Show("Welcome, Admin!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        '        Else
-        '            ' Redirect to regular user dashboard or perform user-specific actions
-        '            MessageBox.Show("Welcome, User!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        '        End If
-        '    Else
-        '        ' Authentication failed
-        '        MessageBox.Show("Invalid username or password. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        '    End If
-        'End Sub
+        Dim userType As String = usercontroller.authenticateuser(loginusername, loginpassword)
 
-
-
-        Dim userdashboardshow As New userdashboard()
-        userdashboard.Show()
-        Me.Hide()
+        If userType = "Admin" Then
+            Dim admindashboard As New AdminDashboard()
+            admindashboard.Show()
+            Me.Hide()
+        ElseIf userType = "User" Then
+            Dim userdashboard As New userdashboard()
+            userdashboard.Show()
+            Me.Hide()
+        Else
+            MessageBox.Show("Invalid username or password. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
     End Sub
+
 
 End Class

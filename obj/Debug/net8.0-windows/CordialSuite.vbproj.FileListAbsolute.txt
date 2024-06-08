@@ -136,7 +136,6 @@ E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Billing.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.checkin.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.checkout.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Loginform.resources
-E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.roomsproperty.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Resources.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Newguest_form.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Options.resources
@@ -156,9 +155,6 @@ E:\NewCordialSuite\obj\Debug\net8.0-windows\refint\CordialSuite.dll
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.pdb
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.genruntimeconfig.cache
 E:\NewCordialSuite\obj\Debug\net8.0-windows\ref\CordialSuite.dll
-E:\NewCordialSuite\bin\Debug\net8.0-windows\FluentValidation.dll
-E:\NewCordialSuite\bin\Debug\net8.0-windows\FluentValidation.AspNetCore.dll
-E:\NewCordialSuite\bin\Debug\net8.0-windows\FluentValidation.DependencyInjectionExtensions.dll
 C:\Project\CordialSuite\bin\Debug\net8.0-windows\Azure.Core.dll
 C:\Project\CordialSuite\bin\Debug\net8.0-windows\Azure.Identity.dll
 C:\Project\CordialSuite\bin\Debug\net8.0-windows\FluentValidation.dll
@@ -226,3 +222,19 @@ C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Updateroom.resourc
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.Viewemployee.resources
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialSuite.ViewGuest.resources
 C:\Project\CordialSuite\obj\Debug\net8.0-windows\CordialS.CD832973.Up2Date
+E:\NewCordialSuite\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+E:\NewCordialSuite\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+E:\NewCordialSuite\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\NewCordialSuite\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+E:\NewCordialSuite\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\NewCordialSuite\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+E:\NewCordialSuite\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\NewCordialSuite\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+E:\NewCordialSuite\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.AdminDashboard.resources
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.ChooseDashboard.resources
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Room.resources
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Revenue.resources
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Updateroom.resources
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Viewemployee.resources
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.ViewGuest.resources

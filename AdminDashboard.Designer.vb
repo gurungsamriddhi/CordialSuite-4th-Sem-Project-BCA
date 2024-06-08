@@ -32,7 +32,6 @@ Partial Class AdminDashboard
         roomsbtn = New Button()
         viewguestbtn = New Button()
         pnlhotel_status = New Panel()
-        Button1 = New Button()
         closebtn = New Button()
         guestpanel2 = New Panel()
         roompanel2 = New Panel()
@@ -71,9 +70,8 @@ Partial Class AdminDashboard
         Paneluser.Controls.Add(viewguestbtn)
         Paneluser.Dock = DockStyle.Left
         Paneluser.Location = New Point(0, 0)
-        Paneluser.Margin = New Padding(3, 2, 3, 2)
         Paneluser.Name = "Paneluser"
-        Paneluser.Size = New Size(168, 450)
+        Paneluser.Size = New Size(201, 585)
         Paneluser.TabIndex = 1
         ' 
         ' Labeladminname
@@ -83,9 +81,9 @@ Partial Class AdminDashboard
         Labeladminname.FlatStyle = FlatStyle.Flat
         Labeladminname.Font = New Font("Tahoma", 10.8F)
         Labeladminname.ForeColor = SystemColors.ControlLightLight
-        Labeladminname.Location = New Point(47, 30)
+        Labeladminname.Location = New Point(54, 40)
         Labeladminname.Name = "Labeladminname"
-        Labeladminname.Size = New Size(84, 18)
+        Labeladminname.Size = New Size(101, 22)
         Labeladminname.TabIndex = 11
         Labeladminname.Text = "adminname"
         Labeladminname.TextAlign = ContentAlignment.TopCenter
@@ -97,9 +95,9 @@ Partial Class AdminDashboard
         Lbl_currentadmin.FlatStyle = FlatStyle.Flat
         Lbl_currentadmin.Font = New Font("Tahoma", 10.8F)
         Lbl_currentadmin.ForeColor = SystemColors.ControlLightLight
-        Lbl_currentadmin.Location = New Point(34, 10)
+        Lbl_currentadmin.Location = New Point(39, 13)
         Lbl_currentadmin.Name = "Lbl_currentadmin"
-        Lbl_currentadmin.Size = New Size(96, 18)
+        Lbl_currentadmin.Size = New Size(115, 22)
         Lbl_currentadmin.TabIndex = 10
         Lbl_currentadmin.Text = "Current User:"
         Lbl_currentadmin.TextAlign = ContentAlignment.TopCenter
@@ -113,10 +111,9 @@ Partial Class AdminDashboard
         logoutbtn.FlatStyle = FlatStyle.Flat
         logoutbtn.Font = New Font("Tahoma", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         logoutbtn.ForeColor = SystemColors.Control
-        logoutbtn.Location = New Point(25, 371)
-        logoutbtn.Margin = New Padding(3, 2, 3, 2)
+        logoutbtn.Location = New Point(29, 495)
         logoutbtn.Name = "logoutbtn"
-        logoutbtn.Size = New Size(118, 31)
+        logoutbtn.Size = New Size(135, 41)
         logoutbtn.TabIndex = 9
         logoutbtn.Text = "Log Out"
         logoutbtn.UseVisualStyleBackColor = False
@@ -131,10 +128,9 @@ Partial Class AdminDashboard
         statusbtn.FlatStyle = FlatStyle.Flat
         statusbtn.Font = New Font("Tahoma", 10.8F)
         statusbtn.ForeColor = SystemColors.Control
-        statusbtn.Location = New Point(19, 94)
-        statusbtn.Margin = New Padding(3, 2, 3, 2)
+        statusbtn.Location = New Point(22, 125)
         statusbtn.Name = "statusbtn"
-        statusbtn.Size = New Size(128, 30)
+        statusbtn.Size = New Size(146, 40)
         statusbtn.TabIndex = 8
         statusbtn.Text = "Hotel Status"
         statusbtn.UseVisualStyleBackColor = False
@@ -149,10 +145,9 @@ Partial Class AdminDashboard
         transactionbtn.FlatStyle = FlatStyle.Flat
         transactionbtn.Font = New Font("Tahoma", 10.8F)
         transactionbtn.ForeColor = SystemColors.Control
-        transactionbtn.Location = New Point(19, 232)
-        transactionbtn.Margin = New Padding(3, 2, 3, 2)
+        transactionbtn.Location = New Point(22, 309)
         transactionbtn.Name = "transactionbtn"
-        transactionbtn.Size = New Size(128, 30)
+        transactionbtn.Size = New Size(146, 40)
         transactionbtn.TabIndex = 7
         transactionbtn.Text = "Transaction"
         transactionbtn.UseVisualStyleBackColor = False
@@ -167,10 +162,9 @@ Partial Class AdminDashboard
         viewempbtn.FlatStyle = FlatStyle.Flat
         viewempbtn.Font = New Font("Tahoma", 10.8F)
         viewempbtn.ForeColor = SystemColors.Control
-        viewempbtn.Location = New Point(19, 163)
-        viewempbtn.Margin = New Padding(3, 2, 3, 2)
+        viewempbtn.Location = New Point(22, 217)
         viewempbtn.Name = "viewempbtn"
-        viewempbtn.Size = New Size(128, 30)
+        viewempbtn.Size = New Size(146, 40)
         viewempbtn.TabIndex = 6
         viewempbtn.Text = "View Employee"
         viewempbtn.UseVisualStyleBackColor = False
@@ -185,10 +179,9 @@ Partial Class AdminDashboard
         roomsbtn.FlatStyle = FlatStyle.Flat
         roomsbtn.Font = New Font("Tahoma", 10.8F)
         roomsbtn.ForeColor = SystemColors.Control
-        roomsbtn.Location = New Point(19, 197)
-        roomsbtn.Margin = New Padding(3, 2, 3, 2)
+        roomsbtn.Location = New Point(22, 263)
         roomsbtn.Name = "roomsbtn"
-        roomsbtn.Size = New Size(128, 30)
+        roomsbtn.Size = New Size(146, 40)
         roomsbtn.TabIndex = 5
         roomsbtn.Text = "Rooms"
         roomsbtn.UseVisualStyleBackColor = False
@@ -203,10 +196,9 @@ Partial Class AdminDashboard
         viewguestbtn.FlatStyle = FlatStyle.Flat
         viewguestbtn.Font = New Font("Tahoma", 10.8F)
         viewguestbtn.ForeColor = SystemColors.Control
-        viewguestbtn.Location = New Point(19, 128)
-        viewguestbtn.Margin = New Padding(3, 2, 3, 2)
+        viewguestbtn.Location = New Point(22, 171)
         viewguestbtn.Name = "viewguestbtn"
-        viewguestbtn.Size = New Size(128, 30)
+        viewguestbtn.Size = New Size(146, 40)
         viewguestbtn.TabIndex = 3
         viewguestbtn.Text = "View Guest"
         viewguestbtn.UseVisualStyleBackColor = False
@@ -214,34 +206,16 @@ Partial Class AdminDashboard
         ' pnlhotel_status
         ' 
         pnlhotel_status.BackColor = SystemColors.Control
-        pnlhotel_status.Controls.Add(Button1)
         pnlhotel_status.Controls.Add(closebtn)
         pnlhotel_status.Controls.Add(guestpanel2)
         pnlhotel_status.Controls.Add(roompanel2)
         pnlhotel_status.Controls.Add(roompanel1)
         pnlhotel_status.Controls.Add(guestpanel1)
         pnlhotel_status.Dock = DockStyle.Fill
-        pnlhotel_status.Location = New Point(168, 0)
-        pnlhotel_status.Margin = New Padding(3, 2, 3, 2)
+        pnlhotel_status.Location = New Point(201, 0)
         pnlhotel_status.Name = "pnlhotel_status"
-        pnlhotel_status.Size = New Size(632, 450)
+        pnlhotel_status.Size = New Size(820, 585)
         pnlhotel_status.TabIndex = 3
-        ' 
-        ' Button1
-        ' 
-        Button1.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        Button1.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        Button1.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = SystemColors.ControlLightLight
-        Button1.Location = New Point(588, 2)
-        Button1.Margin = New Padding(3, 2, 3, 2)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(41, 26)
-        Button1.TabIndex = 8
-        Button1.Text = "X"
-        Button1.UseVisualStyleBackColor = False
         ' 
         ' closebtn
         ' 
@@ -251,10 +225,9 @@ Partial Class AdminDashboard
         closebtn.FlatStyle = FlatStyle.Flat
         closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         closebtn.ForeColor = SystemColors.ControlLightLight
-        closebtn.Location = New Point(682, 2)
-        closebtn.Margin = New Padding(3, 2, 3, 2)
+        closebtn.Location = New Point(770, 3)
         closebtn.Name = "closebtn"
-        closebtn.Size = New Size(41, 26)
+        closebtn.Size = New Size(47, 35)
         closebtn.TabIndex = 7
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
@@ -263,20 +236,18 @@ Partial Class AdminDashboard
         ' 
         guestpanel2.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
         guestpanel2.BorderStyle = BorderStyle.Fixed3D
-        guestpanel2.Location = New Point(44, 119)
-        guestpanel2.Margin = New Padding(3, 2, 3, 2)
+        guestpanel2.Location = New Point(50, 159)
         guestpanel2.Name = "guestpanel2"
-        guestpanel2.Size = New Size(239, 18)
+        guestpanel2.Size = New Size(273, 23)
         guestpanel2.TabIndex = 0
         ' 
         ' roompanel2
         ' 
         roompanel2.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
         roompanel2.BorderStyle = BorderStyle.Fixed3D
-        roompanel2.Location = New Point(368, 119)
-        roompanel2.Margin = New Padding(3, 2, 3, 2)
+        roompanel2.Location = New Point(421, 159)
         roompanel2.Name = "roompanel2"
-        roompanel2.Size = New Size(239, 18)
+        roompanel2.Size = New Size(273, 23)
         roompanel2.TabIndex = 1
         ' 
         ' roompanel1
@@ -290,10 +261,9 @@ Partial Class AdminDashboard
         roompanel1.Controls.Add(Lblavailablerooms)
         roompanel1.Controls.Add(Lbltotalrooms)
         roompanel1.Controls.Add(Lbloccupied)
-        roompanel1.Location = New Point(368, 133)
-        roompanel1.Margin = New Padding(3, 2, 3, 2)
+        roompanel1.Location = New Point(421, 177)
         roompanel1.Name = "roompanel1"
-        roompanel1.Size = New Size(239, 129)
+        roompanel1.Size = New Size(273, 171)
         roompanel1.TabIndex = 6
         ' 
         ' Label2rooms
@@ -301,9 +271,9 @@ Partial Class AdminDashboard
         Label2rooms.AutoSize = True
         Label2rooms.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2rooms.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Label2rooms.Location = New Point(85, 14)
+        Label2rooms.Location = New Point(97, 19)
         Label2rooms.Name = "Label2rooms"
-        Label2rooms.Size = New Size(61, 19)
+        Label2rooms.Size = New Size(72, 23)
         Label2rooms.TabIndex = 10
         Label2rooms.Text = "ROOMS"
         ' 
@@ -312,9 +282,9 @@ Partial Class AdminDashboard
         intavailablerooms.AutoSize = True
         intavailablerooms.Font = New Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         intavailablerooms.ForeColor = Color.DarkBlue
-        intavailablerooms.Location = New Point(205, 94)
+        intavailablerooms.Location = New Point(234, 125)
         intavailablerooms.Name = "intavailablerooms"
-        intavailablerooms.Size = New Size(26, 17)
+        intavailablerooms.Size = New Size(32, 21)
         intavailablerooms.TabIndex = 9
         intavailablerooms.Text = "10"
         ' 
@@ -323,9 +293,9 @@ Partial Class AdminDashboard
         intoccupiedrooms.AutoSize = True
         intoccupiedrooms.Font = New Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         intoccupiedrooms.ForeColor = Color.Crimson
-        intoccupiedrooms.Location = New Point(205, 73)
+        intoccupiedrooms.Location = New Point(234, 97)
         intoccupiedrooms.Name = "intoccupiedrooms"
-        intoccupiedrooms.Size = New Size(26, 17)
+        intoccupiedrooms.Size = New Size(32, 21)
         intoccupiedrooms.TabIndex = 10
         intoccupiedrooms.Text = "10"
         ' 
@@ -334,9 +304,9 @@ Partial Class AdminDashboard
         inttotrooms.AutoSize = True
         inttotrooms.Font = New Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         inttotrooms.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        inttotrooms.Location = New Point(205, 50)
+        inttotrooms.Location = New Point(234, 67)
         inttotrooms.Name = "inttotrooms"
-        inttotrooms.Size = New Size(26, 17)
+        inttotrooms.Size = New Size(32, 21)
         inttotrooms.TabIndex = 11
         inttotrooms.Text = "10"
         ' 
@@ -346,9 +316,9 @@ Partial Class AdminDashboard
         Lblavailablerooms.FlatStyle = FlatStyle.Flat
         Lblavailablerooms.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lblavailablerooms.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Lblavailablerooms.Location = New Point(8, 94)
+        Lblavailablerooms.Location = New Point(9, 125)
         Lblavailablerooms.Name = "Lblavailablerooms"
-        Lblavailablerooms.Size = New Size(109, 15)
+        Lblavailablerooms.Size = New Size(137, 20)
         Lblavailablerooms.TabIndex = 8
         Lblavailablerooms.Text = "AVAILABLE ROOMS"
         ' 
@@ -358,9 +328,9 @@ Partial Class AdminDashboard
         Lbltotalrooms.FlatStyle = FlatStyle.Flat
         Lbltotalrooms.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbltotalrooms.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Lbltotalrooms.Location = New Point(8, 50)
+        Lbltotalrooms.Location = New Point(9, 67)
         Lbltotalrooms.Name = "Lbltotalrooms"
-        Lbltotalrooms.Size = New Size(84, 15)
+        Lbltotalrooms.Size = New Size(106, 20)
         Lbltotalrooms.TabIndex = 6
         Lbltotalrooms.Text = "TOTAL ROOMS"
         ' 
@@ -370,9 +340,9 @@ Partial Class AdminDashboard
         Lbloccupied.FlatStyle = FlatStyle.Flat
         Lbloccupied.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbloccupied.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Lbloccupied.Location = New Point(8, 73)
+        Lbloccupied.Location = New Point(9, 97)
         Lbloccupied.Name = "Lbloccupied"
-        Lbloccupied.Size = New Size(109, 15)
+        Lbloccupied.Size = New Size(135, 20)
         Lbloccupied.TabIndex = 7
         Lbloccupied.Text = "OCCUPIED ROOMS"
         ' 
@@ -387,10 +357,9 @@ Partial Class AdminDashboard
         guestpanel1.Controls.Add(maleg_label)
         guestpanel1.Controls.Add(femaleg_label)
         guestpanel1.Controls.Add(guest_totlabel)
-        guestpanel1.Location = New Point(44, 133)
-        guestpanel1.Margin = New Padding(3, 2, 3, 2)
+        guestpanel1.Location = New Point(50, 177)
         guestpanel1.Name = "guestpanel1"
-        guestpanel1.Size = New Size(239, 129)
+        guestpanel1.Size = New Size(273, 171)
         guestpanel1.TabIndex = 5
         ' 
         ' Lbl1guests
@@ -398,9 +367,9 @@ Partial Class AdminDashboard
         Lbl1guests.AutoSize = True
         Lbl1guests.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lbl1guests.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Lbl1guests.Location = New Point(74, 14)
+        Lbl1guests.Location = New Point(85, 19)
         Lbl1guests.Name = "Lbl1guests"
-        Lbl1guests.Size = New Size(60, 19)
+        Lbl1guests.Size = New Size(70, 23)
         Lbl1guests.TabIndex = 9
         Lbl1guests.Text = "GUESTS"
         ' 
@@ -409,9 +378,9 @@ Partial Class AdminDashboard
         inttotfg.AutoSize = True
         inttotfg.Font = New Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         inttotfg.ForeColor = Color.Fuchsia
-        inttotfg.Location = New Point(205, 73)
+        inttotfg.Location = New Point(234, 97)
         inttotfg.Name = "inttotfg"
-        inttotfg.Size = New Size(26, 17)
+        inttotfg.Size = New Size(32, 21)
         inttotfg.TabIndex = 8
         inttotfg.Text = "10"
         ' 
@@ -420,9 +389,9 @@ Partial Class AdminDashboard
         inttotmg.AutoSize = True
         inttotmg.Font = New Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         inttotmg.ForeColor = Color.FromArgb(CByte(0), CByte(0), CByte(192))
-        inttotmg.Location = New Point(205, 94)
+        inttotmg.Location = New Point(234, 125)
         inttotmg.Name = "inttotmg"
-        inttotmg.Size = New Size(26, 17)
+        inttotmg.Size = New Size(32, 21)
         inttotmg.TabIndex = 7
         inttotmg.Text = "10"
         ' 
@@ -431,9 +400,9 @@ Partial Class AdminDashboard
         inttotguests.AutoSize = True
         inttotguests.Font = New Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         inttotguests.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        inttotguests.Location = New Point(205, 50)
+        inttotguests.Location = New Point(234, 67)
         inttotguests.Name = "inttotguests"
-        inttotguests.Size = New Size(26, 17)
+        inttotguests.Size = New Size(32, 21)
         inttotguests.TabIndex = 6
         inttotguests.Text = "10"
         ' 
@@ -443,9 +412,9 @@ Partial Class AdminDashboard
         maleg_label.FlatStyle = FlatStyle.Flat
         maleg_label.Font = New Font("Segoe UI", 9F)
         maleg_label.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        maleg_label.Location = New Point(3, 94)
+        maleg_label.Location = New Point(3, 125)
         maleg_label.Name = "maleg_label"
-        maleg_label.Size = New Size(81, 15)
+        maleg_label.Size = New Size(103, 20)
         maleg_label.TabIndex = 5
         maleg_label.Text = "MALE GUESTS"
         ' 
@@ -455,9 +424,9 @@ Partial Class AdminDashboard
         femaleg_label.FlatStyle = FlatStyle.Flat
         femaleg_label.Font = New Font("Segoe UI", 9F)
         femaleg_label.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        femaleg_label.Location = New Point(3, 73)
+        femaleg_label.Location = New Point(3, 97)
         femaleg_label.Name = "femaleg_label"
-        femaleg_label.Size = New Size(93, 15)
+        femaleg_label.Size = New Size(118, 20)
         femaleg_label.TabIndex = 4
         femaleg_label.Text = "FEMALE GUESTS"
         ' 
@@ -467,20 +436,21 @@ Partial Class AdminDashboard
         guest_totlabel.FlatStyle = FlatStyle.Flat
         guest_totlabel.Font = New Font("Segoe UI", 9F)
         guest_totlabel.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        guest_totlabel.Location = New Point(3, 50)
+        guest_totlabel.Location = New Point(3, 67)
         guest_totlabel.Name = "guest_totlabel"
-        guest_totlabel.Size = New Size(124, 15)
+        guest_totlabel.Size = New Size(157, 20)
         guest_totlabel.TabIndex = 3
         guest_totlabel.Text = "TOTAL NO. OF GUESTS"
         ' 
         ' AdminDashboard
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(1021, 585)
         Controls.Add(pnlhotel_status)
         Controls.Add(Paneluser)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 4, 3, 4)
         Name = "AdminDashboard"
         Text = "AdminDashboard"
         Paneluser.ResumeLayout(False)
@@ -522,5 +492,4 @@ Partial Class AdminDashboard
     Friend WithEvents maleg_label As Label
     Friend WithEvents femaleg_label As Label
     Friend WithEvents guest_totlabel As Label
-    Friend WithEvents Button1 As Button
 End Class
