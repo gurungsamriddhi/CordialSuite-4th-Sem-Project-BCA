@@ -38,7 +38,7 @@ Partial Class Viewemployee
         editEMP_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         editEMP_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         editEMP_btn.FlatStyle = FlatStyle.Flat
-        editEMP_btn.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        editEMP_btn.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         editEMP_btn.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
         editEMP_btn.Location = New Point(380, 501)
         editEMP_btn.Name = "editEMP_btn"
@@ -65,7 +65,7 @@ Partial Class Viewemployee
         closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Bold)
+        closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
         closebtn.Location = New Point(761, 9)
         closebtn.Name = "closebtn"
         closebtn.Size = New Size(47, 35)
@@ -76,7 +76,7 @@ Partial Class Viewemployee
         ' Lblviewemp
         ' 
         Lblviewemp.AutoSize = True
-        Lblviewemp.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lblviewemp.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lblviewemp.ForeColor = SystemColors.ControlLightLight
         Lblviewemp.Location = New Point(329, 11)
         Lblviewemp.Name = "Lblviewemp"
@@ -95,7 +95,7 @@ Partial Class Viewemployee
         ' 
         ' Viewemployee
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(820, 585)
         Controls.Add(DGV_viewemployee)

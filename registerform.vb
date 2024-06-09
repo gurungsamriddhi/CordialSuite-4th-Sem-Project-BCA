@@ -137,10 +137,10 @@ Public Class Registerform
 
 
 
-    Private Sub Linktologin_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Linktologin.LinkClicked
+    Private Sub Linktologin_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
         Dim userloginform As New Loginform
-        Loginform.Show()
-        Hide()
+        Loginform.Show
+        Hide
     End Sub
 
     Private Sub Userfn_txtbx_TextChanged(sender As Object, e As EventArgs) Handles userfn_txtbx.TextChanged

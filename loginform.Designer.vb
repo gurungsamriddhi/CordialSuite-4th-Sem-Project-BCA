@@ -27,161 +27,146 @@ Partial Class loginform
         txtbxusername = New TextBox()
         txtbxpassword = New TextBox()
         Btnlogin = New Button()
-        PnlLogin = New Panel()
+        admin_btn = New Button()
         CheckBoxshowpw = New CheckBox()
-        Linktoregister = New LinkLabel()
-        Linkforgotpw = New LinkLabel()
         closebtn = New Button()
-        PnlLogin.SuspendLayout()
+        Panel1 = New Panel()
         SuspendLayout()
         ' 
         ' Lblusername
         ' 
         Lblusername.AutoSize = True
-        Lblusername.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lblusername.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Lblusername.Location = New Point(109, 93)
+        Lblusername.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lblusername.ForeColor = Color.White
+        Lblusername.Location = New Point(108, 114)
         Lblusername.Margin = New Padding(3)
         Lblusername.Name = "Lblusername"
-        Lblusername.Size = New Size(87, 23)
+        Lblusername.Size = New Size(104, 28)
         Lblusername.TabIndex = 0
         Lblusername.Text = "Username"
         ' 
         ' lblpassword
         ' 
         lblpassword.AutoSize = True
-        lblpassword.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
-        lblpassword.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        lblpassword.Location = New Point(109, 178)
+        lblpassword.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblpassword.ForeColor = Color.White
+        lblpassword.Location = New Point(108, 226)
         lblpassword.Name = "lblpassword"
-        lblpassword.Size = New Size(82, 23)
+        lblpassword.Size = New Size(97, 28)
         lblpassword.TabIndex = 1
         lblpassword.Text = "Password"
         ' 
         ' txtbxusername
         ' 
         txtbxusername.Font = New Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtbxusername.Location = New Point(109, 122)
+        txtbxusername.Location = New Point(108, 149)
         txtbxusername.Margin = New Padding(3, 4, 3, 4)
         txtbxusername.Name = "txtbxusername"
-        txtbxusername.Size = New Size(260, 35)
+        txtbxusername.Size = New Size(359, 35)
         txtbxusername.TabIndex = 2
         ' 
         ' txtbxpassword
         ' 
         txtbxpassword.Font = New Font("Tahoma", 13.8F)
-        txtbxpassword.Location = New Point(109, 204)
+        txtbxpassword.Location = New Point(108, 258)
         txtbxpassword.Margin = New Padding(3, 4, 3, 4)
         txtbxpassword.Name = "txtbxpassword"
-        txtbxpassword.Size = New Size(260, 35)
+        txtbxpassword.Size = New Size(359, 35)
         txtbxpassword.TabIndex = 3
         txtbxpassword.UseSystemPasswordChar = True
         ' 
         ' Btnlogin
         ' 
-        Btnlogin.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Btnlogin.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         Btnlogin.FlatAppearance.BorderSize = 0
         Btnlogin.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
         Btnlogin.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
-        Btnlogin.FlatStyle = FlatStyle.Flat
         Btnlogin.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Btnlogin.ForeColor = SystemColors.ControlLightLight
-        Btnlogin.Location = New Point(173, 295)
+        Btnlogin.Location = New Point(193, 363)
         Btnlogin.Margin = New Padding(3, 4, 3, 4)
         Btnlogin.Name = "Btnlogin"
-        Btnlogin.Size = New Size(128, 45)
+        Btnlogin.Size = New Size(177, 51)
         Btnlogin.TabIndex = 4
         Btnlogin.Text = "Login"
         Btnlogin.UseVisualStyleBackColor = False
         ' 
-        ' PnlLogin
+        ' admin_btn
         ' 
-        PnlLogin.BackColor = Color.Gainsboro
-        PnlLogin.BorderStyle = BorderStyle.Fixed3D
-        PnlLogin.Controls.Add(CheckBoxshowpw)
-        PnlLogin.Controls.Add(Linktoregister)
-        PnlLogin.Controls.Add(Linkforgotpw)
-        PnlLogin.Controls.Add(txtbxusername)
-        PnlLogin.Controls.Add(Btnlogin)
-        PnlLogin.Controls.Add(txtbxpassword)
-        PnlLogin.Controls.Add(lblpassword)
-        PnlLogin.Controls.Add(Lblusername)
-        PnlLogin.Location = New Point(281, 68)
-        PnlLogin.Name = "PnlLogin"
-        PnlLogin.Size = New Size(459, 448)
-        PnlLogin.TabIndex = 5
+        admin_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        admin_btn.FlatAppearance.BorderSize = 0
+        admin_btn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
+        admin_btn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        admin_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        admin_btn.ForeColor = SystemColors.ControlLightLight
+        admin_btn.Location = New Point(193, 422)
+        admin_btn.Margin = New Padding(3, 4, 3, 4)
+        admin_btn.Name = "admin_btn"
+        admin_btn.Size = New Size(177, 51)
+        admin_btn.TabIndex = 8
+        admin_btn.Text = "Admin"
+        admin_btn.UseVisualStyleBackColor = False
         ' 
         ' CheckBoxshowpw
         ' 
         CheckBoxshowpw.AutoSize = True
         CheckBoxshowpw.BackColor = Color.Transparent
-        CheckBoxshowpw.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        CheckBoxshowpw.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        CheckBoxshowpw.Location = New Point(109, 246)
+        CheckBoxshowpw.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        CheckBoxshowpw.ForeColor = Color.White
+        CheckBoxshowpw.Location = New Point(108, 300)
         CheckBoxshowpw.Name = "CheckBoxshowpw"
-        CheckBoxshowpw.Size = New Size(136, 24)
+        CheckBoxshowpw.Size = New Size(170, 32)
         CheckBoxshowpw.TabIndex = 7
         CheckBoxshowpw.Text = "Show password"
         CheckBoxshowpw.UseVisualStyleBackColor = False
         ' 
-        ' Linktoregister
-        ' 
-        Linktoregister.ActiveLinkColor = Color.MidnightBlue
-        Linktoregister.AutoSize = True
-        Linktoregister.Font = New Font("Segoe UI", 9F)
-        Linktoregister.LinkColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Linktoregister.Location = New Point(133, 396)
-        Linktoregister.Name = "Linktoregister"
-        Linktoregister.Size = New Size(217, 20)
-        Linktoregister.TabIndex = 6
-        Linktoregister.TabStop = True
-        Linktoregister.Text = "Don't have an account?Register"
-        ' 
-        ' Linkforgotpw
-        ' 
-        Linkforgotpw.ActiveLinkColor = Color.MidnightBlue
-        Linkforgotpw.AutoSize = True
-        Linkforgotpw.Font = New Font("Segoe UI", 9F)
-        Linkforgotpw.LinkColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Linkforgotpw.Location = New Point(173, 366)
-        Linkforgotpw.Name = "Linkforgotpw"
-        Linkforgotpw.Size = New Size(125, 20)
-        Linkforgotpw.TabIndex = 5
-        Linkforgotpw.TabStop = True
-        Linkforgotpw.Text = "Forgot Password?"
-        ' 
         ' closebtn
         ' 
         closebtn.BackColor = Color.Transparent
-        closebtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        closebtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
         closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        closebtn.ForeColor = SystemColors.ControlLightLight
-        closebtn.Location = New Point(962, 12)
+        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = SystemColors.Window
+        closebtn.Location = New Point(475, 12)
         closebtn.Name = "closebtn"
-        closebtn.Size = New Size(47, 34)
-        closebtn.TabIndex = 6
+        closebtn.Size = New Size(43, 42)
+        closebtn.TabIndex = 8
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = SystemColors.Window
+        Panel1.Dock = DockStyle.Left
+        Panel1.Location = New Point(0, 0)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(23, 508)
+        Panel1.TabIndex = 10
         ' 
         ' Loginform
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        ClientSize = New Size(1021, 585)
+        BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        ClientSize = New Size(530, 508)
+        Controls.Add(Panel1)
+        Controls.Add(admin_btn)
         Controls.Add(closebtn)
-        Controls.Add(PnlLogin)
+        Controls.Add(CheckBoxshowpw)
+        Controls.Add(Btnlogin)
+        Controls.Add(txtbxusername)
+        Controls.Add(txtbxpassword)
+        Controls.Add(lblpassword)
+        Controls.Add(Lblusername)
         ForeColor = Color.Transparent
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 4, 3, 4)
         Name = "Loginform"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Login"
-        PnlLogin.ResumeLayout(False)
-        PnlLogin.PerformLayout()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Lblusername As Label
@@ -189,9 +174,8 @@ Partial Class loginform
     Friend WithEvents txtbxusername As TextBox
     Friend WithEvents txtbxpassword As TextBox
     Friend WithEvents Btnlogin As Button
-    Friend WithEvents PnlLogin As Panel
-    Friend WithEvents Linktoregister As LinkLabel
-    Friend WithEvents Linkforgotpw As LinkLabel
     Friend WithEvents CheckBoxshowpw As CheckBox
     Friend WithEvents closebtn As Button
+    Friend WithEvents admin_btn As Button
+    Friend WithEvents Panel1 As Panel
 End Class

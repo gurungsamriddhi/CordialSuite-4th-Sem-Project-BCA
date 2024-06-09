@@ -1,0 +1,166 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class superadmin_login
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        lbl_password = New Label()
+        txtbx_password = New TextBox()
+        showpw_checkbx = New CheckBox()
+        adminlogin_btn = New Button()
+        lbllink_cancel = New LinkLabel()
+        closebtn = New Button()
+        Panel1 = New Panel()
+        Label1 = New Label()
+        SuspendLayout()
+        ' 
+        ' lbl_password
+        ' 
+        lbl_password.AutoSize = True
+        lbl_password.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbl_password.ForeColor = Color.White
+        lbl_password.Location = New Point(104, 157)
+        lbl_password.Name = "lbl_password"
+        lbl_password.Size = New Size(97, 28)
+        lbl_password.TabIndex = 2
+        lbl_password.Text = "Password"
+        ' 
+        ' txtbx_password
+        ' 
+        txtbx_password.Font = New Font("Tahoma", 13.8F)
+        txtbx_password.Location = New Point(104, 200)
+        txtbx_password.Margin = New Padding(3, 4, 3, 4)
+        txtbx_password.Name = "txtbx_password"
+        txtbx_password.Size = New Size(359, 35)
+        txtbx_password.TabIndex = 4
+        txtbx_password.UseSystemPasswordChar = True
+        ' 
+        ' showpw_checkbx
+        ' 
+        showpw_checkbx.AutoSize = True
+        showpw_checkbx.BackColor = Color.Transparent
+        showpw_checkbx.FlatAppearance.CheckedBackColor = SystemColors.InactiveCaption
+        showpw_checkbx.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        showpw_checkbx.ForeColor = Color.White
+        showpw_checkbx.Location = New Point(104, 242)
+        showpw_checkbx.Name = "showpw_checkbx"
+        showpw_checkbx.Size = New Size(170, 32)
+        showpw_checkbx.TabIndex = 8
+        showpw_checkbx.Text = "Show password"
+        showpw_checkbx.UseVisualStyleBackColor = False
+        ' 
+        ' adminlogin_btn
+        ' 
+        adminlogin_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        adminlogin_btn.FlatAppearance.BorderSize = 0
+        adminlogin_btn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
+        adminlogin_btn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        adminlogin_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        adminlogin_btn.ForeColor = SystemColors.ControlLightLight
+        adminlogin_btn.Location = New Point(178, 341)
+        adminlogin_btn.Margin = New Padding(3, 4, 3, 4)
+        adminlogin_btn.Name = "adminlogin_btn"
+        adminlogin_btn.Size = New Size(177, 51)
+        adminlogin_btn.TabIndex = 9
+        adminlogin_btn.Text = "Login"
+        adminlogin_btn.UseVisualStyleBackColor = False
+        ' 
+        ' lbllink_cancel
+        ' 
+        lbllink_cancel.ActiveLinkColor = Color.Pink
+        lbllink_cancel.AutoSize = True
+        lbllink_cancel.DisabledLinkColor = Color.Silver
+        lbllink_cancel.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lbllink_cancel.LinkColor = SystemColors.Window
+        lbllink_cancel.Location = New Point(223, 396)
+        lbllink_cancel.Name = "lbllink_cancel"
+        lbllink_cancel.Size = New Size(63, 25)
+        lbllink_cancel.TabIndex = 10
+        lbllink_cancel.TabStop = True
+        lbllink_cancel.Text = "Cancel"
+        ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = Color.Transparent
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = SystemColors.Window
+        closebtn.Location = New Point(475, 12)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(43, 42)
+        closebtn.TabIndex = 11
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = SystemColors.Window
+        Panel1.Dock = DockStyle.Left
+        Panel1.Location = New Point(0, 0)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(23, 508)
+        Panel1.TabIndex = 12
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(105, 56)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(169, 31)
+        Label1.TabIndex = 13
+        Label1.Text = "ADMIN LOGIN"
+        ' 
+        ' superadmin_login
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        ClientSize = New Size(530, 508)
+        Controls.Add(Label1)
+        Controls.Add(Panel1)
+        Controls.Add(closebtn)
+        Controls.Add(lbllink_cancel)
+        Controls.Add(adminlogin_btn)
+        Controls.Add(showpw_checkbx)
+        Controls.Add(txtbx_password)
+        Controls.Add(lbl_password)
+        ForeColor = SystemColors.Window
+        FormBorderStyle = FormBorderStyle.None
+        Name = "superadmin_login"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "superadminlogin"
+        ResumeLayout(False)
+        PerformLayout()
+    End Sub
+
+    Friend WithEvents lbl_password As Label
+    Friend WithEvents txtbx_password As TextBox
+    Friend WithEvents showpw_checkbx As CheckBox
+    Friend WithEvents adminlogin_btn As Button
+    Friend WithEvents lbllink_cancel As LinkLabel
+    Friend WithEvents closebtn As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label1 As Label
+End Class

@@ -42,7 +42,6 @@ Partial Class Registerform
         Lbl_msgusername = New Label()
         Lbl_msgusertype = New Label()
         Lbl_msgfirstname = New Label()
-        Linktologin = New LinkLabel()
         closebtn = New Button()
         userDOB_dtp = New DateTimePicker()
         usertype_cmbbx = New ComboBox()
@@ -180,7 +179,7 @@ Partial Class Registerform
         ' 
         ' Pnlregister
         ' 
-        Pnlregister.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Pnlregister.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         Pnlregister.Controls.Add(Lbl_msggender)
         Pnlregister.Controls.Add(Lbl_msgaddress)
         Pnlregister.Controls.Add(Lbl_msgDOB)
@@ -191,7 +190,6 @@ Partial Class Registerform
         Pnlregister.Controls.Add(Lbl_msgusername)
         Pnlregister.Controls.Add(Lbl_msgusertype)
         Pnlregister.Controls.Add(Lbl_msgfirstname)
-        Pnlregister.Controls.Add(Linktologin)
         Pnlregister.Controls.Add(closebtn)
         Pnlregister.Controls.Add(userDOB_dtp)
         Pnlregister.Controls.Add(usertype_cmbbx)
@@ -215,7 +213,7 @@ Partial Class Registerform
         Pnlregister.Controls.Add(LblDOB)
         Pnlregister.Controls.Add(LblFirstname)
         Pnlregister.Dock = DockStyle.Fill
-        Pnlregister.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Pnlregister.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         Pnlregister.Location = New Point(0, 0)
         Pnlregister.Name = "Pnlregister"
         Pnlregister.Size = New Size(970, 590)
@@ -310,22 +308,6 @@ Partial Class Registerform
         Lbl_msgfirstname.Name = "Lbl_msgfirstname"
         Lbl_msgfirstname.Size = New Size(0, 20)
         Lbl_msgfirstname.TabIndex = 29
-        ' 
-        ' Linktologin
-        ' 
-        Linktologin.ActiveLinkColor = Color.DeepPink
-        Linktologin.AutoSize = True
-        Linktologin.BackColor = Color.Transparent
-        Linktologin.DisabledLinkColor = Color.Purple
-        Linktologin.Font = New Font("Segoe UI", 9F)
-        Linktologin.ForeColor = SystemColors.ControlLightLight
-        Linktologin.LinkColor = SystemColors.ControlLightLight
-        Linktologin.Location = New Point(392, 550)
-        Linktologin.Name = "Linktologin"
-        Linktologin.Size = New Size(215, 20)
-        Linktologin.TabIndex = 28
-        Linktologin.TabStop = True
-        Linktologin.Text = "Already have an account?Login"
         ' 
         ' closebtn
         ' 
@@ -526,7 +508,6 @@ Partial Class Registerform
     Friend WithEvents userDOB_dtp As DateTimePicker
     Friend WithEvents confirmpw_txtbx As TextBox
     Friend WithEvents closebtn As Button
-    Friend WithEvents Linktologin As LinkLabel
     Friend WithEvents Lbl_msgconfirmpw As Label
     Friend WithEvents Lbl_msgpassword As Label
     Friend WithEvents Lbl_msgusername As Label

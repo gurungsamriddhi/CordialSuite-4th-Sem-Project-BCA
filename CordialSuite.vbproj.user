@@ -16,16 +16,10 @@
     <Compile Update="checkout.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ChooseDashboard.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="loginform.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="newguest.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Options.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="registerform.vb">
@@ -37,7 +31,13 @@
     <Compile Update="rooms.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Splay.vb">
+    <Compile Update="splay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="superadminlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="superadmin_dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Updateroom.vb">

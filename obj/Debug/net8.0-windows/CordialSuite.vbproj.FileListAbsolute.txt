@@ -138,7 +138,6 @@ E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.checkout.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Loginform.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Resources.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Newguest_form.resources
-E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Options.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Registerform.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Rooms.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Splay.resources
@@ -232,9 +231,13 @@ E:\NewCordialSuite\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstrac
 E:\NewCordialSuite\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
 E:\NewCordialSuite\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.AdminDashboard.resources
-E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.ChooseDashboard.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Room.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Revenue.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Updateroom.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Viewemployee.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.ViewGuest.resources
+E:\NewCordialSuite\bin\Debug\net8.0-windows\Guna.UI2.dll
+E:\NewCordialSuite\bin\Debug\net8.0-windows\System.Management.dll
+E:\NewCordialSuite\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.superadmin_login.resources
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.superadmin_dashboard.resources

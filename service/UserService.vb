@@ -3,7 +3,7 @@ Imports System.Diagnostics.Eventing.Reader
 Imports System.IO
 
 Public Interface IUserService
-    Sub AddUser(user As User)
+    Sub AddUser(user As User)  'bydefault all the functions and sub procedures becomes public also only contains declarations 
     Function GetUserById(userId As Integer) As User
     Function GetAllUsers() As List(Of User)
     Sub UpdateUser(user As User)

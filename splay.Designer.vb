@@ -30,11 +30,11 @@ Partial Class splay
         ' 
         Lbl_displayfp.AutoSize = True
         Lbl_displayfp.BackColor = Color.Transparent
-        Lbl_displayfp.Font = New Font("Tahoma", 48F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lbl_displayfp.ForeColor = SystemColors.ControlLightLight
-        Lbl_displayfp.Location = New Point(238, 224)
+        Lbl_displayfp.Font = New Font("Tahoma", 60F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl_displayfp.ForeColor = SystemColors.Window
+        Lbl_displayfp.Location = New Point(257, 273)
         Lbl_displayfp.Name = "Lbl_displayfp"
-        Lbl_displayfp.Size = New Size(532, 97)
+        Lbl_displayfp.Size = New Size(665, 121)
         Lbl_displayfp.TabIndex = 0
         Lbl_displayfp.Text = "CordialSuite"
         Lbl_displayfp.TextAlign = ContentAlignment.MiddleCenter
@@ -42,15 +42,15 @@ Partial Class splay
         ' closebtn
         ' 
         closebtn.BackColor = Color.Transparent
-        closebtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        closebtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
         closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        closebtn.ForeColor = SystemColors.ControlLightLight
-        closebtn.Location = New Point(962, 12)
+        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = SystemColors.Window
+        closebtn.Location = New Point(1101, 12)
         closebtn.Name = "closebtn"
-        closebtn.Size = New Size(47, 34)
-        closebtn.TabIndex = 1
+        closebtn.Size = New Size(58, 48)
+        closebtn.TabIndex = 9
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
         ' 
@@ -58,8 +58,8 @@ Partial Class splay
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        ClientSize = New Size(1021, 585)
+        BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        ClientSize = New Size(1171, 709)
         Controls.Add(closebtn)
         Controls.Add(Lbl_displayfp)
         ForeColor = SystemColors.Control
