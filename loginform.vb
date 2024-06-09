@@ -26,10 +26,8 @@
             Dim admindashboard As New AdminDashboard
             admindashboard.Show()
             admindashboard.Labeladminname.Text = loginusername
-
-
-
             Hide()
+
         ElseIf userType = "User" Then
             Dim userdashboard As New userdashboard
 

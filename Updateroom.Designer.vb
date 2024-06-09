@@ -37,8 +37,9 @@ Partial Class Updateroom
         femaleg_label = New Label()
         guest_totlabel = New Label()
         Panel2 = New Panel()
+        close_Btn = New Button()
         closebtn = New Button()
-        Label1 = New Label()
+        Lblviewg = New Label()
         Paneluser.SuspendLayout()
         guestpanel2.SuspendLayout()
         Panel1.SuspendLayout()
@@ -48,64 +49,68 @@ Partial Class Updateroom
         ' 
         ' Paneluser
         ' 
-        Paneluser.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Paneluser.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         Paneluser.Controls.Add(Button6)
         Paneluser.Controls.Add(Button7)
         Paneluser.Controls.Add(Button8)
         Paneluser.Dock = DockStyle.Left
+        Paneluser.ForeColor = Color.CornflowerBlue
         Paneluser.Location = New Point(0, 0)
         Paneluser.Name = "Paneluser"
-        Paneluser.Size = New Size(192, 585)
+        Paneluser.Size = New Size(192, 709)
         Paneluser.TabIndex = 30
         ' 
         ' Button6
         ' 
-        Button6.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Button6.FlatAppearance.BorderColor = SystemColors.Control
+        Button6.BackColor = Color.Transparent
+        Button6.FlatAppearance.BorderColor = SystemColors.Window
         Button6.FlatAppearance.BorderSize = 2
-        Button6.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        Button6.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        Button6.FlatAppearance.CheckedBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        Button6.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        Button6.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         Button6.FlatStyle = FlatStyle.Flat
         Button6.Font = New Font("Tahoma", 10.8F)
-        Button6.ForeColor = SystemColors.Control
-        Button6.Location = New Point(22, 217)
+        Button6.ForeColor = SystemColors.Window
+        Button6.Location = New Point(12, 281)
         Button6.Name = "Button6"
-        Button6.Size = New Size(146, 40)
+        Button6.Size = New Size(167, 40)
         Button6.TabIndex = 6
         Button6.Text = "Delete Room"
         Button6.UseVisualStyleBackColor = False
         ' 
         ' Button7
         ' 
-        Button7.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Button7.FlatAppearance.BorderColor = SystemColors.Control
+        Button7.BackColor = Color.Transparent
+        Button7.FlatAppearance.BorderColor = SystemColors.Window
         Button7.FlatAppearance.BorderSize = 2
-        Button7.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        Button7.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        Button7.FlatAppearance.CheckedBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        Button7.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        Button7.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         Button7.FlatStyle = FlatStyle.Flat
         Button7.Font = New Font("Tahoma", 10.8F)
-        Button7.ForeColor = SystemColors.Control
-        Button7.Location = New Point(22, 263)
+        Button7.ForeColor = SystemColors.Window
+        Button7.Location = New Point(12, 327)
         Button7.Name = "Button7"
-        Button7.Size = New Size(146, 40)
+        Button7.Size = New Size(167, 40)
         Button7.TabIndex = 5
         Button7.Text = "Edit Rooms"
         Button7.UseVisualStyleBackColor = False
         ' 
         ' Button8
         ' 
-        Button8.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        Button8.FlatAppearance.BorderColor = SystemColors.Control
+        Button8.BackColor = Color.Transparent
+        Button8.FlatAppearance.BorderColor = SystemColors.Window
         Button8.FlatAppearance.BorderSize = 2
-        Button8.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        Button8.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        Button8.FlatAppearance.CheckedBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        Button8.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        Button8.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         Button8.FlatStyle = FlatStyle.Flat
         Button8.Font = New Font("Tahoma", 10.8F)
-        Button8.ForeColor = SystemColors.Control
-        Button8.Location = New Point(22, 171)
+        Button8.ForeColor = SystemColors.Window
+        Button8.Location = New Point(12, 235)
         Button8.Name = "Button8"
         Button8.RightToLeft = RightToLeft.No
-        Button8.Size = New Size(146, 40)
+        Button8.Size = New Size(167, 40)
         Button8.TabIndex = 3
         Button8.Text = "Update Room"
         Button8.UseVisualStyleBackColor = False
@@ -226,14 +231,32 @@ Partial Class Updateroom
         ' 
         ' Panel2
         ' 
-        Panel2.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Panel2.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Panel2.Controls.Add(close_Btn)
         Panel2.Controls.Add(closebtn)
-        Panel2.Controls.Add(Label1)
+        Panel2.Controls.Add(Lblviewg)
         Panel2.Dock = DockStyle.Top
         Panel2.Location = New Point(192, 0)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(628, 47)
-        Panel2.TabIndex = 35
+        Panel2.Size = New Size(756, 57)
+        Panel2.TabIndex = 44
+        ' 
+        ' close_Btn
+        ' 
+        close_Btn.BackColor = Color.Transparent
+        close_Btn.FlatAppearance.BorderColor = Color.White
+        close_Btn.FlatAppearance.BorderSize = 2
+        close_Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        close_Btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        close_Btn.FlatStyle = FlatStyle.Flat
+        close_Btn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        close_Btn.ForeColor = SystemColors.Window
+        close_Btn.Location = New Point(701, 4)
+        close_Btn.Name = "close_Btn"
+        close_Btn.Size = New Size(43, 42)
+        close_Btn.TabIndex = 24
+        close_Btn.Text = "X"
+        close_Btn.UseVisualStyleBackColor = False
         ' 
         ' closebtn
         ' 
@@ -243,29 +266,29 @@ Partial Class Updateroom
         closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         closebtn.FlatStyle = FlatStyle.Flat
         closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        closebtn.Location = New Point(578, 3)
+        closebtn.Location = New Point(431, 313)
         closebtn.Name = "closebtn"
         closebtn.Size = New Size(47, 35)
-        closebtn.TabIndex = 24
+        closebtn.TabIndex = 23
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
         ' 
-        ' Label1
+        ' Lblviewg
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = SystemColors.ControlLightLight
-        Label1.Location = New Point(239, 9)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(151, 28)
-        Label1.TabIndex = 23
-        Label1.Text = "ROOM UPDATE"
+        Lblviewg.AutoSize = True
+        Lblviewg.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lblviewg.ForeColor = SystemColors.Window
+        Lblviewg.Location = New Point(335, 15)
+        Lblviewg.Name = "Lblviewg"
+        Lblviewg.Size = New Size(101, 31)
+        Lblviewg.TabIndex = 23
+        Lblviewg.Text = "UPDATE"
         ' 
         ' Updateroom
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(820, 585)
+        ClientSize = New Size(948, 709)
         Controls.Add(Panel2)
         Controls.Add(guestpanel2)
         Controls.Add(guestpanel1)
@@ -300,6 +323,7 @@ Partial Class Updateroom
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Lblnewg As Label
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents close_Btn As Button
     Friend WithEvents closebtn As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Lblviewg As Label
 End Class

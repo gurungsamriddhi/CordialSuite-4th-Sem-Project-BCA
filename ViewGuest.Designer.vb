@@ -58,7 +58,7 @@ Partial Class ViewGuest
         Country_cmbbx.FormattingEnabled = True
         Country_cmbbx.IntegralHeight = False
         Country_cmbbx.Items.AddRange(New Object() {"Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "The Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic of the", "Congo, Republic of the", "Costa Rica", "Côte d’Ivoire", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor (Timor-Leste)", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "The Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia, Federated States of", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar (Burma)", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "Spain", "Sri Lanka", "Sudan", "Sudan, South", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe", ""})
-        Country_cmbbx.Location = New Point(470, 329)
+        Country_cmbbx.Location = New Point(509, 350)
         Country_cmbbx.Name = "Country_cmbbx"
         Country_cmbbx.Size = New Size(223, 31)
         Country_cmbbx.TabIndex = 41
@@ -71,7 +71,7 @@ Partial Class ViewGuest
         cmbbx_genderG.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
         cmbbx_genderG.FormattingEnabled = True
         cmbbx_genderG.Items.AddRange(New Object() {"Male", "Female", "Others"})
-        cmbbx_genderG.Location = New Point(131, 237)
+        cmbbx_genderG.Location = New Point(170, 258)
         cmbbx_genderG.Name = "cmbbx_genderG"
         cmbbx_genderG.Size = New Size(159, 31)
         cmbbx_genderG.TabIndex = 40
@@ -81,7 +81,7 @@ Partial Class ViewGuest
         checkout_txtbx.BackColor = SystemColors.ControlLightLight
         checkout_txtbx.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         checkout_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        checkout_txtbx.Location = New Point(276, 417)
+        checkout_txtbx.Location = New Point(315, 438)
         checkout_txtbx.Name = "checkout_txtbx"
         checkout_txtbx.Size = New Size(127, 30)
         checkout_txtbx.TabIndex = 39
@@ -91,7 +91,7 @@ Partial Class ViewGuest
         glastname_txtbx.BackColor = SystemColors.ControlLightLight
         glastname_txtbx.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         glastname_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        glastname_txtbx.Location = New Point(467, 138)
+        glastname_txtbx.Location = New Point(506, 159)
         glastname_txtbx.Name = "glastname_txtbx"
         glastname_txtbx.Size = New Size(227, 30)
         glastname_txtbx.TabIndex = 38
@@ -101,7 +101,7 @@ Partial Class ViewGuest
         contact_txtbx.BackColor = SystemColors.ControlLightLight
         contact_txtbx.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         contact_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        contact_txtbx.Location = New Point(470, 417)
+        contact_txtbx.Location = New Point(509, 438)
         contact_txtbx.Name = "contact_txtbx"
         contact_txtbx.Size = New Size(223, 30)
         contact_txtbx.TabIndex = 37
@@ -111,7 +111,7 @@ Partial Class ViewGuest
         checkin_txtbx.BackColor = SystemColors.ControlLightLight
         checkin_txtbx.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         checkin_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        checkin_txtbx.Location = New Point(131, 417)
+        checkin_txtbx.Location = New Point(170, 438)
         checkin_txtbx.Name = "checkin_txtbx"
         checkin_txtbx.Size = New Size(111, 30)
         checkin_txtbx.TabIndex = 36
@@ -121,7 +121,7 @@ Partial Class ViewGuest
         Gemail_txtbx.BackColor = SystemColors.ControlLightLight
         Gemail_txtbx.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Gemail_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        Gemail_txtbx.Location = New Point(131, 329)
+        Gemail_txtbx.Location = New Point(170, 350)
         Gemail_txtbx.Name = "Gemail_txtbx"
         Gemail_txtbx.Size = New Size(227, 30)
         Gemail_txtbx.TabIndex = 35
@@ -131,7 +131,7 @@ Partial Class ViewGuest
         GuestID_txtbx.BackColor = SystemColors.ControlLightLight
         GuestID_txtbx.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         GuestID_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        GuestID_txtbx.Location = New Point(470, 237)
+        GuestID_txtbx.Location = New Point(509, 258)
         GuestID_txtbx.Name = "GuestID_txtbx"
         GuestID_txtbx.Size = New Size(223, 30)
         GuestID_txtbx.TabIndex = 34
@@ -141,7 +141,7 @@ Partial Class ViewGuest
         gfirstname_txtbx.BackColor = SystemColors.ControlLightLight
         gfirstname_txtbx.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         gfirstname_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        gfirstname_txtbx.Location = New Point(131, 138)
+        gfirstname_txtbx.Location = New Point(170, 159)
         gfirstname_txtbx.Name = "gfirstname_txtbx"
         gfirstname_txtbx.Size = New Size(227, 30)
         gfirstname_txtbx.TabIndex = 33
@@ -155,7 +155,7 @@ Partial Class ViewGuest
         editguest_btn.FlatStyle = FlatStyle.Flat
         editguest_btn.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         editguest_btn.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        editguest_btn.Location = New Point(347, 497)
+        editguest_btn.Location = New Point(408, 535)
         editguest_btn.Name = "editguest_btn"
         editguest_btn.Size = New Size(106, 41)
         editguest_btn.TabIndex = 32
@@ -167,7 +167,7 @@ Partial Class ViewGuest
         Lblglastname.AutoSize = True
         Lblglastname.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lblglastname.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        Lblglastname.Location = New Point(467, 113)
+        Lblglastname.Location = New Point(506, 134)
         Lblglastname.Name = "Lblglastname"
         Lblglastname.Size = New Size(91, 23)
         Lblglastname.TabIndex = 30
@@ -178,7 +178,7 @@ Partial Class ViewGuest
         LglguestID.AutoSize = True
         LglguestID.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         LglguestID.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        LglguestID.Location = New Point(467, 212)
+        LglguestID.Location = New Point(506, 233)
         LglguestID.Name = "LglguestID"
         LglguestID.Size = New Size(76, 23)
         LglguestID.TabIndex = 29
@@ -189,7 +189,7 @@ Partial Class ViewGuest
         Lblgemail.AutoSize = True
         Lblgemail.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lblgemail.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        Lblgemail.Location = New Point(131, 304)
+        Lblgemail.Location = New Point(170, 325)
         Lblgemail.Name = "Lblgemail"
         Lblgemail.Size = New Size(51, 23)
         Lblgemail.TabIndex = 28
@@ -200,7 +200,7 @@ Partial Class ViewGuest
         Lblgcountry.AutoSize = True
         Lblgcountry.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lblgcountry.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        Lblgcountry.Location = New Point(470, 302)
+        Lblgcountry.Location = New Point(509, 323)
         Lblgcountry.Name = "Lblgcountry"
         Lblgcountry.Size = New Size(73, 23)
         Lblgcountry.TabIndex = 27
@@ -211,7 +211,7 @@ Partial Class ViewGuest
         Lblcontact.AutoSize = True
         Lblcontact.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lblcontact.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        Lblcontact.Location = New Point(470, 392)
+        Lblcontact.Location = New Point(509, 413)
         Lblcontact.Name = "Lblcontact"
         Lblcontact.Size = New Size(99, 23)
         Lblcontact.TabIndex = 26
@@ -222,7 +222,7 @@ Partial Class ViewGuest
         Checkoutlb.AutoSize = True
         Checkoutlb.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Checkoutlb.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        Checkoutlb.Location = New Point(276, 392)
+        Checkoutlb.Location = New Point(315, 413)
         Checkoutlb.Name = "Checkoutlb"
         Checkoutlb.Size = New Size(130, 23)
         Checkoutlb.TabIndex = 25
@@ -233,7 +233,7 @@ Partial Class ViewGuest
         checkinbtn.AutoSize = True
         checkinbtn.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         checkinbtn.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        checkinbtn.Location = New Point(131, 392)
+        checkinbtn.Location = New Point(170, 413)
         checkinbtn.Name = "checkinbtn"
         checkinbtn.Size = New Size(118, 23)
         checkinbtn.TabIndex = 24
@@ -244,7 +244,7 @@ Partial Class ViewGuest
         LblgGender.AutoSize = True
         LblgGender.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         LblgGender.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        LblgGender.Location = New Point(131, 212)
+        LblgGender.Location = New Point(170, 233)
         LblgGender.Name = "LblgGender"
         LblgGender.Size = New Size(66, 23)
         LblgGender.TabIndex = 23
@@ -255,7 +255,7 @@ Partial Class ViewGuest
         Lblgfirstname.AutoSize = True
         Lblgfirstname.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lblgfirstname.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        Lblgfirstname.Location = New Point(131, 113)
+        Lblgfirstname.Location = New Point(170, 134)
         Lblgfirstname.Name = "Lblgfirstname"
         Lblgfirstname.Size = New Size(93, 23)
         Lblgfirstname.TabIndex = 22
@@ -263,13 +263,13 @@ Partial Class ViewGuest
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Lblviewg)
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(820, 47)
+        Panel1.Size = New Size(948, 54)
         Panel1.TabIndex = 42
         ' 
         ' closebtn
@@ -290,11 +290,11 @@ Partial Class ViewGuest
         ' Lblviewg
         ' 
         Lblviewg.AutoSize = True
-        Lblviewg.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lblviewg.ForeColor = SystemColors.ControlLightLight
-        Lblviewg.Location = New Point(347, 9)
+        Lblviewg.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lblviewg.ForeColor = SystemColors.Window
+        Lblviewg.Location = New Point(419, 9)
         Lblviewg.Name = "Lblviewg"
-        Lblviewg.Size = New Size(126, 28)
+        Lblviewg.Size = New Size(148, 31)
         Lblviewg.TabIndex = 23
         Lblviewg.Text = "VIEW GUEST"
         ' 
@@ -302,7 +302,7 @@ Partial Class ViewGuest
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(820, 585)
+        ClientSize = New Size(948, 709)
         Controls.Add(Panel1)
         Controls.Add(Country_cmbbx)
         Controls.Add(cmbbx_genderG)
@@ -326,6 +326,7 @@ Partial Class ViewGuest
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 4, 3, 4)
         Name = "ViewGuest"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "ViewGuest"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()

@@ -46,7 +46,7 @@ Partial Class Revenue
         Panel1.Location = New Point(0, 0)
         Panel1.Margin = New Padding(3, 4, 3, 4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(192, 585)
+        Panel1.Size = New Size(192, 709)
         Panel1.TabIndex = 24
         ' 
         ' Button1
@@ -151,7 +151,7 @@ Partial Class Revenue
         closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         closebtn.FlatStyle = FlatStyle.Flat
         closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        closebtn.Location = New Point(761, 4)
+        closebtn.Location = New Point(889, 4)
         closebtn.Name = "closebtn"
         closebtn.Size = New Size(47, 35)
         closebtn.TabIndex = 25
@@ -162,7 +162,7 @@ Partial Class Revenue
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(820, 585)
+        ClientSize = New Size(948, 709)
         Controls.Add(closebtn)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None

@@ -70,9 +70,11 @@ Partial Class superadmin_login
         ' adminlogin_btn
         ' 
         adminlogin_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        adminlogin_btn.FlatAppearance.BorderSize = 0
-        adminlogin_btn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        adminlogin_btn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        adminlogin_btn.FlatAppearance.BorderColor = SystemColors.Window
+        adminlogin_btn.FlatAppearance.BorderSize = 2
+        adminlogin_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        adminlogin_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        adminlogin_btn.FlatStyle = FlatStyle.Flat
         adminlogin_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         adminlogin_btn.ForeColor = SystemColors.ControlLightLight
         adminlogin_btn.Location = New Point(178, 341)
@@ -90,7 +92,7 @@ Partial Class superadmin_login
         lbllink_cancel.DisabledLinkColor = Color.Silver
         lbllink_cancel.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lbllink_cancel.LinkColor = SystemColors.Window
-        lbllink_cancel.Location = New Point(223, 396)
+        lbllink_cancel.Location = New Point(232, 407)
         lbllink_cancel.Name = "lbllink_cancel"
         lbllink_cancel.Size = New Size(63, 25)
         lbllink_cancel.TabIndex = 10
@@ -100,8 +102,10 @@ Partial Class superadmin_login
         ' closebtn
         ' 
         closebtn.BackColor = Color.Transparent
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
+        closebtn.FlatAppearance.BorderColor = Color.White
+        closebtn.FlatAppearance.BorderSize = 2
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         closebtn.FlatStyle = FlatStyle.Flat
         closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         closebtn.ForeColor = SystemColors.Window

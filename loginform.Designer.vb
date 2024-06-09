@@ -31,6 +31,7 @@ Partial Class loginform
         CheckBoxshowpw = New CheckBox()
         closebtn = New Button()
         Panel1 = New Panel()
+        Label1 = New Label()
         SuspendLayout()
         ' 
         ' Lblusername
@@ -38,7 +39,7 @@ Partial Class loginform
         Lblusername.AutoSize = True
         Lblusername.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lblusername.ForeColor = Color.White
-        Lblusername.Location = New Point(108, 114)
+        Lblusername.Location = New Point(108, 124)
         Lblusername.Margin = New Padding(3)
         Lblusername.Name = "Lblusername"
         Lblusername.Size = New Size(104, 28)
@@ -59,7 +60,7 @@ Partial Class loginform
         ' txtbxusername
         ' 
         txtbxusername.Font = New Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtbxusername.Location = New Point(108, 149)
+        txtbxusername.Location = New Point(108, 159)
         txtbxusername.Margin = New Padding(3, 4, 3, 4)
         txtbxusername.Name = "txtbxusername"
         txtbxusername.Size = New Size(359, 35)
@@ -78,12 +79,14 @@ Partial Class loginform
         ' Btnlogin
         ' 
         Btnlogin.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        Btnlogin.FlatAppearance.BorderSize = 0
-        Btnlogin.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        Btnlogin.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        Btnlogin.FlatAppearance.BorderColor = Color.White
+        Btnlogin.FlatAppearance.BorderSize = 2
+        Btnlogin.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        Btnlogin.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        Btnlogin.FlatStyle = FlatStyle.Flat
         Btnlogin.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Btnlogin.ForeColor = SystemColors.ControlLightLight
-        Btnlogin.Location = New Point(193, 363)
+        Btnlogin.Location = New Point(193, 364)
         Btnlogin.Margin = New Padding(3, 4, 3, 4)
         Btnlogin.Name = "Btnlogin"
         Btnlogin.Size = New Size(177, 51)
@@ -94,12 +97,14 @@ Partial Class loginform
         ' admin_btn
         ' 
         admin_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        admin_btn.FlatAppearance.BorderSize = 0
-        admin_btn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        admin_btn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        admin_btn.FlatAppearance.BorderColor = Color.White
+        admin_btn.FlatAppearance.BorderSize = 2
+        admin_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        admin_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        admin_btn.FlatStyle = FlatStyle.Flat
         admin_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         admin_btn.ForeColor = SystemColors.ControlLightLight
-        admin_btn.Location = New Point(193, 422)
+        admin_btn.Location = New Point(193, 423)
         admin_btn.Margin = New Padding(3, 4, 3, 4)
         admin_btn.Name = "admin_btn"
         admin_btn.Size = New Size(177, 51)
@@ -123,8 +128,9 @@ Partial Class loginform
         ' closebtn
         ' 
         closebtn.BackColor = Color.Transparent
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
+        closebtn.FlatAppearance.BorderSize = 2
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         closebtn.FlatStyle = FlatStyle.Flat
         closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         closebtn.ForeColor = SystemColors.Window
@@ -144,12 +150,24 @@ Partial Class loginform
         Panel1.Size = New Size(23, 508)
         Panel1.TabIndex = 10
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = SystemColors.Window
+        Label1.Location = New Point(109, 43)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(197, 31)
+        Label1.TabIndex = 14
+        Label1.Text = "ACCOUNT LOGIN"
+        ' 
         ' Loginform
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         ClientSize = New Size(530, 508)
+        Controls.Add(Label1)
         Controls.Add(Panel1)
         Controls.Add(admin_btn)
         Controls.Add(closebtn)
@@ -178,4 +196,5 @@ Partial Class loginform
     Friend WithEvents closebtn As Button
     Friend WithEvents admin_btn As Button
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label1 As Label
 End Class

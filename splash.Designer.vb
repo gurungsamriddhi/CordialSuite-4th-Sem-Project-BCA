@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class splay
+Partial Class splash
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -42,8 +42,10 @@ Partial Class splay
         ' closebtn
         ' 
         closebtn.BackColor = Color.Transparent
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
+        closebtn.FlatAppearance.BorderColor = Color.White
+        closebtn.FlatAppearance.BorderSize = 2
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         closebtn.FlatStyle = FlatStyle.Flat
         closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         closebtn.ForeColor = SystemColors.Window
@@ -54,7 +56,7 @@ Partial Class splay
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
         ' 
-        ' splay
+        ' splash
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
@@ -64,7 +66,7 @@ Partial Class splay
         Controls.Add(Lbl_displayfp)
         ForeColor = SystemColors.Control
         FormBorderStyle = FormBorderStyle.None
-        Name = "splay"
+        Name = "splash"
         StartPosition = FormStartPosition.CenterScreen
         Text = "CordialSuite"
         ResumeLayout(False)

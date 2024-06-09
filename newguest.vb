@@ -11,8 +11,8 @@ Public Class Newguest_form
 
 
 
-    Private Sub Closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
-        Me.Dispose()
+    Private Sub Closebtn_Click(sender As Object, e As EventArgs)
+        Dispose
         End
 
     End Sub
@@ -69,6 +69,13 @@ Public Class Newguest_form
         Dim guest_email As String = Gemail_txtbx.Text
     End Sub
 
+    Private Sub LblgGender_Click(sender As Object, e As EventArgs) Handles LblgGender.Click
 
+    End Sub
+
+    Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
+        Me.Dispose()
+        end
+    End Sub
 End Class
 

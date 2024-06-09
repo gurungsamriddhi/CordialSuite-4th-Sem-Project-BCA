@@ -30,7 +30,7 @@ Partial Class addguestform
         searchtxtbx = New TextBox()
         searchbtn = New Button()
         Pnloptions = New Panel()
-        newguestbtn = New Button()
+        newguest_btn = New Button()
         guestlistbtn = New Button()
         pnlguestlist.SuspendLayout()
         CType(DataGridViewGuestlist, ComponentModel.ISupportInitialize).BeginInit()
@@ -46,9 +46,9 @@ Partial Class addguestform
         pnlguestlist.Controls.Add(searchtxtbx)
         pnlguestlist.Controls.Add(searchbtn)
         pnlguestlist.Dock = DockStyle.Fill
-        pnlguestlist.Location = New Point(158, 0)
+        pnlguestlist.Location = New Point(176, 0)
         pnlguestlist.Name = "pnlguestlist"
-        pnlguestlist.Size = New Size(662, 585)
+        pnlguestlist.Size = New Size(772, 709)
         pnlguestlist.TabIndex = 1
         ' 
         ' DataGridViewGuestlist
@@ -56,46 +56,48 @@ Partial Class addguestform
         DataGridViewGuestlist.AllowUserToOrderColumns = True
         DataGridViewGuestlist.BackgroundColor = SystemColors.ControlLight
         DataGridViewGuestlist.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewGuestlist.Location = New Point(6, 141)
+        DataGridViewGuestlist.Location = New Point(73, 199)
         DataGridViewGuestlist.Name = "DataGridViewGuestlist"
         DataGridViewGuestlist.RowHeadersWidth = 51
-        DataGridViewGuestlist.Size = New Size(640, 401)
+        DataGridViewGuestlist.Size = New Size(660, 461)
         DataGridViewGuestlist.TabIndex = 5
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Lblguestlist)
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(662, 50)
+        Panel1.Size = New Size(772, 50)
         Panel1.TabIndex = 4
         ' 
         ' closebtn
         ' 
-        closebtn.BackColor = SystemColors.ControlLightLight
-        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.BackColor = Color.Transparent
+        closebtn.FlatAppearance.BorderColor = Color.White
+        closebtn.FlatAppearance.BorderSize = 2
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold)
-        closebtn.Location = New Point(603, 5)
+        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = SystemColors.Window
+        closebtn.Location = New Point(726, 3)
         closebtn.Name = "closebtn"
-        closebtn.Size = New Size(47, 34)
-        closebtn.TabIndex = 24
+        closebtn.Size = New Size(43, 42)
+        closebtn.TabIndex = 12
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
         ' 
         ' Lblguestlist
         ' 
         Lblguestlist.AutoSize = True
-        Lblguestlist.Font = New Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Lblguestlist.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lblguestlist.ForeColor = SystemColors.ControlLightLight
-        Lblguestlist.Location = New Point(268, 11)
+        Lblguestlist.Location = New Point(331, 9)
         Lblguestlist.Name = "Lblguestlist"
-        Lblguestlist.Size = New Size(134, 28)
+        Lblguestlist.Size = New Size(136, 31)
         Lblguestlist.TabIndex = 1
         Lblguestlist.Text = "GUEST LIST"
         ' 
@@ -103,69 +105,72 @@ Partial Class addguestform
         ' 
         searchtxtbx.BackColor = SystemColors.ControlLightLight
         searchtxtbx.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        searchtxtbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        searchtxtbx.Location = New Point(192, 78)
+        searchtxtbx.ForeColor = Color.Black
+        searchtxtbx.Location = New Point(240, 143)
         searchtxtbx.Name = "searchtxtbx"
-        searchtxtbx.Size = New Size(234, 31)
+        searchtxtbx.Size = New Size(240, 31)
         searchtxtbx.TabIndex = 3
         ' 
         ' searchbtn
         ' 
-        searchbtn.BackColor = SystemColors.ControlLightLight
-        searchbtn.FlatAppearance.BorderSize = 0
-        searchbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        searchbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        searchbtn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        searchbtn.FlatAppearance.BorderColor = SystemColors.Window
+        searchbtn.FlatAppearance.BorderSize = 2
+        searchbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        searchbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         searchbtn.FlatStyle = FlatStyle.Flat
-        searchbtn.Font = New Font("Calisto MT", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        searchbtn.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        searchbtn.Location = New Point(451, 78)
+        searchbtn.Font = New Font("Calisto MT", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        searchbtn.ForeColor = SystemColors.Window
+        searchbtn.Location = New Point(514, 140)
         searchbtn.Name = "searchbtn"
-        searchbtn.Size = New Size(100, 31)
+        searchbtn.Size = New Size(100, 37)
         searchbtn.TabIndex = 2
         searchbtn.Text = "Search"
         searchbtn.UseVisualStyleBackColor = False
         ' 
         ' Pnloptions
         ' 
-        Pnloptions.BackColor = SystemColors.ControlLight
-        Pnloptions.Controls.Add(newguestbtn)
+        Pnloptions.BackColor = SystemColors.ButtonFace
+        Pnloptions.BorderStyle = BorderStyle.Fixed3D
+        Pnloptions.Controls.Add(newguest_btn)
         Pnloptions.Controls.Add(guestlistbtn)
         Pnloptions.Dock = DockStyle.Left
+        Pnloptions.Font = New Font("Segoe UI Emoji", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Pnloptions.Location = New Point(0, 0)
         Pnloptions.Name = "Pnloptions"
-        Pnloptions.Size = New Size(158, 585)
+        Pnloptions.Size = New Size(176, 709)
         Pnloptions.TabIndex = 0
         ' 
-        ' newguestbtn
+        ' newguest_btn
         ' 
-        newguestbtn.BackColor = SystemColors.ControlLightLight
-        newguestbtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        newguestbtn.FlatAppearance.BorderSize = 0
-        newguestbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        newguestbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        newguestbtn.FlatStyle = FlatStyle.Flat
-        newguestbtn.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
-        newguestbtn.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        newguestbtn.Location = New Point(0, 248)
-        newguestbtn.Name = "newguestbtn"
-        newguestbtn.Size = New Size(158, 36)
-        newguestbtn.TabIndex = 1
-        newguestbtn.Text = "Add New Guest"
-        newguestbtn.UseVisualStyleBackColor = False
+        newguest_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        newguest_btn.FlatAppearance.BorderColor = SystemColors.Window
+        newguest_btn.FlatAppearance.BorderSize = 2
+        newguest_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        newguest_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        newguest_btn.FlatStyle = FlatStyle.Flat
+        newguest_btn.Font = New Font("Segoe UI Emoji", 10.8F, FontStyle.Bold)
+        newguest_btn.ForeColor = SystemColors.Window
+        newguest_btn.Location = New Point(0, 318)
+        newguest_btn.Name = "newguest_btn"
+        newguest_btn.Size = New Size(176, 38)
+        newguest_btn.TabIndex = 1
+        newguest_btn.Text = "Add New Guest"
+        newguest_btn.UseVisualStyleBackColor = False
         ' 
         ' guestlistbtn
         ' 
-        guestlistbtn.BackColor = SystemColors.ControlLightLight
-        guestlistbtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        guestlistbtn.FlatAppearance.BorderSize = 0
-        guestlistbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        guestlistbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        guestlistbtn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        guestlistbtn.FlatAppearance.BorderColor = SystemColors.Window
+        guestlistbtn.FlatAppearance.BorderSize = 2
+        guestlistbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        guestlistbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         guestlistbtn.FlatStyle = FlatStyle.Flat
-        guestlistbtn.Font = New Font("Segoe UI Semibold", 10.2F, FontStyle.Bold)
-        guestlistbtn.ForeColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
-        guestlistbtn.Location = New Point(0, 197)
+        guestlistbtn.Font = New Font("Segoe UI Emoji", 10.8F, FontStyle.Bold)
+        guestlistbtn.ForeColor = SystemColors.Window
+        guestlistbtn.Location = New Point(0, 263)
         guestlistbtn.Name = "guestlistbtn"
-        guestlistbtn.Size = New Size(158, 31)
+        guestlistbtn.Size = New Size(176, 38)
         guestlistbtn.TabIndex = 0
         guestlistbtn.Text = "Guest List"
         guestlistbtn.UseVisualStyleBackColor = False
@@ -174,7 +179,7 @@ Partial Class addguestform
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(820, 585)
+        ClientSize = New Size(948, 709)
         Controls.Add(pnlguestlist)
         Controls.Add(Pnloptions)
         FormBorderStyle = FormBorderStyle.None
@@ -190,7 +195,7 @@ Partial Class addguestform
     End Sub
     Friend WithEvents pnlguestlist As Panel
     Friend WithEvents Pnloptions As Panel
-    Friend WithEvents newguestbtn As Button
+    Friend WithEvents newguest_btn As Button
     Friend WithEvents guestlistbtn As Button
     Friend WithEvents searchtxtbx As TextBox
     Friend WithEvents searchbtn As Button

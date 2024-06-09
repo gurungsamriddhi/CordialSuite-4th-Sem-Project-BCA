@@ -140,7 +140,6 @@ E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Resources.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Newguest_form.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Registerform.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Rooms.resources
-E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Splay.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Userdashboard.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.vbproj.GenerateResource.cache
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.GeneratedMSBuildEditorConfig.editorconfig
@@ -241,3 +240,5 @@ E:\NewCordialSuite\bin\Debug\net8.0-windows\System.Management.dll
 E:\NewCordialSuite\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.superadmin_login.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.superadmin_dashboard.resources
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.splash.resources
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.viewuser.resources

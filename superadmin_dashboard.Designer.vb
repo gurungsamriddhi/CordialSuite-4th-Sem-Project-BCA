@@ -22,50 +22,32 @@ Partial Class superadmin_dashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Panel1 = New Panel()
-        statusbtn = New Button()
+        Pnl_diffform = New Panel()
         closebtn = New Button()
         Panel2 = New Panel()
-        Panel3 = New Panel()
-        Panel1.SuspendLayout()
+        statusbtn = New Button()
+        Pnl_diffform.SuspendLayout()
         SuspendLayout()
         ' 
-        ' Panel1
+        ' Pnl_diffform
         ' 
-        Panel1.Controls.Add(Panel2)
-        Panel1.Controls.Add(statusbtn)
-        Panel1.Dock = DockStyle.Left
-        Panel1.Location = New Point(0, 0)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(231, 709)
-        Panel1.TabIndex = 6
-        ' 
-        ' statusbtn
-        ' 
-        statusbtn.BackColor = Color.Transparent
-        statusbtn.FlatAppearance.BorderColor = SystemColors.Window
-        statusbtn.FlatAppearance.BorderSize = 2
-        statusbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
-        statusbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
-        statusbtn.FlatStyle = FlatStyle.Flat
-        statusbtn.Font = New Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        statusbtn.ForeColor = SystemColors.Window
-        statusbtn.Location = New Point(6, 153)
-        statusbtn.Name = "statusbtn"
-        statusbtn.Size = New Size(219, 47)
-        statusbtn.TabIndex = 9
-        statusbtn.Text = "Register New User"
-        statusbtn.UseVisualStyleBackColor = False
+        Pnl_diffform.BackColor = SystemColors.Control
+        Pnl_diffform.Controls.Add(closebtn)
+        Pnl_diffform.Controls.Add(Panel2)
+        Pnl_diffform.Dock = DockStyle.Right
+        Pnl_diffform.Location = New Point(223, 0)
+        Pnl_diffform.Name = "Pnl_diffform"
+        Pnl_diffform.Size = New Size(948, 709)
+        Pnl_diffform.TabIndex = 6
         ' 
         ' closebtn
         ' 
         closebtn.BackColor = Color.Transparent
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
         closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
         closebtn.FlatStyle = FlatStyle.Flat
         closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        closebtn.ForeColor = SystemColors.Window
-        closebtn.Location = New Point(1101, 12)
+        closebtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        closebtn.Location = New Point(878, 12)
         closebtn.Name = "closebtn"
         closebtn.Size = New Size(58, 48)
         closebtn.TabIndex = 10
@@ -80,13 +62,22 @@ Partial Class superadmin_dashboard
         Panel2.Size = New Size(0, 0)
         Panel2.TabIndex = 10
         ' 
-        ' Panel3
+        ' statusbtn
         ' 
-        Panel3.Dock = DockStyle.Fill
-        Panel3.Location = New Point(231, 0)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(940, 709)
-        Panel3.TabIndex = 11
+        statusbtn.BackColor = Color.Transparent
+        statusbtn.FlatAppearance.BorderColor = SystemColors.Window
+        statusbtn.FlatAppearance.BorderSize = 2
+        statusbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        statusbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        statusbtn.FlatStyle = FlatStyle.Flat
+        statusbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        statusbtn.ForeColor = SystemColors.Window
+        statusbtn.Location = New Point(4, 199)
+        statusbtn.Name = "statusbtn"
+        statusbtn.Size = New Size(213, 47)
+        statusbtn.TabIndex = 9
+        statusbtn.Text = "Register New User"
+        statusbtn.UseVisualStyleBackColor = False
         ' 
         ' superadmin_dashboard
         ' 
@@ -94,21 +85,19 @@ Partial Class superadmin_dashboard
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         ClientSize = New Size(1171, 709)
-        Controls.Add(Panel3)
-        Controls.Add(closebtn)
-        Controls.Add(Panel1)
+        Controls.Add(statusbtn)
+        Controls.Add(Pnl_diffform)
         ForeColor = Color.Transparent
         FormBorderStyle = FormBorderStyle.None
         Name = "superadmin_dashboard"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Options"
-        Panel1.ResumeLayout(False)
+        Pnl_diffform.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
     Friend WithEvents label1 As label
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Pnl_diffform As Panel
     Friend WithEvents closebtn As Button
     Friend WithEvents statusbtn As Button
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel3 As Panel
 End Class

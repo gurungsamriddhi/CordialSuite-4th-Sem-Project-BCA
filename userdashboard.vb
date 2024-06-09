@@ -3,9 +3,9 @@
 
     Public Sub Switchpanel(ByVal panel As Form)
 
-        pnlhotel_status.Controls.Clear()
+        Pnl_diffform.Controls.Clear()
         panel.TopLevel = False
-        pnlhotel_status.Controls.Add(panel)
+        Pnl_diffform.Controls.Add(panel)
         panel.Show()
     End Sub
     Private Sub Addguestbtn_Click(sender As Object, e As EventArgs) Handles addguestbtn.Click
@@ -27,14 +27,9 @@
     End Sub
 
     Private Sub Statusbtn_Click(sender As Object, e As EventArgs) Handles statusbtn.Click
-        addguestform.Hide()
-        rooms.Hide()
-        checkin.Hide()
-        checkout.Hide()
-        billing.Hide()
+        Switchpanel(hotel_statususer)
 
-        pnlhotel_status.Controls.Clear()
-        pnlhotel_status.Show()
+
 
     End Sub
 
@@ -57,7 +52,11 @@
         End If
     End Sub
 
-    Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
+
+
+    Private Sub closebtn_Click_1(sender As Object, e As EventArgs) Handles closebtn.Click
         Me.Dispose()
+        End
+
     End Sub
 End Class

@@ -22,22 +22,24 @@ Partial Class billing
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Pnl_billing = New Panel()
+        Panel1 = New Panel()
         closebtn = New Button()
-        Lblbilling = New Label()
-        Pnl_billing.SuspendLayout()
+        Lbl_billing = New Label()
+        close_btn = New Button()
+        Panel1.SuspendLayout()
         SuspendLayout()
         ' 
-        ' Pnl_billing
+        ' Panel1
         ' 
-        Pnl_billing.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        Pnl_billing.Controls.Add(closebtn)
-        Pnl_billing.Controls.Add(Lblbilling)
-        Pnl_billing.Dock = DockStyle.Top
-        Pnl_billing.Location = New Point(0, 0)
-        Pnl_billing.Name = "Pnl_billing"
-        Pnl_billing.Size = New Size(820, 50)
-        Pnl_billing.TabIndex = 1
+        Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Panel1.Controls.Add(close_btn)
+        Panel1.Controls.Add(closebtn)
+        Panel1.Controls.Add(Lbl_billing)
+        Panel1.Dock = DockStyle.Top
+        Panel1.Location = New Point(0, 0)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(948, 54)
+        Panel1.TabIndex = 44
         ' 
         ' closebtn
         ' 
@@ -46,40 +48,59 @@ Partial Class billing
         closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold)
-        closebtn.Location = New Point(761, 8)
+        closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        closebtn.Location = New Point(431, 313)
         closebtn.Name = "closebtn"
-        closebtn.Size = New Size(47, 34)
-        closebtn.TabIndex = 25
+        closebtn.Size = New Size(47, 35)
+        closebtn.TabIndex = 23
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
         ' 
-        ' Lblbilling
+        ' Lbl_billing
         ' 
-        Lblbilling.AutoSize = True
-        Lblbilling.Font = New Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Lblbilling.ForeColor = SystemColors.ControlLightLight
-        Lblbilling.Location = New Point(373, 13)
-        Lblbilling.Name = "Lblbilling"
-        Lblbilling.Size = New Size(82, 24)
-        Lblbilling.TabIndex = 1
-        Lblbilling.Text = "BILLING"
+        Lbl_billing.AutoSize = True
+        Lbl_billing.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl_billing.ForeColor = SystemColors.Window
+        Lbl_billing.Location = New Point(424, 12)
+        Lbl_billing.Name = "Lbl_billing"
+        Lbl_billing.Size = New Size(101, 31)
+        Lbl_billing.TabIndex = 23
+        Lbl_billing.Text = "BILLING"
+        Lbl_billing.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' close_btn
+        ' 
+        close_btn.BackColor = Color.Transparent
+        close_btn.FlatAppearance.BorderColor = Color.White
+        close_btn.FlatAppearance.BorderSize = 2
+        close_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        close_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        close_btn.FlatStyle = FlatStyle.Flat
+        close_btn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        close_btn.ForeColor = SystemColors.Window
+        close_btn.Location = New Point(902, 3)
+        close_btn.Name = "close_btn"
+        close_btn.Size = New Size(43, 42)
+        close_btn.TabIndex = 25
+        close_btn.Text = "X"
+        close_btn.UseVisualStyleBackColor = False
         ' 
         ' billing
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(820, 585)
-        Controls.Add(Pnl_billing)
+        ClientSize = New Size(948, 709)
+        Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "billing"
         Text = "billing"
-        Pnl_billing.ResumeLayout(False)
-        Pnl_billing.PerformLayout()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents Pnl_billing As Panel
-    Friend WithEvents Lblbilling As Label
+    Friend WithEvents Panel1 As Panel
     Friend WithEvents closebtn As Button
+    Friend WithEvents Lbl_billing As Label
+    Friend WithEvents close_btn As Button
 End Class

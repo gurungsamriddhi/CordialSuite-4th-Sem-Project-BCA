@@ -16,6 +16,12 @@
     <Compile Update="checkout.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="hotel_statusaadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="hotel_statususer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="loginform.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -31,7 +37,7 @@
     <Compile Update="rooms.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="splay.vb">
+    <Compile Update="splash.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="superadminlogin.vb">
@@ -50,6 +56,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ViewGuest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="viewuser.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

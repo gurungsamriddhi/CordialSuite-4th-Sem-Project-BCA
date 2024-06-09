@@ -1,7 +1,7 @@
 ﻿Public Class checkin
 
-    Private Sub Closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
-        Me.Dispose()
+    Private Sub Closebtn_Click(sender As Object, e As EventArgs)
+        Dispose
         End
 
     End Sub
@@ -115,4 +115,9 @@
         End If
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Dispose()
+        End
+
+    End Sub
 End Class

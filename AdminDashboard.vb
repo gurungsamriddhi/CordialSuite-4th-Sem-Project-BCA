@@ -1,9 +1,9 @@
 ﻿Public Class AdminDashboard
     Public Sub Switchpanel(ByVal panel As Form)
 
-        pnlhotel_status.Controls.Clear()
+        Pnl_diffpanel.Controls.Clear()
         panel.TopLevel = False
-        pnlhotel_status.Controls.Add(panel)
+        Pnl_diffpanel.Controls.Add(panel)
         panel.Show()
 
 
@@ -16,7 +16,7 @@
     End Sub
 
     Private Sub statusbtn_Click(sender As Object, e As EventArgs) Handles statusbtn.Click
-
+        Switchpanel(hotel_statusaadmin n)
     End Sub
 
     Private Sub viewguestbtn_Click(sender As Object, e As EventArgs) Handles viewguestbtn.Click
@@ -50,21 +50,19 @@
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-        Dispose
-        End
-    End Sub
 
-    Private Sub Lbl_currentadmin_Click(sender As Object, e As EventArgs) Handles Lbl_currentadmin.Click
 
-    End Sub
+
 
     Private Sub AdminDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
-    Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
+
+
+    Private Sub closebtn_Click_1(sender As Object, e As EventArgs) Handles closebtn.Click
         Me.Dispose()
         End
+
     End Sub
 End Class
