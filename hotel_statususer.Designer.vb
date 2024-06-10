@@ -71,7 +71,7 @@ Partial Class hotel_statususer
         close_Btn.FlatStyle = FlatStyle.Flat
         close_Btn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         close_Btn.ForeColor = SystemColors.Window
-        close_Btn.Location = New Point(893, 9)
+        close_Btn.Location = New Point(900, 5)
         close_Btn.Name = "close_Btn"
         close_Btn.Size = New Size(43, 42)
         close_Btn.TabIndex = 24
@@ -319,7 +319,7 @@ Partial Class hotel_statususer
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(948, 709)
+        ClientSize = New Size(948, 750)
         Controls.Add(guestpanel2)
         Controls.Add(roompanel2)
         Controls.Add(roompanel1)

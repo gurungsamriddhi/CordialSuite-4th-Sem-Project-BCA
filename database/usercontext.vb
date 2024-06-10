@@ -13,31 +13,46 @@ Public Class UserContext
         modelBuilder.Entity(Of User)().HasIndex(Function(u) u.Username).IsUnique()
     End Sub
 
-    ' Create
+    ' Create using raw SQL
     Public Sub AddUser(user As User)
-        AddEntity(user)
-
+        Dim sql = "INSERT INTO users (first_name, last_name, address, phonenumber, age, gender, user_type, username, password) " &
+                  "VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)"
+        Database.ExecuteSqlRaw(sql, user.FirstName, user.LastName, user.Address, user.PhoneNumber, user.Age, user.Gender, user.UserType, user.Username, user.Password)
     End Sub
-    ' Read
+
+    ' Read using raw SQL
     Public Function GetUserById(userId As Integer) As User
-        Return Users.Find(userId)
+        Dim sql = "SELECT * FROM users WHERE id = @p0"
+        Return Users.FromSqlRaw(sql, userId).AsNoTracking().FirstOrDefault()
     End Function
 
+    ' Read all users using raw SQL
     Public Function GetAllUsers() As List(Of User)
-        Return Users.ToList()
+        Dim sql = "SELECT * FROM users"
+        Return Users.FromSqlRaw(sql).AsNoTracking().ToList()
     End Function
 
-    ' Update
+    ' Update using raw SQL
     Public Sub UpdateUser(user As User)
-        UpdateEntity(user)
+        Dim sql = "UPDATE users SET first_name = @p0, last_name = @p1, address = @p2, phonenumber = @p3, age = @p4, gender = @p5, user_type = @p6, username = @p7, password = @p8 WHERE id = @p9"
+        Database.ExecuteSqlRaw(sql, user.FirstName, user.LastName, user.Address, user.PhoneNumber, user.Age, user.Gender, user.UserType, user.Username, user.Password, user.UserID
+                               )
     End Sub
+
+    ' Get user by username using raw SQL
     Public Function GetUserByUsername(username As String) As User
-        Return Users.FirstOrDefault(Function(u) u.Username = username)
+        Dim sql = "SELECT * FROM users WHERE username = @p0"
+        Return Users.FromSqlRaw(sql, username).AsNoTracking().FirstOrDefault()
     End Function
 
-
-    ' Delete
+    ' Delete using raw SQL
     Public Sub DeleteUser(user As User)
-        DeleteEntity(user)
+        Dim sql = "DELETE FROM users WHERE id = @p0"
+        Database.ExecuteSqlRaw(sql, user.UserID)
     End Sub
+
+
+
+
+
 End Class

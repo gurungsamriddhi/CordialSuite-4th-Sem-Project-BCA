@@ -48,7 +48,7 @@ Partial Class addguestform
         pnlguestlist.Dock = DockStyle.Fill
         pnlguestlist.Location = New Point(176, 0)
         pnlguestlist.Name = "pnlguestlist"
-        pnlguestlist.Size = New Size(772, 709)
+        pnlguestlist.Size = New Size(772, 750)
         pnlguestlist.TabIndex = 1
         ' 
         ' DataGridViewGuestlist
@@ -56,10 +56,10 @@ Partial Class addguestform
         DataGridViewGuestlist.AllowUserToOrderColumns = True
         DataGridViewGuestlist.BackgroundColor = SystemColors.ControlLight
         DataGridViewGuestlist.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewGuestlist.Location = New Point(73, 199)
+        DataGridViewGuestlist.Location = New Point(56, 189)
         DataGridViewGuestlist.Name = "DataGridViewGuestlist"
         DataGridViewGuestlist.RowHeadersWidth = 51
-        DataGridViewGuestlist.Size = New Size(660, 461)
+        DataGridViewGuestlist.Size = New Size(676, 461)
         DataGridViewGuestlist.TabIndex = 5
         ' 
         ' Panel1
@@ -104,11 +104,11 @@ Partial Class addguestform
         ' searchtxtbx
         ' 
         searchtxtbx.BackColor = SystemColors.ControlLightLight
-        searchtxtbx.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        searchtxtbx.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         searchtxtbx.ForeColor = Color.Black
-        searchtxtbx.Location = New Point(240, 143)
+        searchtxtbx.Location = New Point(241, 121)
         searchtxtbx.Name = "searchtxtbx"
-        searchtxtbx.Size = New Size(240, 31)
+        searchtxtbx.Size = New Size(240, 38)
         searchtxtbx.TabIndex = 3
         ' 
         ' searchbtn
@@ -121,7 +121,7 @@ Partial Class addguestform
         searchbtn.FlatStyle = FlatStyle.Flat
         searchbtn.Font = New Font("Calisto MT", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         searchbtn.ForeColor = SystemColors.Window
-        searchbtn.Location = New Point(514, 140)
+        searchbtn.Location = New Point(515, 123)
         searchbtn.Name = "searchbtn"
         searchbtn.Size = New Size(100, 37)
         searchbtn.TabIndex = 2
@@ -138,7 +138,7 @@ Partial Class addguestform
         Pnloptions.Font = New Font("Segoe UI Emoji", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Pnloptions.Location = New Point(0, 0)
         Pnloptions.Name = "Pnloptions"
-        Pnloptions.Size = New Size(176, 709)
+        Pnloptions.Size = New Size(176, 750)
         Pnloptions.TabIndex = 0
         ' 
         ' newguest_btn
@@ -179,7 +179,7 @@ Partial Class addguestform
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(948, 709)
+        ClientSize = New Size(948, 750)
         Controls.Add(pnlguestlist)
         Controls.Add(Pnloptions)
         FormBorderStyle = FormBorderStyle.None

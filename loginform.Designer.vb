@@ -86,10 +86,10 @@ Partial Class loginform
         Btnlogin.FlatStyle = FlatStyle.Flat
         Btnlogin.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Btnlogin.ForeColor = SystemColors.ControlLightLight
-        Btnlogin.Location = New Point(193, 364)
+        Btnlogin.Location = New Point(196, 364)
         Btnlogin.Margin = New Padding(3, 4, 3, 4)
         Btnlogin.Name = "Btnlogin"
-        Btnlogin.Size = New Size(177, 51)
+        Btnlogin.Size = New Size(149, 45)
         Btnlogin.TabIndex = 4
         Btnlogin.Text = "Login"
         Btnlogin.UseVisualStyleBackColor = False
@@ -104,10 +104,10 @@ Partial Class loginform
         admin_btn.FlatStyle = FlatStyle.Flat
         admin_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         admin_btn.ForeColor = SystemColors.ControlLightLight
-        admin_btn.Location = New Point(193, 423)
+        admin_btn.Location = New Point(196, 423)
         admin_btn.Margin = New Padding(3, 4, 3, 4)
         admin_btn.Name = "admin_btn"
-        admin_btn.Size = New Size(177, 51)
+        admin_btn.Size = New Size(149, 45)
         admin_btn.TabIndex = 8
         admin_btn.Text = "Admin"
         admin_btn.UseVisualStyleBackColor = False

@@ -1,4 +1,6 @@
-﻿Public Class UserController
+﻿Imports Microsoft.EntityFrameworkCore
+
+Public Class UserController
     Private ReadOnly _userService As IUserService
 
     Public Sub New()
@@ -28,5 +30,10 @@
     End Function
     Public Function GetUsersDataTable() As DataTable
         Return _userService.getuserstable()
+    End Function
+
+
+    Public Function ValidateSuperAdminCredentials(username As String, password As String) As Boolean
+        Return _userService.ValidateSuperAdminCredentials(username, password)
     End Function
 End Class

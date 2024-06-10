@@ -1,11 +1,8 @@
 ﻿Public Class Rooms
-    Private Sub Lblroominfo_Click(sender As Object, e As EventArgs) Handles Lblroominfo.Click
 
-    End Sub
 
-    Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
-        Me.Dispose()
-        End
 
+    Private Sub close_Btn_Click(sender As Object, e As EventArgs) Handles close_Btn.Click
+        Application.Exit()
     End Sub
 End Class

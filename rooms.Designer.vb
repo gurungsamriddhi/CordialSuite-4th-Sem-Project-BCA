@@ -22,26 +22,83 @@ Partial Class rooms
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Panel1 = New Panel()
-        closebtn = New Button()
-        Lblroominfo = New Label()
         searchroom_txtbx = New TextBox()
-        searchroom_btn = New Button()
         Rooms_DGV = New DataGridView()
-        Panel1.SuspendLayout()
+        searchrooms_Btn = New Button()
+        Panel1 = New Panel()
+        close_Btn = New Button()
+        closebtn = New Button()
+        Lblviewg = New Label()
         CType(Rooms_DGV, ComponentModel.ISupportInitialize).BeginInit()
+        Panel1.SuspendLayout()
         SuspendLayout()
+        ' 
+        ' searchroom_txtbx
+        ' 
+        searchroom_txtbx.BackColor = SystemColors.ControlLightLight
+        searchroom_txtbx.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        searchroom_txtbx.ForeColor = Color.Black
+        searchroom_txtbx.Location = New Point(328, 111)
+        searchroom_txtbx.Name = "searchroom_txtbx"
+        searchroom_txtbx.Size = New Size(276, 38)
+        searchroom_txtbx.TabIndex = 4
+        ' 
+        ' Rooms_DGV
+        ' 
+        Rooms_DGV.AllowUserToOrderColumns = True
+        Rooms_DGV.BackgroundColor = SystemColors.ControlLight
+        Rooms_DGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Rooms_DGV.Location = New Point(100, 182)
+        Rooms_DGV.Name = "Rooms_DGV"
+        Rooms_DGV.RowHeadersWidth = 51
+        Rooms_DGV.Size = New Size(761, 454)
+        Rooms_DGV.TabIndex = 6
+        ' 
+        ' searchrooms_Btn
+        ' 
+        searchrooms_Btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        searchrooms_Btn.FlatAppearance.BorderColor = SystemColors.Window
+        searchrooms_Btn.FlatAppearance.BorderSize = 2
+        searchrooms_Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        searchrooms_Btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        searchrooms_Btn.FlatStyle = FlatStyle.Flat
+        searchrooms_Btn.Font = New Font("Calisto MT", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        searchrooms_Btn.ForeColor = SystemColors.Window
+        searchrooms_Btn.Location = New Point(610, 113)
+        searchrooms_Btn.Name = "searchrooms_Btn"
+        searchrooms_Btn.Size = New Size(100, 37)
+        searchrooms_Btn.TabIndex = 7
+        searchrooms_Btn.Text = "Search"
+        searchrooms_Btn.UseVisualStyleBackColor = False
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Panel1.Controls.Add(close_Btn)
         Panel1.Controls.Add(closebtn)
-        Panel1.Controls.Add(Lblroominfo)
+        Panel1.Controls.Add(Lblviewg)
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(820, 50)
-        Panel1.TabIndex = 0
+        Panel1.Size = New Size(948, 57)
+        Panel1.TabIndex = 44
+        ' 
+        ' close_Btn
+        ' 
+        close_Btn.BackColor = Color.Transparent
+        close_Btn.FlatAppearance.BorderColor = Color.White
+        close_Btn.FlatAppearance.BorderSize = 2
+        close_Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        close_Btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        close_Btn.FlatStyle = FlatStyle.Flat
+        close_Btn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        close_Btn.ForeColor = SystemColors.Window
+        close_Btn.Location = New Point(900, 5)
+        close_Btn.Name = "close_Btn"
+        close_Btn.Size = New Size(43, 42)
+        close_Btn.TabIndex = 24
+        close_Btn.Text = "X"
+        close_Btn.UseVisualStyleBackColor = False
         ' 
         ' closebtn
         ' 
@@ -50,85 +107,48 @@ Partial Class rooms
         closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 12F, FontStyle.Bold)
-        closebtn.Location = New Point(761, 8)
+        closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        closebtn.Location = New Point(431, 313)
         closebtn.Name = "closebtn"
-        closebtn.Size = New Size(47, 34)
-        closebtn.TabIndex = 27
+        closebtn.Size = New Size(47, 35)
+        closebtn.TabIndex = 23
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
         ' 
-        ' Lblroominfo
+        ' Lblviewg
         ' 
-        Lblroominfo.AutoSize = True
-        Lblroominfo.Font = New Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Lblroominfo.ForeColor = SystemColors.ControlLightLight
-        Lblroominfo.Location = New Point(314, 13)
-        Lblroominfo.Name = "Lblroominfo"
-        Lblroominfo.Size = New Size(200, 24)
-        Lblroominfo.TabIndex = 1
-        Lblroominfo.Text = "ROOM INFORMATION"
-        ' 
-        ' searchroom_txtbx
-        ' 
-        searchroom_txtbx.BackColor = SystemColors.ControlLightLight
-        searchroom_txtbx.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        searchroom_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        searchroom_txtbx.Location = New Point(289, 94)
-        searchroom_txtbx.Name = "searchroom_txtbx"
-        searchroom_txtbx.Size = New Size(234, 31)
-        searchroom_txtbx.TabIndex = 4
-        ' 
-        ' searchroom_btn
-        ' 
-        searchroom_btn.BackColor = SystemColors.ControlLightLight
-        searchroom_btn.FlatAppearance.BorderSize = 0
-        searchroom_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        searchroom_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        searchroom_btn.FlatStyle = FlatStyle.Flat
-        searchroom_btn.Font = New Font("Calisto MT", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        searchroom_btn.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        searchroom_btn.Location = New Point(556, 94)
-        searchroom_btn.Name = "searchroom_btn"
-        searchroom_btn.Size = New Size(100, 31)
-        searchroom_btn.TabIndex = 5
-        searchroom_btn.Text = "Search"
-        searchroom_btn.UseVisualStyleBackColor = False
-        ' 
-        ' Rooms_DGV
-        ' 
-        Rooms_DGV.AllowUserToOrderColumns = True
-        Rooms_DGV.BackgroundColor = SystemColors.ControlLight
-        Rooms_DGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Rooms_DGV.Location = New Point(105, 153)
-        Rooms_DGV.Name = "Rooms_DGV"
-        Rooms_DGV.RowHeadersWidth = 51
-        Rooms_DGV.Size = New Size(640, 401)
-        Rooms_DGV.TabIndex = 6
+        Lblviewg.AutoSize = True
+        Lblviewg.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lblviewg.ForeColor = SystemColors.Window
+        Lblviewg.Location = New Point(377, 9)
+        Lblviewg.Name = "Lblviewg"
+        Lblviewg.Size = New Size(264, 31)
+        Lblviewg.TabIndex = 23
+        Lblviewg.Text = "ROOMS INFORMATION"
         ' 
         ' rooms
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(820, 585)
-        Controls.Add(Rooms_DGV)
-        Controls.Add(searchroom_btn)
-        Controls.Add(searchroom_txtbx)
+        ClientSize = New Size(948, 750)
         Controls.Add(Panel1)
+        Controls.Add(searchrooms_Btn)
+        Controls.Add(Rooms_DGV)
+        Controls.Add(searchroom_txtbx)
         FormBorderStyle = FormBorderStyle.None
         Name = "rooms"
         Text = "rooms"
+        CType(Rooms_DGV, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
-        CType(Rooms_DGV, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
-
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Lblroominfo As Label
-    Friend WithEvents closebtn As Button
     Friend WithEvents searchroom_txtbx As TextBox
-    Friend WithEvents searchroom_btn As Button
     Friend WithEvents Rooms_DGV As DataGridView
+    Friend WithEvents searchrooms_Btn As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents close_Btn As Button
+    Friend WithEvents closebtn As Button
+    Friend WithEvents Lblviewg As Label
 End Class

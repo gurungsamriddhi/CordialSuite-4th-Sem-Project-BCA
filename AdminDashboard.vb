@@ -5,18 +5,12 @@
         panel.TopLevel = False
         Pnl_diffpanel.Controls.Add(panel)
         panel.Show()
-
-
-
     End Sub
 
 
-    Private Sub Labeladminname_Click(sender As Object, e As EventArgs) Handles Labeladminname.Click
-
-    End Sub
 
     Private Sub statusbtn_Click(sender As Object, e As EventArgs) Handles statusbtn.Click
-        Switchpanel(hotel_statusaadmin n)
+        Switchpanel(hotel_statusaadmin)
     End Sub
 
     Private Sub viewguestbtn_Click(sender As Object, e As EventArgs) Handles viewguestbtn.Click
@@ -61,8 +55,7 @@
 
 
     Private Sub closebtn_Click_1(sender As Object, e As EventArgs) Handles closebtn.Click
-        Me.Dispose()
-        End
+        Application.Exit()
 
     End Sub
 End Class

@@ -121,9 +121,7 @@ Public Class Registerform
         Else
             userController.AddUser(newUser)
             MessageBox.Show("User registered successfully.")
-            Dim loginform As New Loginform()
-            loginform.Show()
-            Me.Hide()
+
         End If
 
     End Sub

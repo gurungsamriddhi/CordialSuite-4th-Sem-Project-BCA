@@ -1,7 +1,7 @@
 ﻿Imports Microsoft.EntityFrameworkCore
 Imports Microsoft.EntityFrameworkCore.Metadata
 Imports Microsoft.EntityFrameworkCore.SqlServer
-
+Imports System.Data.SqlClient
 Public Class basedbcontext
     Inherits DbContext
 
@@ -29,4 +29,8 @@ Public Class basedbcontext
         MyBase.Entry(entity).State = EntityState.Modified
         SaveChanges()
     End Sub
+
+    Public Function ExecuteSqlRaw(query As String, ParamArray parameters As SqlParameter()) As Integer
+        Return Database.ExecuteSqlRaw(query, parameters)
+    End Function
 End Class

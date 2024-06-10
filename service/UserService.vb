@@ -12,7 +12,9 @@ Public Interface IUserService
     Function ValidateUsername(username As String) As Boolean
 
     Function authenticateuser(username As String, password As String) As String
+    Function ValidateSuperAdminCredentials(username As String, password As String) As Boolean
     Function getuserstable() As DataTable
+
 End Interface
 
 Public Class UserService
@@ -95,4 +97,17 @@ Public Class UserService
 
         Return table
     End Function
+
+    Public Function ValidateSuperAdminCredentials(username As String, password As String) As Boolean Implements IUserService.ValidateSuperAdminCredentials
+
+        Dim superAdmin = _context.GetUserByUsername(username)
+
+        If superAdmin IsNot Nothing AndAlso superAdmin.UserType = "superadmin" AndAlso superAdmin.Password = password Then
+            Return True
+        End If
+
+        Return False
+    End Function
+
+
 End Class

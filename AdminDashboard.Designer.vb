@@ -23,44 +23,59 @@ Partial Class AdminDashboard
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Pnl_diffpanel = New Panel()
-        closebtn = New Button()
+        logoutbtn = New Button()
+        Panel1 = New Panel()
         Labeladminname = New Label()
         Lbl_currentadmin = New Label()
-        logoutbtn = New Button()
+        closebtn = New Button()
         statusbtn = New Button()
         transactionbtn = New Button()
         viewempbtn = New Button()
         roomsbtn = New Button()
         viewguestbtn = New Button()
         Pnl_diffpanel.SuspendLayout()
+        Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Pnl_diffpanel
         ' 
         Pnl_diffpanel.BackColor = SystemColors.Control
+        Pnl_diffpanel.Controls.Add(logoutbtn)
+        Pnl_diffpanel.Controls.Add(Panel1)
         Pnl_diffpanel.Controls.Add(closebtn)
         Pnl_diffpanel.Dock = DockStyle.Right
-        Pnl_diffpanel.Location = New Point(223, 0)
+        Pnl_diffpanel.Location = New Point(255, 0)
         Pnl_diffpanel.Name = "Pnl_diffpanel"
-        Pnl_diffpanel.Size = New Size(948, 709)
+        Pnl_diffpanel.Size = New Size(945, 750)
         Pnl_diffpanel.TabIndex = 1
         ' 
-        ' closebtn
+        ' logoutbtn
         ' 
-        closebtn.BackColor = Color.Transparent
-        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        closebtn.FlatAppearance.BorderSize = 2
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        closebtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        closebtn.Location = New Point(902, 3)
-        closebtn.Name = "closebtn"
-        closebtn.Size = New Size(43, 42)
-        closebtn.TabIndex = 13
-        closebtn.Text = "X"
-        closebtn.UseVisualStyleBackColor = False
+        logoutbtn.BackColor = Color.Transparent
+        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
+        logoutbtn.FlatAppearance.BorderSize = 0
+        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatStyle = FlatStyle.Flat
+        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        logoutbtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        logoutbtn.Location = New Point(729, 3)
+        logoutbtn.Name = "logoutbtn"
+        logoutbtn.Size = New Size(111, 54)
+        logoutbtn.TabIndex = 9
+        logoutbtn.Text = "Log Out"
+        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
+        logoutbtn.UseVisualStyleBackColor = False
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Panel1.Controls.Add(Labeladminname)
+        Panel1.Controls.Add(Lbl_currentadmin)
+        Panel1.Location = New Point(0, 68)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(945, 99)
+        Panel1.TabIndex = 14
         ' 
         ' Labeladminname
         ' 
@@ -69,7 +84,7 @@ Partial Class AdminDashboard
         Labeladminname.FlatStyle = FlatStyle.Flat
         Labeladminname.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         Labeladminname.ForeColor = SystemColors.Window
-        Labeladminname.Location = New Point(52, 36)
+        Labeladminname.Location = New Point(155, 30)
         Labeladminname.Name = "Labeladminname"
         Labeladminname.Size = New Size(124, 27)
         Labeladminname.TabIndex = 11
@@ -83,29 +98,29 @@ Partial Class AdminDashboard
         Lbl_currentadmin.FlatStyle = FlatStyle.Flat
         Lbl_currentadmin.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         Lbl_currentadmin.ForeColor = SystemColors.Window
-        Lbl_currentadmin.Location = New Point(38, 9)
+        Lbl_currentadmin.Location = New Point(11, 30)
         Lbl_currentadmin.Name = "Lbl_currentadmin"
         Lbl_currentadmin.Size = New Size(138, 27)
         Lbl_currentadmin.TabIndex = 10
         Lbl_currentadmin.Text = "Current User:"
         Lbl_currentadmin.TextAlign = ContentAlignment.TopCenter
         ' 
-        ' logoutbtn
+        ' closebtn
         ' 
-        logoutbtn.BackColor = Color.Transparent
-        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
-        logoutbtn.FlatAppearance.BorderSize = 2
-        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        logoutbtn.FlatStyle = FlatStyle.Flat
-        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        logoutbtn.ForeColor = SystemColors.Window
-        logoutbtn.Location = New Point(27, 656)
-        logoutbtn.Name = "logoutbtn"
-        logoutbtn.Size = New Size(179, 41)
-        logoutbtn.TabIndex = 9
-        logoutbtn.Text = "Log Out"
-        logoutbtn.UseVisualStyleBackColor = False
+        closebtn.BackColor = Color.Transparent
+        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        closebtn.FlatAppearance.BorderSize = 2
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        closebtn.Location = New Point(899, 5)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(43, 42)
+        closebtn.TabIndex = 13
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
         ' 
         ' statusbtn
         ' 
@@ -117,9 +132,9 @@ Partial Class AdminDashboard
         statusbtn.FlatStyle = FlatStyle.Flat
         statusbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         statusbtn.ForeColor = SystemColors.Window
-        statusbtn.Location = New Point(12, 188)
+        statusbtn.Location = New Point(20, 186)
         statusbtn.Name = "statusbtn"
-        statusbtn.Size = New Size(193, 45)
+        statusbtn.Size = New Size(205, 45)
         statusbtn.TabIndex = 8
         statusbtn.Text = "Hotel Status"
         statusbtn.UseVisualStyleBackColor = False
@@ -134,9 +149,9 @@ Partial Class AdminDashboard
         transactionbtn.FlatStyle = FlatStyle.Flat
         transactionbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         transactionbtn.ForeColor = SystemColors.Window
-        transactionbtn.Location = New Point(13, 392)
+        transactionbtn.Location = New Point(20, 418)
         transactionbtn.Name = "transactionbtn"
-        transactionbtn.Size = New Size(193, 45)
+        transactionbtn.Size = New Size(205, 45)
         transactionbtn.TabIndex = 7
         transactionbtn.Text = "Transaction"
         transactionbtn.UseVisualStyleBackColor = False
@@ -151,9 +166,9 @@ Partial Class AdminDashboard
         viewempbtn.FlatStyle = FlatStyle.Flat
         viewempbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         viewempbtn.ForeColor = SystemColors.Window
-        viewempbtn.Location = New Point(13, 290)
+        viewempbtn.Location = New Point(20, 306)
         viewempbtn.Name = "viewempbtn"
-        viewempbtn.Size = New Size(193, 45)
+        viewempbtn.Size = New Size(205, 45)
         viewempbtn.TabIndex = 6
         viewempbtn.Text = "View Employee"
         viewempbtn.UseVisualStyleBackColor = False
@@ -168,9 +183,9 @@ Partial Class AdminDashboard
         roomsbtn.FlatStyle = FlatStyle.Flat
         roomsbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         roomsbtn.ForeColor = SystemColors.Window
-        roomsbtn.Location = New Point(13, 341)
+        roomsbtn.Location = New Point(20, 365)
         roomsbtn.Name = "roomsbtn"
-        roomsbtn.Size = New Size(193, 45)
+        roomsbtn.Size = New Size(205, 45)
         roomsbtn.TabIndex = 5
         roomsbtn.Text = "Rooms"
         roomsbtn.UseVisualStyleBackColor = False
@@ -185,9 +200,9 @@ Partial Class AdminDashboard
         viewguestbtn.FlatStyle = FlatStyle.Flat
         viewguestbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         viewguestbtn.ForeColor = SystemColors.Window
-        viewguestbtn.Location = New Point(12, 239)
+        viewguestbtn.Location = New Point(20, 246)
         viewguestbtn.Name = "viewguestbtn"
-        viewguestbtn.Size = New Size(194, 45)
+        viewguestbtn.Size = New Size(205, 45)
         viewguestbtn.TabIndex = 3
         viewguestbtn.Text = "View Guest"
         viewguestbtn.UseVisualStyleBackColor = False
@@ -197,14 +212,11 @@ Partial Class AdminDashboard
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        ClientSize = New Size(1171, 709)
-        Controls.Add(logoutbtn)
-        Controls.Add(Labeladminname)
+        ClientSize = New Size(1200, 750)
         Controls.Add(transactionbtn)
         Controls.Add(Pnl_diffpanel)
         Controls.Add(roomsbtn)
         Controls.Add(viewempbtn)
-        Controls.Add(Lbl_currentadmin)
         Controls.Add(statusbtn)
         Controls.Add(viewguestbtn)
         FormBorderStyle = FormBorderStyle.None
@@ -213,8 +225,9 @@ Partial Class AdminDashboard
         StartPosition = FormStartPosition.CenterScreen
         Text = "AdminDashboard"
         Pnl_diffpanel.ResumeLayout(False)
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents Pnl_diffpanel As Panel
@@ -227,4 +240,5 @@ Partial Class AdminDashboard
     Friend WithEvents roomsbtn As Button
     Friend WithEvents viewguestbtn As Button
     Friend WithEvents closebtn As Button
+    Friend WithEvents Panel1 As Panel
 End Class

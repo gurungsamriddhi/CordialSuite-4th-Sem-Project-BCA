@@ -1,19 +1,44 @@
-﻿Public Class superadmin_login
+﻿
 
+Public Class superadmin_login
 
+    Dim usercontroller As New UserController()
     Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
-        Me.Dispose()
-        End
+        Application.Exit()
+    End Sub
+
+
+
+
+    Private Sub showpw_checkbx_CheckedChanged(sender As Object, e As EventArgs) Handles showpw_checkbx.CheckedChanged
+        If showpw_checkbx.Checked Then
+            txtbx_adminpassword.UseSystemPasswordChar = False ' Show password
+        Else
+            txtbx_adminpassword.UseSystemPasswordChar = True ' Hide password
+        End If
+    End Sub
+
+    Private Sub lbllink_cancel_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lbllink_cancel.LinkClicked
+        Dim log As New Loginform()
+        log.Show()
+        Me.Hide()
     End Sub
 
     Private Sub adminlogin_btn_Click(sender As Object, e As EventArgs) Handles adminlogin_btn.Click
-        Dim superadmindashboad As New superadmin_dashboard()
-        superadmindashboad.Show()
-        Me.Hide()
+        Dim username As String = txtbx_adminusername.Text
+        Dim password As String = txtbx_adminpassword.Text
 
-    End Sub
 
-    Private Sub lbl_password_Click(sender As Object, e As EventArgs) Handles lbl_password.Click
 
+        If usercontroller.ValidateSuperAdminCredentials(username, password) Then
+
+            Dim superadminDashboardForm As New superadmin_dashboard()
+            superadminDashboardForm.Show()
+            superadminDashboardForm.lbl_superadminname.Text = username
+            Me.Hide()
+        Else
+            ' Superadmin login failed, show error message or handle accordingly
+            MessageBox.Show("Invalid username or password")
+        End If
     End Sub
 End Class

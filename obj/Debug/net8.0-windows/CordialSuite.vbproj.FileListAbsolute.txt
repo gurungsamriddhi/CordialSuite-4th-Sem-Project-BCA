@@ -242,3 +242,5 @@ E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.superadmin_login.resour
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.superadmin_dashboard.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.splash.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.viewuser.resources
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.hotel_statusaadmin.resources
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.hotel_statususer.resources
