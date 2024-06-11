@@ -286,6 +286,10 @@ Public Class Registerform
         Me.Dispose()
         End
     End Sub
+
+    Private Sub logoutbtn_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
 
 

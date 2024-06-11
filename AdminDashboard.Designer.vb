@@ -40,7 +40,6 @@ Partial Class AdminDashboard
         ' Pnl_diffpanel
         ' 
         Pnl_diffpanel.BackColor = SystemColors.Control
-        Pnl_diffpanel.Controls.Add(logoutbtn)
         Pnl_diffpanel.Controls.Add(Panel1)
         Pnl_diffpanel.Controls.Add(closebtn)
         Pnl_diffpanel.Dock = DockStyle.Right
@@ -53,18 +52,17 @@ Partial Class AdminDashboard
         ' 
         logoutbtn.BackColor = Color.Transparent
         logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
-        logoutbtn.FlatAppearance.BorderSize = 0
+        logoutbtn.FlatAppearance.BorderSize = 2
         logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         logoutbtn.FlatStyle = FlatStyle.Flat
         logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        logoutbtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        logoutbtn.Location = New Point(729, 3)
+        logoutbtn.ForeColor = SystemColors.Window
+        logoutbtn.Location = New Point(61, 690)
         logoutbtn.Name = "logoutbtn"
-        logoutbtn.Size = New Size(111, 54)
+        logoutbtn.Size = New Size(119, 48)
         logoutbtn.TabIndex = 9
         logoutbtn.Text = "Log Out"
-        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
         logoutbtn.UseVisualStyleBackColor = False
         ' 
         ' Panel1
@@ -213,6 +211,7 @@ Partial Class AdminDashboard
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         ClientSize = New Size(1200, 750)
+        Controls.Add(logoutbtn)
         Controls.Add(transactionbtn)
         Controls.Add(Pnl_diffpanel)
         Controls.Add(roomsbtn)

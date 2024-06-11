@@ -25,6 +25,7 @@ Partial Class addguestform
         pnlguestlist = New Panel()
         DataGridViewGuestlist = New DataGridView()
         Panel1 = New Panel()
+        logoutbtn = New Button()
         closebtn = New Button()
         Lblguestlist = New Label()
         searchtxtbx = New TextBox()
@@ -65,6 +66,7 @@ Partial Class addguestform
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Panel1.Controls.Add(logoutbtn)
         Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Lblguestlist)
         Panel1.Dock = DockStyle.Top
@@ -72,6 +74,24 @@ Partial Class addguestform
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(772, 50)
         Panel1.TabIndex = 4
+        ' 
+        ' logoutbtn
+        ' 
+        logoutbtn.BackColor = Color.Transparent
+        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
+        logoutbtn.FlatAppearance.BorderSize = 0
+        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatStyle = FlatStyle.Flat
+        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        logoutbtn.ForeColor = SystemColors.Window
+        logoutbtn.Location = New Point(620, 2)
+        logoutbtn.Name = "logoutbtn"
+        logoutbtn.Size = New Size(100, 47)
+        logoutbtn.TabIndex = 48
+        logoutbtn.Text = "Log Out"
+        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
+        logoutbtn.UseVisualStyleBackColor = False
         ' 
         ' closebtn
         ' 
@@ -203,4 +223,5 @@ Partial Class addguestform
     Friend WithEvents Lblguestlist As Label
     Friend WithEvents DataGridViewGuestlist As DataGridView
     Friend WithEvents closebtn As Button
+    Friend WithEvents logoutbtn As Button
 End Class

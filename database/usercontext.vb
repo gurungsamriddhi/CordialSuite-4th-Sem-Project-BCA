@@ -13,7 +13,7 @@ Public Class UserContext
         modelBuilder.Entity(Of User)().HasIndex(Function(u) u.Username).IsUnique()
     End Sub
 
-    ' Create using raw SQL
+    ' Create using raw SQL 
     Public Sub AddUser(user As User)
         Dim sql = "INSERT INTO users (first_name, last_name, address, phonenumber, age, gender, user_type, username, password) " &
                   "VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)"
@@ -52,7 +52,24 @@ Public Class UserContext
     End Sub
 
 
+    Public Function SelectUsers() As List(Of User)
+        Dim userList As New List(Of User)()
 
+        Try
+            Dim sql = "SELECT id, user_type, username, password FROM users WHERE user_type IN ('admin', 'user')"
 
+            ' Execute the SQL query
+            Database.ExecuteSqlRaw(sql)
+
+            ' If the query is executed successfully, retrieve the data and store it in the list
+            userList = Users.FromSqlRaw(sql).AsNoTracking().ToList()
+        Catch ex As Exception
+            ' Handle exception (e.g., log the error, show a message to the user)
+            Console.WriteLine("Error retrieving users: " & ex.Message)
+        End Try
+
+        ' Return the list of users
+        Return userList
+    End Function
 
 End Class

@@ -28,12 +28,16 @@ Public Class UserController
         Return _userService.authenticateuser(username, password)
 
     End Function
-    Public Function GetUsersDataTable() As DataTable
-        Return _userService.getuserstable()
-    End Function
 
+    Public Function GetUsers() As List(Of User)
+        Return _userService.GetAllUsers()
+    End Function
 
     Public Function ValidateSuperAdminCredentials(username As String, password As String) As Boolean
         Return _userService.ValidateSuperAdminCredentials(username, password)
+    End Function
+
+    Public Function GetAllUsers() As List(Of User)
+        Return _UserService.GetUsers()
     End Function
 End Class

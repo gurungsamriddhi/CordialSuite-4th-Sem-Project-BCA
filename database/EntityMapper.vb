@@ -1,7 +1,5 @@
-﻿Imports Microsoft.EntityFrameworkCore
-Imports Microsoft.EntityFrameworkCore.Metadata
-Imports Microsoft.EntityFrameworkCore.SqlServer
-Imports System.Data.SqlClient
+﻿Imports System.Data.SqlClient
+Imports Microsoft.EntityFrameworkCore
 Public Class basedbcontext
     Inherits DbContext
 

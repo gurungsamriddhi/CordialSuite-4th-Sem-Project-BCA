@@ -22,41 +22,55 @@ Partial Class Viewemployee
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        editEMP_btn = New Button()
-        Pnl_Viewemployee = New Panel()
-        closebtn = New Button()
-        Lblviewemp = New Label()
         DGV_viewemployee = New DataGridView()
-        Pnl_Viewemployee.SuspendLayout()
+        Panel1 = New Panel()
+        close_Btn = New Button()
+        closebtn = New Button()
+        Lblviewg = New Label()
+        edit_btn = New Button()
+        logoutbtn = New Button()
         CType(DGV_viewemployee, ComponentModel.ISupportInitialize).BeginInit()
+        Panel1.SuspendLayout()
         SuspendLayout()
         ' 
-        ' editEMP_btn
+        ' DGV_viewemployee
         ' 
-        editEMP_btn.BackColor = SystemColors.ControlLightLight
-        editEMP_btn.FlatAppearance.BorderColor = SystemColors.ButtonShadow
-        editEMP_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        editEMP_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        editEMP_btn.FlatStyle = FlatStyle.Flat
-        editEMP_btn.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        editEMP_btn.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        editEMP_btn.Location = New Point(380, 501)
-        editEMP_btn.Name = "editEMP_btn"
-        editEMP_btn.Size = New Size(106, 41)
-        editEMP_btn.TabIndex = 60
-        editEMP_btn.Text = "Edit"
-        editEMP_btn.UseVisualStyleBackColor = False
+        DGV_viewemployee.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DGV_viewemployee.Location = New Point(36, 138)
+        DGV_viewemployee.Name = "DGV_viewemployee"
+        DGV_viewemployee.RowHeadersWidth = 51
+        DGV_viewemployee.Size = New Size(873, 354)
+        DGV_viewemployee.TabIndex = 62
         ' 
-        ' Pnl_Viewemployee
+        ' Panel1
         ' 
-        Pnl_Viewemployee.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        Pnl_Viewemployee.Controls.Add(closebtn)
-        Pnl_Viewemployee.Controls.Add(Lblviewemp)
-        Pnl_Viewemployee.Dock = DockStyle.Top
-        Pnl_Viewemployee.Location = New Point(0, 0)
-        Pnl_Viewemployee.Name = "Pnl_Viewemployee"
-        Pnl_Viewemployee.Size = New Size(820, 50)
-        Pnl_Viewemployee.TabIndex = 61
+        Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Panel1.Controls.Add(logoutbtn)
+        Panel1.Controls.Add(close_Btn)
+        Panel1.Controls.Add(closebtn)
+        Panel1.Controls.Add(Lblviewg)
+        Panel1.Dock = DockStyle.Top
+        Panel1.Location = New Point(0, 0)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(948, 57)
+        Panel1.TabIndex = 63
+        ' 
+        ' close_Btn
+        ' 
+        close_Btn.BackColor = Color.Transparent
+        close_Btn.FlatAppearance.BorderColor = Color.White
+        close_Btn.FlatAppearance.BorderSize = 2
+        close_Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        close_Btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        close_Btn.FlatStyle = FlatStyle.Flat
+        close_Btn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        close_Btn.ForeColor = SystemColors.Window
+        close_Btn.Location = New Point(902, 3)
+        close_Btn.Name = "close_Btn"
+        close_Btn.Size = New Size(43, 42)
+        close_Btn.TabIndex = 24
+        close_Btn.Text = "X"
+        close_Btn.UseVisualStyleBackColor = False
         ' 
         ' closebtn
         ' 
@@ -66,53 +80,82 @@ Partial Class Viewemployee
         closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         closebtn.FlatStyle = FlatStyle.Flat
         closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        closebtn.Location = New Point(761, 9)
+        closebtn.Location = New Point(431, 313)
         closebtn.Name = "closebtn"
         closebtn.Size = New Size(47, 35)
         closebtn.TabIndex = 23
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
         ' 
-        ' Lblviewemp
+        ' Lblviewg
         ' 
-        Lblviewemp.AutoSize = True
-        Lblviewemp.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lblviewemp.ForeColor = SystemColors.ControlLightLight
-        Lblviewemp.Location = New Point(329, 11)
-        Lblviewemp.Name = "Lblviewemp"
-        Lblviewemp.Size = New Size(162, 28)
-        Lblviewemp.TabIndex = 23
-        Lblviewemp.Text = "VIEW EMPLOYEE"
+        Lblviewg.AutoSize = True
+        Lblviewg.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lblviewg.ForeColor = SystemColors.Window
+        Lblviewg.Location = New Point(377, 9)
+        Lblviewg.Name = "Lblviewg"
+        Lblviewg.Size = New Size(204, 31)
+        Lblviewg.TabIndex = 23
+        Lblviewg.Text = "VIEW EMPLOYEES"
         ' 
-        ' DGV_viewemployee
+        ' edit_btn
         ' 
-        DGV_viewemployee.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DGV_viewemployee.Location = New Point(49, 115)
-        DGV_viewemployee.Name = "DGV_viewemployee"
-        DGV_viewemployee.RowHeadersWidth = 51
-        DGV_viewemployee.Size = New Size(722, 354)
-        DGV_viewemployee.TabIndex = 62
+        edit_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        edit_btn.FlatAppearance.BorderColor = SystemColors.Window
+        edit_btn.FlatAppearance.BorderSize = 2
+        edit_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        edit_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        edit_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        edit_btn.FlatStyle = FlatStyle.Flat
+        edit_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
+        edit_btn.ForeColor = SystemColors.ControlLightLight
+        edit_btn.Location = New Point(399, 601)
+        edit_btn.Name = "edit_btn"
+        edit_btn.Size = New Size(143, 58)
+        edit_btn.TabIndex = 64
+        edit_btn.Text = "Edit"
+        edit_btn.UseVisualStyleBackColor = False
+        ' 
+        ' logoutbtn
+        ' 
+        logoutbtn.BackColor = Color.Transparent
+        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
+        logoutbtn.FlatAppearance.BorderSize = 0
+        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatStyle = FlatStyle.Flat
+        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        logoutbtn.ForeColor = SystemColors.Window
+        logoutbtn.Location = New Point(796, 3)
+        logoutbtn.Name = "logoutbtn"
+        logoutbtn.Size = New Size(100, 51)
+        logoutbtn.TabIndex = 65
+        logoutbtn.Text = "Log Out"
+        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
+        logoutbtn.UseVisualStyleBackColor = False
         ' 
         ' Viewemployee
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(820, 585)
+        ClientSize = New Size(948, 709)
+        Controls.Add(edit_btn)
+        Controls.Add(Panel1)
         Controls.Add(DGV_viewemployee)
-        Controls.Add(Pnl_Viewemployee)
-        Controls.Add(editEMP_btn)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 4, 3, 4)
         Name = "Viewemployee"
         Text = "Viewemployee"
-        Pnl_Viewemployee.ResumeLayout(False)
-        Pnl_Viewemployee.PerformLayout()
         CType(DGV_viewemployee, ComponentModel.ISupportInitialize).EndInit()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
         ResumeLayout(False)
     End Sub
-    Friend WithEvents editEMP_btn As Button
-    Friend WithEvents Pnl_Viewemployee As Panel
-    Friend WithEvents closebtn As Button
-    Friend WithEvents Lblviewemp As Label
     Friend WithEvents DGV_viewemployee As DataGridView
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents close_Btn As Button
+    Friend WithEvents closebtn As Button
+    Friend WithEvents Lblviewg As Label
+    Friend WithEvents edit_btn As Button
+    Friend WithEvents logoutbtn As Button
 End Class

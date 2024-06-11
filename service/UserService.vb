@@ -1,6 +1,7 @@
 ﻿
 Imports System.Diagnostics.Eventing.Reader
 Imports System.IO
+Imports Microsoft.EntityFrameworkCore
 
 Public Interface IUserService
     Sub AddUser(user As User)  'bydefault all the functions and sub procedures becomes public also only contains declarations 
@@ -13,7 +14,8 @@ Public Interface IUserService
 
     Function authenticateuser(username As String, password As String) As String
     Function ValidateSuperAdminCredentials(username As String, password As String) As Boolean
-    Function getuserstable() As DataTable
+    Function GetUsers() As List(Of User)
+
 
 End Interface
 
@@ -78,26 +80,6 @@ Public Class UserService
     End Function
 
 
-    Public Function GetUsersTable() As DataTable Implements IUserService.getuserstable
-        Dim users = _context.Users.ToList()
-
-        Dim table As New DataTable()
-        table.Columns.Add("UserID", GetType(Integer))
-        table.Columns.Add("FirstName", GetType(String))
-        table.Columns.Add("LastName", GetType(String))
-        table.Columns.Add("Address", GetType(String))
-        table.Columns.Add("PhoneNumber", GetType(String))
-        table.Columns.Add("Gender", GetType(String))
-        table.Columns.Add("Username", GetType(String))
-        table.Columns.Add("Password", GetType(String))
-
-        For Each user In users
-            table.Rows.Add(user.UserID, user.FirstName, user.LastName, user.Address, user.PhoneNumber, user.Gender, user.Username, user.Password)
-        Next
-
-        Return table
-    End Function
-
     Public Function ValidateSuperAdminCredentials(username As String, password As String) As Boolean Implements IUserService.ValidateSuperAdminCredentials
 
         Dim superAdmin = _context.GetUserByUsername(username)
@@ -109,5 +91,9 @@ Public Class UserService
         Return False
     End Function
 
+
+    Public Function GetUsers() As List(Of User) Implements IUserService.GetUsers
+        Return _context.SelectUsers()
+    End Function
 
 End Class

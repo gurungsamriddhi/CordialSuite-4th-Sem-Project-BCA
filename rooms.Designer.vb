@@ -29,6 +29,7 @@ Partial Class rooms
         close_Btn = New Button()
         closebtn = New Button()
         Lblviewg = New Label()
+        logoutbtn = New Button()
         CType(Rooms_DGV, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         SuspendLayout()
@@ -74,6 +75,7 @@ Partial Class rooms
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Panel1.Controls.Add(logoutbtn)
         Panel1.Controls.Add(close_Btn)
         Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Lblviewg)
@@ -126,6 +128,24 @@ Partial Class rooms
         Lblviewg.TabIndex = 23
         Lblviewg.Text = "ROOMS INFORMATION"
         ' 
+        ' logoutbtn
+        ' 
+        logoutbtn.BackColor = Color.Transparent
+        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
+        logoutbtn.FlatAppearance.BorderSize = 0
+        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatStyle = FlatStyle.Flat
+        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        logoutbtn.ForeColor = SystemColors.Window
+        logoutbtn.Location = New Point(783, 3)
+        logoutbtn.Name = "logoutbtn"
+        logoutbtn.Size = New Size(100, 50)
+        logoutbtn.TabIndex = 49
+        logoutbtn.Text = "Log Out"
+        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
+        logoutbtn.UseVisualStyleBackColor = False
+        ' 
         ' rooms
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -151,4 +171,5 @@ Partial Class rooms
     Friend WithEvents close_Btn As Button
     Friend WithEvents closebtn As Button
     Friend WithEvents Lblviewg As Label
+    Friend WithEvents logoutbtn As Button
 End Class

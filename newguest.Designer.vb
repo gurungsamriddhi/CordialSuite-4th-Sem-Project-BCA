@@ -55,6 +55,7 @@ Partial Class newguest_form
         close_btn = New Button()
         closebtn = New Button()
         Lblviewg = New Label()
+        logoutbtn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -387,6 +388,7 @@ Partial Class newguest_form
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Panel1.Controls.Add(logoutbtn)
         Panel1.Controls.Add(close_btn)
         Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Lblviewg)
@@ -438,6 +440,24 @@ Partial Class newguest_form
         Lblviewg.Size = New Size(141, 31)
         Lblviewg.TabIndex = 23
         Lblviewg.Text = "ADD GUEST"
+        ' 
+        ' logoutbtn
+        ' 
+        logoutbtn.BackColor = Color.Transparent
+        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
+        logoutbtn.FlatAppearance.BorderSize = 0
+        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatStyle = FlatStyle.Flat
+        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        logoutbtn.ForeColor = SystemColors.Window
+        logoutbtn.Location = New Point(620, 0)
+        logoutbtn.Name = "logoutbtn"
+        logoutbtn.Size = New Size(100, 51)
+        logoutbtn.TabIndex = 48
+        logoutbtn.Text = "Log Out"
+        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
+        logoutbtn.UseVisualStyleBackColor = False
         ' 
         ' newguest_form
         ' 
@@ -517,4 +537,5 @@ Partial Class newguest_form
     Friend WithEvents closebtn As Button
     Friend WithEvents Lblviewg As Label
     Friend WithEvents close_btn As Button
+    Friend WithEvents logoutbtn As Button
 End Class

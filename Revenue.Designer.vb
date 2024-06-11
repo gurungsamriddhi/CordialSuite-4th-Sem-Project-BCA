@@ -30,12 +30,13 @@ Partial Class Revenue
         combobxperiod = New ComboBox()
         LblgGender = New Label()
         closebtn = New Button()
+        logoutbtn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
+        Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         Panel1.Controls.Add(Button1)
         Panel1.Controls.Add(Button2)
         Panel1.Controls.Add(Button3)
@@ -51,14 +52,14 @@ Partial Class Revenue
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Button1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         Button1.FlatAppearance.BorderColor = SystemColors.Control
         Button1.FlatAppearance.BorderSize = 2
-        Button1.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        Button1.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        Button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        Button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Tahoma", 10.8F)
-        Button1.ForeColor = SystemColors.Control
+        Button1.ForeColor = SystemColors.Window
         Button1.Location = New Point(8, 188)
         Button1.Name = "Button1"
         Button1.Size = New Size(166, 40)
@@ -68,14 +69,14 @@ Partial Class Revenue
         ' 
         ' Button2
         ' 
-        Button2.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Button2.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         Button2.FlatAppearance.BorderColor = SystemColors.Control
         Button2.FlatAppearance.BorderSize = 2
-        Button2.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        Button2.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        Button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        Button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         Button2.FlatStyle = FlatStyle.Flat
         Button2.Font = New Font("Tahoma", 10.8F)
-        Button2.ForeColor = SystemColors.Control
+        Button2.ForeColor = SystemColors.Window
         Button2.Location = New Point(8, 325)
         Button2.Name = "Button2"
         Button2.Size = New Size(166, 40)
@@ -85,14 +86,14 @@ Partial Class Revenue
         ' 
         ' Button3
         ' 
-        Button3.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Button3.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         Button3.FlatAppearance.BorderColor = SystemColors.Control
         Button3.FlatAppearance.BorderSize = 2
-        Button3.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        Button3.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        Button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        Button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         Button3.FlatStyle = FlatStyle.Flat
         Button3.Font = New Font("Tahoma", 10.8F)
-        Button3.ForeColor = SystemColors.Control
+        Button3.ForeColor = SystemColors.Window
         Button3.Location = New Point(8, 280)
         Button3.Name = "Button3"
         Button3.Size = New Size(166, 40)
@@ -102,14 +103,14 @@ Partial Class Revenue
         ' 
         ' Button5
         ' 
-        Button5.BackColor = Color.FromArgb(CByte(10), CByte(7), CByte(46))
+        Button5.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         Button5.FlatAppearance.BorderColor = SystemColors.Control
         Button5.FlatAppearance.BorderSize = 2
-        Button5.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        Button5.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        Button5.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        Button5.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         Button5.FlatStyle = FlatStyle.Flat
         Button5.Font = New Font("Tahoma", 10.8F)
-        Button5.ForeColor = SystemColors.Control
+        Button5.ForeColor = SystemColors.Window
         Button5.Location = New Point(8, 233)
         Button5.Name = "Button5"
         Button5.RightToLeft = RightToLeft.No
@@ -145,24 +146,42 @@ Partial Class Revenue
         ' 
         ' closebtn
         ' 
-        closebtn.BackColor = SystemColors.ControlLightLight
-        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        closebtn.BackColor = Color.Transparent
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
         closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        closebtn.Location = New Point(889, 4)
+        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        closebtn.Location = New Point(884, 7)
         closebtn.Name = "closebtn"
-        closebtn.Size = New Size(47, 35)
-        closebtn.TabIndex = 25
+        closebtn.Size = New Size(58, 48)
+        closebtn.TabIndex = 28
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
+        ' 
+        ' logoutbtn
+        ' 
+        logoutbtn.BackColor = Color.Transparent
+        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
+        logoutbtn.FlatAppearance.BorderSize = 0
+        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatStyle = FlatStyle.Flat
+        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        logoutbtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        logoutbtn.Location = New Point(778, 7)
+        logoutbtn.Name = "logoutbtn"
+        logoutbtn.Size = New Size(100, 48)
+        logoutbtn.TabIndex = 49
+        logoutbtn.Text = "Log Out"
+        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
+        logoutbtn.UseVisualStyleBackColor = False
         ' 
         ' Revenue
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(948, 709)
+        Controls.Add(logoutbtn)
         Controls.Add(closebtn)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
@@ -182,4 +201,5 @@ Partial Class Revenue
     Friend WithEvents combobxperiod As ComboBox
     Friend WithEvents LblgGender As Label
     Friend WithEvents closebtn As Button
+    Friend WithEvents logoutbtn As Button
 End Class

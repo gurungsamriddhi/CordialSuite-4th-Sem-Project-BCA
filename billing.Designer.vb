@@ -23,15 +23,17 @@ Partial Class billing
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panel1 = New Panel()
+        close_btn = New Button()
         closebtn = New Button()
         Lbl_billing = New Label()
-        close_btn = New Button()
+        logoutbtn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Panel1.Controls.Add(logoutbtn)
         Panel1.Controls.Add(close_btn)
         Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Lbl_billing)
@@ -40,6 +42,23 @@ Partial Class billing
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(948, 54)
         Panel1.TabIndex = 44
+        ' 
+        ' close_btn
+        ' 
+        close_btn.BackColor = Color.Transparent
+        close_btn.FlatAppearance.BorderColor = Color.White
+        close_btn.FlatAppearance.BorderSize = 2
+        close_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        close_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        close_btn.FlatStyle = FlatStyle.Flat
+        close_btn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        close_btn.ForeColor = SystemColors.Window
+        close_btn.Location = New Point(902, 3)
+        close_btn.Name = "close_btn"
+        close_btn.Size = New Size(43, 42)
+        close_btn.TabIndex = 25
+        close_btn.Text = "X"
+        close_btn.UseVisualStyleBackColor = False
         ' 
         ' closebtn
         ' 
@@ -68,22 +87,23 @@ Partial Class billing
         Lbl_billing.Text = "BILLING"
         Lbl_billing.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' close_btn
+        ' logoutbtn
         ' 
-        close_btn.BackColor = Color.Transparent
-        close_btn.FlatAppearance.BorderColor = Color.White
-        close_btn.FlatAppearance.BorderSize = 2
-        close_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        close_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        close_btn.FlatStyle = FlatStyle.Flat
-        close_btn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        close_btn.ForeColor = SystemColors.Window
-        close_btn.Location = New Point(902, 3)
-        close_btn.Name = "close_btn"
-        close_btn.Size = New Size(43, 42)
-        close_btn.TabIndex = 25
-        close_btn.Text = "X"
-        close_btn.UseVisualStyleBackColor = False
+        logoutbtn.BackColor = Color.Transparent
+        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
+        logoutbtn.FlatAppearance.BorderSize = 0
+        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatStyle = FlatStyle.Flat
+        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        logoutbtn.ForeColor = SystemColors.Window
+        logoutbtn.Location = New Point(796, 3)
+        logoutbtn.Name = "logoutbtn"
+        logoutbtn.Size = New Size(100, 48)
+        logoutbtn.TabIndex = 50
+        logoutbtn.Text = "Log Out"
+        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
+        logoutbtn.UseVisualStyleBackColor = False
         ' 
         ' billing
         ' 
@@ -103,4 +123,5 @@ Partial Class billing
     Friend WithEvents closebtn As Button
     Friend WithEvents Lbl_billing As Label
     Friend WithEvents close_btn As Button
+    Friend WithEvents logoutbtn As Button
 End Class

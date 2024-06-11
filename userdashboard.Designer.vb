@@ -42,7 +42,6 @@ Partial Class userdashboard
         ' 
         Pnl_diffform.BackColor = SystemColors.Control
         Pnl_diffform.Controls.Add(Panel1)
-        Pnl_diffform.Controls.Add(logoutbtn)
         Pnl_diffform.Controls.Add(closebtn)
         Pnl_diffform.Dock = DockStyle.Right
         Pnl_diffform.Location = New Point(252, 0)
@@ -96,10 +95,10 @@ Partial Class userdashboard
         logoutbtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
         logoutbtn.FlatStyle = FlatStyle.Flat
         logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        logoutbtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        logoutbtn.Location = New Point(774, 5)
+        logoutbtn.ForeColor = SystemColors.Window
+        logoutbtn.Location = New Point(64, 696)
         logoutbtn.Name = "logoutbtn"
-        logoutbtn.Size = New Size(120, 39)
+        logoutbtn.Size = New Size(123, 42)
         logoutbtn.TabIndex = 9
         logoutbtn.Text = "Log Out"
         logoutbtn.UseVisualStyleBackColor = False
@@ -230,6 +229,7 @@ Partial Class userdashboard
         BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         ClientSize = New Size(1200, 750)
         Controls.Add(billingbtn)
+        Controls.Add(logoutbtn)
         Controls.Add(checkoutbtn)
         Controls.Add(statusbtn)
         Controls.Add(roomsbtn)

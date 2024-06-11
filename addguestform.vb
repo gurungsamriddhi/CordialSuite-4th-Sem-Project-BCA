@@ -24,4 +24,19 @@ Public Class Addguestform
         Application.Exit()
 
     End Sub
+
+    Private Sub logoutbtn_Click(sender As Object, e As EventArgs) Handles logoutbtn.Click
+        Dim result As DialogResult = MessageBox.Show("Do you want to logout?", "Logout Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        ' Check the user's choice in the MessageBox
+        If result = DialogResult.Yes Then
+            ' Close the current form (Userdashboard)
+            Me.Close()
+
+            ' Show the Loginform and clear text boxes
+            Loginform.Show()
+            Loginform.txtbxusername.Clear()
+            Loginform.txtbxpassword.Clear()
+        End If
+    End Sub
 End Class

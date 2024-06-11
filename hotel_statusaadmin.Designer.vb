@@ -44,6 +44,7 @@ Partial Class hotel_statusaadmin
         maleg_label = New Label()
         femaleg_label = New Label()
         guest_totlabel = New Label()
+        logoutbtn = New Button()
         Panel1.SuspendLayout()
         roompanel1.SuspendLayout()
         guestpanel1.SuspendLayout()
@@ -52,6 +53,7 @@ Partial Class hotel_statusaadmin
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Panel1.Controls.Add(logoutbtn)
         Panel1.Controls.Add(close_Btn)
         Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Lblviewg)
@@ -315,6 +317,24 @@ Partial Class hotel_statusaadmin
         guest_totlabel.TabIndex = 3
         guest_totlabel.Text = "TOTAL NO. OF GUESTS"
         ' 
+        ' logoutbtn
+        ' 
+        logoutbtn.BackColor = Color.Transparent
+        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
+        logoutbtn.FlatAppearance.BorderSize = 0
+        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatStyle = FlatStyle.Flat
+        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        logoutbtn.ForeColor = SystemColors.Window
+        logoutbtn.Location = New Point(796, 0)
+        logoutbtn.Name = "logoutbtn"
+        logoutbtn.Size = New Size(100, 51)
+        logoutbtn.TabIndex = 52
+        logoutbtn.Text = "Log Out"
+        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
+        logoutbtn.UseVisualStyleBackColor = False
+        ' 
         ' hotel_statusaadmin
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -360,4 +380,5 @@ Partial Class hotel_statusaadmin
     Friend WithEvents maleg_label As Label
     Friend WithEvents femaleg_label As Label
     Friend WithEvents guest_totlabel As Label
+    Friend WithEvents logoutbtn As Button
 End Class

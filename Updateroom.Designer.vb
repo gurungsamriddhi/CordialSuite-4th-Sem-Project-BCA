@@ -40,6 +40,7 @@ Partial Class Updateroom
         close_Btn = New Button()
         closebtn = New Button()
         Lblviewg = New Label()
+        logoutbtn = New Button()
         Paneluser.SuspendLayout()
         guestpanel2.SuspendLayout()
         Panel1.SuspendLayout()
@@ -232,6 +233,7 @@ Partial Class Updateroom
         ' Panel2
         ' 
         Panel2.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Panel2.Controls.Add(logoutbtn)
         Panel2.Controls.Add(close_Btn)
         Panel2.Controls.Add(closebtn)
         Panel2.Controls.Add(Lblviewg)
@@ -251,7 +253,7 @@ Partial Class Updateroom
         close_Btn.FlatStyle = FlatStyle.Flat
         close_Btn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         close_Btn.ForeColor = SystemColors.Window
-        close_Btn.Location = New Point(701, 4)
+        close_Btn.Location = New Point(710, 6)
         close_Btn.Name = "close_Btn"
         close_Btn.Size = New Size(43, 42)
         close_Btn.TabIndex = 24
@@ -283,6 +285,24 @@ Partial Class Updateroom
         Lblviewg.Size = New Size(101, 31)
         Lblviewg.TabIndex = 23
         Lblviewg.Text = "UPDATE"
+        ' 
+        ' logoutbtn
+        ' 
+        logoutbtn.BackColor = Color.Transparent
+        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
+        logoutbtn.FlatAppearance.BorderSize = 0
+        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatStyle = FlatStyle.Flat
+        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        logoutbtn.ForeColor = SystemColors.Window
+        logoutbtn.Location = New Point(604, 3)
+        logoutbtn.Name = "logoutbtn"
+        logoutbtn.Size = New Size(100, 51)
+        logoutbtn.TabIndex = 49
+        logoutbtn.Text = "Log Out"
+        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
+        logoutbtn.UseVisualStyleBackColor = False
         ' 
         ' Updateroom
         ' 
@@ -326,4 +346,5 @@ Partial Class Updateroom
     Friend WithEvents close_Btn As Button
     Friend WithEvents closebtn As Button
     Friend WithEvents Lblviewg As Label
+    Friend WithEvents logoutbtn As Button
 End Class

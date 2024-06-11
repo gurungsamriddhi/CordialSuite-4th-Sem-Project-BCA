@@ -44,6 +44,8 @@ Partial Class ViewGuest
         Panel1 = New Panel()
         closebtn = New Button()
         Lblviewg = New Label()
+        logoutbtn = New Button()
+        close_Btn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -264,6 +266,8 @@ Partial Class ViewGuest
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Panel1.Controls.Add(close_Btn)
+        Panel1.Controls.Add(logoutbtn)
         Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Lblviewg)
         Panel1.Dock = DockStyle.Top
@@ -297,6 +301,41 @@ Partial Class ViewGuest
         Lblviewg.Size = New Size(148, 31)
         Lblviewg.TabIndex = 23
         Lblviewg.Text = "VIEW GUEST"
+        ' 
+        ' logoutbtn
+        ' 
+        logoutbtn.BackColor = Color.Transparent
+        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
+        logoutbtn.FlatAppearance.BorderSize = 0
+        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatStyle = FlatStyle.Flat
+        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        logoutbtn.ForeColor = SystemColors.Window
+        logoutbtn.Location = New Point(794, 1)
+        logoutbtn.Name = "logoutbtn"
+        logoutbtn.Size = New Size(100, 50)
+        logoutbtn.TabIndex = 49
+        logoutbtn.Text = "Log Out"
+        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
+        logoutbtn.UseVisualStyleBackColor = False
+        ' 
+        ' close_Btn
+        ' 
+        close_Btn.BackColor = Color.Transparent
+        close_Btn.FlatAppearance.BorderColor = Color.White
+        close_Btn.FlatAppearance.BorderSize = 2
+        close_Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        close_Btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        close_Btn.FlatStyle = FlatStyle.Flat
+        close_Btn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        close_Btn.ForeColor = SystemColors.Window
+        close_Btn.Location = New Point(900, 4)
+        close_Btn.Name = "close_Btn"
+        close_Btn.Size = New Size(43, 42)
+        close_Btn.TabIndex = 50
+        close_Btn.Text = "X"
+        close_Btn.UseVisualStyleBackColor = False
         ' 
         ' ViewGuest
         ' 
@@ -356,4 +395,6 @@ Partial Class ViewGuest
     Friend WithEvents Panel1 As Panel
     Friend WithEvents closebtn As Button
     Friend WithEvents Lblviewg As Label
+    Friend WithEvents logoutbtn As Button
+    Friend WithEvents close_Btn As Button
 End Class
