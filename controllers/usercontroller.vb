@@ -37,7 +37,5 @@ Public Class UserController
         Return _userService.ValidateSuperAdminCredentials(username, password)
     End Function
 
-    Public Function GetAllUsers() As List(Of User)
-        Return _UserService.GetUsers()
-    End Function
+
 End Class

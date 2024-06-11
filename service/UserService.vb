@@ -14,7 +14,7 @@ Public Interface IUserService
 
     Function authenticateuser(username As String, password As String) As String
     Function ValidateSuperAdminCredentials(username As String, password As String) As Boolean
-    Function GetUsers() As List(Of User)
+
 
 
 End Interface
@@ -89,11 +89,6 @@ Public Class UserService
         End If
 
         Return False
-    End Function
-
-
-    Public Function GetUsers() As List(Of User) Implements IUserService.GetUsers
-        Return _context.SelectUsers()
     End Function
 
 End Class

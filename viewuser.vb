@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class viewuser
-    Dim usercontroller As New UserController()
+
     Dim sqlConnector As New sql.sqlconnector()
 
     Private Sub logoutbtn_Click(sender As Object, e As EventArgs)
@@ -33,20 +33,17 @@ Public Class viewuser
         End If
     End Sub
 
-    Private Sub LoadUsers()
-        Dim query As String = "SELECT id, user_type, username, password FROM users WHERE user_type IN ('admin', 'user')"
+    Private Sub populateUsers()
+        Dim query As String = "SELECT id, Usertype, Username, Password FROM users WHERE Usertype IN ('admin', 'user')"
         Dim dataTable As DataTable = sqlConnector.ExecuteQuery(query)
 
         ' Assuming you have a DataGridView control named DataGridViewUsers
         DGV_users.DataSource = dataTable
-
-
-        ' Optional: Disable auto-generated columns if you want to control the column names and order
-        DGV_users.AutoGenerateColumns = False
     End Sub
 
-    ' Call LoadUsers when the form loads or a specific event occurs
     Private Sub viewuser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadUsers()
+        populateUsers()
+        DGV_users.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells)
+        DGV_users.AutoGenerateColumns = False
     End Sub
 End Class

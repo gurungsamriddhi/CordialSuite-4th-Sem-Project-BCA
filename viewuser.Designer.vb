@@ -24,10 +24,6 @@ Partial Class viewuser
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         DGV_users = New DataGridView()
-        user_id = New DataGridViewTextBoxColumn()
-        Column5 = New DataGridViewTextBoxColumn()
-        Column6 = New DataGridViewTextBoxColumn()
-        Column7 = New DataGridViewTextBoxColumn()
         searchusers_txtbx = New TextBox()
         searchusers_btn = New Button()
         Panel1 = New Panel()
@@ -65,10 +61,10 @@ Partial Class viewuser
         DataGridViewCellStyle1.SelectionForeColor = SystemColors.Window
         DGV_users.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         DGV_users.Anchor = AnchorStyles.None
+        DGV_users.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DGV_users.BackgroundColor = SystemColors.MenuBar
         DGV_users.BorderStyle = BorderStyle.None
         DGV_users.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DGV_users.Columns.AddRange(New DataGridViewColumn() {user_id, Column5, Column6, Column7})
         DGV_users.GridColor = SystemColors.Menu
         DGV_users.Location = New Point(32, 146)
         DGV_users.Name = "DGV_users"
@@ -76,42 +72,6 @@ Partial Class viewuser
         DGV_users.RowHeadersWidth = 51
         DGV_users.Size = New Size(782, 446)
         DGV_users.TabIndex = 6
-        ' 
-        ' user_id
-        ' 
-        user_id.DataPropertyName = "user_ID"
-        user_id.HeaderText = "ID"
-        user_id.MinimumWidth = 6
-        user_id.Name = "user_id"
-        user_id.ReadOnly = True
-        user_id.Width = 183
-        ' 
-        ' Column5
-        ' 
-        Column5.DataPropertyName = "User_usertype"
-        Column5.HeaderText = "Usertype"
-        Column5.MinimumWidth = 6
-        Column5.Name = "Column5"
-        Column5.ReadOnly = True
-        Column5.Width = 183
-        ' 
-        ' Column6
-        ' 
-        Column6.DataPropertyName = "User_username"
-        Column6.HeaderText = "Username"
-        Column6.MinimumWidth = 6
-        Column6.Name = "Column6"
-        Column6.ReadOnly = True
-        Column6.Width = 182
-        ' 
-        ' Column7
-        ' 
-        Column7.DataPropertyName = "User_password"
-        Column7.HeaderText = "Password"
-        Column7.MinimumWidth = 6
-        Column7.Name = "Column7"
-        Column7.ReadOnly = True
-        Column7.Width = 183
         ' 
         ' searchusers_txtbx
         ' 
@@ -410,8 +370,4 @@ Partial Class viewuser
     Friend WithEvents Lbl_msgusertype As Label
     Friend WithEvents Lbl_msgpassword As Label
     Friend WithEvents Lbl_msgusername As Label
-    Friend WithEvents user_id As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
 End Class

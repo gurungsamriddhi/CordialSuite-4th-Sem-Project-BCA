@@ -8,30 +8,30 @@ Public Class User
     <Column("id")>
     Public Property UserID As Integer
 
-    <Column("first_name")>
+    <Column("Firstname")>
     Public Property FirstName As String
 
-    <Column("last_name")>
+    <Column("Lastname")>
     Public Property LastName As String
 
-    <Column("address")>
+    <Column("Address")>
     Public Property Address As String
 
-    <Column("phonenumber")>
+    <Column("PhoneNumber")>
     Public Property PhoneNumber As String
 
-    <Column("age")>
+    <Column("Age")>
     Public Property Age As Integer?
 
-    <Column("gender")>
+    <Column("Gender")>
     Public Property Gender As String
 
-    <Column("user_type")>
+    <Column("UserType")>
     Public Property UserType As String
 
-    <Column("username")>
+    <Column("Username")>
     Public Property Username As String
 
-    <Column("password")>
+    <Column("Password")>
     Public Property Password As String
 End Class
