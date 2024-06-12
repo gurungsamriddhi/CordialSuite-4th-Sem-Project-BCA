@@ -49,13 +49,12 @@ Partial Class newguest_form
         Lbl_msggemail = New Label()
         Ll_msggcountry = New Label()
         Lbl_msgnadults = New Label()
-        labl_msgnchildren = New Label()
         Lbl_msgcontact = New Label()
         Panel1 = New Panel()
+        logoutbtn = New Button()
         close_btn = New Button()
         closebtn = New Button()
         Lblviewg = New Label()
-        logoutbtn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -64,7 +63,7 @@ Partial Class newguest_form
         LblgGender.AutoSize = True
         LblgGender.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         LblgGender.ForeColor = Color.Black
-        LblgGender.Location = New Point(115, 242)
+        LblgGender.Location = New Point(81, 242)
         LblgGender.Name = "LblgGender"
         LblgGender.Size = New Size(79, 28)
         LblgGender.TabIndex = 2
@@ -75,7 +74,7 @@ Partial Class newguest_form
         Lblnoofadults.AutoSize = True
         Lblnoofadults.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lblnoofadults.ForeColor = Color.Black
-        Lblnoofadults.Location = New Point(112, 495)
+        Lblnoofadults.Location = New Point(76, 498)
         Lblnoofadults.Name = "Lblnoofadults"
         Lblnoofadults.Size = New Size(133, 28)
         Lblnoofadults.TabIndex = 3
@@ -86,7 +85,7 @@ Partial Class newguest_form
         Lblnoofchildren.AutoSize = True
         Lblnoofchildren.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lblnoofchildren.ForeColor = Color.Black
-        Lblnoofchildren.Location = New Point(257, 495)
+        Lblnoofchildren.Location = New Point(255, 498)
         Lblnoofchildren.Name = "Lblnoofchildren"
         Lblnoofchildren.Size = New Size(151, 28)
         Lblnoofchildren.TabIndex = 4
@@ -97,7 +96,7 @@ Partial Class newguest_form
         Lblcontact.AutoSize = True
         Lblcontact.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lblcontact.ForeColor = Color.Black
-        Lblcontact.Location = New Point(451, 495)
+        Lblcontact.Location = New Point(454, 493)
         Lblcontact.Name = "Lblcontact"
         Lblcontact.Size = New Size(116, 28)
         Lblcontact.TabIndex = 5
@@ -108,7 +107,7 @@ Partial Class newguest_form
         Lblgcountry.AutoSize = True
         Lblgcountry.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lblgcountry.ForeColor = Color.Black
-        Lblgcountry.Location = New Point(445, 355)
+        Lblgcountry.Location = New Point(450, 357)
         Lblgcountry.Name = "Lblgcountry"
         Lblgcountry.Size = New Size(85, 28)
         Lblgcountry.TabIndex = 6
@@ -119,7 +118,7 @@ Partial Class newguest_form
         Lblgemail.AutoSize = True
         Lblgemail.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lblgemail.ForeColor = Color.Black
-        Lblgemail.Location = New Point(109, 361)
+        Lblgemail.Location = New Point(75, 363)
         Lblgemail.Name = "Lblgemail"
         Lblgemail.Size = New Size(60, 28)
         Lblgemail.TabIndex = 7
@@ -130,7 +129,7 @@ Partial Class newguest_form
         LglguestID.AutoSize = True
         LglguestID.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         LglguestID.ForeColor = Color.Black
-        LglguestID.Location = New Point(448, 242)
+        LglguestID.Location = New Point(453, 242)
         LglguestID.Name = "LglguestID"
         LglguestID.Size = New Size(91, 28)
         LglguestID.TabIndex = 8
@@ -177,9 +176,9 @@ Partial Class newguest_form
         gfirstname_txtbx.BackColor = SystemColors.ControlLightLight
         gfirstname_txtbx.Font = New Font("Segoe UI", 13.8F)
         gfirstname_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        gfirstname_txtbx.Location = New Point(115, 163)
+        gfirstname_txtbx.Location = New Point(81, 163)
         gfirstname_txtbx.Name = "gfirstname_txtbx"
-        gfirstname_txtbx.Size = New Size(263, 38)
+        gfirstname_txtbx.Size = New Size(282, 38)
         gfirstname_txtbx.TabIndex = 12
         ' 
         ' GuestID_txtbx
@@ -187,7 +186,7 @@ Partial Class newguest_form
         GuestID_txtbx.BackColor = SystemColors.ControlLightLight
         GuestID_txtbx.Font = New Font("Segoe UI", 13.8F)
         GuestID_txtbx.ForeColor = Color.Black
-        GuestID_txtbx.Location = New Point(448, 273)
+        GuestID_txtbx.Location = New Point(453, 273)
         GuestID_txtbx.Name = "GuestID_txtbx"
         GuestID_txtbx.Size = New Size(237, 38)
         GuestID_txtbx.TabIndex = 14
@@ -197,9 +196,9 @@ Partial Class newguest_form
         Gemail_txtbx.BackColor = SystemColors.ControlLightLight
         Gemail_txtbx.Font = New Font("Segoe UI", 13.8F)
         Gemail_txtbx.ForeColor = Color.Black
-        Gemail_txtbx.Location = New Point(109, 387)
+        Gemail_txtbx.Location = New Point(75, 389)
         Gemail_txtbx.Name = "Gemail_txtbx"
-        Gemail_txtbx.Size = New Size(240, 38)
+        Gemail_txtbx.Size = New Size(285, 38)
         Gemail_txtbx.TabIndex = 15
         ' 
         ' nadult_txtbx
@@ -207,9 +206,9 @@ Partial Class newguest_form
         nadult_txtbx.BackColor = SystemColors.ControlLightLight
         nadult_txtbx.Font = New Font("Segoe UI", 13.8F)
         nadult_txtbx.ForeColor = Color.Black
-        nadult_txtbx.Location = New Point(115, 526)
+        nadult_txtbx.Location = New Point(79, 529)
         nadult_txtbx.Name = "nadult_txtbx"
-        nadult_txtbx.Size = New Size(130, 38)
+        nadult_txtbx.Size = New Size(139, 38)
         nadult_txtbx.TabIndex = 16
         ' 
         ' contact_txtbx
@@ -217,9 +216,9 @@ Partial Class newguest_form
         contact_txtbx.BackColor = SystemColors.ControlLightLight
         contact_txtbx.Font = New Font("Segoe UI", 13.8F)
         contact_txtbx.ForeColor = Color.Black
-        contact_txtbx.Location = New Point(451, 521)
+        contact_txtbx.Location = New Point(454, 524)
         contact_txtbx.Name = "contact_txtbx"
-        contact_txtbx.Size = New Size(237, 38)
+        contact_txtbx.Size = New Size(281, 38)
         contact_txtbx.TabIndex = 17
         ' 
         ' glastname_txtbx
@@ -227,9 +226,9 @@ Partial Class newguest_form
         glastname_txtbx.BackColor = SystemColors.ControlLightLight
         glastname_txtbx.Font = New Font("Segoe UI", 13.8F)
         glastname_txtbx.ForeColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        glastname_txtbx.Location = New Point(448, 163)
+        glastname_txtbx.Location = New Point(453, 163)
         glastname_txtbx.Name = "glastname_txtbx"
-        glastname_txtbx.Size = New Size(263, 38)
+        glastname_txtbx.Size = New Size(282, 38)
         glastname_txtbx.TabIndex = 18
         ' 
         ' nchildren_txtbx
@@ -237,9 +236,9 @@ Partial Class newguest_form
         nchildren_txtbx.BackColor = SystemColors.ControlLightLight
         nchildren_txtbx.Font = New Font("Segoe UI", 13.8F)
         nchildren_txtbx.ForeColor = Color.Black
-        nchildren_txtbx.Location = New Point(263, 526)
+        nchildren_txtbx.Location = New Point(261, 529)
         nchildren_txtbx.Name = "nchildren_txtbx"
-        nchildren_txtbx.Size = New Size(140, 38)
+        nchildren_txtbx.Size = New Size(149, 38)
         nchildren_txtbx.TabIndex = 19
         ' 
         ' cmbbx_genderG
@@ -250,7 +249,7 @@ Partial Class newguest_form
         cmbbx_genderG.ForeColor = Color.Black
         cmbbx_genderG.FormattingEnabled = True
         cmbbx_genderG.Items.AddRange(New Object() {"Male", "Female", "Others"})
-        cmbbx_genderG.Location = New Point(115, 273)
+        cmbbx_genderG.Location = New Point(81, 273)
         cmbbx_genderG.Name = "cmbbx_genderG"
         cmbbx_genderG.Size = New Size(172, 39)
         cmbbx_genderG.TabIndex = 20
@@ -266,9 +265,9 @@ Partial Class newguest_form
         Country_cmbbx.FormattingEnabled = True
         Country_cmbbx.IntegralHeight = False
         Country_cmbbx.Items.AddRange(New Object() {"Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "The Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic of the", "Congo, Republic of the", "Costa Rica", "Côte d’Ivoire", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor (Timor-Leste)", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "The Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia, Federated States of", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar (Burma)", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "Spain", "Sri Lanka", "Sudan", "Sudan, South", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe", ""})
-        Country_cmbbx.Location = New Point(448, 386)
+        Country_cmbbx.Location = New Point(453, 388)
         Country_cmbbx.Name = "Country_cmbbx"
-        Country_cmbbx.Size = New Size(237, 39)
+        Country_cmbbx.Size = New Size(282, 39)
         Country_cmbbx.TabIndex = 21
         ' 
         ' Lblglastname
@@ -276,7 +275,7 @@ Partial Class newguest_form
         Lblglastname.AutoSize = True
         Lblglastname.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lblglastname.ForeColor = Color.Black
-        Lblglastname.Location = New Point(445, 132)
+        Lblglastname.Location = New Point(450, 132)
         Lblglastname.Name = "Lblglastname"
         Lblglastname.Size = New Size(108, 28)
         Lblglastname.TabIndex = 9
@@ -287,7 +286,7 @@ Partial Class newguest_form
         Lblgfirstname.AutoSize = True
         Lblgfirstname.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lblgfirstname.ForeColor = Color.Black
-        Lblgfirstname.Location = New Point(112, 132)
+        Lblgfirstname.Location = New Point(78, 132)
         Lblgfirstname.Name = "Lblgfirstname"
         Lblgfirstname.Size = New Size(110, 28)
         Lblgfirstname.TabIndex = 1
@@ -297,52 +296,55 @@ Partial Class newguest_form
         ' 
         Lbl_msggfirstname.AutoSize = True
         Lbl_msggfirstname.BackColor = Color.Transparent
-        Lbl_msggfirstname.Font = New Font("Segoe UI", 13.8F)
+        Lbl_msggfirstname.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbl_msggfirstname.ForeColor = Color.Red
-        Lbl_msggfirstname.Location = New Point(115, 196)
+        Lbl_msggfirstname.Location = New Point(81, 204)
         Lbl_msggfirstname.Name = "Lbl_msggfirstname"
-        Lbl_msggfirstname.Size = New Size(0, 31)
+        Lbl_msggfirstname.Size = New Size(0, 23)
         Lbl_msggfirstname.TabIndex = 23
         ' 
         ' Lbl_msgglastname
         ' 
         Lbl_msgglastname.AutoSize = True
         Lbl_msgglastname.BackColor = Color.Transparent
-        Lbl_msgglastname.Font = New Font("Segoe UI", 13.8F)
+        Lbl_msgglastname.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbl_msgglastname.ForeColor = Color.Red
-        Lbl_msgglastname.Location = New Point(451, 196)
+        Lbl_msgglastname.Location = New Point(456, 204)
         Lbl_msgglastname.Name = "Lbl_msgglastname"
-        Lbl_msgglastname.Size = New Size(0, 31)
+        Lbl_msgglastname.Size = New Size(0, 23)
         Lbl_msgglastname.TabIndex = 24
         ' 
         ' Lbl_msgggender
         ' 
         Lbl_msgggender.AutoSize = True
         Lbl_msgggender.BackColor = Color.Transparent
+        Lbl_msgggender.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbl_msgggender.ForeColor = Color.Red
-        Lbl_msgggender.Location = New Point(115, 313)
+        Lbl_msgggender.Location = New Point(81, 313)
         Lbl_msgggender.Name = "Lbl_msgggender"
-        Lbl_msgggender.Size = New Size(0, 20)
+        Lbl_msgggender.Size = New Size(0, 23)
         Lbl_msgggender.TabIndex = 25
         ' 
         ' Lbl_msgguestid
         ' 
         Lbl_msgguestid.AutoSize = True
         Lbl_msgguestid.BackColor = Color.Transparent
+        Lbl_msgguestid.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbl_msgguestid.ForeColor = Color.Red
-        Lbl_msgguestid.Location = New Point(448, 323)
+        Lbl_msgguestid.Location = New Point(456, 314)
         Lbl_msgguestid.Name = "Lbl_msgguestid"
-        Lbl_msgguestid.Size = New Size(0, 20)
+        Lbl_msgguestid.Size = New Size(0, 23)
         Lbl_msgguestid.TabIndex = 26
         ' 
         ' Lbl_msggemail
         ' 
         Lbl_msggemail.AutoSize = True
         Lbl_msggemail.BackColor = Color.Transparent
+        Lbl_msggemail.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbl_msggemail.ForeColor = Color.Red
-        Lbl_msggemail.Location = New Point(112, 420)
+        Lbl_msggemail.Location = New Point(79, 430)
         Lbl_msggemail.Name = "Lbl_msggemail"
-        Lbl_msggemail.Size = New Size(0, 20)
+        Lbl_msggemail.Size = New Size(0, 23)
         Lbl_msggemail.TabIndex = 27
         ' 
         ' Ll_msggcountry
@@ -350,7 +352,7 @@ Partial Class newguest_form
         Ll_msggcountry.AutoSize = True
         Ll_msggcountry.BackColor = Color.Transparent
         Ll_msggcountry.ForeColor = Color.Red
-        Ll_msggcountry.Location = New Point(448, 420)
+        Ll_msggcountry.Location = New Point(453, 422)
         Ll_msggcountry.Name = "Ll_msggcountry"
         Ll_msggcountry.Size = New Size(0, 20)
         Ll_msggcountry.TabIndex = 28
@@ -359,30 +361,22 @@ Partial Class newguest_form
         ' 
         Lbl_msgnadults.AutoSize = True
         Lbl_msgnadults.BackColor = Color.Transparent
+        Lbl_msgnadults.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbl_msgnadults.ForeColor = Color.Red
-        Lbl_msgnadults.Location = New Point(115, 554)
+        Lbl_msgnadults.Location = New Point(81, 573)
         Lbl_msgnadults.Name = "Lbl_msgnadults"
-        Lbl_msgnadults.Size = New Size(0, 20)
+        Lbl_msgnadults.Size = New Size(0, 23)
         Lbl_msgnadults.TabIndex = 29
-        ' 
-        ' labl_msgnchildren
-        ' 
-        labl_msgnchildren.AutoSize = True
-        labl_msgnchildren.BackColor = Color.Transparent
-        labl_msgnchildren.ForeColor = Color.Red
-        labl_msgnchildren.Location = New Point(257, 554)
-        labl_msgnchildren.Name = "labl_msgnchildren"
-        labl_msgnchildren.Size = New Size(0, 20)
-        labl_msgnchildren.TabIndex = 30
         ' 
         ' Lbl_msgcontact
         ' 
         Lbl_msgcontact.AutoSize = True
         Lbl_msgcontact.BackColor = Color.Transparent
+        Lbl_msgcontact.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbl_msgcontact.ForeColor = Color.Red
-        Lbl_msgcontact.Location = New Point(451, 554)
+        Lbl_msgcontact.Location = New Point(456, 570)
         Lbl_msgcontact.Name = "Lbl_msgcontact"
-        Lbl_msgcontact.Size = New Size(0, 20)
+        Lbl_msgcontact.Size = New Size(0, 23)
         Lbl_msgcontact.TabIndex = 31
         ' 
         ' Panel1
@@ -397,6 +391,24 @@ Partial Class newguest_form
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(772, 54)
         Panel1.TabIndex = 43
+        ' 
+        ' logoutbtn
+        ' 
+        logoutbtn.BackColor = Color.Transparent
+        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
+        logoutbtn.FlatAppearance.BorderSize = 0
+        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatStyle = FlatStyle.Flat
+        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        logoutbtn.ForeColor = SystemColors.Window
+        logoutbtn.Location = New Point(620, 0)
+        logoutbtn.Name = "logoutbtn"
+        logoutbtn.Size = New Size(100, 51)
+        logoutbtn.TabIndex = 48
+        logoutbtn.Text = "Log Out"
+        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
+        logoutbtn.UseVisualStyleBackColor = False
         ' 
         ' close_btn
         ' 
@@ -441,24 +453,6 @@ Partial Class newguest_form
         Lblviewg.TabIndex = 23
         Lblviewg.Text = "ADD GUEST"
         ' 
-        ' logoutbtn
-        ' 
-        logoutbtn.BackColor = Color.Transparent
-        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
-        logoutbtn.FlatAppearance.BorderSize = 0
-        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        logoutbtn.FlatStyle = FlatStyle.Flat
-        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        logoutbtn.ForeColor = SystemColors.Window
-        logoutbtn.Location = New Point(620, 0)
-        logoutbtn.Name = "logoutbtn"
-        logoutbtn.Size = New Size(100, 51)
-        logoutbtn.TabIndex = 48
-        logoutbtn.Text = "Log Out"
-        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
-        logoutbtn.UseVisualStyleBackColor = False
-        ' 
         ' newguest_form
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -467,7 +461,6 @@ Partial Class newguest_form
         ClientSize = New Size(772, 750)
         Controls.Add(Panel1)
         Controls.Add(Lbl_msgcontact)
-        Controls.Add(labl_msgnchildren)
         Controls.Add(Lbl_msgnadults)
         Controls.Add(Ll_msggcountry)
         Controls.Add(Lbl_msggemail)
@@ -531,7 +524,6 @@ Partial Class newguest_form
     Friend WithEvents Lbl_msggemail As Label
     Friend WithEvents Ll_msggcountry As Label
     Friend WithEvents Lbl_msgnadults As Label
-    Friend WithEvents labl_msgnchildren As Label
     Friend WithEvents Lbl_msgcontact As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents closebtn As Button

@@ -56,8 +56,15 @@ Public Class Newguest_form
     End Sub
 
     Private Sub cmbbx_genderG_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbbx_genderG.SelectedIndexChanged
+        If cmbbx_genderG.SelectedIndex = -1 Then
+            Lbl_msgggender.Text = "Please select a valid user type."
+        Else
+            Lbl_msgggender.Text = ""
+        End If
 
     End Sub
+
+
 
     Private Sub addnewguest_btn_Click(sender As Object, e As EventArgs) Handles addnewguest_btn.Click
         Dim guest_firstname As String = gfirstname_txtbx.Text.Trim()
@@ -69,13 +76,41 @@ Public Class Newguest_form
         Dim guest_email As String = Gemail_txtbx.Text
     End Sub
 
-    Private Sub LblgGender_Click(sender As Object, e As EventArgs) Handles LblgGender.Click
+    Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
+        Application.Exit()
+        End
+    End Sub
+
+    Private Sub newguest_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
-    Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
-        Me.Dispose()
-        end
+    Private Sub GuestID_txtbx_TextChanged(sender As Object, e As EventArgs) Handles GuestID_txtbx.TextChanged
+
+    End Sub
+
+    Private Sub Gemail_txtbx_TextChanged(sender As Object, e As EventArgs) Handles Gemail_txtbx.TextChanged
+
+    End Sub
+
+    Private Sub Country_cmbbx_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Country_cmbbx.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Lblnoofadults_Click(sender As Object, e As EventArgs) Handles Lblnoofadults.Click
+
+    End Sub
+
+    Private Sub nadult_txtbx_TextChanged(sender As Object, e As EventArgs) Handles nadult_txtbx.TextChanged
+
+    End Sub
+
+    Private Sub nchildren_txtbx_TextChanged(sender As Object, e As EventArgs) Handles nchildren_txtbx.TextChanged
+
+    End Sub
+
+    Private Sub contact_txtbx_TextChanged(sender As Object, e As EventArgs) Handles contact_txtbx.TextChanged
+
     End Sub
 End Class
 

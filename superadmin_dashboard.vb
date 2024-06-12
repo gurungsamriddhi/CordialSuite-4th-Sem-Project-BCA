@@ -1,4 +1,5 @@
 ﻿Public Class superadmin_dashboard
+    Dim loadusers As New viewuser()
     Private Sub Options_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -6,16 +7,16 @@
 
     Private Sub Register_btn_Click(sender As Object, e As EventArgs)
         Dim register As New Registerform()               'shows registerform
-        register.Show
-        Hide
+        register.Show()
+        Hide()
 
 
     End Sub
 
     Private Sub Login_btn_Click(sender As Object, e As EventArgs)
         Dim login As New Loginform() 'shows loginform
-        login.Show
-        Hide
+        login.Show()
+        Hide()
     End Sub
 
     Private Sub Closebtn_Click(sender As Object, e As EventArgs)
@@ -65,7 +66,11 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub vieuser_btn_Click(sender As Object, e As EventArgs) Handles vieuser_btn.Click
+
+        ' Refresh the DataGridView to ensure it's showing the latest data
+        loadusers.DGV_users.Refresh()
+        loadusers.populateUsers()
         Switchpanel(viewuser)
     End Sub
 End Class

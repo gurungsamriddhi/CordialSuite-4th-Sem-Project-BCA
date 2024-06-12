@@ -37,5 +37,25 @@ Module sql
 
             Return dataTable
         End Function
+
+
+        Public Sub SearchUsers(query As String, dataGridView As DataGridView)
+            Dim dataTable As New DataTable()
+
+            Try
+                Using connection As New SqlConnection(connectionString)
+                    connection.Open()
+                    Using command As New SqlCommand(query, connection)
+                        Using reader As SqlDataReader = command.ExecuteReader()
+                            dataTable.Load(reader)
+                        End Using
+                    End Using
+                End Using
+            Catch ex As Exception
+                MessageBox.Show("Error executing query: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+
+            dataGridView.DataSource = dataTable
+        End Sub
     End Class
 End Module

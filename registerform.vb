@@ -1,8 +1,8 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
-
-Public Class Registerform
+﻿Public Class Registerform
     Public isValidInput As Boolean
     Dim userController As New UserController()
+    Dim loadusers As New viewuser()
+
 
     Private Sub Registerbtn_Click(sender As Object, e As EventArgs) Handles Registerbtn.Click
         ' Retrieve and trim text inputs from textboxes
@@ -120,6 +120,7 @@ Public Class Registerform
             username_txtbx.Focus()
         Else
             userController.AddUser(newUser)
+            loadusers.populateUsers()
             MessageBox.Show("User registered successfully.")
 
         End If
@@ -137,8 +138,8 @@ Public Class Registerform
 
     Private Sub Linktologin_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
         Dim userloginform As New Loginform
-        Loginform.Show
-        Hide
+        Loginform.Show()
+        Hide()
     End Sub
 
     Private Sub Userfn_txtbx_TextChanged(sender As Object, e As EventArgs) Handles userfn_txtbx.TextChanged

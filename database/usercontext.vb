@@ -11,6 +11,7 @@ Public Class UserContext
         ' Configure entity properties and relationships if needed
         modelBuilder.Entity(Of User)().ToTable("users")
         modelBuilder.Entity(Of User)().HasIndex(Function(u) u.Username).IsUnique()
+        modelBuilder.Entity(Of User)().Property(Function(u) u.Username).IsRequired().HasMaxLength(50).HasColumnName("Username").IsUnicode(True)
     End Sub
 
     ' Create using raw SQL 

@@ -31,7 +31,7 @@ Partial Class superadmin_dashboard
         logoutbtn = New Button()
         statusbtn = New Button()
         admindashb_btn = New Button()
-        Button1 = New Button()
+        vieuser_btn = New Button()
         Pnl_diffform.SuspendLayout()
         Panel1.SuspendLayout()
         SuspendLayout()
@@ -43,9 +43,9 @@ Partial Class superadmin_dashboard
         Pnl_diffform.Controls.Add(closebtn)
         Pnl_diffform.Controls.Add(Panel2)
         Pnl_diffform.Dock = DockStyle.Right
-        Pnl_diffform.Location = New Point(252, 0)
+        Pnl_diffform.Location = New Point(246, 0)
         Pnl_diffform.Name = "Pnl_diffform"
-        Pnl_diffform.Size = New Size(948, 750)
+        Pnl_diffform.Size = New Size(1000, 750)
         Pnl_diffform.TabIndex = 6
         ' 
         ' Panel1
@@ -55,7 +55,7 @@ Partial Class superadmin_dashboard
         Panel1.Controls.Add(Lbl_currentadmin)
         Panel1.Location = New Point(0, 88)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(948, 96)
+        Panel1.Size = New Size(1000, 96)
         Panel1.TabIndex = 15
         ' 
         ' lbl_superadminname
@@ -93,7 +93,7 @@ Partial Class superadmin_dashboard
         closebtn.FlatStyle = FlatStyle.Flat
         closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         closebtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        closebtn.Location = New Point(887, 3)
+        closebtn.Location = New Point(930, 3)
         closebtn.Name = "closebtn"
         closebtn.Size = New Size(58, 48)
         closebtn.TabIndex = 10
@@ -159,31 +159,31 @@ Partial Class superadmin_dashboard
         admindashb_btn.Text = "Admin Dashboard"
         admindashb_btn.UseVisualStyleBackColor = False
         ' 
-        ' Button1
+        ' vieuser_btn
         ' 
-        Button1.BackColor = Color.Transparent
-        Button1.FlatAppearance.BorderColor = SystemColors.Window
-        Button1.FlatAppearance.BorderSize = 2
-        Button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        Button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = SystemColors.Window
-        Button1.Location = New Point(16, 320)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(205, 45)
-        Button1.TabIndex = 11
-        Button1.Text = "View Users"
-        Button1.UseVisualStyleBackColor = False
+        vieuser_btn.BackColor = Color.Transparent
+        vieuser_btn.FlatAppearance.BorderColor = SystemColors.Window
+        vieuser_btn.FlatAppearance.BorderSize = 2
+        vieuser_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        vieuser_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        vieuser_btn.FlatStyle = FlatStyle.Flat
+        vieuser_btn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        vieuser_btn.ForeColor = SystemColors.Window
+        vieuser_btn.Location = New Point(16, 320)
+        vieuser_btn.Name = "vieuser_btn"
+        vieuser_btn.Size = New Size(205, 45)
+        vieuser_btn.TabIndex = 11
+        vieuser_btn.Text = "View Users"
+        vieuser_btn.UseVisualStyleBackColor = False
         ' 
         ' superadmin_dashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        ClientSize = New Size(1200, 750)
+        ClientSize = New Size(1246, 750)
         Controls.Add(admindashb_btn)
-        Controls.Add(Button1)
+        Controls.Add(vieuser_btn)
         Controls.Add(logoutbtn)
         Controls.Add(statusbtn)
         Controls.Add(Pnl_diffform)
@@ -207,5 +207,5 @@ Partial Class superadmin_dashboard
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lbl_superadminname As Label
     Friend WithEvents Lbl_currentadmin As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents vieuser_btn As Button
 End Class
