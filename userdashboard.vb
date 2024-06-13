@@ -9,7 +9,7 @@
         panel.Show()
     End Sub
     Private Sub Addguestbtn_Click(sender As Object, e As EventArgs) Handles addguestbtn.Click
-        Switchpanel(addguestform)
+        Switchpanel(Guestform)
     End Sub
 
     Private Sub Roomsbtn_Click(sender As Object, e As EventArgs) Handles roomsbtn.Click

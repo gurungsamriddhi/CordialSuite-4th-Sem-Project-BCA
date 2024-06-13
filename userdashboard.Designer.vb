@@ -26,8 +26,8 @@ Partial Class userdashboard
         Panel1 = New Panel()
         Lbl_currentuser = New Label()
         Labelusername = New Label()
-        logoutbtn = New Button()
         closebtn = New Button()
+        logoutbtn = New Button()
         statusbtn = New Button()
         checkoutbtn = New Button()
         checkinbtn = New Button()
@@ -87,22 +87,6 @@ Partial Class userdashboard
         Labelusername.Text = "username"
         Labelusername.TextAlign = ContentAlignment.TopCenter
         ' 
-        ' logoutbtn
-        ' 
-        logoutbtn.BackColor = Color.Transparent
-        logoutbtn.FlatAppearance.BorderColor = SystemColors.Control
-        logoutbtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        logoutbtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
-        logoutbtn.FlatStyle = FlatStyle.Flat
-        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        logoutbtn.ForeColor = SystemColors.Window
-        logoutbtn.Location = New Point(64, 696)
-        logoutbtn.Name = "logoutbtn"
-        logoutbtn.Size = New Size(123, 42)
-        logoutbtn.TabIndex = 9
-        logoutbtn.Text = "Log Out"
-        logoutbtn.UseVisualStyleBackColor = False
-        ' 
         ' closebtn
         ' 
         closebtn.BackColor = Color.Transparent
@@ -119,6 +103,22 @@ Partial Class userdashboard
         closebtn.TabIndex = 12
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
+        ' 
+        ' logoutbtn
+        ' 
+        logoutbtn.BackColor = Color.Transparent
+        logoutbtn.FlatAppearance.BorderColor = SystemColors.Control
+        logoutbtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
+        logoutbtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        logoutbtn.FlatStyle = FlatStyle.Flat
+        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        logoutbtn.ForeColor = SystemColors.Window
+        logoutbtn.Location = New Point(64, 696)
+        logoutbtn.Name = "logoutbtn"
+        logoutbtn.Size = New Size(123, 42)
+        logoutbtn.TabIndex = 9
+        logoutbtn.Text = "Log Out"
+        logoutbtn.UseVisualStyleBackColor = False
         ' 
         ' statusbtn
         ' 
@@ -219,7 +219,7 @@ Partial Class userdashboard
         addguestbtn.Name = "addguestbtn"
         addguestbtn.Size = New Size(205, 45)
         addguestbtn.TabIndex = 3
-        addguestbtn.Text = "Add Guest"
+        addguestbtn.Text = " Guest"
         addguestbtn.UseVisualStyleBackColor = False
         ' 
         ' userdashboard

@@ -69,12 +69,14 @@ Public Class viewuser
             Dim selectedRow As DataGridViewRow = DGV_users.Rows(e.RowIndex)
 
             ' Access data from the selected row
-            Dim dob As Date = CDate(selectedRow.Cells("UserDOB").Value)
+            Dim age As Integer = Convert.ToInt32(selectedRow.Cells("Age").Value)
+            Dim dob As Date = Date.Today.AddYears(-age)
             Dim userType As String = selectedRow.Cells("UserType").Value.ToString()
             Dim gender As String = selectedRow.Cells("Gender").Value.ToString()
+            Dim firstName As String = selectedRow.Cells("FirstName").Value.ToString()
             Dim lastName As String = selectedRow.Cells("LastName").Value.ToString()
             Dim address As String = selectedRow.Cells("Address").Value.ToString()
-            Dim phone As String = selectedRow.Cells("Phone").Value.ToString()
+            Dim phone As String = selectedRow.Cells("PhoneNumber").Value.ToString()
             Dim username As String = selectedRow.Cells("Username").Value.ToString()
             Dim password As String = selectedRow.Cells("Password").Value.ToString()
 
@@ -82,6 +84,7 @@ Public Class viewuser
             userDOB_dtp.Value = dob
             usertype_cmbbx.SelectedItem = userType
             gender_cmbbx.SelectedItem = gender
+            userfn_txtbx.Text = firstName
             userln_txtbx.Text = lastName
             userAddress_txtbx.Text = address
             userPhone_txtbx.Text = phone
@@ -89,7 +92,7 @@ Public Class viewuser
             password_txtbx.Text = password
 
             ' You can decide what to do with the ID value, such as storing it in a hidden field or variable.
-            Dim id As Integer = Convert.ToInt32(selectedRow.Cells("ID").Value)
+            Dim id As Integer = Convert.ToInt32(selectedRow.Cells("id").Value)
 
         End If
     End Sub
