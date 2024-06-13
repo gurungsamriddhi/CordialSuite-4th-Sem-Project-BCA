@@ -26,14 +26,12 @@ Partial Class billing
         close_btn = New Button()
         closebtn = New Button()
         Lbl_billing = New Label()
-        logoutbtn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        Panel1.Controls.Add(logoutbtn)
         Panel1.Controls.Add(close_btn)
         Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Lbl_billing)
@@ -87,24 +85,6 @@ Partial Class billing
         Lbl_billing.Text = "BILLING"
         Lbl_billing.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' logoutbtn
-        ' 
-        logoutbtn.BackColor = Color.Transparent
-        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
-        logoutbtn.FlatAppearance.BorderSize = 0
-        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        logoutbtn.FlatStyle = FlatStyle.Flat
-        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        logoutbtn.ForeColor = SystemColors.Window
-        logoutbtn.Location = New Point(796, 3)
-        logoutbtn.Name = "logoutbtn"
-        logoutbtn.Size = New Size(100, 48)
-        logoutbtn.TabIndex = 50
-        logoutbtn.Text = "Log Out"
-        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
-        logoutbtn.UseVisualStyleBackColor = False
-        ' 
         ' billing
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -123,5 +103,4 @@ Partial Class billing
     Friend WithEvents closebtn As Button
     Friend WithEvents Lbl_billing As Label
     Friend WithEvents close_btn As Button
-    Friend WithEvents logoutbtn As Button
 End Class

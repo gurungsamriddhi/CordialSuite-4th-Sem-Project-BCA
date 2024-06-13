@@ -284,12 +284,8 @@
     End Function
 
     Private Sub Closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
-        Me.Dispose()
+        Application.Exit()
         End
-    End Sub
-
-    Private Sub logoutbtn_Click(sender As Object, e As EventArgs)
-
     End Sub
 End Class
 

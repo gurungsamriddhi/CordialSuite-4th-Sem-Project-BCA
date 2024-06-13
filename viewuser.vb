@@ -33,20 +33,19 @@ Public Class viewuser
     'End Sub
 
     Public Sub populateUsers()
-        ' Adjust the query to select all columns from the users table
+
         Dim query As String = "SELECT * FROM users WHERE Usertype IN ('admin', 'user')"
         Dim dataTable As DataTable = sqlConnector.ExecuteQuery(query)
 
-        ' Assuming you have a DataGridView control named DGV_users
         DGV_users.DataSource = dataTable
 
         DGV_users.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells
-        DGV_users.AutoGenerateColumns = True ' Allow columns to be automatically generate
+        DGV_users.AutoGenerateColumns = True
 
-        ' Ensure styles are correctly set
         DGV_users.DefaultCellStyle.BackColor = Color.White
         DGV_users.DefaultCellStyle.ForeColor = Color.Black
-        DGV_users.AlternatingRowsDefaultCellStyle = Nothing ' Or set to a proper style
+        DGV_users.AlternatingRowsDefaultCellStyle = Nothing
+
     End Sub
 
     Private Sub viewuser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -68,7 +67,7 @@ Public Class viewuser
         If e.RowIndex >= 0 AndAlso e.ColumnIndex >= 0 Then
             Dim selectedRow As DataGridViewRow = DGV_users.Rows(e.RowIndex)
 
-            ' Access data from the selected row
+
             Dim age As Integer = Convert.ToInt32(selectedRow.Cells("Age").Value)
             Dim dob As Date = Date.Today.AddYears(-age)
             Dim userType As String = selectedRow.Cells("UserType").Value.ToString()
@@ -80,7 +79,6 @@ Public Class viewuser
             Dim username As String = selectedRow.Cells("Username").Value.ToString()
             Dim password As String = selectedRow.Cells("Password").Value.ToString()
 
-            ' Set values to controls
             userDOB_dtp.Value = dob
             usertype_cmbbx.SelectedItem = userType
             gender_cmbbx.SelectedItem = gender
@@ -91,7 +89,7 @@ Public Class viewuser
             username_txtbx.Text = username
             password_txtbx.Text = password
 
-            ' You can decide what to do with the ID value, such as storing it in a hidden field or variable.
+
             Dim id As Integer = Convert.ToInt32(selectedRow.Cells("id").Value)
 
         End If

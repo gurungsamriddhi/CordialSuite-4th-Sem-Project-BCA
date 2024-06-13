@@ -108,8 +108,8 @@ Partial Class userdashboard
         ' 
         logoutbtn.BackColor = Color.Transparent
         logoutbtn.FlatAppearance.BorderColor = SystemColors.Control
-        logoutbtn.FlatAppearance.MouseDownBackColor = SystemColors.GrayText
-        logoutbtn.FlatAppearance.MouseOverBackColor = SystemColors.GrayText
+        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         logoutbtn.FlatStyle = FlatStyle.Flat
         logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         logoutbtn.ForeColor = SystemColors.Window
