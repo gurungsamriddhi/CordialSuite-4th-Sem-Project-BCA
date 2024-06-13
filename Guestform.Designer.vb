@@ -39,7 +39,6 @@ Partial Class Guestform
         contact_txtbx = New TextBox()
         nadult_txtbx = New TextBox()
         Gemail_txtbx = New TextBox()
-        GuestID_txtbx = New TextBox()
         gfirstname_txtbx = New TextBox()
         addnewguest_btn = New Button()
         clear_btn = New Button()
@@ -55,9 +54,18 @@ Partial Class Guestform
         tabpage_viewguest = New TabPage()
         TextBox1 = New TextBox()
         DGV_Guests = New DataGridView()
+        GuestID = New DataGridViewTextBoxColumn()
+        Firstname = New DataGridViewTextBoxColumn()
+        Lastname = New DataGridViewTextBoxColumn()
+        Country = New DataGridViewTextBoxColumn()
+        Phonenumber = New DataGridViewTextBoxColumn()
+        Gender = New DataGridViewTextBoxColumn()
+        Email = New DataGridViewTextBoxColumn()
         Panel1 = New Panel()
         closebtn = New Button()
         Lblguestlist = New Label()
+        guestid_cmbbx = New ComboBox()
+        del_btn = New Button()
         pnlguestlist.SuspendLayout()
         TabGuestcontrol.SuspendLayout()
         TabPage1.SuspendLayout()
@@ -91,6 +99,8 @@ Partial Class Guestform
         ' 
         ' TabPage1
         ' 
+        TabPage1.Controls.Add(del_btn)
+        TabPage1.Controls.Add(guestid_cmbbx)
         TabPage1.Controls.Add(Lbl_msgggender)
         TabPage1.Controls.Add(Lbl_msgnadults)
         TabPage1.Controls.Add(Lbl_msggfirstname)
@@ -105,7 +115,6 @@ Partial Class Guestform
         TabPage1.Controls.Add(contact_txtbx)
         TabPage1.Controls.Add(nadult_txtbx)
         TabPage1.Controls.Add(Gemail_txtbx)
-        TabPage1.Controls.Add(GuestID_txtbx)
         TabPage1.Controls.Add(gfirstname_txtbx)
         TabPage1.Controls.Add(addnewguest_btn)
         TabPage1.Controls.Add(clear_btn)
@@ -205,7 +214,7 @@ Partial Class Guestform
         ' 
         ' Country_cmbbx
         ' 
-        Country_cmbbx.BackColor = SystemColors.ControlLightLight
+        Country_cmbbx.BackColor = SystemColors.ControlLight
         Country_cmbbx.DropDownHeight = 200
         Country_cmbbx.DropDownWidth = 100
         Country_cmbbx.FlatStyle = FlatStyle.Flat
@@ -221,7 +230,7 @@ Partial Class Guestform
         ' 
         ' cmbbx_genderG
         ' 
-        cmbbx_genderG.BackColor = SystemColors.ControlLightLight
+        cmbbx_genderG.BackColor = SystemColors.ControlLight
         cmbbx_genderG.FlatStyle = FlatStyle.Flat
         cmbbx_genderG.Font = New Font("Segoe UI", 13.8F)
         cmbbx_genderG.ForeColor = Color.Black
@@ -282,16 +291,6 @@ Partial Class Guestform
         Gemail_txtbx.Size = New Size(285, 38)
         Gemail_txtbx.TabIndex = 45
         ' 
-        ' GuestID_txtbx
-        ' 
-        GuestID_txtbx.BackColor = SystemColors.ControlLightLight
-        GuestID_txtbx.Font = New Font("Segoe UI", 13.8F)
-        GuestID_txtbx.ForeColor = Color.Black
-        GuestID_txtbx.Location = New Point(499, 183)
-        GuestID_txtbx.Name = "GuestID_txtbx"
-        GuestID_txtbx.Size = New Size(237, 38)
-        GuestID_txtbx.TabIndex = 44
-        ' 
         ' gfirstname_txtbx
         ' 
         gfirstname_txtbx.BackColor = SystemColors.ControlLightLight
@@ -313,7 +312,7 @@ Partial Class Guestform
         addnewguest_btn.FlatStyle = FlatStyle.Flat
         addnewguest_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
         addnewguest_btn.ForeColor = SystemColors.ControlLightLight
-        addnewguest_btn.Location = New Point(477, 534)
+        addnewguest_btn.Location = New Point(228, 534)
         addnewguest_btn.Name = "addnewguest_btn"
         addnewguest_btn.Size = New Size(127, 49)
         addnewguest_btn.TabIndex = 42
@@ -322,16 +321,15 @@ Partial Class Guestform
         ' 
         ' clear_btn
         ' 
-        clear_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        clear_btn.BackColor = Color.Red
         clear_btn.FlatAppearance.BorderColor = SystemColors.Window
         clear_btn.FlatAppearance.BorderSize = 2
         clear_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        clear_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         clear_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         clear_btn.FlatStyle = FlatStyle.Flat
         clear_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
         clear_btn.ForeColor = SystemColors.ControlLightLight
-        clear_btn.Location = New Point(325, 534)
+        clear_btn.Location = New Point(550, 534)
         clear_btn.Name = "clear_btn"
         clear_btn.Size = New Size(127, 49)
         clear_btn.TabIndex = 41
@@ -462,14 +460,79 @@ Partial Class Guestform
         DGV_Guests.AllowUserToAddRows = False
         DGV_Guests.AllowUserToDeleteRows = False
         DGV_Guests.Anchor = AnchorStyles.None
+        DGV_Guests.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
         DGV_Guests.BackgroundColor = SystemColors.Menu
         DGV_Guests.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DGV_Guests.Location = New Point(24, 118)
+        DGV_Guests.Columns.AddRange(New DataGridViewColumn() {GuestID, Firstname, Lastname, Country, Phonenumber, Gender, Email})
+        DGV_Guests.Location = New Point(31, 118)
         DGV_Guests.Name = "DGV_Guests"
         DGV_Guests.ReadOnly = True
         DGV_Guests.RowHeadersWidth = 51
         DGV_Guests.Size = New Size(840, 475)
         DGV_Guests.TabIndex = 0
+        ' 
+        ' GuestID
+        ' 
+        GuestID.DataPropertyName = "GuestId"
+        GuestID.HeaderText = "GuestID"
+        GuestID.MinimumWidth = 6
+        GuestID.Name = "GuestID"
+        GuestID.ReadOnly = True
+        GuestID.Width = 110
+        ' 
+        ' Firstname
+        ' 
+        Firstname.DataPropertyName = "GFirst_name"
+        Firstname.HeaderText = "Firstname"
+        Firstname.MinimumWidth = 6
+        Firstname.Name = "Firstname"
+        Firstname.ReadOnly = True
+        Firstname.Width = 126
+        ' 
+        ' Lastname
+        ' 
+        Lastname.DataPropertyName = "GLast_name"
+        Lastname.HeaderText = "Lastname"
+        Lastname.MinimumWidth = 6
+        Lastname.Name = "Lastname"
+        Lastname.ReadOnly = True
+        Lastname.Width = 123
+        ' 
+        ' Country
+        ' 
+        Country.DataPropertyName = "GCountry"
+        Country.HeaderText = "Country"
+        Country.MinimumWidth = 6
+        Country.Name = "Country"
+        Country.ReadOnly = True
+        Country.Width = 111
+        ' 
+        ' Phonenumber
+        ' 
+        Phonenumber.DataPropertyName = "GPhonenumber"
+        Phonenumber.HeaderText = "Phonenumber"
+        Phonenumber.MinimumWidth = 6
+        Phonenumber.Name = "Phonenumber"
+        Phonenumber.ReadOnly = True
+        Phonenumber.Width = 164
+        ' 
+        ' Gender
+        ' 
+        Gender.DataPropertyName = "GGender"
+        Gender.HeaderText = "Gender"
+        Gender.MinimumWidth = 6
+        Gender.Name = "Gender"
+        Gender.ReadOnly = True
+        Gender.Width = 105
+        ' 
+        ' Email
+        ' 
+        Email.DataPropertyName = "GEmail"
+        Email.HeaderText = "Email"
+        Email.MinimumWidth = 6
+        Email.Name = "Email"
+        Email.ReadOnly = True
+        Email.Width = 88
         ' 
         ' Panel1
         ' 
@@ -509,6 +572,37 @@ Partial Class Guestform
         Lblguestlist.Size = New Size(91, 31)
         Lblguestlist.TabIndex = 1
         Lblguestlist.Text = "GUEST "
+        ' 
+        ' guestid_cmbbx
+        ' 
+        guestid_cmbbx.BackColor = SystemColors.ControlLight
+        guestid_cmbbx.FlatStyle = FlatStyle.Flat
+        guestid_cmbbx.Font = New Font("Segoe UI", 13.8F)
+        guestid_cmbbx.ForeColor = Color.Black
+        guestid_cmbbx.FormattingEnabled = True
+        guestid_cmbbx.Items.AddRange(New Object() {"Male", "Female", "Others"})
+        guestid_cmbbx.Location = New Point(502, 183)
+        guestid_cmbbx.Name = "guestid_cmbbx"
+        guestid_cmbbx.Size = New Size(187, 39)
+        guestid_cmbbx.TabIndex = 59
+        ' 
+        ' del_btn
+        ' 
+        del_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        del_btn.FlatAppearance.BorderColor = SystemColors.Window
+        del_btn.FlatAppearance.BorderSize = 2
+        del_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        del_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        del_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        del_btn.FlatStyle = FlatStyle.Flat
+        del_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
+        del_btn.ForeColor = SystemColors.ControlLightLight
+        del_btn.Location = New Point(387, 534)
+        del_btn.Name = "del_btn"
+        del_btn.Size = New Size(127, 49)
+        del_btn.TabIndex = 60
+        del_btn.Text = "Update"
+        del_btn.UseVisualStyleBackColor = False
         ' 
         ' Guestform
         ' 
@@ -551,7 +645,6 @@ Partial Class Guestform
     Friend WithEvents contact_txtbx As TextBox
     Friend WithEvents nadult_txtbx As TextBox
     Friend WithEvents Gemail_txtbx As TextBox
-    Friend WithEvents GuestID_txtbx As TextBox
     Friend WithEvents gfirstname_txtbx As TextBox
     Friend WithEvents addnewguest_btn As Button
     Friend WithEvents clear_btn As Button
@@ -568,4 +661,13 @@ Partial Class Guestform
     Friend WithEvents Lbl_msggfirstname As Label
     Friend WithEvents Lbl_msgnadults As Label
     Friend WithEvents Lbl_msgggender As Label
+    Friend WithEvents GuestID As DataGridViewTextBoxColumn
+    Friend WithEvents Firstname As DataGridViewTextBoxColumn
+    Friend WithEvents Lastname As DataGridViewTextBoxColumn
+    Friend WithEvents Country As DataGridViewTextBoxColumn
+    Friend WithEvents Phonenumber As DataGridViewTextBoxColumn
+    Friend WithEvents Gender As DataGridViewTextBoxColumn
+    Friend WithEvents Email As DataGridViewTextBoxColumn
+    Friend WithEvents guestid_cmbbx As ComboBox
+    Friend WithEvents del_btn As Button
 End Class

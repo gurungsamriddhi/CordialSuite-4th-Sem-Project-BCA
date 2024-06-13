@@ -58,14 +58,14 @@ Public Class Guestform
             End If
         End Sub
 
-        Private Sub cmbbx_genderG_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbbx_genderG.SelectedIndexChanged
-            If cmbbx_genderG.SelectedIndex = -1 Then
-                Lbl_msgggender.Text = "Please select a valid user type."
-            Else
-                Lbl_msgggender.Text = ""
-            End If
+    Private Sub cmbbx_genderG_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbbx_genderG.SelectedIndexChanged
+        If cmbbx_genderG.SelectedIndex = -1 Then
+            Lbl_msgggender.Text = "Please select a valid user type."
+        Else
+            Lbl_msgggender.Text = ""
+        End If
 
-        End Sub
+    End Sub
 
 
 
@@ -83,11 +83,11 @@ Public Class Guestform
 
         End Sub
 
-        Private Sub GuestID_txtbx_TextChanged(sender As Object, e As EventArgs) Handles GuestID_txtbx.TextChanged
+    Private Sub GuestID_txtbx_TextChanged(sender As Object, e As EventArgs)
 
-        End Sub
+    End Sub
 
-        Private Sub Gemail_txtbx_TextChanged(sender As Object, e As EventArgs) Handles Gemail_txtbx.TextChanged
+    Private Sub Gemail_txtbx_TextChanged(sender As Object, e As EventArgs) Handles Gemail_txtbx.TextChanged
 
         End Sub
 

@@ -84,11 +84,11 @@ Partial Class viewuser
         DGV_users.BorderStyle = BorderStyle.None
         DGV_users.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DGV_users.GridColor = Color.Black
-        DGV_users.Location = New Point(22, 152)
+        DGV_users.Location = New Point(23, 105)
         DGV_users.Name = "DGV_users"
         DGV_users.ReadOnly = True
         DGV_users.RowHeadersWidth = 51
-        DGV_users.Size = New Size(923, 438)
+        DGV_users.Size = New Size(923, 495)
         DGV_users.TabIndex = 6
         ' 
         ' searchusername_txtbx
@@ -97,7 +97,7 @@ Partial Class viewuser
         searchusername_txtbx.BackColor = SystemColors.ControlLightLight
         searchusername_txtbx.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         searchusername_txtbx.ForeColor = Color.Black
-        searchusername_txtbx.Location = New Point(355, 89)
+        searchusername_txtbx.Location = New Point(346, 50)
         searchusername_txtbx.Name = "searchusername_txtbx"
         searchusername_txtbx.Size = New Size(285, 38)
         searchusername_txtbx.TabIndex = 7
@@ -173,7 +173,7 @@ Partial Class viewuser
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.ActiveCaptionText
-        Label1.Location = New Point(355, 61)
+        Label1.Location = New Point(346, 22)
         Label1.Name = "Label1"
         Label1.Size = New Size(107, 25)
         Label1.TabIndex = 9
@@ -223,7 +223,7 @@ Partial Class viewuser
         ' 
         Lbl_msggender.AutoSize = True
         Lbl_msggender.ForeColor = SystemColors.ControlLightLight
-        Lbl_msggender.Location = New Point(147, 330)
+        Lbl_msggender.Location = New Point(147, 307)
         Lbl_msggender.Name = "Lbl_msggender"
         Lbl_msggender.Size = New Size(0, 23)
         Lbl_msggender.TabIndex = 66
@@ -232,7 +232,7 @@ Partial Class viewuser
         ' 
         Lbl_msgaddress.AutoSize = True
         Lbl_msgaddress.ForeColor = SystemColors.ControlLightLight
-        Lbl_msgaddress.Location = New Point(147, 222)
+        Lbl_msgaddress.Location = New Point(147, 199)
         Lbl_msgaddress.Name = "Lbl_msgaddress"
         Lbl_msgaddress.Size = New Size(0, 23)
         Lbl_msgaddress.TabIndex = 65
@@ -241,7 +241,7 @@ Partial Class viewuser
         ' 
         Lbl_msgDOB.AutoSize = True
         Lbl_msgDOB.ForeColor = SystemColors.ControlLightLight
-        Lbl_msgDOB.Location = New Point(551, 223)
+        Lbl_msgDOB.Location = New Point(551, 200)
         Lbl_msgDOB.Name = "Lbl_msgDOB"
         Lbl_msgDOB.Size = New Size(0, 23)
         Lbl_msgDOB.TabIndex = 64
@@ -252,7 +252,7 @@ Partial Class viewuser
         Lbl_msglastname.BackColor = Color.Transparent
         Lbl_msglastname.Font = New Font("Segoe UI", 9F)
         Lbl_msglastname.ForeColor = Color.Black
-        Lbl_msglastname.Location = New Point(551, 140)
+        Lbl_msglastname.Location = New Point(551, 117)
         Lbl_msglastname.Name = "Lbl_msglastname"
         Lbl_msglastname.Size = New Size(0, 20)
         Lbl_msglastname.TabIndex = 63
@@ -261,7 +261,7 @@ Partial Class viewuser
         ' 
         Lbl_msgphone.AutoSize = True
         Lbl_msgphone.ForeColor = Color.Black
-        Lbl_msgphone.Location = New Point(551, 326)
+        Lbl_msgphone.Location = New Point(551, 303)
         Lbl_msgphone.Name = "Lbl_msgphone"
         Lbl_msgphone.Size = New Size(0, 23)
         Lbl_msgphone.TabIndex = 62
@@ -270,7 +270,7 @@ Partial Class viewuser
         ' 
         Lbl_msgusername.AutoSize = True
         Lbl_msgusername.ForeColor = Color.Black
-        Lbl_msgusername.Location = New Point(147, 434)
+        Lbl_msgusername.Location = New Point(147, 411)
         Lbl_msgusername.Name = "Lbl_msgusername"
         Lbl_msgusername.Size = New Size(0, 23)
         Lbl_msgusername.TabIndex = 61
@@ -279,7 +279,7 @@ Partial Class viewuser
         ' 
         Lbl_msgusertype.AutoSize = True
         Lbl_msgusertype.ForeColor = Color.Black
-        Lbl_msgusertype.Location = New Point(551, 434)
+        Lbl_msgusertype.Location = New Point(551, 411)
         Lbl_msgusertype.Name = "Lbl_msgusertype"
         Lbl_msgusertype.Size = New Size(0, 23)
         Lbl_msgusertype.TabIndex = 60
@@ -290,7 +290,7 @@ Partial Class viewuser
         Lbl_msgfirstname.BackColor = Color.Transparent
         Lbl_msgfirstname.Font = New Font("Segoe UI", 9F)
         Lbl_msgfirstname.ForeColor = Color.Black
-        Lbl_msgfirstname.Location = New Point(147, 140)
+        Lbl_msgfirstname.Location = New Point(147, 88)
         Lbl_msgfirstname.Name = "Lbl_msgfirstname"
         Lbl_msgfirstname.Size = New Size(0, 20)
         Lbl_msgfirstname.TabIndex = 59
@@ -305,7 +305,7 @@ Partial Class viewuser
         userDOB_dtp.CalendarTrailingForeColor = SystemColors.GradientInactiveCaption
         userDOB_dtp.Font = New Font("Segoe UI", 10.2F)
         userDOB_dtp.Format = DateTimePickerFormat.Short
-        userDOB_dtp.Location = New Point(551, 190)
+        userDOB_dtp.Location = New Point(551, 167)
         userDOB_dtp.MaxDate = New Date(2025, 1, 1, 0, 0, 0, 0)
         userDOB_dtp.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
         userDOB_dtp.Name = "userDOB_dtp"
@@ -321,7 +321,7 @@ Partial Class viewuser
         usertype_cmbbx.ForeColor = Color.Black
         usertype_cmbbx.FormattingEnabled = True
         usertype_cmbbx.Items.AddRange(New Object() {"Admin", "User"})
-        usertype_cmbbx.Location = New Point(551, 400)
+        usertype_cmbbx.Location = New Point(551, 377)
         usertype_cmbbx.Name = "usertype_cmbbx"
         usertype_cmbbx.Size = New Size(272, 31)
         usertype_cmbbx.TabIndex = 57
@@ -335,7 +335,7 @@ Partial Class viewuser
         gender_cmbbx.ForeColor = Color.Black
         gender_cmbbx.FormattingEnabled = True
         gender_cmbbx.Items.AddRange(New Object() {"Female", "Male", "Others"})
-        gender_cmbbx.Location = New Point(147, 296)
+        gender_cmbbx.Location = New Point(147, 273)
         gender_cmbbx.Name = "gender_cmbbx"
         gender_cmbbx.Size = New Size(272, 31)
         gender_cmbbx.TabIndex = 56
@@ -345,7 +345,7 @@ Partial Class viewuser
         userln_txtbx.BackColor = SystemColors.ControlLightLight
         userln_txtbx.Font = New Font("Segoe UI", 10.8F)
         userln_txtbx.ForeColor = Color.Black
-        userln_txtbx.Location = New Point(551, 77)
+        userln_txtbx.Location = New Point(551, 54)
         userln_txtbx.Name = "userln_txtbx"
         userln_txtbx.Size = New Size(272, 31)
         userln_txtbx.TabIndex = 55
@@ -355,7 +355,7 @@ Partial Class viewuser
         userAddress_txtbx.BackColor = SystemColors.ControlLightLight
         userAddress_txtbx.Font = New Font("Segoe UI", 10.2F)
         userAddress_txtbx.ForeColor = Color.Black
-        userAddress_txtbx.Location = New Point(147, 189)
+        userAddress_txtbx.Location = New Point(147, 166)
         userAddress_txtbx.Name = "userAddress_txtbx"
         userAddress_txtbx.Size = New Size(272, 30)
         userAddress_txtbx.TabIndex = 54
@@ -365,7 +365,7 @@ Partial Class viewuser
         userPhone_txtbx.BackColor = SystemColors.ControlLightLight
         userPhone_txtbx.Font = New Font("Segoe UI", 10.2F)
         userPhone_txtbx.ForeColor = Color.Black
-        userPhone_txtbx.Location = New Point(551, 295)
+        userPhone_txtbx.Location = New Point(551, 272)
         userPhone_txtbx.Name = "userPhone_txtbx"
         userPhone_txtbx.Size = New Size(272, 30)
         userPhone_txtbx.TabIndex = 53
@@ -375,7 +375,7 @@ Partial Class viewuser
         username_txtbx.BackColor = SystemColors.ControlLightLight
         username_txtbx.Font = New Font("Segoe UI", 10.2F)
         username_txtbx.ForeColor = Color.Black
-        username_txtbx.Location = New Point(147, 401)
+        username_txtbx.Location = New Point(147, 378)
         username_txtbx.Name = "username_txtbx"
         username_txtbx.Size = New Size(272, 30)
         username_txtbx.TabIndex = 52
@@ -385,7 +385,7 @@ Partial Class viewuser
         password_txtbx.BackColor = SystemColors.ControlLightLight
         password_txtbx.Font = New Font("Segoe UI", 10.2F)
         password_txtbx.ForeColor = Color.Black
-        password_txtbx.Location = New Point(147, 506)
+        password_txtbx.Location = New Point(147, 483)
         password_txtbx.Name = "password_txtbx"
         password_txtbx.Size = New Size(272, 30)
         password_txtbx.TabIndex = 51
@@ -395,7 +395,7 @@ Partial Class viewuser
         confirmpw_txtbx.BackColor = SystemColors.ControlLightLight
         confirmpw_txtbx.Font = New Font("Segoe UI", 10.2F)
         confirmpw_txtbx.ForeColor = Color.Black
-        confirmpw_txtbx.Location = New Point(551, 506)
+        confirmpw_txtbx.Location = New Point(551, 483)
         confirmpw_txtbx.Name = "confirmpw_txtbx"
         confirmpw_txtbx.Size = New Size(272, 30)
         confirmpw_txtbx.TabIndex = 50
@@ -405,7 +405,7 @@ Partial Class viewuser
         userfn_txtbx.BackColor = SystemColors.ControlLightLight
         userfn_txtbx.Font = New Font("Segoe UI", 10.8F)
         userfn_txtbx.ForeColor = Color.Black
-        userfn_txtbx.Location = New Point(147, 77)
+        userfn_txtbx.Location = New Point(147, 54)
         userfn_txtbx.Name = "userfn_txtbx"
         userfn_txtbx.Size = New Size(272, 31)
         userfn_txtbx.TabIndex = 49
@@ -416,7 +416,7 @@ Partial Class viewuser
         LblLastname.FlatStyle = FlatStyle.Flat
         LblLastname.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         LblLastname.ForeColor = Color.Black
-        LblLastname.Location = New Point(551, 46)
+        LblLastname.Location = New Point(551, 23)
         LblLastname.Name = "LblLastname"
         LblLastname.Size = New Size(108, 28)
         LblLastname.TabIndex = 48
@@ -429,7 +429,7 @@ Partial Class viewuser
         LblPassword.FlatStyle = FlatStyle.Flat
         LblPassword.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         LblPassword.ForeColor = Color.Black
-        LblPassword.Location = New Point(145, 477)
+        LblPassword.Location = New Point(145, 454)
         LblPassword.Name = "LblPassword"
         LblPassword.Size = New Size(97, 28)
         LblPassword.TabIndex = 47
@@ -442,7 +442,7 @@ Partial Class viewuser
         LblUsername.FlatStyle = FlatStyle.Flat
         LblUsername.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         LblUsername.ForeColor = Color.Black
-        LblUsername.Location = New Point(145, 370)
+        LblUsername.Location = New Point(145, 347)
         LblUsername.Name = "LblUsername"
         LblUsername.Size = New Size(104, 28)
         LblUsername.TabIndex = 46
@@ -456,7 +456,7 @@ Partial Class viewuser
         LblGender.FlatStyle = FlatStyle.Flat
         LblGender.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         LblGender.ForeColor = Color.Black
-        LblGender.Location = New Point(145, 265)
+        LblGender.Location = New Point(145, 242)
         LblGender.Name = "LblGender"
         LblGender.Size = New Size(79, 28)
         LblGender.TabIndex = 45
@@ -469,7 +469,7 @@ Partial Class viewuser
         LblUsertype.FlatStyle = FlatStyle.Flat
         LblUsertype.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         LblUsertype.ForeColor = Color.Black
-        LblUsertype.Location = New Point(551, 370)
+        LblUsertype.Location = New Point(551, 347)
         LblUsertype.Name = "LblUsertype"
         LblUsertype.Size = New Size(102, 28)
         LblUsertype.TabIndex = 44
@@ -483,7 +483,7 @@ Partial Class viewuser
         LblPhonenumber.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         LblPhonenumber.ForeColor = Color.Black
         LblPhonenumber.ImageAlign = ContentAlignment.TopRight
-        LblPhonenumber.Location = New Point(551, 265)
+        LblPhonenumber.Location = New Point(551, 242)
         LblPhonenumber.Name = "LblPhonenumber"
         LblPhonenumber.Size = New Size(143, 28)
         LblPhonenumber.TabIndex = 43
@@ -497,7 +497,7 @@ Partial Class viewuser
         LblAddress.FlatStyle = FlatStyle.Flat
         LblAddress.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         LblAddress.ForeColor = Color.Black
-        LblAddress.Location = New Point(145, 158)
+        LblAddress.Location = New Point(145, 135)
         LblAddress.Name = "LblAddress"
         LblAddress.Size = New Size(85, 28)
         LblAddress.TabIndex = 42
@@ -510,7 +510,7 @@ Partial Class viewuser
         LblConfirmpw.FlatStyle = FlatStyle.Flat
         LblConfirmpw.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         LblConfirmpw.ForeColor = Color.Black
-        LblConfirmpw.Location = New Point(550, 477)
+        LblConfirmpw.Location = New Point(550, 454)
         LblConfirmpw.Name = "LblConfirmpw"
         LblConfirmpw.Size = New Size(176, 28)
         LblConfirmpw.TabIndex = 41
@@ -524,7 +524,7 @@ Partial Class viewuser
         LblDOB.FlatStyle = FlatStyle.Flat
         LblDOB.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         LblDOB.ForeColor = Color.Black
-        LblDOB.Location = New Point(551, 159)
+        LblDOB.Location = New Point(551, 136)
         LblDOB.Name = "LblDOB"
         LblDOB.Size = New Size(129, 28)
         LblDOB.TabIndex = 40
@@ -538,7 +538,7 @@ Partial Class viewuser
         LblFirstname.FlatStyle = FlatStyle.Flat
         LblFirstname.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         LblFirstname.ForeColor = Color.Black
-        LblFirstname.Location = New Point(145, 46)
+        LblFirstname.Location = New Point(145, 23)
         LblFirstname.Name = "LblFirstname"
         LblFirstname.Size = New Size(110, 28)
         LblFirstname.TabIndex = 39
@@ -555,7 +555,7 @@ Partial Class viewuser
         deluser_Btn.FlatStyle = FlatStyle.Flat
         deluser_Btn.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         deluser_Btn.ForeColor = SystemColors.Window
-        deluser_Btn.Location = New Point(500, 562)
+        deluser_Btn.Location = New Point(510, 553)
         deluser_Btn.Name = "deluser_Btn"
         deluser_Btn.Size = New Size(194, 54)
         deluser_Btn.TabIndex = 13
@@ -572,7 +572,7 @@ Partial Class viewuser
         updateuser_Btn.FlatStyle = FlatStyle.Flat
         updateuser_Btn.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         updateuser_Btn.ForeColor = SystemColors.Window
-        updateuser_Btn.Location = New Point(288, 562)
+        updateuser_Btn.Location = New Point(299, 553)
         updateuser_Btn.Name = "updateuser_Btn"
         updateuser_Btn.Size = New Size(192, 54)
         updateuser_Btn.TabIndex = 12
