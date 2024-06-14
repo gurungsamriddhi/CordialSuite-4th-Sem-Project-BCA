@@ -62,16 +62,10 @@ Public Class viewuser
     End Sub
 
     Private Sub viewuser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        populateUsers()
+
+        TabPageViewUser_Enter(sender, e)
 
     End Sub
-
-    Private Sub searchusername_txtbx_Enter(sender As Object, e As EventArgs) Handles searchusername_txtbx.Enter
-        sqlConnector.SearchUsers("SELECT * FROM users WHERE Usertype IN ('admin', 'user')", DGV_users)
-
-    End Sub
-
-
     Private Sub DGV_users_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_users.CellClick
         If e.RowIndex >= 0 AndAlso e.ColumnIndex >= 0 Then
             Dim selectedRow As DataGridViewRow = DGV_users.Rows(e.RowIndex)
@@ -114,10 +108,22 @@ Public Class viewuser
 
 
     Private Sub TabPageViewUser_Enter(sender As Object, e As EventArgs) Handles TabPageViewUser.Enter
-        searchusername_txtbx.Clear()
+        populateUsers()
+
+
     End Sub
 
     Private Sub TabPageViewUser_Leave(sender As Object, e As EventArgs) Handles TabPageViewUser.Leave
         searchusername_txtbx.Clear()
     End Sub
+
+    Private Sub searchusername_txtbx_TextChanged(sender As Object, e As EventArgs) Handles searchusername_txtbx.TextChanged
+        FilterUsersByUsername(searchusername_txtbx.Text.Trim())
+    End Sub
+
+    Private Sub FilterUsersByUsername(username As String)
+        Dim query As String = "SELECT * FROM users WHERE Usertype IN ('admin', 'user') AND Username LIKE @Username"
+        sqlConnector.SearchUsers(query, username, DGV_users)
+    End Sub
+
 End Class

@@ -319,13 +319,13 @@ Partial Class Registerform
         ' closebtn
         ' 
         closebtn.BackColor = Color.Transparent
-        closebtn.FlatAppearance.BorderColor = Color.FromArgb(32, 114, 175)
+        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         closebtn.FlatAppearance.BorderSize = 2
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(48, 144, 220)
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(48, 144, 220)
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0)
-        closebtn.ForeColor = Color.FromArgb(32, 114, 175)
+        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         closebtn.Location = New Point(889, 12)
         closebtn.Name = "closebtn"
         closebtn.Size = New Size(47, 43)
@@ -335,7 +335,7 @@ Partial Class Registerform
         ' 
         ' userDOB_dtp
         ' 
-        userDOB_dtp.CalendarFont = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0)
+        userDOB_dtp.CalendarFont = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         userDOB_dtp.CalendarForeColor = Color.Black
         userDOB_dtp.CalendarMonthBackground = SystemColors.GradientActiveCaption
         userDOB_dtp.CalendarTitleBackColor = SystemColors.GradientActiveCaption
@@ -440,13 +440,13 @@ Partial Class Registerform
         ' 
         ' Registerbtn
         ' 
-        Registerbtn.BackColor = Color.FromArgb(32, 114, 175)
+        Registerbtn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         Registerbtn.FlatAppearance.BorderColor = SystemColors.Window
         Registerbtn.FlatAppearance.BorderSize = 2
-        Registerbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(48, 144, 220)
-        Registerbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(48, 144, 220)
+        Registerbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        Registerbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         Registerbtn.FlatStyle = FlatStyle.Flat
-        Registerbtn.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0)
+        Registerbtn.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Registerbtn.Location = New Point(394, 607)
         Registerbtn.Name = "Registerbtn"
         Registerbtn.Size = New Size(219, 54)
@@ -468,7 +468,7 @@ Partial Class Registerform
         ' 
         LblLastname.AutoSize = True
         LblLastname.FlatStyle = FlatStyle.Flat
-        LblLastname.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
+        LblLastname.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         LblLastname.ForeColor = Color.Black
         LblLastname.Location = New Point(546, 86)
         LblLastname.Name = "LblLastname"
@@ -479,10 +479,10 @@ Partial Class Registerform
         ' 
         ' Registerform
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         AutoValidate = AutoValidate.Disable
-        BackColor = Color.FromArgb(32, 114, 175)
+        BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         ClientSize = New Size(948, 750)
         Controls.Add(Pnlregister)
         FormBorderStyle = FormBorderStyle.None

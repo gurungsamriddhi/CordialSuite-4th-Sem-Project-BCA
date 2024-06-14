@@ -19,7 +19,9 @@ Public Class UserController
     Public Sub DeleteUser(userId As Integer)
         _userService.DeleteUser(userId)
     End Sub
-
+    Public Function GetUserByUsername(username As String) As User
+        Return _userService.getuserbyusername(username)
+    End Function
     Public Function validusername(username As String) As Boolean
         Return _userService.ValidateUsername(username)
 

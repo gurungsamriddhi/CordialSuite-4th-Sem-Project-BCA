@@ -39,13 +39,14 @@ Module sql
         End Function
 
 
-        Public Sub SearchUsers(query As String, dataGridView As DataGridView)
+        Public Sub SearchUsers(query As String, username As String, dataGridView As DataGridView)
             Dim dataTable As New DataTable()
 
             Try
                 Using connection As New SqlConnection(connectionString)
                     connection.Open()
                     Using command As New SqlCommand(query, connection)
+                        command.Parameters.AddWithValue("@Username", "%" & username & "%")
                         Using reader As SqlDataReader = command.ExecuteReader()
                             dataTable.Load(reader)
                         End Using

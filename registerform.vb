@@ -120,7 +120,7 @@
             username_txtbx.Focus()
         Else
             userController.AddUser(newUser)
-            loadusers.populateUsers()
+
             MessageBox.Show("User registered successfully.")
 
         End If
@@ -132,6 +132,7 @@
     Private Sub Registerform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Set the default value of the DateTimePicker to 18 years ago from today
         userDOB_dtp.Value = Date.Today.AddYears(-18)
+
     End Sub
 
 
@@ -286,6 +287,35 @@
     Private Sub Closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
         Application.Exit()
         End
+    End Sub
+
+    Public Sub clearinputs()
+
+        ' Clear all text boxes
+        userfn_txtbx.Clear()
+        userln_txtbx.Clear()
+        userPhone_txtbx.Clear()
+        userAddress_txtbx.Clear()
+        password_txtbx.Clear()
+        gender_cmbbx.Items.Clear()
+        gender_cmbbx.Items.Add("Male")
+        gender_cmbbx.Items.Add("Female")
+        gender_cmbbx.Items.Add("Other")
+        gender_cmbbx.Text = String.Empty
+        usertype_cmbbx.Items.Clear()
+        usertype_cmbbx.Items.Add("Admin")
+        usertype_cmbbx.Items.Add("User")
+        usertype_cmbbx.Text = String.Empty
+        userDOB_dtp.Value = Date.Today.AddYears(-18)
+        confirmpw_txtbx.Clear()
+    End Sub
+
+    Private Sub Registerform_Enter(sender As Object, e As EventArgs) Handles MyBase.Enter
+        clearinputs()
+
+    End Sub
+    Private Sub Registerform_leave(sender As Object, e As EventArgs) Handles MyBase.Leave
+        clearinputs()
     End Sub
 End Class
 
