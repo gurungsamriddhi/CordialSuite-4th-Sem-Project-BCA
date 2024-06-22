@@ -32,6 +32,8 @@ Partial Class viewuser
         TabPageViewUser = New TabPage()
         Label1 = New Label()
         update_deletetabpage = New TabPage()
+        Lbl_msgpassword = New Label()
+        Lbl_msgconfirmpw = New Label()
         Lbl_msggender = New Label()
         Lbl_msgaddress = New Label()
         Lbl_msgDOB = New Label()
@@ -181,6 +183,8 @@ Partial Class viewuser
         ' 
         ' update_deletetabpage
         ' 
+        update_deletetabpage.Controls.Add(Lbl_msgpassword)
+        update_deletetabpage.Controls.Add(Lbl_msgconfirmpw)
         update_deletetabpage.Controls.Add(Lbl_msggender)
         update_deletetabpage.Controls.Add(Lbl_msgaddress)
         update_deletetabpage.Controls.Add(Lbl_msgDOB)
@@ -218,6 +222,24 @@ Partial Class viewuser
         update_deletetabpage.TabIndex = 1
         update_deletetabpage.Text = "Update and Delete User"
         update_deletetabpage.UseVisualStyleBackColor = True
+        ' 
+        ' Lbl_msgpassword
+        ' 
+        Lbl_msgpassword.AutoSize = True
+        Lbl_msgpassword.ForeColor = Color.Black
+        Lbl_msgpassword.Location = New Point(147, 516)
+        Lbl_msgpassword.Name = "Lbl_msgpassword"
+        Lbl_msgpassword.Size = New Size(0, 23)
+        Lbl_msgpassword.TabIndex = 68
+        ' 
+        ' Lbl_msgconfirmpw
+        ' 
+        Lbl_msgconfirmpw.AutoSize = True
+        Lbl_msgconfirmpw.ForeColor = Color.Black
+        Lbl_msgconfirmpw.Location = New Point(551, 516)
+        Lbl_msgconfirmpw.Name = "Lbl_msgconfirmpw"
+        Lbl_msgconfirmpw.Size = New Size(0, 23)
+        Lbl_msgconfirmpw.TabIndex = 67
         ' 
         ' Lbl_msggender
         ' 
@@ -641,4 +663,6 @@ Partial Class viewuser
     Friend WithEvents LblConfirmpw As Label
     Friend WithEvents LblDOB As Label
     Friend WithEvents LblFirstname As Label
+    Friend WithEvents Lbl_msgconfirmpw As Label
+    Friend WithEvents Lbl_msgpassword As Label
 End Class

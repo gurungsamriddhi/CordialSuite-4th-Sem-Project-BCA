@@ -51,8 +51,8 @@ Public Class UserContext
         Dim sql = "DELETE FROM users WHERE id = @p0"
         Database.ExecuteSqlRaw(sql, user.UserID)
     End Sub
-
-
-
-
 End Class
+
+
+
+

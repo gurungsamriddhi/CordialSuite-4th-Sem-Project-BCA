@@ -126,9 +126,6 @@
         End If
 
     End Sub
-
-
-
     Private Sub Registerform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Set the default value of the DateTimePicker to 18 years ago from today
         userDOB_dtp.Value = Date.Today.AddYears(-18)
@@ -316,6 +313,128 @@
     End Sub
     Private Sub Registerform_leave(sender As Object, e As EventArgs) Handles MyBase.Leave
         clearinputs()
+    End Sub
+
+    Public Sub inputvalidation()
+        ' Retrieve and trim text inputs from textboxes
+        Dim user_firstname As String = userfn_txtbx.Text.Trim()
+        Dim user_lastname As String = userln_txtbx.Text.Trim()
+        Dim user_address As String = userAddress_txtbx.Text.Trim()
+        Dim user_dateofbirth As Date = userDOB_dtp.Value
+        Dim user_type As String = If(usertype_cmbbx.SelectedItem IsNot Nothing, usertype_cmbbx.SelectedItem.ToString(), String.Empty)
+        Dim user_gender As String = If(gender_cmbbx.SelectedItem IsNot Nothing, gender_cmbbx.SelectedItem.ToString(), String.Empty)
+        Dim user_phone As String = userPhone_txtbx.Text.Trim()
+        Dim user_username As String = username_txtbx.Text.Trim()
+        Dim user_password As String = password_txtbx.Text.Trim()
+        Dim user_confirmPassword As String = confirmpw_txtbx.Text.Trim()
+        Dim user_Age As Integer = CalculateAge(userDOB_dtp.Value)
+
+
+
+        ' Validation checks for each input field
+        Dim isValid As Boolean = True
+
+        If String.IsNullOrEmpty(user_firstname) OrElse Not IsAlphabeticOnly(user_firstname) OrElse user_firstname.Length <= 1 Then
+            isValid = False
+            Lbl_msgfirstname.Text = "Please enter a valid first name (alphabets only and
+                                    more than one letter)."
+            Lbl_msgfirstname.ForeColor = Color.Red
+        End If
+
+        If String.IsNullOrEmpty(user_lastname) OrElse Not IsAlphabeticOnly(user_lastname) OrElse user_lastname.Length <= 1 Then
+            isValid = False
+            Lbl_msglastname.Text = "Please enter a valid last name (alphabets only and
+                                    more than one letter)."
+            Lbl_msglastname.ForeColor = Color.Red
+        End If
+
+        If String.IsNullOrEmpty(user_address) Then
+            isValid = False
+            Lbl_msgaddress.Text = "Please enter a valid address."
+            Lbl_msgaddress.ForeColor = Color.Red
+        End If
+
+        If userDOB_dtp.Value < New Date(1900, 1, 1) OrElse userDOB_dtp.Value > Date.Today.AddDays(-1) Then
+            isValid = False
+            Lbl_msgDOB.Text = "Please select a valid date of birth between 01/01/1900 
+                             and yesterday."
+            Lbl_msgDOB.ForeColor = Color.Red
+        End If
+
+        If String.IsNullOrEmpty(user_type) Then
+            isValid = False
+            Lbl_msgusertype.Text = "Please select a valid user type."
+            Lbl_msgusertype.ForeColor = Color.Red
+        End If
+
+        If String.IsNullOrEmpty(user_gender) Then
+            isValid = False
+            Lbl_msggender.Text = "Please select a valid gender."
+            Lbl_msggender.ForeColor = Color.Red
+        End If
+
+        If Not IsPhoneNumber(user_phone) Then
+            isValid = False
+            Lbl_msgphone.Text = "Please enter a valid phone number."
+            Lbl_msgphone.ForeColor = Color.Red
+        End If
+
+        If String.IsNullOrEmpty(user_username) OrElse user_username.Length < 5 Then
+            isValid = False
+            Lbl_msgusername.Text = "Please enter a valid username (at least 5 characters)."
+            Lbl_msgusername.ForeColor = Color.Red
+        End If
+
+        If String.IsNullOrEmpty(user_password) OrElse user_password.Length < 8 Then
+            isValid = False
+            Lbl_msgpassword.Text = "Please enter a valid password (at least 8 characters)."
+            Lbl_msgpassword.ForeColor = Color.Red
+        End If
+
+
+
+        If user_password <> user_confirmPassword OrElse String.IsNullOrEmpty(user_confirmPassword) Then
+            isValid = False
+            Lbl_msgconfirmpw.Text = "Passwords do not match."
+            Lbl_msgconfirmpw.ForeColor = Color.Red
+        Else
+            Lbl_msgconfirmpw.Text = "Passwords match."
+            Lbl_msgconfirmpw.ForeColor = Color.Green
+        End If
+
+
+        ' Show message box if any validation fails
+        If Not isValid Then
+            MessageBox.Show("Please fill out all the fields correctly.")
+            Exit Sub
+        End If
+
+
+
+        Dim newUser As New User() With {
+    .FirstName = user_firstname,
+    .LastName = user_lastname,
+    .Address = user_address,
+    .Age = user_Age,
+    .UserType = user_type,
+    .Gender = user_gender,
+    .PhoneNumber = user_phone,
+    .Username = user_username,
+    .Password = user_password
+    }
+
+
+
+        If userController.validusername(newUser.Username) Then
+            MessageBox.Show("Username already exists. Please choose a different username.")
+            username_txtbx.Clear()
+            username_txtbx.Focus()
+        Else
+            userController.AddUser(newUser)
+
+            MessageBox.Show("User registered successfully.")
+
+        End If
     End Sub
 End Class
 

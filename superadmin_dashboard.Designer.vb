@@ -93,7 +93,7 @@ Partial Class superadmin_dashboard
         closebtn.FlatStyle = FlatStyle.Flat
         closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         closebtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        closebtn.Location = New Point(930, 3)
+        closebtn.Location = New Point(939, 3)
         closebtn.Name = "closebtn"
         closebtn.Size = New Size(58, 48)
         closebtn.TabIndex = 10

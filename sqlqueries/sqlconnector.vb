@@ -58,5 +58,18 @@ Module sql
 
             dataGridView.DataSource = dataTable
         End Sub
+
+
+        Public Sub ExecuteNonQueryWithParameters(query As String, parameters As List(Of SqlParameter))
+            Using connection As New SqlConnection(connectionString)
+                Using command As New SqlCommand(query, connection)
+                    command.Parameters.AddRange(parameters.ToArray())
+                    connection.Open()
+                    command.ExecuteNonQuery()
+                End Using
+            End Using
+        End Sub
+
+
     End Class
 End Module

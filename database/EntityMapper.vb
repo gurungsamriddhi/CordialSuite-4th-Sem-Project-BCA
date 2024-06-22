@@ -16,8 +16,6 @@ Public Class basedbcontext
         SaveChanges()
 
     End Sub
-
-
     Public Sub DeleteEntity(Of T As Class)(entity As T)
         MyBase.Set(Of T)().Remove(entity)
         SaveChanges()
