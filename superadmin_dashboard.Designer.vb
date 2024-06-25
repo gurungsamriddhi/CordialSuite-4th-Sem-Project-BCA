@@ -25,8 +25,8 @@ Partial Class superadmin_dashboard
         Pnl_diffform = New Panel()
         Panel1 = New Panel()
         lbl_superadminname = New Label()
-        Lbl_currentadmin = New Label()
         closebtn = New Button()
+        Lbl_currentadmin = New Label()
         Panel2 = New Panel()
         logoutbtn = New Button()
         statusbtn = New Button()
@@ -40,22 +40,22 @@ Partial Class superadmin_dashboard
         ' 
         Pnl_diffform.BackColor = SystemColors.Control
         Pnl_diffform.Controls.Add(Panel1)
-        Pnl_diffform.Controls.Add(closebtn)
         Pnl_diffform.Controls.Add(Panel2)
         Pnl_diffform.Dock = DockStyle.Right
-        Pnl_diffform.Location = New Point(246, 0)
+        Pnl_diffform.Location = New Point(240, 0)
         Pnl_diffform.Name = "Pnl_diffform"
-        Pnl_diffform.Size = New Size(1000, 750)
+        Pnl_diffform.Size = New Size(1042, 792)
         Pnl_diffform.TabIndex = 6
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         Panel1.Controls.Add(lbl_superadminname)
+        Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Lbl_currentadmin)
-        Panel1.Location = New Point(0, 88)
+        Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1000, 96)
+        Panel1.Size = New Size(1042, 59)
         Panel1.TabIndex = 15
         ' 
         ' lbl_superadminname
@@ -65,12 +65,26 @@ Partial Class superadmin_dashboard
         lbl_superadminname.FlatStyle = FlatStyle.Flat
         lbl_superadminname.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         lbl_superadminname.ForeColor = SystemColors.Window
-        lbl_superadminname.Location = New Point(155, 30)
+        lbl_superadminname.Location = New Point(147, 18)
         lbl_superadminname.Name = "lbl_superadminname"
         lbl_superadminname.Size = New Size(177, 27)
         lbl_superadminname.TabIndex = 11
         lbl_superadminname.Text = "superadminname"
         lbl_superadminname.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = Color.White
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        closebtn.Location = New Point(981, 6)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(58, 48)
+        closebtn.TabIndex = 10
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
         ' 
         ' Lbl_currentadmin
         ' 
@@ -79,26 +93,12 @@ Partial Class superadmin_dashboard
         Lbl_currentadmin.FlatStyle = FlatStyle.Flat
         Lbl_currentadmin.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         Lbl_currentadmin.ForeColor = SystemColors.Window
-        Lbl_currentadmin.Location = New Point(11, 30)
+        Lbl_currentadmin.Location = New Point(3, 18)
         Lbl_currentadmin.Name = "Lbl_currentadmin"
         Lbl_currentadmin.Size = New Size(138, 27)
         Lbl_currentadmin.TabIndex = 10
         Lbl_currentadmin.Text = "Current User:"
         Lbl_currentadmin.TextAlign = ContentAlignment.TopCenter
-        ' 
-        ' closebtn
-        ' 
-        closebtn.BackColor = Color.Transparent
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
-        closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        closebtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        closebtn.Location = New Point(939, 3)
-        closebtn.Name = "closebtn"
-        closebtn.Size = New Size(58, 48)
-        closebtn.TabIndex = 10
-        closebtn.Text = "X"
-        closebtn.UseVisualStyleBackColor = False
         ' 
         ' Panel2
         ' 
@@ -181,7 +181,7 @@ Partial Class superadmin_dashboard
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        ClientSize = New Size(1246, 750)
+        ClientSize = New Size(1282, 792)
         Controls.Add(admindashb_btn)
         Controls.Add(vieuser_btn)
         Controls.Add(logoutbtn)

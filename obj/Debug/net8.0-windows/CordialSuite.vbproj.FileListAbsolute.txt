@@ -215,7 +215,6 @@ E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Guestform.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.hotel_statusaadmin.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.hotel_statususer.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Loginform.resources
-E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Room.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Resources.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Registerform.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Revenue.resources
