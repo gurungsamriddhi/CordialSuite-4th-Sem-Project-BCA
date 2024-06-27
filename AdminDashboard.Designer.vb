@@ -23,11 +23,11 @@ Partial Class AdminDashboard
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Pnl_diffpanel = New Panel()
-        logoutbtn = New Button()
         Panel1 = New Panel()
+        close_Btn = New Button()
         Labeladminname = New Label()
         Lbl_currentadmin = New Label()
-        closebtn = New Button()
+        logoutbtn = New Button()
         statusbtn = New Button()
         transactionbtn = New Button()
         viewempbtn = New Button()
@@ -41,12 +41,67 @@ Partial Class AdminDashboard
         ' 
         Pnl_diffpanel.BackColor = SystemColors.Control
         Pnl_diffpanel.Controls.Add(Panel1)
-        Pnl_diffpanel.Controls.Add(closebtn)
         Pnl_diffpanel.Dock = DockStyle.Right
-        Pnl_diffpanel.Location = New Point(255, 0)
+        Pnl_diffpanel.Location = New Point(245, 0)
         Pnl_diffpanel.Name = "Pnl_diffpanel"
-        Pnl_diffpanel.Size = New Size(945, 750)
+        Pnl_diffpanel.Size = New Size(1037, 792)
         Pnl_diffpanel.TabIndex = 1
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Panel1.Controls.Add(close_Btn)
+        Panel1.Controls.Add(Labeladminname)
+        Panel1.Controls.Add(Lbl_currentadmin)
+        Panel1.Location = New Point(0, 0)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(1037, 60)
+        Panel1.TabIndex = 14
+        ' 
+        ' close_Btn
+        ' 
+        close_Btn.BackColor = Color.Transparent
+        close_Btn.FlatAppearance.BorderColor = Color.White
+        close_Btn.FlatAppearance.BorderSize = 2
+        close_Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        close_Btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        close_Btn.FlatStyle = FlatStyle.Flat
+        close_Btn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        close_Btn.ForeColor = SystemColors.Window
+        close_Btn.Location = New Point(982, 6)
+        close_Btn.Name = "close_Btn"
+        close_Btn.Size = New Size(43, 42)
+        close_Btn.TabIndex = 25
+        close_Btn.Text = "X"
+        close_Btn.UseVisualStyleBackColor = False
+        ' 
+        ' Labeladminname
+        ' 
+        Labeladminname.AutoSize = True
+        Labeladminname.BackColor = Color.Transparent
+        Labeladminname.FlatStyle = FlatStyle.Flat
+        Labeladminname.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        Labeladminname.ForeColor = SystemColors.Window
+        Labeladminname.Location = New Point(155, 15)
+        Labeladminname.Name = "Labeladminname"
+        Labeladminname.Size = New Size(124, 27)
+        Labeladminname.TabIndex = 11
+        Labeladminname.Text = "adminname"
+        Labeladminname.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' Lbl_currentadmin
+        ' 
+        Lbl_currentadmin.AutoSize = True
+        Lbl_currentadmin.BackColor = Color.Transparent
+        Lbl_currentadmin.FlatStyle = FlatStyle.Flat
+        Lbl_currentadmin.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        Lbl_currentadmin.ForeColor = SystemColors.Window
+        Lbl_currentadmin.Location = New Point(11, 15)
+        Lbl_currentadmin.Name = "Lbl_currentadmin"
+        Lbl_currentadmin.Size = New Size(138, 27)
+        Lbl_currentadmin.TabIndex = 10
+        Lbl_currentadmin.Text = "Current User:"
+        Lbl_currentadmin.TextAlign = ContentAlignment.TopCenter
         ' 
         ' logoutbtn
         ' 
@@ -64,61 +119,6 @@ Partial Class AdminDashboard
         logoutbtn.TabIndex = 9
         logoutbtn.Text = "Log Out"
         logoutbtn.UseVisualStyleBackColor = False
-        ' 
-        ' Panel1
-        ' 
-        Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        Panel1.Controls.Add(Labeladminname)
-        Panel1.Controls.Add(Lbl_currentadmin)
-        Panel1.Location = New Point(0, 68)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(945, 99)
-        Panel1.TabIndex = 14
-        ' 
-        ' Labeladminname
-        ' 
-        Labeladminname.AutoSize = True
-        Labeladminname.BackColor = Color.Transparent
-        Labeladminname.FlatStyle = FlatStyle.Flat
-        Labeladminname.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        Labeladminname.ForeColor = SystemColors.Window
-        Labeladminname.Location = New Point(155, 30)
-        Labeladminname.Name = "Labeladminname"
-        Labeladminname.Size = New Size(124, 27)
-        Labeladminname.TabIndex = 11
-        Labeladminname.Text = "adminname"
-        Labeladminname.TextAlign = ContentAlignment.TopCenter
-        ' 
-        ' Lbl_currentadmin
-        ' 
-        Lbl_currentadmin.AutoSize = True
-        Lbl_currentadmin.BackColor = Color.Transparent
-        Lbl_currentadmin.FlatStyle = FlatStyle.Flat
-        Lbl_currentadmin.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        Lbl_currentadmin.ForeColor = SystemColors.Window
-        Lbl_currentadmin.Location = New Point(11, 30)
-        Lbl_currentadmin.Name = "Lbl_currentadmin"
-        Lbl_currentadmin.Size = New Size(138, 27)
-        Lbl_currentadmin.TabIndex = 10
-        Lbl_currentadmin.Text = "Current User:"
-        Lbl_currentadmin.TextAlign = ContentAlignment.TopCenter
-        ' 
-        ' closebtn
-        ' 
-        closebtn.BackColor = Color.Transparent
-        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        closebtn.FlatAppearance.BorderSize = 2
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        closebtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        closebtn.Location = New Point(899, 5)
-        closebtn.Name = "closebtn"
-        closebtn.Size = New Size(43, 42)
-        closebtn.TabIndex = 13
-        closebtn.Text = "X"
-        closebtn.UseVisualStyleBackColor = False
         ' 
         ' statusbtn
         ' 
@@ -210,7 +210,7 @@ Partial Class AdminDashboard
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        ClientSize = New Size(1200, 750)
+        ClientSize = New Size(1282, 792)
         Controls.Add(logoutbtn)
         Controls.Add(transactionbtn)
         Controls.Add(Pnl_diffpanel)
@@ -238,6 +238,6 @@ Partial Class AdminDashboard
     Friend WithEvents viewempbtn As Button
     Friend WithEvents roomsbtn As Button
     Friend WithEvents viewguestbtn As Button
-    Friend WithEvents closebtn As Button
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents close_Btn As Button
 End Class

@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Diagnostics.Eventing.Reader
 
 Public Class viewuser
 
@@ -6,15 +7,6 @@ Public Class viewuser
     Public isValidInput As Boolean
     Dim userController As New UserController()
 
-    Private Sub logoutbtn_Click(sender As Object, e As EventArgs)
-        Dim result = MessageBox.Show("Do you want to logout?", "Logout Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-        If result = DialogResult.Yes Then
-            Close()
-            Loginform.Show()
-            Loginform.txtbxusername.Clear()
-            Loginform.txtbxpassword.Clear()
-        End If
-    End Sub
 
     Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
         Application.Exit()
@@ -56,14 +48,19 @@ Public Class viewuser
         userssql.ExecuteQuery(query, DGV_users)
 
         DGV_users.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells
+        DGV_users.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
         DGV_users.AutoGenerateColumns = True
         DGV_users.DefaultCellStyle.BackColor = Color.White
         DGV_users.DefaultCellStyle.ForeColor = Color.Black
         DGV_users.AlternatingRowsDefaultCellStyle = Nothing
+        For Each column As DataGridViewColumn In DGV_users.Columns
+            column.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+        Next
+        DGV_users.AutoResizeRowHeadersWidth(DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders)
     End Sub
 
     Private Sub viewuser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TabPageViewUser_Enter(sender, e)
+        populateUsers()
     End Sub
 
     Private Sub DGV_users_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_users.CellClick
@@ -100,18 +97,12 @@ Public Class viewuser
         End If
     End Sub
 
-    Private Sub searchusername_txtbx_Leave(sender As Object, e As EventArgs) Handles searchusername_txtbx.Leave
-        searchusername_txtbx.Clear()
-    End Sub
+
     Private Sub updateuser_Btn_Click(sender As Object, e As EventArgs) Handles updateuser_Btn.Click
         If inputvalidation() Then
-            If userController.validusername(username_txtbx.Text.Trim()) Then
-                MessageBox.Show("Username already exists. Please choose a different username.")
-                username_txtbx.Clear()
-                username_txtbx.Focus()
-                Return
-            End If
+
             UpdateUser()
+
         End If
     End Sub
 
@@ -121,20 +112,36 @@ Public Class viewuser
     End Sub
 
     Private Sub TabPageViewUser_Leave(sender As Object, e As EventArgs) Handles TabPageViewUser.Leave
-        searchusername_txtbx.Clear()
+        searchkeyword_txtbx.Clear()
     End Sub
 
-    Private Sub searchusername_txtbx_TextChanged(sender As Object, e As EventArgs) Handles searchusername_txtbx.TextChanged
-        FilterUsersByUsername(searchusername_txtbx.Text.Trim())
+    Private Sub searchkeyword_txtbx_TextChanged(sender As Object, e As EventArgs) Handles searchkeyword_txtbx.TextChanged
+        FilterUsersByKeyword(searchkeyword_txtbx.Text.Trim())
     End Sub
 
-    Private Sub FilterUsersByUsername(username As String)
-        Dim query As String = "SELECT * FROM users WHERE Usertype IN ('admin', 'user') AND Username LIKE @Username"
-        userssql.SearchUsers(query, username, DGV_users)
+    Private Sub FilterUsersByKeyword(keyword As String)
+        Dim query As String = "SELECT * FROM users WHERE Usertype IN ('admin', 'user') AND 
+                          (Username LIKE @Keyword OR 
+                           FirstName LIKE @Keyword OR 
+                           LastName LIKE @Keyword OR 
+                           Address LIKE @keyword OR
+                           PhoneNumber LIKE @Keyword OR 
+                           Age LIKE @Keyword OR 
+                           id LIKE @Keyword OR 
+                           UserType LIKE @Keyword OR 
+                           Gender LIKE @Keyword)"
+        userssql.SearchUsers(query, keyword, DGV_users)
     End Sub
 
     Private Sub UpdateUser()
         Dim userage As Integer = CalculateAge(userDOB_dtp.Value)
+
+        If userController.validusername(username_txtbx.Text.Trim()) Then
+            MessageBox.Show("Username already exists. Please choose a different username.")
+            username_txtbx.Clear()
+            username_txtbx.Focus()
+            Return
+        End If
 
         Dim query As String = "UPDATE users SET FirstName = @FirstName, LastName = @LastName, Address = @Address, " &
                           "PhoneNumber = @PhoneNumber, Gender = @Gender, UserType = @UserType, Password = @Password, " &
@@ -159,10 +166,10 @@ Public Class viewuser
         clear()
     End Sub
 
-    Private Sub DeleteUser(username As String)
-        Dim query As String = "DELETE FROM users WHERE Username = @Username"
+    Private Sub DeleteUser(userid As Integer)
+        Dim query As String = "DELETE FROM users WHERE id=@userid"
         Dim parameters As New List(Of SqlParameter) From {
-        New SqlParameter("@Username", username)
+        New SqlParameter("@userid", userid)
     }
 
         userssql.ExecuteNonQueryWithParameters(query, parameters)
@@ -215,30 +222,31 @@ Public Class viewuser
     End Sub
 
     Private Sub UserDOB_dtp_ValueChanged(sender As Object, e As EventArgs) Handles userDOB_dtp.ValueChanged
-        ' Define the minimum and maximum valid dates for validation
         Dim minValidDate As New Date(1900, 1, 1)
-        Dim maxValidDate As Date = Date.Today.AddDays(-1) ' Ensure the user is at least one day old
+        Dim maxValidDate As Date = Date.Today.AddDays(-1)
         Dim selectedDate As Date = userDOB_dtp.Value
 
         ' Check if the selected date is within the valid range
         If selectedDate < minValidDate Then
-
             Lbl_msgDOB.Text = Validationmessages.InvalidDOB
-
         ElseIf selectedDate > maxValidDate Then
-
             Lbl_msgDOB.Text = "Date of birth cannot be set to the future."
         Else
-
-            Lbl_msgDOB.Text = ""
+            ' Calculate age and validate
+            Dim age As Integer = CalculateAge(selectedDate)
+            If age < 14 Then
+                Lbl_msgDOB.Text = "Age must be at least 14 years."
+            Else
+                Lbl_msgDOB.Text = ""
+            End If
         End If
-
     End Sub
+
 
     Private Sub Usertype_cmbbx_SelectedIndexChanged(sender As Object, e As EventArgs) Handles usertype_cmbbx.SelectedIndexChanged
 
         If usertype_cmbbx.SelectedIndex = -1 Then
-            Lbl_msgusertype.Text = Validationmessages.InvalidUserType
+            Lbl_msgusertype.Text = InvalidUserType
         Else
             Lbl_msgusertype.Text = ""
         End If
@@ -285,23 +293,6 @@ Public Class viewuser
             Lbl_msgpassword.Text = ""
         End If
     End Sub
-
-
-
-    Private Function IsPhoneNumber(input As String) As Boolean
-        ' Check if the input is numeric and has 10 digits
-        Return input.All(AddressOf Char.IsDigit) AndAlso input.Length = 10
-    End Function
-
-    Private Function CalculateAge(selectedDate As Date) As Integer
-        ' Calculate the age based on the selected date and today's date
-        Dim age As Integer = Date.Now.Year - selectedDate.Year
-        If selectedDate > Date.Now.AddYears(-age) Then
-            age -= 1 ' Adjust the age if the birthday hasn't occurred yet this year
-        End If
-
-        Return age
-    End Function
 
     Public Function inputvalidation() As Boolean
         Dim user_firstname As String = userfn_txtbx.Text.Trim()
@@ -378,17 +369,24 @@ Public Class viewuser
             password_txtbx.Clear()
         End If
 
-
+        If Not isValid Then
+            MessageBox.Show("Please fill out all the fields correctly.")
+            Exit Function
+        End If
 
 
         Return isValid
     End Function
 
     Private Sub userdel_btn_Click(sender As Object, e As EventArgs) Handles userdel_btn.Click
+        If String.IsNullOrEmpty(usernamedel_txtbx.Text) OrElse usertypedel_cmbbx.SelectedItem Is Nothing Then
+            MessageBox.Show("Please select the user you want to delete", "Delete User", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return ' Exit the method if either field is empty
+        End If
 
         Dim result = MessageBox.Show("Do you want to delete this user?", "Delete Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = DialogResult.Yes Then
-            DeleteUser(username_txtbx.Text)
+            DeleteUser(Lbl_useridshowdel.Text)
         End If
 
     End Sub
@@ -398,5 +396,7 @@ Public Class viewuser
         usernamedel_txtbx.Clear()
         usertypedel_cmbbx.SelectedIndex = -1
     End Sub
+
+
 
 End Class

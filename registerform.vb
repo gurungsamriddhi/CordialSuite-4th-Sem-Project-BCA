@@ -60,7 +60,7 @@
             Lbl_msggender.ForeColor = Color.Red
         End If
 
-        If Not IsPhoneNumber(user_phone) Then
+        If String.IsNullOrEmpty(user_phone) OrElse Not IsPhoneNumber(user_phone) Then
             isValid = False
             Lbl_msgphone.Text = Validationmessages.InvalidPhone
             Lbl_msgphone.ForeColor = Color.Red
@@ -156,12 +156,12 @@
     End Sub
 
     Private Function IsAlphabeticOnly(input As String) As Boolean     'function that checks if the values is alphabets or not
-        For Each character As Char In input       ' Loop through each character in the input string
-            If Not Char.IsLetter(character) Then      ' Check if the character is not an alphabetic character
-                Return False         ' Return false if any non-alphabetic character is found
+        For Each character As Char In input                           ' Loop through each character in the input string
+            If Not Char.IsLetter(character) Then                      ' Check if the character is not an alphabetic character
+                Return False                                          ' Return false if any non-alphabetic character is found
             End If
         Next
-        Return True   ' Return true if all characters are alphabetic
+        Return True                                                   ' Return true if all characters are alphabetic
     End Function
 
     Private Sub Userln_txtbx_TextChanged(sender As Object, e As EventArgs) Handles userln_txtbx.TextChanged
@@ -186,25 +186,24 @@
     End Sub
 
     Private Sub UserDOB_dtp_ValueChanged(sender As Object, e As EventArgs) Handles userDOB_dtp.ValueChanged
-        ' Define the minimum and maximum valid dates for validation
         Dim minValidDate As New Date(1900, 1, 1)
-        Dim maxValidDate As Date = Date.Today.AddDays(-1) ' Ensure the user is at least one day old
+        Dim maxValidDate As Date = Date.Today.AddDays(-1)
         Dim selectedDate As Date = userDOB_dtp.Value
 
         ' Check if the selected date is within the valid range
         If selectedDate < minValidDate Then
-
             Lbl_msgDOB.Text = Validationmessages.InvalidDOB
-
         ElseIf selectedDate > maxValidDate Then
-
             Lbl_msgDOB.Text = "Date of birth cannot be set to the future."
-            Lbl_msgDOB.ForeColor = Color.Red
         Else
-
-            Lbl_msgDOB.Text = ""
+            ' Calculate age and validate
+            Dim age As Integer = CalculateAge(selectedDate)
+            If age < 14 Then
+                Lbl_msgDOB.Text = "Age must be at least 14 years."
+            Else
+                Lbl_msgDOB.Text = ""
+            End If
         End If
-
     End Sub
 
     Private Sub Usertype_cmbbx_SelectedIndexChanged(sender As Object, e As EventArgs) Handles usertype_cmbbx.SelectedIndexChanged
@@ -258,28 +257,13 @@
     End Sub
 
 
-    Private Sub Confirmpw_txtbx_TextChanged(sender As Object, e As EventArgs) Handles confirmpw_txtbx.TextChanged
-        If password_txtbx.Text <> confirmpw_txtbx.Text Then
-            Lbl_msgconfirmpw.Text = Validationmessages.PasswordsMatch
-            Lbl_msgconfirmpw.ForeColor = Color.Green
-        Else
-            Lbl_msgconfirmpw.Text = ""
-        End If
-    End Sub
+
     Private Function IsPhoneNumber(input As String) As Boolean
         ' Check if the input is numeric and has 10 digits
         Return input.All(AddressOf Char.IsDigit) AndAlso input.Length = 10
     End Function
 
-    Private Function CalculateAge(selectedDate As Date) As Integer
-        ' Calculate the age based on the selected date and today's date
-        Dim age As Integer = Date.Now.Year - selectedDate.Year
-        If selectedDate > Date.Now.AddYears(-age) Then
-            age -= 1 ' Adjust the age if the birthday hasn't occurred yet this year
-        End If
 
-        Return age
-    End Function
 
     Private Sub Closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
         Application.Exit()

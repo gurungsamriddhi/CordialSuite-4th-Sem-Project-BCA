@@ -25,8 +25,8 @@ Partial Class userdashboard
         Pnl_diffform = New Panel()
         Panel1 = New Panel()
         Lbl_currentuser = New Label()
-        Labelusername = New Label()
         closebtn = New Button()
+        Labelusername = New Label()
         logoutbtn = New Button()
         statusbtn = New Button()
         checkoutbtn = New Button()
@@ -42,21 +42,21 @@ Partial Class userdashboard
         ' 
         Pnl_diffform.BackColor = SystemColors.Control
         Pnl_diffform.Controls.Add(Panel1)
-        Pnl_diffform.Controls.Add(closebtn)
         Pnl_diffform.Dock = DockStyle.Right
-        Pnl_diffform.Location = New Point(252, 0)
+        Pnl_diffform.Location = New Point(245, 0)
         Pnl_diffform.Name = "Pnl_diffform"
-        Pnl_diffform.Size = New Size(948, 750)
+        Pnl_diffform.Size = New Size(1072, 792)
         Pnl_diffform.TabIndex = 0
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         Panel1.Controls.Add(Lbl_currentuser)
+        Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Labelusername)
-        Panel1.Location = New Point(0, 68)
+        Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(948, 99)
+        Panel1.Size = New Size(1072, 59)
         Panel1.TabIndex = 15
         ' 
         ' Lbl_currentuser
@@ -66,12 +66,29 @@ Partial Class userdashboard
         Lbl_currentuser.FlatStyle = FlatStyle.Flat
         Lbl_currentuser.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         Lbl_currentuser.ForeColor = SystemColors.ControlLightLight
-        Lbl_currentuser.Location = New Point(3, 24)
+        Lbl_currentuser.Location = New Point(3, 14)
         Lbl_currentuser.Name = "Lbl_currentuser"
         Lbl_currentuser.Size = New Size(138, 27)
         Lbl_currentuser.TabIndex = 10
         Lbl_currentuser.Text = "Current User:"
         Lbl_currentuser.TextAlign = ContentAlignment.TopCenter
+        ' 
+        ' closebtn
+        ' 
+        closebtn.BackColor = Color.Transparent
+        closebtn.FlatAppearance.BorderColor = SystemColors.Control
+        closebtn.FlatAppearance.BorderSize = 2
+        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        closebtn.FlatStyle = FlatStyle.Flat
+        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.ForeColor = SystemColors.Control
+        closebtn.Location = New Point(1021, 5)
+        closebtn.Name = "closebtn"
+        closebtn.Size = New Size(48, 42)
+        closebtn.TabIndex = 12
+        closebtn.Text = "X"
+        closebtn.UseVisualStyleBackColor = False
         ' 
         ' Labelusername
         ' 
@@ -80,29 +97,12 @@ Partial Class userdashboard
         Labelusername.FlatStyle = FlatStyle.Flat
         Labelusername.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         Labelusername.ForeColor = SystemColors.ControlLightLight
-        Labelusername.Location = New Point(147, 24)
+        Labelusername.Location = New Point(147, 14)
         Labelusername.Name = "Labelusername"
         Labelusername.Size = New Size(104, 27)
         Labelusername.TabIndex = 11
         Labelusername.Text = "username"
         Labelusername.TextAlign = ContentAlignment.TopCenter
-        ' 
-        ' closebtn
-        ' 
-        closebtn.BackColor = Color.Transparent
-        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        closebtn.FlatAppearance.BorderSize = 2
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        closebtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        closebtn.Location = New Point(900, 5)
-        closebtn.Name = "closebtn"
-        closebtn.Size = New Size(43, 42)
-        closebtn.TabIndex = 12
-        closebtn.Text = "X"
-        closebtn.UseVisualStyleBackColor = False
         ' 
         ' logoutbtn
         ' 
@@ -227,7 +227,7 @@ Partial Class userdashboard
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        ClientSize = New Size(1200, 750)
+        ClientSize = New Size(1317, 792)
         Controls.Add(billingbtn)
         Controls.Add(logoutbtn)
         Controls.Add(checkoutbtn)

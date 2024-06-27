@@ -39,5 +39,7 @@ Public Class UserController
         Return _userService.ValidateSuperAdminCredentials(username, password)
     End Function
 
-
+    Public Function GetUserById(userId As Integer) As User
+        Return _userService.GetUserById(userId)
+    End Function
 End Class

@@ -54,10 +54,10 @@
         End If
     End Sub
 
-    Private Sub admindashb_btn_Click(sender As Object, e As EventArgs) Handles admindashb_btn.Click
+    Private Sub admindashb_btn_Click(sender As Object, e As EventArgs)
         Dim admindashboardform As New AdminDashboard
-        admindashboardform.Show()
-        Me.Hide()
+        admindashboardform.Show
+        Hide
     End Sub
 
     Private Sub lbl_superadminname_Click(sender As Object, e As EventArgs) Handles lbl_superadminname.Click
