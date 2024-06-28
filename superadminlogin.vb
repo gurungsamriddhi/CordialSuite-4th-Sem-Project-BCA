@@ -4,7 +4,10 @@ Public Class superadmin_login
 
     Dim usercontroller As New UserController()
     Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
-        Application.Exit()
+        Dim result As DialogResult = MessageBox.Show("Do you want to exit the application?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If result = DialogResult.Yes Then
+            Application.Exit()
+        End If
     End Sub
 
 
@@ -32,7 +35,7 @@ Public Class superadmin_login
             MessageBox.Show("Please fill out all fields", "Required Field", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Else
             If usercontroller.ValidateSuperAdminCredentials(username, password) Then
-                Dim superadminDashboardForm As New superadmin_dashboard()
+                Dim superadminDashboardForm As New superadmin()
                 superadminDashboardForm.Show()
                 superadminDashboardForm.lbl_superadminname.Text = username
                 Me.Close()

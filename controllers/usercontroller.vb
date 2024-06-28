@@ -8,18 +8,18 @@ Public Class UserController
         _userService = userService
     End Sub
 
-    Public Sub AddUser(viewModel As User)
+    Public Sub AddUser(viewModel As user)
         _userService.AddUser(viewModel)
     End Sub
 
-    Public Sub UpdateUser(viewModel As User)
+    Public Sub UpdateUser(viewModel As user)
         _userService.UpdateUser(viewModel)
     End Sub
 
     Public Sub DeleteUser(userId As Integer)
         _userService.DeleteUser(userId)
     End Sub
-    Public Function GetUserByUsername(username As String) As User
+    Public Function GetUserByUsername(username As String) As user
         Return _userService.getuserbyusername(username)
     End Function
     Public Function validusername(username As String) As Boolean
@@ -31,7 +31,7 @@ Public Class UserController
 
     End Function
 
-    Public Function GetUsers() As List(Of User)
+    Public Function GetUsers() As List(Of user)
         Return _userService.GetAllUsers()
     End Function
 
@@ -39,7 +39,7 @@ Public Class UserController
         Return _userService.ValidateSuperAdminCredentials(username, password)
     End Function
 
-    Public Function GetUserById(userId As Integer) As User
+    Public Function GetUserById(userId As Integer) As user
         Return _userService.GetUserById(userId)
     End Function
 End Class

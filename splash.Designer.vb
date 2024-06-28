@@ -30,11 +30,11 @@ Partial Class splash
         ' 
         Lbl_displayfp.AutoSize = True
         Lbl_displayfp.BackColor = Color.Transparent
-        Lbl_displayfp.Font = New Font("Tahoma", 60F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl_displayfp.Font = New Font("Tahoma", 67.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lbl_displayfp.ForeColor = SystemColors.Window
-        Lbl_displayfp.Location = New Point(257, 273)
+        Lbl_displayfp.Location = New Point(288, 315)
         Lbl_displayfp.Name = "Lbl_displayfp"
-        Lbl_displayfp.Size = New Size(665, 121)
+        Lbl_displayfp.Size = New Size(755, 138)
         Lbl_displayfp.TabIndex = 0
         Lbl_displayfp.Text = "CordialSuite"
         Lbl_displayfp.TextAlign = ContentAlignment.MiddleCenter
@@ -49,9 +49,9 @@ Partial Class splash
         closebtn.FlatStyle = FlatStyle.Flat
         closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         closebtn.ForeColor = SystemColors.Window
-        closebtn.Location = New Point(1101, 12)
+        closebtn.Location = New Point(1260, 7)
         closebtn.Name = "closebtn"
-        closebtn.Size = New Size(58, 48)
+        closebtn.Size = New Size(48, 48)
         closebtn.TabIndex = 9
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
@@ -61,7 +61,7 @@ Partial Class splash
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        ClientSize = New Size(1171, 709)
+        ClientSize = New Size(1317, 792)
         Controls.Add(closebtn)
         Controls.Add(Lbl_displayfp)
         ForeColor = SystemColors.Control

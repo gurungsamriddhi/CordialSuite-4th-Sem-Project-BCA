@@ -1,14 +1,13 @@
-﻿
-Imports System.Diagnostics.Eventing.Reader
+﻿Imports System.Diagnostics.Eventing.Reader
 Imports System.IO
 Imports Microsoft.EntityFrameworkCore
 
 Public Interface IUserService
-    Sub AddUser(user As User)  'bydefault all the functions and sub procedures becomes public also only contains declarations 
-    Function GetUserById(userId As Integer) As User
-    Function GetAllUsers() As List(Of User)
-    Sub UpdateUser(user As User)
-    Function getuserbyusername(username As String) As User
+    Sub AddUser(user As user)  'bydefault all the functions and sub procedures becomes public also only contains declarations 
+    Function GetUserById(userId As Integer) As user
+    Function GetAllUsers() As List(Of user)
+    Sub UpdateUser(user As user)
+    Function getuserbyusername(username As String) As user
     Sub DeleteUser(userId As Integer)
     Function ValidateUsername(username As String) As Boolean
 
@@ -29,7 +28,7 @@ Public Class UserService
         _context = dbContext
     End Sub
 
-    Public Sub AddUser(user As User) Implements IUserService.AddUser
+    Public Sub AddUser(user As user) Implements IUserService.AddUser
         ' Check if a user with the same username already exists
         If _context.Users.Any(Function(u) u.Username = user.Username) Then
             ' Handle the case where the username is already taken
@@ -42,15 +41,15 @@ Public Class UserService
         _context.SaveChanges() ' Make sure to save changes to the database
     End Sub
 
-    Public Function GetUserById(userId As Integer) As User Implements IUserService.GetUserById
+    Public Function GetUserById(userId As Integer) As user Implements IUserService.GetUserById
         Return _context.Users.Find(userId)
     End Function
 
-    Public Function GetAllUsers() As List(Of User) Implements IUserService.GetAllUsers
+    Public Function GetAllUsers() As List(Of user) Implements IUserService.GetAllUsers
         Return _context.Users.ToList()
     End Function
 
-    Public Sub UpdateUser(user As User) Implements IUserService.UpdateUser
+    Public Sub UpdateUser(user As user) Implements IUserService.UpdateUser
         _context.UpdateEntity(user)
         _context.SaveChanges() ' Make sure to save changes to the database
     End Sub
@@ -63,7 +62,7 @@ Public Class UserService
         End If
     End Sub
 
-    Public Function GetUserByUsername(username As String) As User Implements IUserService.getuserbyusername
+    Public Function GetUserByUsername(username As String) As user Implements IUserService.getuserbyusername
         Return _context.Users.FirstOrDefault(Function(u) u.Username = username)
     End Function
 

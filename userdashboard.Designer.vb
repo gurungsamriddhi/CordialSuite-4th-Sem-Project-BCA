@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class userdashboard
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class usersmodel
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,53 +20,37 @@ Partial Class userdashboard
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Pnl_diffform = New Panel()
-        Panel1 = New Panel()
+        Pnl_userdashboard = New Panel()
         Lbl_currentuser = New Label()
         closebtn = New Button()
         Labelusername = New Label()
         logoutbtn = New Button()
-        statusbtn = New Button()
-        checkoutbtn = New Button()
-        checkinbtn = New Button()
-        roomsbtn = New Button()
-        billingbtn = New Button()
-        addguestbtn = New Button()
-        Pnl_diffform.SuspendLayout()
-        Panel1.SuspendLayout()
+        dashboard_btn = New Button()
+        checkout_btn = New Button()
+        checkin_btn = New Button()
+        rooms_btn = New Button()
+        billing_btn = New Button()
+        guest_btn = New Button()
         SuspendLayout()
         ' 
-        ' Pnl_diffform
+        ' Pnl_userdashboard
         ' 
-        Pnl_diffform.BackColor = SystemColors.Control
-        Pnl_diffform.Controls.Add(Panel1)
-        Pnl_diffform.Dock = DockStyle.Right
-        Pnl_diffform.Location = New Point(245, 0)
-        Pnl_diffform.Name = "Pnl_diffform"
-        Pnl_diffform.Size = New Size(1072, 792)
-        Pnl_diffform.TabIndex = 0
-        ' 
-        ' Panel1
-        ' 
-        Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        Panel1.Controls.Add(Lbl_currentuser)
-        Panel1.Controls.Add(closebtn)
-        Panel1.Controls.Add(Labelusername)
-        Panel1.Location = New Point(0, 0)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1072, 59)
-        Panel1.TabIndex = 15
+        Pnl_userdashboard.BackColor = SystemColors.Control
+        Pnl_userdashboard.Location = New Point(240, 56)
+        Pnl_userdashboard.Name = "Pnl_userdashboard"
+        Pnl_userdashboard.Size = New Size(1077, 777)
+        Pnl_userdashboard.TabIndex = 0
         ' 
         ' Lbl_currentuser
         ' 
         Lbl_currentuser.AutoSize = True
         Lbl_currentuser.BackColor = Color.Transparent
         Lbl_currentuser.FlatStyle = FlatStyle.Flat
-        Lbl_currentuser.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        Lbl_currentuser.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
         Lbl_currentuser.ForeColor = SystemColors.ControlLightLight
-        Lbl_currentuser.Location = New Point(3, 14)
+        Lbl_currentuser.Location = New Point(240, 13)
         Lbl_currentuser.Name = "Lbl_currentuser"
         Lbl_currentuser.Size = New Size(138, 27)
         Lbl_currentuser.TabIndex = 10
@@ -83,7 +67,7 @@ Partial Class userdashboard
         closebtn.FlatStyle = FlatStyle.Flat
         closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         closebtn.ForeColor = SystemColors.Control
-        closebtn.Location = New Point(1021, 5)
+        closebtn.Location = New Point(1261, 5)
         closebtn.Name = "closebtn"
         closebtn.Size = New Size(48, 42)
         closebtn.TabIndex = 12
@@ -95,9 +79,9 @@ Partial Class userdashboard
         Labelusername.AutoSize = True
         Labelusername.BackColor = Color.Transparent
         Labelusername.FlatStyle = FlatStyle.Flat
-        Labelusername.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        Labelusername.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
         Labelusername.ForeColor = SystemColors.ControlLightLight
-        Labelusername.Location = New Point(147, 14)
+        Labelusername.Location = New Point(384, 13)
         Labelusername.Name = "Labelusername"
         Labelusername.Size = New Size(104, 27)
         Labelusername.TabIndex = 11
@@ -108,156 +92,157 @@ Partial Class userdashboard
         ' 
         logoutbtn.BackColor = Color.Transparent
         logoutbtn.FlatAppearance.BorderColor = SystemColors.Control
+        logoutbtn.FlatAppearance.BorderSize = 2
         logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         logoutbtn.FlatStyle = FlatStyle.Flat
-        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        logoutbtn.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
         logoutbtn.ForeColor = SystemColors.Window
-        logoutbtn.Location = New Point(64, 696)
+        logoutbtn.Location = New Point(21, 776)
         logoutbtn.Name = "logoutbtn"
-        logoutbtn.Size = New Size(123, 42)
+        logoutbtn.Size = New Size(204, 45)
         logoutbtn.TabIndex = 9
         logoutbtn.Text = "Log Out"
         logoutbtn.UseVisualStyleBackColor = False
         ' 
-        ' statusbtn
+        ' dashboard_btn
         ' 
-        statusbtn.BackColor = Color.Transparent
-        statusbtn.FlatAppearance.BorderColor = SystemColors.Control
-        statusbtn.FlatAppearance.BorderSize = 2
-        statusbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        statusbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        statusbtn.FlatStyle = FlatStyle.Flat
-        statusbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        statusbtn.ForeColor = SystemColors.Control
-        statusbtn.Location = New Point(19, 171)
-        statusbtn.Name = "statusbtn"
-        statusbtn.Size = New Size(205, 45)
-        statusbtn.TabIndex = 8
-        statusbtn.Text = "Hotel Status"
-        statusbtn.UseVisualStyleBackColor = False
+        dashboard_btn.BackColor = Color.Transparent
+        dashboard_btn.FlatAppearance.BorderColor = SystemColors.Control
+        dashboard_btn.FlatAppearance.BorderSize = 2
+        dashboard_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        dashboard_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        dashboard_btn.FlatStyle = FlatStyle.Flat
+        dashboard_btn.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        dashboard_btn.ForeColor = SystemColors.Control
+        dashboard_btn.Location = New Point(19, 212)
+        dashboard_btn.Name = "dashboard_btn"
+        dashboard_btn.Size = New Size(205, 45)
+        dashboard_btn.TabIndex = 8
+        dashboard_btn.Text = "Dashboard"
+        dashboard_btn.UseVisualStyleBackColor = False
         ' 
-        ' checkoutbtn
+        ' checkout_btn
         ' 
-        checkoutbtn.BackColor = Color.Transparent
-        checkoutbtn.FlatAppearance.BorderColor = SystemColors.Control
-        checkoutbtn.FlatAppearance.BorderSize = 2
-        checkoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        checkoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        checkoutbtn.FlatStyle = FlatStyle.Flat
-        checkoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        checkoutbtn.ForeColor = SystemColors.Control
-        checkoutbtn.Location = New Point(19, 407)
-        checkoutbtn.Name = "checkoutbtn"
-        checkoutbtn.Size = New Size(205, 45)
-        checkoutbtn.TabIndex = 7
-        checkoutbtn.Text = "Check-out"
-        checkoutbtn.UseVisualStyleBackColor = False
+        checkout_btn.BackColor = Color.Transparent
+        checkout_btn.FlatAppearance.BorderColor = SystemColors.Control
+        checkout_btn.FlatAppearance.BorderSize = 2
+        checkout_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        checkout_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        checkout_btn.FlatStyle = FlatStyle.Flat
+        checkout_btn.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        checkout_btn.ForeColor = SystemColors.Control
+        checkout_btn.Location = New Point(19, 416)
+        checkout_btn.Name = "checkout_btn"
+        checkout_btn.Size = New Size(205, 45)
+        checkout_btn.TabIndex = 7
+        checkout_btn.Text = "Check-out"
+        checkout_btn.UseVisualStyleBackColor = False
         ' 
-        ' checkinbtn
+        ' checkin_btn
         ' 
-        checkinbtn.BackColor = Color.Transparent
-        checkinbtn.FlatAppearance.BorderColor = SystemColors.Control
-        checkinbtn.FlatAppearance.BorderSize = 2
-        checkinbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        checkinbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        checkinbtn.FlatStyle = FlatStyle.Flat
-        checkinbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        checkinbtn.ForeColor = SystemColors.Control
-        checkinbtn.Location = New Point(20, 289)
-        checkinbtn.Name = "checkinbtn"
-        checkinbtn.Size = New Size(205, 45)
-        checkinbtn.TabIndex = 6
-        checkinbtn.Text = "Check-in"
-        checkinbtn.UseVisualStyleBackColor = False
+        checkin_btn.BackColor = Color.Transparent
+        checkin_btn.FlatAppearance.BorderColor = SystemColors.Control
+        checkin_btn.FlatAppearance.BorderSize = 2
+        checkin_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        checkin_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        checkin_btn.FlatStyle = FlatStyle.Flat
+        checkin_btn.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        checkin_btn.ForeColor = SystemColors.Control
+        checkin_btn.Location = New Point(20, 314)
+        checkin_btn.Name = "checkin_btn"
+        checkin_btn.Size = New Size(205, 45)
+        checkin_btn.TabIndex = 6
+        checkin_btn.Text = "Check-in"
+        checkin_btn.UseVisualStyleBackColor = False
         ' 
-        ' roomsbtn
+        ' rooms_btn
         ' 
-        roomsbtn.BackColor = Color.Transparent
-        roomsbtn.FlatAppearance.BorderColor = SystemColors.Control
-        roomsbtn.FlatAppearance.BorderSize = 2
-        roomsbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        roomsbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        roomsbtn.FlatStyle = FlatStyle.Flat
-        roomsbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        roomsbtn.ForeColor = SystemColors.Control
-        roomsbtn.Location = New Point(20, 348)
-        roomsbtn.Name = "roomsbtn"
-        roomsbtn.Size = New Size(205, 45)
-        roomsbtn.TabIndex = 5
-        roomsbtn.Text = "Rooms"
-        roomsbtn.UseVisualStyleBackColor = False
+        rooms_btn.BackColor = Color.Transparent
+        rooms_btn.FlatAppearance.BorderColor = SystemColors.Control
+        rooms_btn.FlatAppearance.BorderSize = 2
+        rooms_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        rooms_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        rooms_btn.FlatStyle = FlatStyle.Flat
+        rooms_btn.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        rooms_btn.ForeColor = SystemColors.Control
+        rooms_btn.Location = New Point(20, 365)
+        rooms_btn.Name = "rooms_btn"
+        rooms_btn.Size = New Size(205, 45)
+        rooms_btn.TabIndex = 5
+        rooms_btn.Text = "Rooms"
+        rooms_btn.UseVisualStyleBackColor = False
         ' 
-        ' billingbtn
+        ' billing_btn
         ' 
-        billingbtn.BackColor = Color.Transparent
-        billingbtn.FlatAppearance.BorderColor = SystemColors.Control
-        billingbtn.FlatAppearance.BorderSize = 2
-        billingbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        billingbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        billingbtn.FlatStyle = FlatStyle.Flat
-        billingbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        billingbtn.ForeColor = SystemColors.Control
-        billingbtn.Location = New Point(20, 466)
-        billingbtn.Name = "billingbtn"
-        billingbtn.Size = New Size(205, 45)
-        billingbtn.TabIndex = 4
-        billingbtn.Text = "Billing"
-        billingbtn.UseVisualStyleBackColor = False
+        billing_btn.BackColor = Color.Transparent
+        billing_btn.FlatAppearance.BorderColor = SystemColors.Control
+        billing_btn.FlatAppearance.BorderSize = 2
+        billing_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        billing_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        billing_btn.FlatStyle = FlatStyle.Flat
+        billing_btn.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        billing_btn.ForeColor = SystemColors.Control
+        billing_btn.Location = New Point(20, 467)
+        billing_btn.Name = "billing_btn"
+        billing_btn.Size = New Size(205, 45)
+        billing_btn.TabIndex = 4
+        billing_btn.Text = "Billing"
+        billing_btn.UseVisualStyleBackColor = False
         ' 
-        ' addguestbtn
+        ' guest_btn
         ' 
-        addguestbtn.BackColor = Color.Transparent
-        addguestbtn.FlatAppearance.BorderColor = SystemColors.Control
-        addguestbtn.FlatAppearance.BorderSize = 2
-        addguestbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        addguestbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        addguestbtn.FlatStyle = FlatStyle.Flat
-        addguestbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        addguestbtn.ForeColor = SystemColors.Control
-        addguestbtn.Location = New Point(19, 229)
-        addguestbtn.Name = "addguestbtn"
-        addguestbtn.Size = New Size(205, 45)
-        addguestbtn.TabIndex = 3
-        addguestbtn.Text = " Guest"
-        addguestbtn.UseVisualStyleBackColor = False
+        guest_btn.BackColor = Color.Transparent
+        guest_btn.FlatAppearance.BorderColor = SystemColors.Control
+        guest_btn.FlatAppearance.BorderSize = 2
+        guest_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        guest_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        guest_btn.FlatStyle = FlatStyle.Flat
+        guest_btn.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        guest_btn.ForeColor = SystemColors.Control
+        guest_btn.Location = New Point(19, 262)
+        guest_btn.Name = "guest_btn"
+        guest_btn.Size = New Size(205, 45)
+        guest_btn.TabIndex = 3
+        guest_btn.Text = " Guest"
+        guest_btn.UseVisualStyleBackColor = False
         ' 
-        ' userdashboard
+        ' User
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        ClientSize = New Size(1317, 792)
-        Controls.Add(billingbtn)
+        ClientSize = New Size(1317, 833)
+        Controls.Add(closebtn)
+        Controls.Add(Lbl_currentuser)
+        Controls.Add(Labelusername)
+        Controls.Add(billing_btn)
         Controls.Add(logoutbtn)
-        Controls.Add(checkoutbtn)
-        Controls.Add(statusbtn)
-        Controls.Add(roomsbtn)
-        Controls.Add(checkinbtn)
-        Controls.Add(Pnl_diffform)
-        Controls.Add(addguestbtn)
+        Controls.Add(checkout_btn)
+        Controls.Add(dashboard_btn)
+        Controls.Add(rooms_btn)
+        Controls.Add(checkin_btn)
+        Controls.Add(Pnl_userdashboard)
+        Controls.Add(guest_btn)
         FormBorderStyle = FormBorderStyle.None
-        Name = "userdashboard"
+        Name = "User"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Userdashboard"
-        Pnl_diffform.ResumeLayout(False)
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
-    Friend WithEvents Pnl_diffform As Panel
-    Friend WithEvents statusbtn As Button
-    Friend WithEvents checkoutbtn As Button
-    Friend WithEvents checkinbtn As Button
-    Friend WithEvents roomsbtn As Button
-    Friend WithEvents billingbtn As Button
-    Friend WithEvents addguestbtn As Button
+    Friend WithEvents Pnl_userdashboard As Panel
+    Friend WithEvents dashboard_btn As Button
+    Friend WithEvents checkout_btn As Button
+    Friend WithEvents checkin_btn As Button
+    Friend WithEvents rooms_btn As Button
+    Friend WithEvents billing_btn As Button
+    Friend WithEvents guest_btn As Button
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
     Friend WithEvents logoutbtn As Button
     Friend WithEvents Lbl_currentuser As Label
     Friend WithEvents Labelusername As Label
     Friend WithEvents closebtn As Button
-    Friend WithEvents Panel1 As Panel
 End Class

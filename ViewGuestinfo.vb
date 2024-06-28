@@ -1,36 +1,10 @@
 ﻿Imports System.Data.SqlClient
-Imports System.Diagnostics.Eventing.Reader
 
-Public Class Guestform
+
+Public Class ViewGuestinfo
     Dim isvalidinput As Boolean
-    Dim guestssql As New guestssql()
+    Dim manageguests As New guestssql()
     Private originalEmail As String
-
-    Private Sub closebtn_Click_1(sender As Object, e As EventArgs)
-        Dim result = MessageBox.Show("Do you want to exit the application?", "Exit Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
-        If result = DialogResult.OK Then
-            Application.Exit
-        End If
-
-    End Sub
-
-
-    Private Sub populateguests()
-        Dim query As String = "SELECT * FROM guests"
-        guestssql.ExecuteQuery(query, DGV_Guests)
-        DGV_Guests.AutoGenerateColumns = True
-        DGV_Guests.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells
-        DGV_Guests.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
-        DGV_Guests.DefaultCellStyle.BackColor = Color.White
-        DGV_Guests.DefaultCellStyle.ForeColor = Color.Black
-        DGV_Guests.AlternatingRowsDefaultCellStyle = Nothing
-        ' Loop through columns and set the AutoSizeMode property
-        For Each column As DataGridViewColumn In DGV_Guests.Columns
-            column.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-        Next
-        ' Adjust the height of the header row to display the full content
-        DGV_Guests.AutoResizeRowHeadersWidth(DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders)
-    End Sub
 
 
     Private Sub gfirstname_txtbx_TextChanged(sender As Object, e As EventArgs)
@@ -59,7 +33,6 @@ Public Class Guestform
         Return True ' Return true if all characters are alphabetic
     End Function
 
-
     Private Sub glastname_txtbx_TextChanged(sender As Object, e As EventArgs)
         isvalidinput = IsAlphabeticOnly(gfirstname_txtbx.Text)
 
@@ -80,6 +53,7 @@ Public Class Guestform
         End If
 
     End Sub
+
     Private Sub Gemail_txtbx_TextChanged(sender As Object, e As EventArgs) Handles Gemail_txtbx.TextChanged
         If Not IsValidEmail(Gemail_txtbx.Text) Then
             Lbl_msgemail.Text = invalidemail
@@ -107,10 +81,26 @@ Public Class Guestform
         End If
     End Sub
 
-    Private Sub newguest_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        populateguests()
-
+    Private Sub populateguests()
+        Dim query As String = "SELECT * FROM guests"
+        manageguests.ExecuteQuery(query, DGV_Guests)
+        DGV_Guests.AutoGenerateColumns = True
+        DGV_Guests.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells
+        DGV_Guests.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
+        DGV_Guests.DefaultCellStyle.BackColor = Color.White
+        DGV_Guests.DefaultCellStyle.ForeColor = Color.Black
+        DGV_Guests.AlternatingRowsDefaultCellStyle = Nothing
+        ' Loop through columns and set the AutoSizeMode property
+        For Each column As DataGridViewColumn In DGV_Guests.Columns
+            column.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+        Next
+        ' Adjust the height of the header row to display the full content
+        DGV_Guests.AutoResizeRowHeadersWidth(DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders)
     End Sub
+    Private Sub ViewGuestinfo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        populateguests()
+    End Sub
+
     Private Sub searchguest_txtbx_TextChanged(sender As Object, e As EventArgs) Handles searchguest_txtbx.TextChanged
         FilterguestsByKeyword(searchguest_txtbx.Text.Trim())
     End Sub
@@ -123,7 +113,7 @@ Public Class Guestform
                            Contact LIKE @keyword OR
                            Gender LIKE @Keyword OR 
                            Email LIKE @Keyword )"
-        guestssql.SearchGuests(query, keyword, DGV_Guests)
+        manageguests.SearchGuests(query, keyword, DGV_Guests)
     End Sub
 
     Private Sub Tabpage_newguest_Leave(sender As Object, e As EventArgs) Handles Tabpage_manageguest.Leave
@@ -143,8 +133,6 @@ Public Class Guestform
         Lbl_msgemail.Text = String.Empty
 
     End Sub
-
-
     Private Sub add_btn_Click(sender As Object, e As EventArgs) Handles add_btn.Click
         Dim isValid As Boolean = True
         ' Trim the input values
@@ -172,7 +160,7 @@ Public Class Guestform
             isValid = False
             Lbl_msgemail.Text = invalidemail
             Lbl_msgemail.ForeColor = Color.Red
-        ElseIf guestssql.EmailExists(guestemail) OrElse Not String.IsNullOrEmpty(Lbl_guestidshow.Text) Then
+        ElseIf manageguests.EmailExists(guestemail) OrElse Not String.IsNullOrEmpty(Lbl_guestidshow.Text) Then
             isValid = False
             MessageBox.Show("E-mail exists or Guest already exists with this ID. You can only update existing guests.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Gemail_txtbx.Focus()
@@ -217,14 +205,13 @@ Public Class Guestform
 
         ' Execute the insertion query
         Try
-            guestssql.ExecuteNonQueryWithParameters(query, parameters)
+            manageguests.ExecuteNonQueryWithParameters(query, parameters)
             MessageBox.Show("Guest added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
             populateguests() ' Refresh the DataGridView after adding the guest
         Catch ex As Exception
             MessageBox.Show("Error adding guest: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
-
 
     Private Sub tabpage_viewguest_Enter(sender As Object, e As EventArgs) Handles tabpage_viewguest.Enter
         populateguests()
@@ -253,7 +240,7 @@ Public Class Guestform
             glastname_txtbx.Text = lastName
             gaddress_txtbx.Text = address
             contact_txtbx.Text = phone
-            Gemail_txtbx.Text = originalemail
+            Gemail_txtbx.Text = originalEmail
 
         End If
     End Sub
@@ -319,7 +306,7 @@ Public Class Guestform
         End If
 
         ' Check if the email exists only if it was changed
-        If Not guestemail.Equals(originalEmail, StringComparison.OrdinalIgnoreCase) AndAlso guestssql.EmailExists(guestemail) Then
+        If Not guestemail.Equals(originalEmail, StringComparison.OrdinalIgnoreCase) AndAlso manageguests.EmailExists(guestemail) Then
             MessageBox.Show("E-mail already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Gemail_txtbx.Focus()
             Exit Sub
@@ -339,12 +326,61 @@ Public Class Guestform
 
         ' Execute the update query
         Try
-            guestssql.ExecuteNonQueryWithParameters(query, parameters)
+            manageguests.ExecuteNonQueryWithParameters(query, parameters)
             MessageBox.Show("Guest updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
             populateguests() ' Refresh the DataGridView after updating the guest
         Catch ex As Exception
             MessageBox.Show("Error updating guest: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Private Sub userdel_btn_Click(sender As Object, e As EventArgs) Handles userdel_btn.Click
+        If String.IsNullOrEmpty(Lbl_guestidshow.Text) Then
+            MessageBox.Show("Please select a guest to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Exit Sub
+        End If
+
+        ' Confirm the deletion with the user
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to delete this guest?", "Delete Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+        If result = DialogResult.No Then
+            Exit Sub
+        End If
+
+        ' Get the guest ID
+        Dim guestId As Integer = Convert.ToInt32(Lbl_guestidshow.Text.Trim())
+
+        ' Delete the guest information from the database
+        Dim query As String = "DELETE FROM guests WHERE GuestId = @GuestId"
+
+        Dim parameters As New List(Of SqlParameter)()
+        parameters.Add(New SqlParameter("@GuestId", guestId))
+
+        ' Execute the delete query
+        Try
+            manageguests.ExecuteNonQueryWithParameters(query, parameters)
+            MessageBox.Show("Guest deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            ' Clear the form fields
+            gfirstname_txtbx.Clear()
+            glastname_txtbx.Clear()
+            gaddress_txtbx.Clear()
+            cmbbx_genderG.SelectedIndex = -1
+            contact_txtbx.Clear()
+            Gemail_txtbx.Clear()
+            Lbl_msgcontactno.Text = String.Empty
+            Lbl_msggaddress.Text = String.Empty
+            Lbl_msggfirstname.Text = String.Empty
+            Lbl_msgglastname.Text = String.Empty
+            Lbl_msgggender.Text = String.Empty
+            Lbl_guestid.Text = String.Empty
+            Lbl_guestidshow.Text = String.Empty
+            Lbl_msgemail.Text = String.Empty
+
+            ' Refresh the DataGridView after deleting the guest
+            populateguests()
+        Catch ex As Exception
+            MessageBox.Show("Error deleting guest: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
 End Class

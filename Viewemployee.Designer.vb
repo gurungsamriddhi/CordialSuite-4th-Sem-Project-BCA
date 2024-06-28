@@ -22,10 +22,7 @@ Partial Class Viewemployee
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Panel1 = New Panel()
-        close_Btn = New Button()
-        closebtn = New Button()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Lblviewg = New Label()
         Tabcontrolusers = New TabControl()
         TabPageViewemployee = New TabPage()
@@ -57,63 +54,18 @@ Partial Class Viewemployee
         LblDOB = New Label()
         LblFirstname = New Label()
         updateemployee_Btn = New Button()
-        Panel1.SuspendLayout()
         Tabcontrolusers.SuspendLayout()
         TabPageViewemployee.SuspendLayout()
         CType(DGV_employee, ComponentModel.ISupportInitialize).BeginInit()
         updateemployeetabpage.SuspendLayout()
         SuspendLayout()
         ' 
-        ' Panel1
-        ' 
-        Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        Panel1.Controls.Add(close_Btn)
-        Panel1.Controls.Add(closebtn)
-        Panel1.Controls.Add(Lblviewg)
-        Panel1.Dock = DockStyle.Top
-        Panel1.Location = New Point(0, 0)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1037, 57)
-        Panel1.TabIndex = 63
-        ' 
-        ' close_Btn
-        ' 
-        close_Btn.BackColor = Color.Transparent
-        close_Btn.FlatAppearance.BorderColor = Color.White
-        close_Btn.FlatAppearance.BorderSize = 2
-        close_Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        close_Btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        close_Btn.FlatStyle = FlatStyle.Flat
-        close_Btn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        close_Btn.ForeColor = SystemColors.Window
-        close_Btn.Location = New Point(991, 9)
-        close_Btn.Name = "close_Btn"
-        close_Btn.Size = New Size(43, 42)
-        close_Btn.TabIndex = 24
-        close_Btn.Text = "X"
-        close_Btn.UseVisualStyleBackColor = False
-        ' 
-        ' closebtn
-        ' 
-        closebtn.BackColor = SystemColors.ControlLightLight
-        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        closebtn.Location = New Point(431, 313)
-        closebtn.Name = "closebtn"
-        closebtn.Size = New Size(47, 35)
-        closebtn.TabIndex = 23
-        closebtn.Text = "X"
-        closebtn.UseVisualStyleBackColor = False
-        ' 
         ' Lblviewg
         ' 
         Lblviewg.AutoSize = True
         Lblviewg.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lblviewg.ForeColor = SystemColors.Window
-        Lblviewg.Location = New Point(377, 9)
+        Lblviewg.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(170))
+        Lblviewg.Location = New Point(456, 9)
         Lblviewg.Name = "Lblviewg"
         Lblviewg.Size = New Size(204, 31)
         Lblviewg.TabIndex = 23
@@ -125,10 +77,10 @@ Partial Class Viewemployee
         Tabcontrolusers.Controls.Add(TabPageViewemployee)
         Tabcontrolusers.Controls.Add(updateemployeetabpage)
         Tabcontrolusers.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Tabcontrolusers.Location = New Point(26, 63)
+        Tabcontrolusers.Location = New Point(26, 58)
         Tabcontrolusers.Name = "Tabcontrolusers"
         Tabcontrolusers.SelectedIndex = 0
-        Tabcontrolusers.Size = New Size(985, 717)
+        Tabcontrolusers.Size = New Size(1014, 707)
         Tabcontrolusers.TabIndex = 64
         ' 
         ' TabPageViewemployee
@@ -140,7 +92,7 @@ Partial Class Viewemployee
         TabPageViewemployee.Location = New Point(4, 4)
         TabPageViewemployee.Name = "TabPageViewemployee"
         TabPageViewemployee.Padding = New Padding(3)
-        TabPageViewemployee.Size = New Size(977, 676)
+        TabPageViewemployee.Size = New Size(1006, 666)
         TabPageViewemployee.TabIndex = 0
         TabPageViewemployee.Text = "Search Employee"
         TabPageViewemployee.UseVisualStyleBackColor = True
@@ -151,7 +103,7 @@ Partial Class Viewemployee
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.ActiveCaptionText
-        Label1.Location = New Point(226, 90)
+        Label1.Location = New Point(243, 43)
         Label1.Name = "Label1"
         Label1.Size = New Size(131, 25)
         Label1.TabIndex = 9
@@ -161,11 +113,11 @@ Partial Class Viewemployee
         ' 
         DGV_employee.AllowUserToAddRows = False
         DGV_employee.AllowUserToDeleteRows = False
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle2.ForeColor = Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = Color.White
-        DataGridViewCellStyle2.SelectionForeColor = Color.Black
-        DGV_employee.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle1.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle1.ForeColor = Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = Color.White
+        DataGridViewCellStyle1.SelectionForeColor = Color.Black
+        DGV_employee.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         DGV_employee.Anchor = AnchorStyles.None
         DGV_employee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
         DGV_employee.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
@@ -173,11 +125,11 @@ Partial Class Viewemployee
         DGV_employee.BorderStyle = BorderStyle.None
         DGV_employee.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DGV_employee.GridColor = Color.Black
-        DGV_employee.Location = New Point(30, 136)
+        DGV_employee.Location = New Point(49, 103)
         DGV_employee.Name = "DGV_employee"
         DGV_employee.ReadOnly = True
         DGV_employee.RowHeadersWidth = 51
-        DGV_employee.Size = New Size(923, 495)
+        DGV_employee.Size = New Size(923, 548)
         DGV_employee.TabIndex = 6
         ' 
         ' searchkeyword_txtbx
@@ -187,7 +139,7 @@ Partial Class Viewemployee
         searchkeyword_txtbx.BorderStyle = BorderStyle.FixedSingle
         searchkeyword_txtbx.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         searchkeyword_txtbx.ForeColor = Color.Black
-        searchkeyword_txtbx.Location = New Point(363, 78)
+        searchkeyword_txtbx.Location = New Point(378, 33)
         searchkeyword_txtbx.Multiline = True
         searchkeyword_txtbx.Name = "searchkeyword_txtbx"
         searchkeyword_txtbx.Size = New Size(324, 47)
@@ -222,7 +174,7 @@ Partial Class Viewemployee
         updateemployeetabpage.Location = New Point(4, 4)
         updateemployeetabpage.Name = "updateemployeetabpage"
         updateemployeetabpage.Padding = New Padding(3)
-        updateemployeetabpage.Size = New Size(977, 676)
+        updateemployeetabpage.Size = New Size(1006, 665)
         updateemployeetabpage.TabIndex = 1
         updateemployeetabpage.Text = "Update Employee Information"
         updateemployeetabpage.UseVisualStyleBackColor = True
@@ -517,15 +469,13 @@ Partial Class Viewemployee
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1037, 792)
+        ClientSize = New Size(1077, 777)
         Controls.Add(Tabcontrolusers)
-        Controls.Add(Panel1)
+        Controls.Add(Lblviewg)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 4, 3, 4)
         Name = "Viewemployee"
         Text = "Viewemployee"
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
         Tabcontrolusers.ResumeLayout(False)
         TabPageViewemployee.ResumeLayout(False)
         TabPageViewemployee.PerformLayout()
@@ -533,10 +483,8 @@ Partial Class Viewemployee
         updateemployeetabpage.ResumeLayout(False)
         updateemployeetabpage.PerformLayout()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents close_Btn As Button
-    Friend WithEvents closebtn As Button
     Friend WithEvents Lblviewg As Label
     Friend WithEvents Tabcontrolusers As TabControl
     Friend WithEvents TabPageViewemployee As TabPage

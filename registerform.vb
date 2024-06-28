@@ -99,7 +99,7 @@
 
 
 
-        Dim newUser As New User() With {
+        Dim newUser As New user() With {
     .FirstName = user_firstname,
     .LastName = user_lastname,
     .Address = user_address,
@@ -115,7 +115,7 @@
 
         If userController.validusername(newUser.Username) Then
             MessageBox.Show("Username already exists. Please choose a different username.")
-            username_txtbx.Clear()
+
             username_txtbx.Focus()
         Else
             userController.AddUser(newUser)
@@ -265,9 +265,11 @@
 
 
 
-    Private Sub Closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
-        Application.Exit()
-        End
+    Private Sub Closebtn_Click(sender As Object, e As EventArgs)
+        Dim result = MessageBox.Show("Do you want to exit the application?", "Exit Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+        If result = DialogResult.OK Then
+            Application.Exit()
+        End If
     End Sub
 
     Public Sub clearinputs()
@@ -276,6 +278,7 @@
         userfn_txtbx.Clear()
         userln_txtbx.Clear()
         userPhone_txtbx.Clear()
+        username_txtbx.Clear()
         userAddress_txtbx.Clear()
         password_txtbx.Clear()
         gender_cmbbx.Items.Clear()

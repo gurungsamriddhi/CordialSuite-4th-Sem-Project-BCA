@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Revenue
+Partial Class Transaction
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -29,8 +29,6 @@ Partial Class Revenue
         Button5 = New Button()
         combobxperiod = New ComboBox()
         LblgGender = New Label()
-        closebtn = New Button()
-        logoutbtn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -47,7 +45,7 @@ Partial Class Revenue
         Panel1.Location = New Point(0, 0)
         Panel1.Margin = New Padding(3, 4, 3, 4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(192, 709)
+        Panel1.Size = New Size(192, 777)
         Panel1.TabIndex = 24
         ' 
         ' Button1
@@ -144,49 +142,15 @@ Partial Class Revenue
         LblgGender.TabIndex = 21
         LblgGender.Text = "Select Period"
         ' 
-        ' closebtn
-        ' 
-        closebtn.BackColor = Color.Transparent
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(219), CByte(215), CByte(210))
-        closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        closebtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        closebtn.Location = New Point(884, 7)
-        closebtn.Name = "closebtn"
-        closebtn.Size = New Size(58, 48)
-        closebtn.TabIndex = 28
-        closebtn.Text = "X"
-        closebtn.UseVisualStyleBackColor = False
-        ' 
-        ' logoutbtn
-        ' 
-        logoutbtn.BackColor = Color.Transparent
-        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
-        logoutbtn.FlatAppearance.BorderSize = 0
-        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        logoutbtn.FlatStyle = FlatStyle.Flat
-        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        logoutbtn.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        logoutbtn.Location = New Point(778, 7)
-        logoutbtn.Name = "logoutbtn"
-        logoutbtn.Size = New Size(100, 48)
-        logoutbtn.TabIndex = 49
-        logoutbtn.Text = "Log Out"
-        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
-        logoutbtn.UseVisualStyleBackColor = False
-        ' 
-        ' Revenue
+        ' Transaction
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(948, 709)
-        Controls.Add(logoutbtn)
-        Controls.Add(closebtn)
+        ClientSize = New Size(1077, 777)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 4, 3, 4)
-        Name = "Revenue"
+        Name = "Transaction"
         Text = "Revenue"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
@@ -200,6 +164,4 @@ Partial Class Revenue
     Friend WithEvents Button5 As Button
     Friend WithEvents combobxperiod As ComboBox
     Friend WithEvents LblgGender As Label
-    Friend WithEvents closebtn As Button
-    Friend WithEvents logoutbtn As Button
 End Class

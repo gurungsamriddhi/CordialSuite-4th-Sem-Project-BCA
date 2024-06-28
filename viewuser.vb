@@ -3,13 +3,17 @@ Imports System.Diagnostics.Eventing.Reader
 
 Public Class viewuser
 
-    Dim userssql As New userssql()
+    Dim manageusers As New userssql()
     Public isValidInput As Boolean
     Dim userController As New UserController()
+    Private originalusername As String
 
 
-    Private Sub closebtn_Click(sender As Object, e As EventArgs) Handles closebtn.Click
-        Application.Exit()
+    Private Sub closebtn_Click(sender As Object, e As EventArgs)
+        Dim result = MessageBox.Show("Do you want to exit the application?", "Exit Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+        If result = DialogResult.OK Then
+            Application.Exit
+        End If
     End Sub
 
     Public Sub clear()
@@ -45,7 +49,7 @@ Public Class viewuser
 
     Public Sub populateUsers()
         Dim query As String = "SELECT * FROM users WHERE Usertype IN ('admin', 'user')"
-        userssql.ExecuteQuery(query, DGV_users)
+        manageusers.ExecuteQuery(query, DGV_users)
 
         DGV_users.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells
         DGV_users.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
@@ -60,7 +64,7 @@ Public Class viewuser
     End Sub
 
     Private Sub viewuser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        populateUsers()
+        TabPageViewUser_Enter(sender, e)
     End Sub
 
     Private Sub DGV_users_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_users.CellClick
@@ -74,14 +78,14 @@ Public Class viewuser
             Dim lastName As String = selectedRow.Cells("LastName").Value.ToString()
             Dim address As String = selectedRow.Cells("Address").Value.ToString()
             Dim phone As String = selectedRow.Cells("PhoneNumber").Value.ToString()
-            Dim username As String = selectedRow.Cells("Username").Value.ToString()
+            originalusername = selectedRow.Cells("Username").Value.ToString()
             Dim password As String = selectedRow.Cells("Password").Value.ToString()
             Dim userid As Integer = selectedRow.Cells("id").Value.ToString()
 
 
             Lbl_useridshow.Text = userid
             usertypedel_cmbbx.SelectedItem = userType
-            usernamedel_txtbx.Text = username
+            usernamedel_txtbx.Text = originalusername
             Lbl_useridshowdel.Text = userid
             userDOB_dtp.Value = dob
             usertype_cmbbx.SelectedItem = userType
@@ -90,7 +94,7 @@ Public Class viewuser
             userln_txtbx.Text = lastName
             userAddress_txtbx.Text = address
             userPhone_txtbx.Text = phone
-            username_txtbx.Text = username
+            username_txtbx.Text = originalusername
             password_txtbx.Text = password
 
 
@@ -121,24 +125,24 @@ Public Class viewuser
 
     Private Sub FilterUsersByKeyword(keyword As String)
         Dim query As String = "SELECT * FROM users WHERE Usertype IN ('admin', 'user') AND 
-                          (Username LIKE @Keyword OR 
+                          ( CAST (id as varchar) LIKE @Keyword OR 
+                           Username LIKE @Keyword OR
                            FirstName LIKE @Keyword OR 
                            LastName LIKE @Keyword OR 
                            Address LIKE @keyword OR
                            PhoneNumber LIKE @Keyword OR 
                            Age LIKE @Keyword OR 
-                           id LIKE @Keyword OR 
+                           
                            UserType LIKE @Keyword OR 
                            Gender LIKE @Keyword)"
-        userssql.SearchUsers(query, keyword, DGV_users)
+        manageusers.SearchUsers(query, keyword, DGV_users)
     End Sub
 
     Private Sub UpdateUser()
         Dim userage As Integer = CalculateAge(userDOB_dtp.Value)
 
-        If userController.validusername(username_txtbx.Text.Trim()) Then
+        If Not username_txtbx.Text.Trim().Equals(originalusername, StringComparison.OrdinalIgnoreCase) AndAlso userController.validusername(username_txtbx.Text.Trim()) Then
             MessageBox.Show("Username already exists. Please choose a different username.")
-            username_txtbx.Clear()
             username_txtbx.Focus()
             Return
         End If
@@ -160,10 +164,10 @@ Public Class viewuser
         New SqlParameter("@userid", Lbl_useridshow.Text)
        }
 
-        userssql.ExecuteNonQueryWithParameters(query, parameters)
+        manageusers.ExecuteNonQueryWithParameters(query, parameters)
         MessageBox.Show("User updated successfully.")
         populateUsers()
-        clear()
+
     End Sub
 
     Private Sub DeleteUser(userid As Integer)
@@ -172,7 +176,7 @@ Public Class viewuser
         New SqlParameter("@userid", userid)
     }
 
-        userssql.ExecuteNonQueryWithParameters(query, parameters)
+        manageusers.ExecuteNonQueryWithParameters(query, parameters)
         MessageBox.Show("User deleted successfully.")
         populateUsers()
 
@@ -397,6 +401,7 @@ Public Class viewuser
         usertypedel_cmbbx.SelectedIndex = -1
     End Sub
 
-
-
+    Private Sub updateusertabpage_Leave(sender As Object, e As EventArgs) Handles updateusertabpage.Leave
+        clear()
+    End Sub
 End Class

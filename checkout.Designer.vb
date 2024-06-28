@@ -28,7 +28,6 @@ Partial Class checkout
         closebtn = New Button()
         Lblviewg = New Label()
         checkout_btn = New Button()
-        logoutbtn = New Button()
         CType(DGV_guestcheckout, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         SuspendLayout()
@@ -45,14 +44,13 @@ Partial Class checkout
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        Panel1.Controls.Add(logoutbtn)
         Panel1.Controls.Add(Button1)
         Panel1.Controls.Add(closebtn)
         Panel1.Controls.Add(Lblviewg)
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(948, 54)
+        Panel1.Size = New Size(1077, 54)
         Panel1.TabIndex = 45
         ' 
         ' Button1
@@ -65,7 +63,7 @@ Partial Class checkout
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = SystemColors.Window
-        Button1.Location = New Point(902, 3)
+        Button1.Location = New Point(1031, 3)
         Button1.Name = "Button1"
         Button1.Size = New Size(43, 42)
         Button1.TabIndex = 45
@@ -117,29 +115,11 @@ Partial Class checkout
         checkout_btn.Text = "Check Out"
         checkout_btn.UseVisualStyleBackColor = False
         ' 
-        ' logoutbtn
-        ' 
-        logoutbtn.BackColor = Color.Transparent
-        logoutbtn.FlatAppearance.BorderColor = SystemColors.Window
-        logoutbtn.FlatAppearance.BorderSize = 0
-        logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        logoutbtn.FlatStyle = FlatStyle.Flat
-        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
-        logoutbtn.ForeColor = SystemColors.Window
-        logoutbtn.Location = New Point(796, 0)
-        logoutbtn.Name = "logoutbtn"
-        logoutbtn.Size = New Size(100, 51)
-        logoutbtn.TabIndex = 47
-        logoutbtn.Text = "Log Out"
-        logoutbtn.TextAlign = ContentAlignment.MiddleLeft
-        logoutbtn.UseVisualStyleBackColor = False
-        ' 
         ' checkout
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(948, 750)
+        ClientSize = New Size(1077, 792)
         Controls.Add(checkout_btn)
         Controls.Add(Panel1)
         Controls.Add(DGV_guestcheckout)
@@ -157,5 +137,4 @@ Partial Class checkout
     Friend WithEvents closebtn As Button
     Friend WithEvents Lblviewg As Label
     Friend WithEvents checkout_btn As Button
-    Friend WithEvents logoutbtn As Button
 End Class

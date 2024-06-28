@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Guestform
+Partial Class ViewGuestinfo
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,13 +23,14 @@ Partial Class Guestform
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        pnlguestlist = New Panel()
+        Lblviewg = New Label()
         Tabpage_updateguest = New TabControl()
         tabpage_viewguest = New TabPage()
         lbl_anykeyword = New Label()
         searchguest_txtbx = New TextBox()
         DGV_Guests = New DataGridView()
         Tabpage_manageguest = New TabPage()
+        userdel_btn = New Button()
         update_btn = New Button()
         Lbl_guestidshow = New Label()
         Lbl_guestid = New Label()
@@ -52,24 +53,23 @@ Partial Class Guestform
         Lbl_contactno = New Label()
         Lbl_gender = New Label()
         Lbl_firstname = New Label()
-        Lblguestlist = New Label()
-        pnlguestlist.SuspendLayout()
         Tabpage_updateguest.SuspendLayout()
         tabpage_viewguest.SuspendLayout()
         CType(DGV_Guests, ComponentModel.ISupportInitialize).BeginInit()
         Tabpage_manageguest.SuspendLayout()
         SuspendLayout()
         ' 
-        ' pnlguestlist
+        ' Lblviewg
         ' 
-        pnlguestlist.BackColor = SystemColors.ButtonFace
-        pnlguestlist.Controls.Add(Tabpage_updateguest)
-        pnlguestlist.Controls.Add(Lblguestlist)
-        pnlguestlist.Dock = DockStyle.Fill
-        pnlguestlist.Location = New Point(0, 0)
-        pnlguestlist.Name = "pnlguestlist"
-        pnlguestlist.Size = New Size(1077, 777)
-        pnlguestlist.TabIndex = 1
+        Lblviewg.AutoSize = True
+        Lblviewg.BackColor = Color.Transparent
+        Lblviewg.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lblviewg.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(170))
+        Lblviewg.Location = New Point(464, 9)
+        Lblviewg.Name = "Lblviewg"
+        Lblviewg.Size = New Size(148, 31)
+        Lblviewg.TabIndex = 23
+        Lblviewg.Text = "VIEW GUEST"
         ' 
         ' Tabpage_updateguest
         ' 
@@ -78,11 +78,11 @@ Partial Class Guestform
         Tabpage_updateguest.Controls.Add(tabpage_viewguest)
         Tabpage_updateguest.Controls.Add(Tabpage_manageguest)
         Tabpage_updateguest.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Tabpage_updateguest.Location = New Point(27, 57)
+        Tabpage_updateguest.Location = New Point(31, 58)
         Tabpage_updateguest.Name = "Tabpage_updateguest"
         Tabpage_updateguest.SelectedIndex = 0
-        Tabpage_updateguest.Size = New Size(1026, 708)
-        Tabpage_updateguest.TabIndex = 6
+        Tabpage_updateguest.Size = New Size(1008, 695)
+        Tabpage_updateguest.TabIndex = 43
         ' 
         ' tabpage_viewguest
         ' 
@@ -93,7 +93,7 @@ Partial Class Guestform
         tabpage_viewguest.Location = New Point(4, 4)
         tabpage_viewguest.Name = "tabpage_viewguest"
         tabpage_viewguest.Padding = New Padding(3)
-        tabpage_viewguest.Size = New Size(1018, 667)
+        tabpage_viewguest.Size = New Size(1000, 654)
         tabpage_viewguest.TabIndex = 1
         tabpage_viewguest.Text = "View Guest"
         tabpage_viewguest.UseVisualStyleBackColor = True
@@ -104,7 +104,7 @@ Partial Class Guestform
         lbl_anykeyword.AutoSize = True
         lbl_anykeyword.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbl_anykeyword.ForeColor = SystemColors.ActiveCaptionText
-        lbl_anykeyword.Location = New Point(226, 45)
+        lbl_anykeyword.Location = New Point(228, 57)
         lbl_anykeyword.Name = "lbl_anykeyword"
         lbl_anykeyword.Size = New Size(131, 25)
         lbl_anykeyword.TabIndex = 10
@@ -113,7 +113,7 @@ Partial Class Guestform
         ' searchguest_txtbx
         ' 
         searchguest_txtbx.BorderStyle = BorderStyle.FixedSingle
-        searchguest_txtbx.Location = New Point(363, 38)
+        searchguest_txtbx.Location = New Point(365, 48)
         searchguest_txtbx.Multiline = True
         searchguest_txtbx.Name = "searchguest_txtbx"
         searchguest_txtbx.Size = New Size(358, 49)
@@ -137,15 +137,16 @@ Partial Class Guestform
         DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
         DGV_Guests.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         DGV_Guests.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DGV_Guests.Location = New Point(17, 119)
+        DGV_Guests.Location = New Point(15, 118)
         DGV_Guests.Name = "DGV_Guests"
         DGV_Guests.ReadOnly = True
         DGV_Guests.RowHeadersWidth = 51
-        DGV_Guests.Size = New Size(983, 530)
+        DGV_Guests.Size = New Size(953, 515)
         DGV_Guests.TabIndex = 0
         ' 
         ' Tabpage_manageguest
         ' 
+        Tabpage_manageguest.Controls.Add(userdel_btn)
         Tabpage_manageguest.Controls.Add(update_btn)
         Tabpage_manageguest.Controls.Add(Lbl_guestidshow)
         Tabpage_manageguest.Controls.Add(Lbl_guestid)
@@ -171,23 +172,38 @@ Partial Class Guestform
         Tabpage_manageguest.Location = New Point(4, 4)
         Tabpage_manageguest.Name = "Tabpage_manageguest"
         Tabpage_manageguest.Padding = New Padding(3)
-        Tabpage_manageguest.Size = New Size(1000, 662)
+        Tabpage_manageguest.Size = New Size(1000, 600)
         Tabpage_manageguest.TabIndex = 2
         Tabpage_manageguest.Text = "Manage Guests"
         Tabpage_manageguest.UseVisualStyleBackColor = True
+        ' 
+        ' userdel_btn
+        ' 
+        userdel_btn.BackColor = Color.Red
+        userdel_btn.FlatAppearance.BorderColor = SystemColors.Window
+        userdel_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(204), CByte(0), CByte(0))
+        userdel_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(204), CByte(0), CByte(0))
+        userdel_btn.FlatStyle = FlatStyle.Flat
+        userdel_btn.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        userdel_btn.ForeColor = SystemColors.Window
+        userdel_btn.Location = New Point(615, 586)
+        userdel_btn.Name = "userdel_btn"
+        userdel_btn.Size = New Size(154, 49)
+        userdel_btn.TabIndex = 94
+        userdel_btn.Text = "Delete"
+        userdel_btn.UseVisualStyleBackColor = False
         ' 
         ' update_btn
         ' 
         update_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         update_btn.FlatAppearance.BorderColor = SystemColors.Window
-        update_btn.FlatAppearance.BorderSize = 2
         update_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         update_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         update_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         update_btn.FlatStyle = FlatStyle.Flat
         update_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
         update_btn.ForeColor = SystemColors.ControlLightLight
-        update_btn.Location = New Point(526, 588)
+        update_btn.Location = New Point(428, 588)
         update_btn.Name = "update_btn"
         update_btn.Size = New Size(154, 49)
         update_btn.TabIndex = 93
@@ -199,7 +215,7 @@ Partial Class Guestform
         Lbl_guestidshow.AutoSize = True
         Lbl_guestidshow.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lbl_guestidshow.ForeColor = Color.Black
-        Lbl_guestidshow.Location = New Point(225, 17)
+        Lbl_guestidshow.Location = New Point(228, 20)
         Lbl_guestidshow.Name = "Lbl_guestidshow"
         Lbl_guestidshow.Size = New Size(0, 28)
         Lbl_guestidshow.TabIndex = 92
@@ -209,7 +225,7 @@ Partial Class Guestform
         Lbl_guestid.AutoSize = True
         Lbl_guestid.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lbl_guestid.ForeColor = Color.Red
-        Lbl_guestid.Location = New Point(94, 17)
+        Lbl_guestid.Location = New Point(97, 20)
         Lbl_guestid.Name = "Lbl_guestid"
         Lbl_guestid.Size = New Size(0, 28)
         Lbl_guestid.TabIndex = 91
@@ -220,7 +236,7 @@ Partial Class Guestform
         Lbl_msgemail.BackColor = Color.Transparent
         Lbl_msgemail.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbl_msgemail.ForeColor = Color.Red
-        Lbl_msgemail.Location = New Point(546, 321)
+        Lbl_msgemail.Location = New Point(549, 324)
         Lbl_msgemail.Name = "Lbl_msgemail"
         Lbl_msgemail.Size = New Size(0, 23)
         Lbl_msgemail.TabIndex = 90
@@ -242,7 +258,7 @@ Partial Class Guestform
         Lbl_msgggender.BackColor = Color.Transparent
         Lbl_msgggender.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbl_msgggender.ForeColor = Color.Red
-        Lbl_msgggender.Location = New Point(97, 323)
+        Lbl_msgggender.Location = New Point(100, 326)
         Lbl_msgggender.Name = "Lbl_msgggender"
         Lbl_msgggender.Size = New Size(0, 23)
         Lbl_msgggender.TabIndex = 86
@@ -253,7 +269,7 @@ Partial Class Guestform
         Lbl_msggfirstname.BackColor = Color.Transparent
         Lbl_msggfirstname.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbl_msggfirstname.ForeColor = Color.Red
-        Lbl_msggfirstname.Location = New Point(97, 161)
+        Lbl_msggfirstname.Location = New Point(100, 164)
         Lbl_msggfirstname.Name = "Lbl_msggfirstname"
         Lbl_msggfirstname.Size = New Size(0, 23)
         Lbl_msggfirstname.TabIndex = 84
@@ -264,7 +280,7 @@ Partial Class Guestform
         Lbl_msgcontactno.BackColor = Color.Transparent
         Lbl_msgcontactno.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbl_msgcontactno.ForeColor = Color.Red
-        Lbl_msgcontactno.Location = New Point(97, 502)
+        Lbl_msgcontactno.Location = New Point(100, 505)
         Lbl_msgcontactno.Name = "Lbl_msgcontactno"
         Lbl_msgcontactno.Size = New Size(0, 23)
         Lbl_msgcontactno.TabIndex = 83
@@ -274,7 +290,7 @@ Partial Class Guestform
         Lbl_msggaddress.AutoSize = True
         Lbl_msggaddress.BackColor = Color.Transparent
         Lbl_msggaddress.ForeColor = Color.Red
-        Lbl_msggaddress.Location = New Point(546, 497)
+        Lbl_msggaddress.Location = New Point(549, 500)
         Lbl_msggaddress.Name = "Lbl_msggaddress"
         Lbl_msggaddress.Size = New Size(0, 28)
         Lbl_msggaddress.TabIndex = 82
@@ -285,7 +301,7 @@ Partial Class Guestform
         Lbl_msgglastname.BackColor = Color.Transparent
         Lbl_msgglastname.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Lbl_msgglastname.ForeColor = Color.Red
-        Lbl_msgglastname.Location = New Point(543, 163)
+        Lbl_msgglastname.Location = New Point(546, 166)
         Lbl_msgglastname.Name = "Lbl_msgglastname"
         Lbl_msgglastname.Size = New Size(0, 23)
         Lbl_msgglastname.TabIndex = 80
@@ -351,14 +367,13 @@ Partial Class Guestform
         ' 
         add_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         add_btn.FlatAppearance.BorderColor = SystemColors.Window
-        add_btn.FlatAppearance.BorderSize = 2
         add_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         add_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         add_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         add_btn.FlatStyle = FlatStyle.Flat
         add_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
         add_btn.ForeColor = SystemColors.ControlLightLight
-        add_btn.Location = New Point(311, 588)
+        add_btn.Location = New Point(240, 588)
         add_btn.Name = "add_btn"
         add_btn.Size = New Size(154, 49)
         add_btn.TabIndex = 71
@@ -370,7 +385,7 @@ Partial Class Guestform
         Lbl_lastname.AutoSize = True
         Lbl_lastname.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lbl_lastname.ForeColor = Color.Black
-        Lbl_lastname.Location = New Point(539, 69)
+        Lbl_lastname.Location = New Point(542, 72)
         Lbl_lastname.Name = "Lbl_lastname"
         Lbl_lastname.Size = New Size(99, 28)
         Lbl_lastname.TabIndex = 69
@@ -381,7 +396,7 @@ Partial Class Guestform
         Lbl_email.AutoSize = True
         Lbl_email.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lbl_email.ForeColor = Color.Black
-        Lbl_email.Location = New Point(543, 229)
+        Lbl_email.Location = New Point(546, 232)
         Lbl_email.Name = "Lbl_email"
         Lbl_email.Size = New Size(68, 28)
         Lbl_email.TabIndex = 67
@@ -392,7 +407,7 @@ Partial Class Guestform
         Lbl_address.AutoSize = True
         Lbl_address.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lbl_address.ForeColor = Color.Black
-        Lbl_address.Location = New Point(546, 411)
+        Lbl_address.Location = New Point(549, 414)
         Lbl_address.Name = "Lbl_address"
         Lbl_address.Size = New Size(85, 28)
         Lbl_address.TabIndex = 66
@@ -403,7 +418,7 @@ Partial Class Guestform
         Lbl_contactno.AutoSize = True
         Lbl_contactno.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lbl_contactno.ForeColor = Color.Black
-        Lbl_contactno.Location = New Point(97, 411)
+        Lbl_contactno.Location = New Point(100, 414)
         Lbl_contactno.Name = "Lbl_contactno"
         Lbl_contactno.Size = New Size(81, 28)
         Lbl_contactno.TabIndex = 65
@@ -414,7 +429,7 @@ Partial Class Guestform
         Lbl_gender.AutoSize = True
         Lbl_gender.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lbl_gender.ForeColor = Color.Black
-        Lbl_gender.Location = New Point(97, 234)
+        Lbl_gender.Location = New Point(100, 237)
         Lbl_gender.Name = "Lbl_gender"
         Lbl_gender.Size = New Size(79, 28)
         Lbl_gender.TabIndex = 62
@@ -425,34 +440,24 @@ Partial Class Guestform
         Lbl_firstname.AutoSize = True
         Lbl_firstname.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lbl_firstname.ForeColor = Color.Black
-        Lbl_firstname.Location = New Point(94, 74)
+        Lbl_firstname.Location = New Point(97, 77)
         Lbl_firstname.Name = "Lbl_firstname"
         Lbl_firstname.Size = New Size(101, 28)
         Lbl_firstname.TabIndex = 61
         Lbl_firstname.Text = "Firstname"
         ' 
-        ' Lblguestlist
-        ' 
-        Lblguestlist.AutoSize = True
-        Lblguestlist.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lblguestlist.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(170))
-        Lblguestlist.Location = New Point(500, 9)
-        Lblguestlist.Name = "Lblguestlist"
-        Lblguestlist.Size = New Size(91, 31)
-        Lblguestlist.TabIndex = 1
-        Lblguestlist.Text = "GUEST "
-        ' 
-        ' Guestform
+        ' ViewGuestinfo
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1077, 777)
-        Controls.Add(pnlguestlist)
+        Controls.Add(Tabpage_updateguest)
+        Controls.Add(Lblviewg)
         FormBorderStyle = FormBorderStyle.None
-        Name = "Guestform"
-        Text = "addguestform"
-        pnlguestlist.ResumeLayout(False)
-        pnlguestlist.PerformLayout()
+        Margin = New Padding(3, 4, 3, 4)
+        Name = "ViewGuestinfo"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "ViewGuest"
         Tabpage_updateguest.ResumeLayout(False)
         tabpage_viewguest.ResumeLayout(False)
         tabpage_viewguest.PerformLayout()
@@ -460,23 +465,16 @@ Partial Class Guestform
         Tabpage_manageguest.ResumeLayout(False)
         Tabpage_manageguest.PerformLayout()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
-    Friend WithEvents pnlguestlist As Panel
-    Friend WithEvents searchbtn As Button
-    Friend WithEvents Lblguestlist As Label
-    Friend WithEvents DataGridViewGuestlist As DataGridView
+    Friend WithEvents Lblviewg As Label
     Friend WithEvents Tabpage_updateguest As TabControl
     Friend WithEvents tabpage_viewguest As TabPage
+    Friend WithEvents lbl_anykeyword As Label
     Friend WithEvents searchguest_txtbx As TextBox
     Friend WithEvents DGV_Guests As DataGridView
-    Friend WithEvents Lbl_msgnadults As Label
-    Friend WithEvents Lbl_msgguestid As Label
-    Friend WithEvents Country_cmbbx As ComboBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents lbl_anykeyword As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents Tabpage_manageguest As TabPage
+    Friend WithEvents update_btn As Button
     Friend WithEvents Lbl_guestidshow As Label
     Friend WithEvents Lbl_guestid As Label
     Friend WithEvents Lbl_msgemail As Label
@@ -498,5 +496,5 @@ Partial Class Guestform
     Friend WithEvents Lbl_contactno As Label
     Friend WithEvents Lbl_gender As Label
     Friend WithEvents Lbl_firstname As Label
-    Friend WithEvents update_btn As Button
+    Friend WithEvents userdel_btn As Button
 End Class

@@ -38,7 +38,7 @@ Partial Class billing
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(948, 54)
+        Panel1.Size = New Size(1077, 54)
         Panel1.TabIndex = 44
         ' 
         ' close_btn
@@ -51,7 +51,7 @@ Partial Class billing
         close_btn.FlatStyle = FlatStyle.Flat
         close_btn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         close_btn.ForeColor = SystemColors.Window
-        close_btn.Location = New Point(902, 3)
+        close_btn.Location = New Point(1031, 3)
         close_btn.Name = "close_btn"
         close_btn.Size = New Size(43, 42)
         close_btn.TabIndex = 25
@@ -89,7 +89,7 @@ Partial Class billing
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(948, 709)
+        ClientSize = New Size(1077, 792)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "billing"

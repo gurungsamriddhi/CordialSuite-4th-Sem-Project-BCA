@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 Public Class Viewemployee
     Dim usercontroller As New UserController()
-    Dim userssql As New userssql()
+    Dim manageemployee As New userssql()
     Public isValidInput As Boolean
 
 
@@ -36,13 +36,16 @@ Public Class Viewemployee
         Lbl_useridshow.Text = String.Empty
     End Sub
 
-    Private Sub close_Btn_Click(sender As Object, e As EventArgs) Handles close_Btn.Click
-        Application.Exit()
+    Private Sub close_Btn_Click(sender As Object, e As EventArgs)
+        Dim result = MessageBox.Show("Do you want to exit the application?", "Exit Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+        If result = DialogResult.OK Then
+            Application.Exit
+        End If
     End Sub
 
     Public Sub populateemployees()
         Dim query As String = "SELECT id,FirstName,LastName,Address,PhoneNumber,Age,Gender,UserType  FROM users WHERE Usertype='user'"
-        userssql.ExecuteQuery(query, DGV_employee)
+        manageemployee.ExecuteQuery(query, DGV_employee)
 
         DGV_employee.AutoGenerateColumns = True
 
@@ -77,16 +80,16 @@ Public Class Viewemployee
 
     Private Sub FilterUsersByKeyword(keyword As String)
         Dim query As String = "SELECT * FROM users WHERE Usertype ='user'AND 
-                          (
+                          (cast(id as varchar) LIKE @Keyword OR 
                            FirstName LIKE @Keyword OR 
                            LastName LIKE @Keyword OR 
                            Address LIKE @keyword OR
                            PhoneNumber LIKE @Keyword OR 
                            Age LIKE @Keyword OR 
-                           id LIKE @Keyword OR 
+                           
                            UserType LIKE @Keyword OR 
                            Gender LIKE @Keyword)"
-        userssql.SearchUsers(query, keyword, DGV_employee)
+        manageemployee.SearchUsers(query, keyword, DGV_employee)
     End Sub
 
 
@@ -303,7 +306,7 @@ Public Class Viewemployee
         New SqlParameter("@userid", Lbl_useridshow.Text)
        }
 
-        userssql.ExecuteNonQueryWithParameters(query, parameters)
+        manageemployee.ExecuteNonQueryWithParameters(query, parameters)
         MessageBox.Show("User updated successfully.")
         populateemployees()
         clear()

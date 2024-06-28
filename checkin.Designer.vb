@@ -48,12 +48,8 @@ Partial Class checkin
         Lbl_msgcheckout = New Label()
         Lbl_msgarrivaldate = New Label()
         Lbl_msgroomno = New Label()
-        Panel1 = New Panel()
-        Button1 = New Button()
-        closebtn = New Button()
-        Lblviewg = New Label()
+        Lbl_guestcheckin = New Label()
         CType(guestnumber_NUD, ComponentModel.ISupportInitialize).BeginInit()
-        Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Lblguestid
@@ -253,7 +249,7 @@ Partial Class checkin
         checkinbtn.FlatStyle = FlatStyle.Flat
         checkinbtn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
         checkinbtn.ForeColor = SystemColors.ControlLightLight
-        checkinbtn.Location = New Point(304, 639)
+        checkinbtn.Location = New Point(332, 675)
         checkinbtn.Name = "checkinbtn"
         checkinbtn.Size = New Size(161, 58)
         checkinbtn.TabIndex = 22
@@ -271,7 +267,7 @@ Partial Class checkin
         clearbtn.FlatStyle = FlatStyle.Flat
         clearbtn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
         clearbtn.ForeColor = SystemColors.ControlLightLight
-        clearbtn.Location = New Point(516, 639)
+        clearbtn.Location = New Point(578, 675)
         clearbtn.Name = "clearbtn"
         clearbtn.Size = New Size(143, 58)
         clearbtn.TabIndex = 24
@@ -344,69 +340,25 @@ Partial Class checkin
         Lbl_msgroomno.Size = New Size(0, 20)
         Lbl_msgroomno.TabIndex = 32
         ' 
-        ' Panel1
+        ' Lbl_guestcheckin
         ' 
-        Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        Panel1.Controls.Add(Button1)
-        Panel1.Controls.Add(closebtn)
-        Panel1.Controls.Add(Lblviewg)
-        Panel1.Dock = DockStyle.Top
-        Panel1.Location = New Point(0, 0)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(948, 54)
-        Panel1.TabIndex = 44
-        ' 
-        ' Button1
-        ' 
-        Button1.BackColor = Color.Transparent
-        Button1.FlatAppearance.BorderColor = Color.White
-        Button1.FlatAppearance.BorderSize = 2
-        Button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        Button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = SystemColors.Window
-        Button1.Location = New Point(902, 3)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(43, 42)
-        Button1.TabIndex = 45
-        Button1.Text = "X"
-        Button1.UseVisualStyleBackColor = False
-        ' 
-        ' closebtn
-        ' 
-        closebtn.BackColor = SystemColors.ControlLightLight
-        closebtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(10), CByte(15), CByte(60))
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
-        closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        closebtn.Location = New Point(431, 313)
-        closebtn.Name = "closebtn"
-        closebtn.Size = New Size(47, 35)
-        closebtn.TabIndex = 23
-        closebtn.Text = "X"
-        closebtn.UseVisualStyleBackColor = False
-        ' 
-        ' Lblviewg
-        ' 
-        Lblviewg.AutoSize = True
-        Lblviewg.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lblviewg.ForeColor = SystemColors.Window
-        Lblviewg.Location = New Point(375, 9)
-        Lblviewg.Name = "Lblviewg"
-        Lblviewg.Size = New Size(198, 62)
-        Lblviewg.TabIndex = 23
-        Lblviewg.Text = "GUEST CHECK-IN" & vbCrLf & vbCrLf
-        Lblviewg.TextAlign = ContentAlignment.MiddleCenter
+        Lbl_guestcheckin.AutoSize = True
+        Lbl_guestcheckin.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl_guestcheckin.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(170))
+        Lbl_guestcheckin.Location = New Point(439, 9)
+        Lbl_guestcheckin.Name = "Lbl_guestcheckin"
+        Lbl_guestcheckin.Size = New Size(198, 62)
+        Lbl_guestcheckin.TabIndex = 23
+        Lbl_guestcheckin.Text = "GUEST CHECK-IN" & vbCrLf & vbCrLf
+        Lbl_guestcheckin.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' checkin
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(948, 750)
-        Controls.Add(Panel1)
+        ClientSize = New Size(1077, 777)
         Controls.Add(Lbl_msgroomno)
+        Controls.Add(Lbl_guestcheckin)
         Controls.Add(Lbl_msgarrivaldate)
         Controls.Add(Lbl_msgcheckout)
         Controls.Add(roomno_cmbbxbx)
@@ -436,8 +388,6 @@ Partial Class checkin
         Name = "checkin"
         Text = "checkin"
         CType(guestnumber_NUD, ComponentModel.ISupportInitialize).EndInit()
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -471,6 +421,6 @@ Partial Class checkin
     Friend WithEvents Lbl_msgroomno As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents closebtn As Button
-    Friend WithEvents Lblviewg As Label
+    Friend WithEvents Lbl_guestcheckin As Label
     Friend WithEvents Button1 As Button
 End Class

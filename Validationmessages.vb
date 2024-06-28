@@ -36,9 +36,18 @@ more than one letter)."
         End If
     End Function
 
-    Public Function IsValidEmailLength(email As String) As Boolean
+    Public Function IsValidEmail(email As String) As Boolean
         ' Check if the email length does not exceed 254 characters
-        Return email.Length <= 254
+        If email.Length > 254 Then
+            Return False
+        End If
+
+        ' Regular expression for validating an email address
+        Dim emailPattern As String = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        Dim regex As New System.Text.RegularExpressions.Regex(emailPattern)
+
+        ' Check if the email matches the regular expression
+        Return regex.IsMatch(email)
     End Function
 
 End Module

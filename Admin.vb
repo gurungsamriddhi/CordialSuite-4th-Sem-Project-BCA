@@ -1,20 +1,13 @@
-﻿Public Class AdminDashboard
+﻿Public Class Admin
     Public Sub Switchpanel(ByVal panel As Form)
 
-        Pnl_diffpanel.Controls.Clear()
+        Pnl_admindashboard.Controls.Clear()
         panel.TopLevel = False
-        Pnl_diffpanel.Controls.Add(panel)
+        Pnl_admindashboard.Controls.Add(panel)
         panel.Show()
     End Sub
-
-
-
-    Private Sub statusbtn_Click(sender As Object, e As EventArgs) Handles statusbtn.Click
-        Switchpanel(hotel_statusaadmin)
-    End Sub
-
     Private Sub viewguestbtn_Click(sender As Object, e As EventArgs) Handles viewguestbtn.Click
-        Switchpanel(ViewGuest)
+        Switchpanel(ViewGuestinfo)
     End Sub
 
     Private Sub viewempbtn_Click(sender As Object, e As EventArgs) Handles viewempbtn.Click
@@ -22,11 +15,31 @@
     End Sub
 
     Private Sub roomsbtn_Click(sender As Object, e As EventArgs) Handles roomsbtn.Click
-        Switchpanel(Updateroom)
+        Switchpanel(AdminRoom)
     End Sub
 
     Private Sub transactionbtn_Click(sender As Object, e As EventArgs) Handles transactionbtn.Click
-        Switchpanel(Revenue)
+        Switchpanel(Transaction)
+    End Sub
+
+
+    Private Sub close_Btn_Click(sender As Object, e As EventArgs) Handles close_Btn.Click
+        Dim result As DialogResult = MessageBox.Show("Do you want to exit the application?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If result = DialogResult.Yes Then
+            Application.Exit()
+        End If
+
+    End Sub
+
+    Private Sub dashboard_btn_Click(sender As Object, e As EventArgs) Handles dashboard_btn.Click
+        Dim adminDashboard As New admindashboardform()
+        Switchpanel(adminDashboard)
+    End Sub
+
+
+    Private Sub Admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim adminDashboard As New admindashboardform()
+        Switchpanel(adminDashboard)
     End Sub
 
     Private Sub logoutbtn_Click(sender As Object, e As EventArgs) Handles logoutbtn.Click
@@ -44,16 +57,11 @@
         End If
     End Sub
 
+    Private Sub back_btn_Click(sender As Object, e As EventArgs) Handles back_btn.Click
+        Me.Hide()
 
-
-
-
-    Private Sub AdminDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub close_Btn_Click(sender As Object, e As EventArgs) Handles close_Btn.Click
-        Application.Exit()
-
+        ' Show SuperAdmin dashboard form
+        Dim superAdminForm As New superadmin()
+        superAdminForm.Show()
     End Sub
 End Class

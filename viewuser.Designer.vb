@@ -22,15 +22,12 @@ Partial Class viewuser
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         DGV_users = New DataGridView()
         searchkeyword_txtbx = New TextBox()
-        Panel1 = New Panel()
-        closebtn = New Button()
-        Lblguestlist = New Label()
         Tabcontrolusers = New TabControl()
         TabPageViewUser = New TabPage()
-        Label1 = New Label()
+        Lbl_anykeyword = New Label()
         updateusertabpage = New TabPage()
         Lbl_useridshow = New Label()
         Lbl_upuserid = New Label()
@@ -70,8 +67,8 @@ Partial Class viewuser
         Label2 = New Label()
         Lbl_username = New Label()
         Lbl_userid = New Label()
+        Lblguestlist = New Label()
         CType(DGV_users, ComponentModel.ISupportInitialize).BeginInit()
-        Panel1.SuspendLayout()
         Tabcontrolusers.SuspendLayout()
         TabPageViewUser.SuspendLayout()
         updateusertabpage.SuspendLayout()
@@ -82,11 +79,11 @@ Partial Class viewuser
         ' 
         DGV_users.AllowUserToAddRows = False
         DGV_users.AllowUserToDeleteRows = False
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle2.ForeColor = Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = Color.White
-        DataGridViewCellStyle2.SelectionForeColor = Color.Black
-        DGV_users.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle1.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle1.ForeColor = Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = Color.White
+        DataGridViewCellStyle1.SelectionForeColor = Color.Black
+        DGV_users.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         DGV_users.Anchor = AnchorStyles.None
         DGV_users.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
         DGV_users.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
@@ -94,11 +91,11 @@ Partial Class viewuser
         DGV_users.BorderStyle = BorderStyle.None
         DGV_users.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DGV_users.GridColor = Color.Black
-        DGV_users.Location = New Point(55, 129)
+        DGV_users.Location = New Point(29, 173)
         DGV_users.Name = "DGV_users"
         DGV_users.ReadOnly = True
         DGV_users.RowHeadersWidth = 51
-        DGV_users.Size = New Size(923, 495)
+        DGV_users.Size = New Size(978, 495)
         DGV_users.TabIndex = 6
         ' 
         ' searchkeyword_txtbx
@@ -108,50 +105,11 @@ Partial Class viewuser
         searchkeyword_txtbx.BorderStyle = BorderStyle.FixedSingle
         searchkeyword_txtbx.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         searchkeyword_txtbx.ForeColor = Color.Black
-        searchkeyword_txtbx.Location = New Point(378, 51)
+        searchkeyword_txtbx.Location = New Point(378, 72)
         searchkeyword_txtbx.Multiline = True
         searchkeyword_txtbx.Name = "searchkeyword_txtbx"
         searchkeyword_txtbx.Size = New Size(361, 47)
         searchkeyword_txtbx.TabIndex = 7
-        ' 
-        ' Panel1
-        ' 
-        Panel1.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        Panel1.Controls.Add(closebtn)
-        Panel1.Controls.Add(Lblguestlist)
-        Panel1.Dock = DockStyle.Top
-        Panel1.Location = New Point(0, 0)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1077, 58)
-        Panel1.TabIndex = 9
-        ' 
-        ' closebtn
-        ' 
-        closebtn.BackColor = Color.Transparent
-        closebtn.FlatAppearance.BorderColor = Color.White
-        closebtn.FlatAppearance.BorderSize = 2
-        closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
-        closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        closebtn.ForeColor = SystemColors.Window
-        closebtn.Location = New Point(1026, 3)
-        closebtn.Name = "closebtn"
-        closebtn.Size = New Size(48, 48)
-        closebtn.TabIndex = 12
-        closebtn.Text = "X"
-        closebtn.UseVisualStyleBackColor = False
-        ' 
-        ' Lblguestlist
-        ' 
-        Lblguestlist.AutoSize = True
-        Lblguestlist.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lblguestlist.ForeColor = SystemColors.ControlLightLight
-        Lblguestlist.Location = New Point(402, 12)
-        Lblguestlist.Name = "Lblguestlist"
-        Lblguestlist.Size = New Size(147, 31)
-        Lblguestlist.TabIndex = 1
-        Lblguestlist.Text = "VIEW USERS"
         ' 
         ' Tabcontrolusers
         ' 
@@ -160,37 +118,37 @@ Partial Class viewuser
         Tabcontrolusers.Controls.Add(updateusertabpage)
         Tabcontrolusers.Controls.Add(TabPagedeluser)
         Tabcontrolusers.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Tabcontrolusers.Location = New Point(12, 84)
+        Tabcontrolusers.Location = New Point(12, 43)
         Tabcontrolusers.Name = "Tabcontrolusers"
         Tabcontrolusers.SelectedIndex = 0
-        Tabcontrolusers.Size = New Size(1041, 696)
+        Tabcontrolusers.Size = New Size(1041, 737)
         Tabcontrolusers.TabIndex = 10
         ' 
         ' TabPageViewUser
         ' 
-        TabPageViewUser.Controls.Add(Label1)
+        TabPageViewUser.Controls.Add(Lbl_anykeyword)
         TabPageViewUser.Controls.Add(DGV_users)
         TabPageViewUser.Controls.Add(searchkeyword_txtbx)
         TabPageViewUser.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TabPageViewUser.Location = New Point(4, 4)
         TabPageViewUser.Name = "TabPageViewUser"
         TabPageViewUser.Padding = New Padding(3)
-        TabPageViewUser.Size = New Size(1033, 655)
+        TabPageViewUser.Size = New Size(1033, 696)
         TabPageViewUser.TabIndex = 0
         TabPageViewUser.Text = "Search User"
         TabPageViewUser.UseVisualStyleBackColor = True
         ' 
-        ' Label1
+        ' Lbl_anykeyword
         ' 
-        Label1.Anchor = AnchorStyles.None
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = SystemColors.ActiveCaptionText
-        Label1.Location = New Point(241, 61)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(131, 25)
-        Label1.TabIndex = 9
-        Label1.Text = "Any Keyword:"
+        Lbl_anykeyword.Anchor = AnchorStyles.None
+        Lbl_anykeyword.AutoSize = True
+        Lbl_anykeyword.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl_anykeyword.ForeColor = SystemColors.ActiveCaptionText
+        Lbl_anykeyword.Location = New Point(241, 82)
+        Lbl_anykeyword.Name = "Lbl_anykeyword"
+        Lbl_anykeyword.Size = New Size(131, 25)
+        Lbl_anykeyword.TabIndex = 9
+        Lbl_anykeyword.Text = "Any Keyword:"
         ' 
         ' updateusertabpage
         ' 
@@ -692,21 +650,32 @@ Partial Class viewuser
         Lbl_userid.TabIndex = 0
         Lbl_userid.Text = "User ID:"
         ' 
+        ' Lblguestlist
+        ' 
+        Lblguestlist.AutoSize = True
+        Lblguestlist.BackColor = Color.Transparent
+        Lblguestlist.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lblguestlist.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Lblguestlist.Location = New Point(471, 9)
+        Lblguestlist.Name = "Lblguestlist"
+        Lblguestlist.Size = New Size(147, 31)
+        Lblguestlist.TabIndex = 1
+        Lblguestlist.Text = "VIEW USERS"
+        ' 
         ' viewuser
         ' 
         AutoScaleDimensions = New SizeF(9F, 23F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.Menu
         ClientSize = New Size(1077, 792)
         Controls.Add(Tabcontrolusers)
-        Controls.Add(Panel1)
+        Controls.Add(Lblguestlist)
         Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         FormBorderStyle = FormBorderStyle.None
         Name = "viewuser"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Search User"
         CType(DGV_users, ComponentModel.ISupportInitialize).EndInit()
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
         Tabcontrolusers.ResumeLayout(False)
         TabPageViewUser.ResumeLayout(False)
         TabPageViewUser.PerformLayout()
@@ -715,17 +684,15 @@ Partial Class viewuser
         TabPagedeluser.ResumeLayout(False)
         TabPagedeluser.PerformLayout()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents DGV_users As DataGridView
     Friend WithEvents searchkeyword_txtbx As TextBox
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents closebtn As Button
-    Friend WithEvents Lblguestlist As Label
     Friend WithEvents Tabcontrolusers As TabControl
     Friend WithEvents TabPageViewUser As TabPage
     Friend WithEvents updateusertabpage As TabPage
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Lbl_anykeyword As Label
     Friend WithEvents updateuser_Btn As Button
     Friend WithEvents Lbl_msggender As Label
     Friend WithEvents Lbl_msgaddress As Label
@@ -764,4 +731,5 @@ Partial Class viewuser
     Friend WithEvents Lbl_upuserid As Label
     Friend WithEvents Lbl_useridshow As Label
     Friend WithEvents Lbl_useridshowdel As Label
+    Friend WithEvents Lblguestlist As Label
 End Class

@@ -27,12 +27,12 @@
             Dim userType = usercontroller.authenticateuser(loginusername, loginpassword)
 
             If userType = "Admin" Then
-                Dim admindashboard As New AdminDashboard
+                Dim admindashboard As New Admin
                 admindashboard.Show()
                 admindashboard.Labeladminname.Text = loginusername
                 Me.Close()
             ElseIf userType = "User" Then
-                Dim userdashboard As New userdashboard
+                Dim userdashboard As New usersmodel
                 userdashboard.Show()
                 userdashboard.Labelusername.Text = loginusername
                 Me.Close()

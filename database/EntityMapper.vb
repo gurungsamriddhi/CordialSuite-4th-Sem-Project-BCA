@@ -5,7 +5,7 @@ Public Class basedbcontext
 
     Protected Overrides Sub OnConfiguring(optionsBuilder As DbContextOptionsBuilder)
         If Not optionsBuilder.IsConfigured Then
-            optionsBuilder.UseSqlServer("Data Source=LOCALHOST\SQLEXPRESS;AttachDbFilename=E:\CordialSuiteDB.mdf;Integrated Security=True;Trust Server Certificate=True")
+            optionsBuilder.UseSqlServer("Data Source=LOCALHOST\SQLEXPRESS;AttachDbFilename=E:\CordialSuiteDB.mdf;Integrated Security=True;Encrypt=True;Trust Server Certificate=True")
         End If
     End Sub
 

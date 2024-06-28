@@ -1,9 +1,9 @@
 ﻿Imports System.Data.SqlClient
 
-Public Class userssql
+Public Class roomsSql
     Private connectionString As String = "Data Source=LOCALHOST\SQLEXPRESS;AttachDbFilename=E:\CordialSuiteDB.mdf;Integrated Security=True;"
 
-    ' Method to execute non-query (INSERT, UPDATE, DELETE)
+    ' Method to execute non-query (INSERT, UPDATE, DELETE) for rooms
     Public Sub ExecuteNonQuery(query As String)
         Try
             Using connection As New SqlConnection(connectionString)
@@ -17,9 +17,8 @@ Public Class userssql
         End Try
     End Sub
 
-    ' Method to execute SELECT query and return results
+    ' Method to execute SELECT query and return results for rooms
     Public Sub ExecuteQuery(query As String, dgv As DataGridView)
-
         Using connection As New SqlConnection(connectionString)
             Dim command As New SqlCommand(query, connection)
             Dim adapter As New SqlDataAdapter(command)
@@ -35,9 +34,8 @@ Public Class userssql
         End Using
     End Sub
 
-
-
-    Public Sub SearchUsers(query As String, keyword As String, dataGridView As DataGridView)
+    ' Example: Method to search rooms by room number or type
+    Public Sub SearchRooms(query As String, keyword As String, dataGridView As DataGridView)
         Dim dataTable As New DataTable()
 
         Try
@@ -57,7 +55,7 @@ Public Class userssql
         dataGridView.DataSource = dataTable
     End Sub
 
-
+    ' Method to execute non-query (INSERT, UPDATE, DELETE) with parameters for rooms
     Public Sub ExecuteNonQueryWithParameters(query As String, parameters As List(Of SqlParameter))
         Using connection As New SqlConnection(connectionString)
             Using command As New SqlCommand(query, connection)
@@ -68,6 +66,25 @@ Public Class userssql
         End Using
     End Sub
 
+
+    Public Function RoomExists(roomNumber As Integer) As Boolean
+        Dim exists As Boolean = False
+
+        Using conn As New SqlConnection(connectionString)
+            conn.Open()
+            Dim query As String = "SELECT COUNT(*) FROM rooms WHERE Roomnumber = @Roomnumber"
+
+            Using cmd As New SqlCommand(query, conn)
+                cmd.Parameters.AddWithValue("@Roomnumber", roomNumber)
+                Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                If count > 0 Then
+                    exists = True
+                End If
+            End Using
+        End Using
+
+        Return exists
+    End Function
     Public Function ExecuteScalar(query As String) As Integer
         Using connection As New SqlConnection(connectionString)
             Using command As New SqlCommand(query, connection)
@@ -76,6 +93,4 @@ Public Class userssql
             End Using
         End Using
     End Function
-
 End Class
-

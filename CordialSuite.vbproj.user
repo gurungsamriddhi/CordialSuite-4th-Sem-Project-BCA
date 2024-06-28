@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="AdminDashboard.vb">
+    <Compile Update="Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="admindashboardform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AdminRoom.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="billing.vb">
@@ -16,43 +22,40 @@
     <Compile Update="Guestform.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="hotel_statusaadmin.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="hotel_statususer.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="loginform.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="registerform.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Revenue.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="rooms.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="superadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="superadmindashboardform.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="superadminlogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="superadmin_dashboard.vb">
+    <Compile Update="Transaction.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Updateroom.vb">
+    <Compile Update="userdashboard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Userdashboard.vb">
+    <Compile Update="userdashboardform.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Viewemployee.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ViewGuest.vb">
+    <Compile Update="ViewGuestinfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Viewroomsinfo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="viewuser.vb">

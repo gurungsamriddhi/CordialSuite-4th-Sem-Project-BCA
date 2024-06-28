@@ -63,4 +63,32 @@ Public Class guestssql
             End Using
         End Using
     End Sub
+
+    Public Function EmailExists(guestEmail As String) As Boolean
+        Dim exists As Boolean = False
+
+        Using conn As New SqlConnection(connectionString)
+            conn.Open()
+            Dim query As String = "SELECT COUNT(*) FROM Guests WHERE Email = @Email"
+
+            Using cmd As New SqlCommand(query, conn)
+                cmd.Parameters.AddWithValue("@Email", guestEmail)
+                Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                If count > 0 Then
+                    exists = True
+                End If
+            End Using
+        End Using
+
+        Return exists
+    End Function
+
+    Public Function ExecuteScalar(query As String) As Integer
+        Using connection As New SqlConnection(connectionString)
+            Using command As New SqlCommand(query, connection)
+                connection.Open()
+                Return Convert.ToInt32(command.ExecuteScalar())
+            End Using
+        End Using
+    End Function
 End Class
