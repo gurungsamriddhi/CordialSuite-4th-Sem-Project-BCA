@@ -13,10 +13,10 @@
     <Compile Update="billing.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="checkin.vb">
+    <Compile Update="guestselectionform.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="checkout.vb">
+    <Compile Update="GuestCheckout.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Guestform.vb">
@@ -26,6 +26,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="registerform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="roomselectionform.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="splash.vb">

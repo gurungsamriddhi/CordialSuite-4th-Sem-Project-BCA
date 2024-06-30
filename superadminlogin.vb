@@ -35,10 +35,11 @@ Public Class superadmin_login
             MessageBox.Show("Please fill out all fields", "Required Field", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Else
             If usercontroller.ValidateSuperAdminCredentials(username, password) Then
+                Me.Close()
                 Dim superadminDashboardForm As New superadmin()
                 superadminDashboardForm.Show()
                 superadminDashboardForm.lbl_superadminname.Text = username
-                Me.Close()
+
             Else
                 ' Superadmin login failed, show error message or handle accordingly
                 MessageBox.Show("Invalid username or password", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -46,4 +47,7 @@ Public Class superadmin_login
         End If
     End Sub
 
+    Private Sub minimise_btn_Click(sender As Object, e As EventArgs) Handles minimise_btn.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
 End Class

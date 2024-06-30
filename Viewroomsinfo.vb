@@ -158,12 +158,6 @@ Public Class Viewroomsinfo
             Exit Sub
         End If
 
-        ' If any validation failed, show error message and exit
-        If Not isValid Then
-            MessageBox.Show("Please fill out all the fields correctly.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Exit Sub
-        End If
-
         ' Update the room information in the database only if there's a change in room number
         Dim query As String = "UPDATE rooms SET RoomType = @RoomType, Roomnumber = @Roomnumber, BedCount = @BedCount, RoomStatus = @RoomStatus, Pricepernight = @Pricepernight " &
                       "WHERE roomID = @roomID"

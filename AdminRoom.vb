@@ -63,12 +63,12 @@ Public Class AdminRoom
 
         ' Validate Room Number
         Dim roomnumber As Integer
-        If Not Integer.TryParse(roomnumber_txtbx.Text.Trim(), roomnumber) OrElse roomnumber <= 0 OrElse roomnumber < 100 OrElse roomnumber > 1000 Then
+        If String.IsNullOrEmpty(roomnumber) AndAlso Not Integer.TryParse(roomnumber_txtbx.Text.Trim(), roomnumber) OrElse roomnumber <= 0 OrElse roomnumber < 100 OrElse roomnumber > 1000 Then
             isValid = False
             Lbl_msgroomno.Text = "Invalid Room Number. It must be between 100 and 1000."
             Lbl_msgroomno.ForeColor = Color.Red
             roomnumber_txtbx.Focus()
-            Exit Sub
+
         Else
             Lbl_msgroomno.Text = ""
         End If
@@ -112,7 +112,7 @@ Public Class AdminRoom
 
         ' Validate Price per Night
         Dim pricepernight As Decimal
-        If Not Decimal.TryParse(pricepernight_txtbx.Text.Trim(), pricepernight) OrElse pricepernight <= 0 Then
+        If String.IsNullOrEmpty(pricepernight) AndAlso Not Decimal.TryParse(pricepernight_txtbx.Text.Trim(), pricepernight) OrElse pricepernight <= 0 Then
             isValid = False
             Lbl_msgpricepernight.Text = "Invalid Price per Night."
             Lbl_msgpricepernight.ForeColor = Color.Red
@@ -302,6 +302,20 @@ Public Class AdminRoom
                 managerooms.ExecuteNonQueryWithParameters(query, parameters)
                 MessageBox.Show("Room deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 populaterooms() ' Refresh the DataGridView after deleting the room
+                roomnumber_txtbx.Clear()
+                pricepernight_txtbx.Clear()
+                bedcount_cmbbx.SelectedIndex = -1
+                roomtype_cmbbx.SelectedIndex = -1
+                roomstatus_cmbbx.SelectedIndex = -1
+
+                Lbl_roomid.Text = String.Empty
+                Lbl_roomidshow.Text = String.Empty
+                Lbl_msgbedcount.Text = String.Empty
+                Lbl_msgpricepernight.Text = String.Empty
+                Lbl_msgroomno.Text = String.Empty
+                Lbl_msgroomstatus.Text = String.Empty
+                Lbl_msgroomtype.Text = String.Empty
+
             Catch ex As Exception
                 MessageBox.Show("Error deleting room: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try

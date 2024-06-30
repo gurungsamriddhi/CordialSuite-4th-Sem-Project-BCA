@@ -6,75 +6,75 @@
 
     Private Sub Registerbtn_Click(sender As Object, e As EventArgs) Handles Registerbtn.Click
         ' Retrieve and trim text inputs from textboxes
-        Dim user_firstname As String = userfn_txtbx.Text.Trim()
-        Dim user_lastname As String = userln_txtbx.Text.Trim()
-        Dim user_address As String = userAddress_txtbx.Text.Trim()
-        Dim user_dateofbirth As Date = userDOB_dtp.Value
-        Dim user_type As String = If(usertype_cmbbx.SelectedItem IsNot Nothing, usertype_cmbbx.SelectedItem.ToString(), String.Empty)
-        Dim user_gender As String = If(gender_cmbbx.SelectedItem IsNot Nothing, gender_cmbbx.SelectedItem.ToString(), String.Empty)
-        Dim user_phone As String = userPhone_txtbx.Text.Trim()
-        Dim user_username As String = username_txtbx.Text.Trim()
-        Dim user_password As String = password_txtbx.Text.Trim()
-        Dim user_confirmPassword As String = confirmpw_txtbx.Text.Trim()
-        Dim user_Age As Integer = CalculateAge(userDOB_dtp.Value)
+        Dim user_firstname = userfn_txtbx.Text.Trim
+        Dim user_lastname = userln_txtbx.Text.Trim
+        Dim user_address = userAddress_txtbx.Text.Trim
+        Dim user_dateofbirth = userDOB_dtp.Value
+        Dim user_type = If(usertype_cmbbx.SelectedItem IsNot Nothing, usertype_cmbbx.SelectedItem.ToString, String.Empty)
+        Dim user_gender = If(gender_cmbbx.SelectedItem IsNot Nothing, gender_cmbbx.SelectedItem.ToString, String.Empty)
+        Dim user_phone = userPhone_txtbx.Text.Trim
+        Dim user_username = username_txtbx.Text.Trim
+        Dim user_password = password_txtbx.Text.Trim
+        Dim user_confirmPassword = confirmpw_txtbx.Text.Trim
+        Dim user_Age = CalculateAge(userDOB_dtp.Value)
 
 
 
         ' Validation checks for each input field while registering
-        Dim isValid As Boolean = True
+        Dim isValid = True
 
         If String.IsNullOrEmpty(user_firstname) OrElse Not IsAlphabeticOnly(user_firstname) OrElse user_firstname.Length <= 1 Then
             isValid = False
-            Lbl_msgfirstname.Text = Validationmessages.InvalidFirstName
+            Lbl_msgfirstname.Text = InvalidFirstName
 
             Lbl_msgfirstname.ForeColor = Color.Red
         End If
 
         If String.IsNullOrEmpty(user_lastname) OrElse Not IsAlphabeticOnly(user_lastname) OrElse user_lastname.Length <= 1 Then
             isValid = False
-            Lbl_msglastname.Text = Validationmessages.InvalidLastName
+            Lbl_msglastname.Text = InvalidLastName
             Lbl_msglastname.ForeColor = Color.Red
         End If
 
         If String.IsNullOrEmpty(user_address) Then
             isValid = False
-            Lbl_msgaddress.Text = Validationmessages.InvalidAddress
+            Lbl_msgaddress.Text = InvalidAddress
             Lbl_msgaddress.ForeColor = Color.Red
         End If
 
         If userDOB_dtp.Value < New Date(1900, 1, 1) OrElse userDOB_dtp.Value > Date.Today.AddDays(-1) Then
             isValid = False
-            Lbl_msgDOB.Text = Validationmessages.InvalidDOB
+            Lbl_msgDOB.Text = InvalidDOB
             Lbl_msgDOB.ForeColor = Color.Red
         End If
 
         If String.IsNullOrEmpty(user_type) Then
             isValid = False
-            Lbl_msgusertype.Text = Validationmessages.InvalidUserType
+            Lbl_msgusertype.Text = InvalidUserType
             Lbl_msgusertype.ForeColor = Color.Red
         End If
 
         If String.IsNullOrEmpty(user_gender) Then
             isValid = False
-            Lbl_msggender.Text = Validationmessages.InvalidGender
+            Lbl_msggender.Text = InvalidGender
             Lbl_msggender.ForeColor = Color.Red
         End If
 
         If String.IsNullOrEmpty(user_phone) OrElse Not IsPhoneNumber(user_phone) Then
             isValid = False
-            Lbl_msgphone.Text = Validationmessages.InvalidPhone
+            Lbl_msgphone.Text = InvalidPhone
             Lbl_msgphone.ForeColor = Color.Red
         End If
 
         If String.IsNullOrEmpty(user_username) OrElse user_username.Length < 5 Then
             isValid = False
-            Lbl_msgusername.Text = Validationmessages.InvalidUsername
+            Lbl_msgusername.Text = InvalidUsername
             Lbl_msgusername.ForeColor = Color.Red
         End If
 
         If String.IsNullOrEmpty(user_password) OrElse user_password.Length < 8 Then
             isValid = False
-            Lbl_msgpassword.Text = Validationmessages.InvalidPassword
+            Lbl_msgpassword.Text = InvalidPassword
             Lbl_msgpassword.ForeColor = Color.Red
         End If
 
@@ -82,11 +82,11 @@
 
         If user_password <> user_confirmPassword OrElse String.IsNullOrEmpty(user_confirmPassword) Then
             isValid = False
-            Lbl_msgconfirmpw.Text = Validationmessages.PasswordsDoNotMatch
+            Lbl_msgconfirmpw.Text = PasswordsDoNotMatch
 
             Lbl_msgconfirmpw.ForeColor = Color.Red
         Else
-            Lbl_msgconfirmpw.Text = Validationmessages.PasswordsMatch
+            Lbl_msgconfirmpw.Text = PasswordsMatch
             Lbl_msgconfirmpw.ForeColor = Color.Green
         End If
 
@@ -99,7 +99,7 @@
 
 
 
-        Dim newUser As New user() With {
+        Dim newUser As New user With {
     .FirstName = user_firstname,
     .LastName = user_lastname,
     .Address = user_address,
@@ -257,11 +257,6 @@
     End Sub
 
 
-
-    Private Function IsPhoneNumber(input As String) As Boolean
-        ' Check if the input is numeric and has 10 digits
-        Return input.All(AddressOf Char.IsDigit) AndAlso input.Length = 10
-    End Function
 
 
 

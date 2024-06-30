@@ -54,6 +54,7 @@ Partial Class Viewemployee
         LblDOB = New Label()
         LblFirstname = New Label()
         updateemployee_Btn = New Button()
+        clear_btn = New Button()
         Tabcontrolusers.SuspendLayout()
         TabPageViewemployee.SuspendLayout()
         CType(DGV_employee, ComponentModel.ISupportInitialize).BeginInit()
@@ -147,6 +148,7 @@ Partial Class Viewemployee
         ' 
         ' updateemployeetabpage
         ' 
+        updateemployeetabpage.Controls.Add(clear_btn)
         updateemployeetabpage.Controls.Add(Lbl_useridshow)
         updateemployeetabpage.Controls.Add(Lbl_upuserid)
         updateemployeetabpage.Controls.Add(Lbl_msggender)
@@ -174,7 +176,7 @@ Partial Class Viewemployee
         updateemployeetabpage.Location = New Point(4, 4)
         updateemployeetabpage.Name = "updateemployeetabpage"
         updateemployeetabpage.Padding = New Padding(3)
-        updateemployeetabpage.Size = New Size(1006, 665)
+        updateemployeetabpage.Size = New Size(1006, 666)
         updateemployeetabpage.TabIndex = 1
         updateemployeetabpage.Text = "Update Employee Information"
         updateemployeetabpage.UseVisualStyleBackColor = True
@@ -458,12 +460,29 @@ Partial Class Viewemployee
         updateemployee_Btn.FlatStyle = FlatStyle.Flat
         updateemployee_Btn.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         updateemployee_Btn.ForeColor = SystemColors.Window
-        updateemployee_Btn.Location = New Point(401, 591)
+        updateemployee_Btn.Location = New Point(341, 587)
         updateemployee_Btn.Name = "updateemployee_Btn"
         updateemployee_Btn.Size = New Size(192, 54)
         updateemployee_Btn.TabIndex = 12
         updateemployee_Btn.Text = "Update"
         updateemployee_Btn.UseVisualStyleBackColor = False
+        ' 
+        ' clear_btn
+        ' 
+        clear_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        clear_btn.FlatAppearance.BorderColor = SystemColors.Window
+        clear_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        clear_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        clear_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        clear_btn.FlatStyle = FlatStyle.Flat
+        clear_btn.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold)
+        clear_btn.ForeColor = SystemColors.ControlLightLight
+        clear_btn.Location = New Point(561, 587)
+        clear_btn.Name = "clear_btn"
+        clear_btn.Size = New Size(192, 54)
+        clear_btn.TabIndex = 104
+        clear_btn.Text = "Clear"
+        clear_btn.UseVisualStyleBackColor = False
         ' 
         ' Viewemployee
         ' 
@@ -516,4 +535,5 @@ Partial Class Viewemployee
     Friend WithEvents LblDOB As Label
     Friend WithEvents LblFirstname As Label
     Friend WithEvents updateemployee_Btn As Button
+    Friend WithEvents clear_btn As Button
 End Class

@@ -11,9 +11,7 @@ Public Class Viewemployee
         userln_txtbx.Clear()
         userPhone_txtbx.Clear()
         userAddress_txtbx.Clear()
-
         gender_cmbbx.Items.Clear()
-
         gender_cmbbx.Items.Add("Male")
         gender_cmbbx.Items.Add("Female")
         gender_cmbbx.Items.Add("Other")
@@ -205,7 +203,6 @@ Public Class Viewemployee
 
 
             Lbl_useridshow.Text = userid
-
             userDOB_dtp.Value = dob
             usertype_cmbbx.SelectedItem = userType
             gender_cmbbx.SelectedItem = gender
@@ -279,7 +276,7 @@ Public Class Viewemployee
             Lbl_msggender.ForeColor = Color.Red
         End If
 
-        If Not IsPhoneNumber(user_phone) Then
+        If String.IsNullOrEmpty(user_phone) AndAlso Not IsPhoneNumber(user_phone) Then
             isValid = False
             Lbl_msgphone.Text = Validationmessages.InvalidPhone
             Lbl_msgphone.ForeColor = Color.Red
@@ -324,5 +321,31 @@ Public Class Viewemployee
 
     Private Sub Tabcontrolusers_Leave(sender As Object, e As EventArgs) Handles Tabcontrolusers.Leave
         searchkeyword_txtbx.Clear()
+    End Sub
+
+    Private Sub clear_btn_Click(sender As Object, e As EventArgs) Handles clear_btn.Click
+        userfn_txtbx.Clear()
+        userln_txtbx.Clear()
+        userPhone_txtbx.Clear()
+        userAddress_txtbx.Clear()
+        gender_cmbbx.Items.Clear()
+        gender_cmbbx.Items.Add("Male")
+        gender_cmbbx.Items.Add("Female")
+        gender_cmbbx.Items.Add("Other")
+        gender_cmbbx.Text = String.Empty
+        usertype_cmbbx.Items.Clear()
+        usertype_cmbbx.Items.Add("Admin")
+        usertype_cmbbx.Items.Add("User")
+        usertype_cmbbx.Text = String.Empty
+        userDOB_dtp.Value = Date.Today.AddYears(-18)
+
+        Lbl_msgfirstname.Text = String.Empty
+        Lbl_msglastname.Text = String.Empty
+        Lbl_msgaddress.Text = String.Empty
+        Lbl_msgDOB.Text = String.Empty
+        Lbl_msgusertype.Text = String.Empty
+        Lbl_msggender.Text = String.Empty
+        Lbl_msgphone.Text = String.Empty
+        Lbl_useridshow.Text = String.Empty
     End Sub
 End Class

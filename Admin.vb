@@ -24,9 +24,9 @@
 
 
     Private Sub close_Btn_Click(sender As Object, e As EventArgs) Handles close_Btn.Click
-        Dim result As DialogResult = MessageBox.Show("Do you want to exit the application?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim result = MessageBox.Show("Do you want to exit the application?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = DialogResult.Yes Then
-            Application.Exit()
+            Application.Exit
         End If
 
     End Sub
@@ -59,9 +59,14 @@
 
     Private Sub back_btn_Click(sender As Object, e As EventArgs) Handles back_btn.Click
         Me.Hide()
-
+        Dim superadminame As String = "gurung_samriddhi"
         ' Show SuperAdmin dashboard form
         Dim superAdminForm As New superadmin()
         superAdminForm.Show()
+        superAdminForm.lbl_superadminname.Text = superadminame
+    End Sub
+
+    Private Sub minimise_btn_Click(sender As Object, e As EventArgs) Handles minimise_btn.Click
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 End Class

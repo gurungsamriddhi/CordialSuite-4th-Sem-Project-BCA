@@ -232,7 +232,7 @@ Partial Class Viewroomsinfo
         clear_btn.FlatStyle = FlatStyle.Flat
         clear_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
         clear_btn.ForeColor = SystemColors.ControlLightLight
-        clear_btn.Location = New Point(568, 605)
+        clear_btn.Location = New Point(555, 605)
         clear_btn.Name = "clear_btn"
         clear_btn.Size = New Size(127, 49)
         clear_btn.TabIndex = 103
@@ -319,7 +319,7 @@ Partial Class Viewroomsinfo
         updateroom_btn.FlatStyle = FlatStyle.Flat
         updateroom_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
         updateroom_btn.ForeColor = SystemColors.ControlLightLight
-        updateroom_btn.Location = New Point(350, 605)
+        updateroom_btn.Location = New Point(357, 605)
         updateroom_btn.Name = "updateroom_btn"
         updateroom_btn.Size = New Size(127, 49)
         updateroom_btn.TabIndex = 94
@@ -439,6 +439,7 @@ Partial Class Viewroomsinfo
         Controls.Add(Lbl_viewrooms)
         FormBorderStyle = FormBorderStyle.None
         Name = "Viewroomsinfo"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "rooms"
         TabControlrooms.ResumeLayout(False)
         TabPageviewrooms.ResumeLayout(False)

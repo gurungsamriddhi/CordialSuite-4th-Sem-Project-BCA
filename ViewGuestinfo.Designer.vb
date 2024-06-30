@@ -22,7 +22,7 @@ Partial Class ViewGuestinfo
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Lblviewg = New Label()
         Tabpage_updateguest = New TabControl()
         tabpage_viewguest = New TabPage()
@@ -53,6 +53,7 @@ Partial Class ViewGuestinfo
         Lbl_contactno = New Label()
         Lbl_gender = New Label()
         Lbl_firstname = New Label()
+        clear_btn = New Button()
         Tabpage_updateguest.SuspendLayout()
         tabpage_viewguest.SuspendLayout()
         CType(DGV_Guests, ComponentModel.ISupportInitialize).BeginInit()
@@ -128,14 +129,14 @@ Partial Class ViewGuestinfo
         DGV_Guests.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
         DGV_Guests.BackgroundColor = SystemColors.Menu
         DGV_Guests.BorderStyle = BorderStyle.None
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = SystemColors.Control
-        DataGridViewCellStyle1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle1.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
-        DGV_Guests.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = SystemColors.Control
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle2.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        DGV_Guests.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         DGV_Guests.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DGV_Guests.Location = New Point(15, 118)
         DGV_Guests.Name = "DGV_Guests"
@@ -146,6 +147,7 @@ Partial Class ViewGuestinfo
         ' 
         ' Tabpage_manageguest
         ' 
+        Tabpage_manageguest.Controls.Add(clear_btn)
         Tabpage_manageguest.Controls.Add(userdel_btn)
         Tabpage_manageguest.Controls.Add(update_btn)
         Tabpage_manageguest.Controls.Add(Lbl_guestidshow)
@@ -172,7 +174,7 @@ Partial Class ViewGuestinfo
         Tabpage_manageguest.Location = New Point(4, 4)
         Tabpage_manageguest.Name = "Tabpage_manageguest"
         Tabpage_manageguest.Padding = New Padding(3)
-        Tabpage_manageguest.Size = New Size(1000, 600)
+        Tabpage_manageguest.Size = New Size(1000, 654)
         Tabpage_manageguest.TabIndex = 2
         Tabpage_manageguest.Text = "Manage Guests"
         Tabpage_manageguest.UseVisualStyleBackColor = True
@@ -186,7 +188,7 @@ Partial Class ViewGuestinfo
         userdel_btn.FlatStyle = FlatStyle.Flat
         userdel_btn.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         userdel_btn.ForeColor = SystemColors.Window
-        userdel_btn.Location = New Point(615, 586)
+        userdel_btn.Location = New Point(676, 584)
         userdel_btn.Name = "userdel_btn"
         userdel_btn.Size = New Size(154, 49)
         userdel_btn.TabIndex = 94
@@ -203,7 +205,7 @@ Partial Class ViewGuestinfo
         update_btn.FlatStyle = FlatStyle.Flat
         update_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
         update_btn.ForeColor = SystemColors.ControlLightLight
-        update_btn.Location = New Point(428, 588)
+        update_btn.Location = New Point(499, 586)
         update_btn.Name = "update_btn"
         update_btn.Size = New Size(154, 49)
         update_btn.TabIndex = 93
@@ -373,7 +375,7 @@ Partial Class ViewGuestinfo
         add_btn.FlatStyle = FlatStyle.Flat
         add_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
         add_btn.ForeColor = SystemColors.ControlLightLight
-        add_btn.Location = New Point(240, 588)
+        add_btn.Location = New Point(143, 586)
         add_btn.Name = "add_btn"
         add_btn.Size = New Size(154, 49)
         add_btn.TabIndex = 71
@@ -446,6 +448,23 @@ Partial Class ViewGuestinfo
         Lbl_firstname.TabIndex = 61
         Lbl_firstname.Text = "Firstname"
         ' 
+        ' clear_btn
+        ' 
+        clear_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        clear_btn.FlatAppearance.BorderColor = SystemColors.Window
+        clear_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        clear_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        clear_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        clear_btn.FlatStyle = FlatStyle.Flat
+        clear_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
+        clear_btn.ForeColor = SystemColors.ControlLightLight
+        clear_btn.Location = New Point(324, 586)
+        clear_btn.Name = "clear_btn"
+        clear_btn.Size = New Size(154, 49)
+        clear_btn.TabIndex = 95
+        clear_btn.Text = "Clear"
+        clear_btn.UseVisualStyleBackColor = False
+        ' 
         ' ViewGuestinfo
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -497,4 +516,5 @@ Partial Class ViewGuestinfo
     Friend WithEvents Lbl_gender As Label
     Friend WithEvents Lbl_firstname As Label
     Friend WithEvents userdel_btn As Button
+    Friend WithEvents clear_btn As Button
 End Class

@@ -43,7 +43,7 @@
     End Sub
 
     Private Sub checkin_btn_Click(sender As Object, e As EventArgs) Handles checkin_btn.Click
-        Switchpanel(checkin)
+        Switchpanel(Reservation)
     End Sub
 
     Private Sub rooms_btn_Click(sender As Object, e As EventArgs) Handles rooms_btn.Click
@@ -51,7 +51,7 @@
     End Sub
 
     Private Sub checkout_btn_Click(sender As Object, e As EventArgs) Handles checkout_btn.Click
-        Switchpanel(checkout)
+        Switchpanel(GuestCheckout)
     End Sub
 
     Private Sub billing_btn_Click(sender As Object, e As EventArgs) Handles billing_btn.Click
@@ -61,5 +61,9 @@
     Private Sub User_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim userDashboard As New userdashboardform()
         Switchpanel(userDashboard)
+    End Sub
+
+    Private Sub minimise_btn_Click(sender As Object, e As EventArgs) Handles minimise_btn.Click
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 End Class

@@ -33,6 +33,7 @@ Partial Class usersmodel
         rooms_btn = New Button()
         billing_btn = New Button()
         guest_btn = New Button()
+        minimise_btn = New Button()
         SuspendLayout()
         ' 
         ' Pnl_userdashboard
@@ -48,7 +49,7 @@ Partial Class usersmodel
         Lbl_currentuser.AutoSize = True
         Lbl_currentuser.BackColor = Color.Transparent
         Lbl_currentuser.FlatStyle = FlatStyle.Flat
-        Lbl_currentuser.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        Lbl_currentuser.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         Lbl_currentuser.ForeColor = SystemColors.ControlLightLight
         Lbl_currentuser.Location = New Point(240, 13)
         Lbl_currentuser.Name = "Lbl_currentuser"
@@ -65,11 +66,11 @@ Partial Class usersmodel
         closebtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         closebtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         closebtn.FlatStyle = FlatStyle.Flat
-        closebtn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        closebtn.Font = New Font("Lucida Fax", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         closebtn.ForeColor = SystemColors.Control
-        closebtn.Location = New Point(1261, 5)
+        closebtn.Location = New Point(1268, 6)
         closebtn.Name = "closebtn"
-        closebtn.Size = New Size(48, 42)
+        closebtn.Size = New Size(42, 39)
         closebtn.TabIndex = 12
         closebtn.Text = "X"
         closebtn.UseVisualStyleBackColor = False
@@ -79,7 +80,7 @@ Partial Class usersmodel
         Labelusername.AutoSize = True
         Labelusername.BackColor = Color.Transparent
         Labelusername.FlatStyle = FlatStyle.Flat
-        Labelusername.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        Labelusername.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         Labelusername.ForeColor = SystemColors.ControlLightLight
         Labelusername.Location = New Point(384, 13)
         Labelusername.Name = "Labelusername"
@@ -96,7 +97,7 @@ Partial Class usersmodel
         logoutbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         logoutbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         logoutbtn.FlatStyle = FlatStyle.Flat
-        logoutbtn.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        logoutbtn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         logoutbtn.ForeColor = SystemColors.Window
         logoutbtn.Location = New Point(21, 776)
         logoutbtn.Name = "logoutbtn"
@@ -113,7 +114,7 @@ Partial Class usersmodel
         dashboard_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         dashboard_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         dashboard_btn.FlatStyle = FlatStyle.Flat
-        dashboard_btn.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        dashboard_btn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         dashboard_btn.ForeColor = SystemColors.Control
         dashboard_btn.Location = New Point(19, 212)
         dashboard_btn.Name = "dashboard_btn"
@@ -130,7 +131,7 @@ Partial Class usersmodel
         checkout_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         checkout_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         checkout_btn.FlatStyle = FlatStyle.Flat
-        checkout_btn.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        checkout_btn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         checkout_btn.ForeColor = SystemColors.Control
         checkout_btn.Location = New Point(19, 416)
         checkout_btn.Name = "checkout_btn"
@@ -147,13 +148,13 @@ Partial Class usersmodel
         checkin_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         checkin_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         checkin_btn.FlatStyle = FlatStyle.Flat
-        checkin_btn.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        checkin_btn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         checkin_btn.ForeColor = SystemColors.Control
         checkin_btn.Location = New Point(20, 314)
         checkin_btn.Name = "checkin_btn"
         checkin_btn.Size = New Size(205, 45)
         checkin_btn.TabIndex = 6
-        checkin_btn.Text = "Check-in"
+        checkin_btn.Text = "Reservation"
         checkin_btn.UseVisualStyleBackColor = False
         ' 
         ' rooms_btn
@@ -164,7 +165,7 @@ Partial Class usersmodel
         rooms_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         rooms_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         rooms_btn.FlatStyle = FlatStyle.Flat
-        rooms_btn.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        rooms_btn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         rooms_btn.ForeColor = SystemColors.Control
         rooms_btn.Location = New Point(20, 365)
         rooms_btn.Name = "rooms_btn"
@@ -181,7 +182,7 @@ Partial Class usersmodel
         billing_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         billing_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         billing_btn.FlatStyle = FlatStyle.Flat
-        billing_btn.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        billing_btn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         billing_btn.ForeColor = SystemColors.Control
         billing_btn.Location = New Point(20, 467)
         billing_btn.Name = "billing_btn"
@@ -198,7 +199,7 @@ Partial Class usersmodel
         guest_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         guest_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         guest_btn.FlatStyle = FlatStyle.Flat
-        guest_btn.Font = New Font("Segoe UI Emoji", 12.0F, FontStyle.Bold)
+        guest_btn.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
         guest_btn.ForeColor = SystemColors.Control
         guest_btn.Location = New Point(19, 262)
         guest_btn.Name = "guest_btn"
@@ -207,12 +208,30 @@ Partial Class usersmodel
         guest_btn.Text = " Guest"
         guest_btn.UseVisualStyleBackColor = False
         ' 
-        ' User
+        ' minimise_btn
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        minimise_btn.BackColor = Color.Transparent
+        minimise_btn.FlatAppearance.BorderColor = Color.White
+        minimise_btn.FlatAppearance.BorderSize = 2
+        minimise_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        minimise_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        minimise_btn.FlatStyle = FlatStyle.Flat
+        minimise_btn.Font = New Font("Perpetua Titling MT", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        minimise_btn.ForeColor = SystemColors.Window
+        minimise_btn.Location = New Point(1210, 6)
+        minimise_btn.Name = "minimise_btn"
+        minimise_btn.Size = New Size(42, 39)
+        minimise_btn.TabIndex = 29
+        minimise_btn.Text = "-"
+        minimise_btn.UseVisualStyleBackColor = False
+        ' 
+        ' usersmodel
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         ClientSize = New Size(1317, 833)
+        Controls.Add(minimise_btn)
         Controls.Add(closebtn)
         Controls.Add(Lbl_currentuser)
         Controls.Add(Labelusername)
@@ -225,7 +244,7 @@ Partial Class usersmodel
         Controls.Add(Pnl_userdashboard)
         Controls.Add(guest_btn)
         FormBorderStyle = FormBorderStyle.None
-        Name = "User"
+        Name = "usersmodel"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Userdashboard"
         ResumeLayout(False)
@@ -245,4 +264,5 @@ Partial Class usersmodel
     Friend WithEvents Lbl_currentuser As Label
     Friend WithEvents Labelusername As Label
     Friend WithEvents closebtn As Button
+    Friend WithEvents minimise_btn As Button
 End Class

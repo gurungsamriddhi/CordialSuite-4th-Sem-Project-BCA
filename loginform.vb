@@ -27,15 +27,17 @@
             Dim userType = usercontroller.authenticateuser(loginusername, loginpassword)
 
             If userType = "Admin" Then
+                Me.Close()
                 Dim admindashboard As New Admin
                 admindashboard.Show()
                 admindashboard.Labeladminname.Text = loginusername
-                Me.Close()
+
             ElseIf userType = "User" Then
+                Me.Close()
                 Dim userdashboard As New usersmodel
                 userdashboard.Show()
                 userdashboard.Labelusername.Text = loginusername
-                Me.Close()
+
             Else
                 MessageBox.Show("Invalid username or password. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
@@ -44,13 +46,22 @@
 
 
     Private Sub closebtn_Click_1(sender As Object, e As EventArgs) Handles closebtn.Click
-        Me.Dispose()
-        End
+        Dim result As DialogResult = MessageBox.Show("Do you want to exit the application?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If result = DialogResult.Yes Then
+            Application.Exit()
+        End If
     End Sub
 
     Private Sub admin_btn_Click(sender As Object, e As EventArgs) Handles admin_btn.Click
+        Me.Close()
         Dim superadminlogin As New superadmin_login()
         superadminlogin.Show()
-        Me.Hide()
+
+    End Sub
+
+    Private Sub minimise_btn_Click(sender As Object, e As EventArgs) Handles minimise_btn.Click
+        Me.WindowState = FormWindowState.Minimized
+
+
     End Sub
 End Class

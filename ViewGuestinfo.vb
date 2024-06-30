@@ -134,25 +134,25 @@ Public Class ViewGuestinfo
 
     End Sub
     Private Sub add_btn_Click(sender As Object, e As EventArgs) Handles add_btn.Click
-        Dim isValid As Boolean = True
+        Dim isValid = True
         ' Trim the input values
-        Dim guestfirstname As String = gfirstname_txtbx.Text.Trim()
-        Dim guestlastname As String = glastname_txtbx.Text.Trim()
-        Dim guestgender As String = If(cmbbx_genderG.SelectedItem IsNot Nothing, cmbbx_genderG.SelectedItem.ToString(), "")
-        Dim guestcontact As String = contact_txtbx.Text.Trim()
-        Dim guestaddress As String = gaddress_txtbx.Text.Trim()
-        Dim guestemail As String = Gemail_txtbx.Text.Trim()
+        Dim guestfirstname = gfirstname_txtbx.Text.Trim
+        Dim guestlastname = glastname_txtbx.Text.Trim
+        Dim guestgender = If(cmbbx_genderG.SelectedItem IsNot Nothing, cmbbx_genderG.SelectedItem.ToString, "")
+        Dim guestcontact = contact_txtbx.Text.Trim
+        Dim guestaddress = gaddress_txtbx.Text.Trim
+        Dim guestemail = Gemail_txtbx.Text.Trim
 
         ' Validate the inputs
         If String.IsNullOrEmpty(guestfirstname) OrElse Not IsAlphabeticOnly(guestfirstname) OrElse guestfirstname.Length <= 1 Then
             isValid = False
-            Lbl_msggfirstname.Text = Validationmessages.InvalidFirstName
+            Lbl_msggfirstname.Text = InvalidFirstName
             Lbl_msggfirstname.ForeColor = Color.Red
         End If
 
         If String.IsNullOrEmpty(guestlastname) OrElse Not IsAlphabeticOnly(guestlastname) OrElse guestlastname.Length <= 1 Then
             isValid = False
-            Lbl_msgglastname.Text = Validationmessages.InvalidLastName
+            Lbl_msgglastname.Text = InvalidLastName
             Lbl_msgglastname.ForeColor = Color.Red
         End If
 
@@ -169,19 +169,19 @@ Public Class ViewGuestinfo
 
         If String.IsNullOrEmpty(guestaddress) Then
             isValid = False
-            Lbl_msggaddress.Text = Validationmessages.InvalidAddress
+            Lbl_msggaddress.Text = InvalidAddress
             Lbl_msggaddress.ForeColor = Color.Red
         End If
 
         If String.IsNullOrEmpty(guestgender) Then
             isValid = False
-            Lbl_msgggender.Text = Validationmessages.InvalidGender
+            Lbl_msgggender.Text = InvalidGender
             Lbl_msgggender.ForeColor = Color.Red
         End If
 
         If String.IsNullOrEmpty(guestcontact) OrElse Not IsPhoneNumber(guestcontact) Then
             isValid = False
-            Lbl_msgcontactno.Text = Validationmessages.InvalidPhone
+            Lbl_msgcontactno.Text = InvalidPhone
             Lbl_msgcontactno.ForeColor = Color.Red
         End If
 
@@ -192,10 +192,10 @@ Public Class ViewGuestinfo
 
 
         ' Insert the guest information into the database
-        Dim query As String = "INSERT INTO guests (FirstName, LastName, Address, Contact, Gender, Email) " &
+        Dim query = "INSERT INTO guests (FirstName, LastName, Address, Contact, Gender, Email) " &
                           "VALUES (@FirstName, @LastName, @Address, @Contact, @Gender, @Email)"
 
-        Dim parameters As New List(Of SqlParameter)()
+        Dim parameters As New List(Of SqlParameter)
         parameters.Add(New SqlParameter("@FirstName", guestfirstname))
         parameters.Add(New SqlParameter("@LastName", guestlastname))
         parameters.Add(New SqlParameter("@Address", guestaddress))
@@ -382,5 +382,22 @@ Public Class ViewGuestinfo
         Catch ex As Exception
             MessageBox.Show("Error deleting guest: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
+    End Sub
+
+    Private Sub clear_btn_Click(sender As Object, e As EventArgs) Handles clear_btn.Click
+        gfirstname_txtbx.Clear()
+        glastname_txtbx.Clear()
+        gaddress_txtbx.Clear()
+        cmbbx_genderG.SelectedIndex = -1
+        contact_txtbx.Clear()
+        Gemail_txtbx.Clear()
+        Lbl_msgcontactno.Text = String.Empty
+        Lbl_msggaddress.Text = String.Empty
+        Lbl_msggfirstname.Text = String.Empty
+        Lbl_msgglastname.Text = String.Empty
+        Lbl_msgggender.Text = String.Empty
+        Lbl_guestid.Text = String.Empty
+        Lbl_guestidshow.Text = String.Empty
+        Lbl_msgemail.Text = String.Empty
     End Sub
 End Class

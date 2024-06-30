@@ -391,6 +391,10 @@ Public Class viewuser
         Dim result = MessageBox.Show("Do you want to delete this user?", "Delete Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = DialogResult.Yes Then
             DeleteUser(Lbl_useridshowdel.Text)
+            Lbl_useridshowdel.Text = String.Empty
+            usertypedel_cmbbx.SelectedIndex = -1
+            usernamedel_txtbx.Clear()
+
         End If
 
     End Sub
@@ -403,5 +407,9 @@ Public Class viewuser
 
     Private Sub updateusertabpage_Leave(sender As Object, e As EventArgs) Handles updateusertabpage.Leave
         clear()
+    End Sub
+
+    Private Sub TabPagedeluser_Click(sender As Object, e As EventArgs) Handles TabPagedeluser.Click
+
     End Sub
 End Class

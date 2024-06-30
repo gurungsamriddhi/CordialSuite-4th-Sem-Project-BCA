@@ -32,6 +32,7 @@ Partial Class Registerform
         LblUsername = New Label()
         LblPassword = New Label()
         Pnlregister = New Panel()
+        Lbl_registeruser = New Label()
         Lbl_msggender = New Label()
         Lbl_msgaddress = New Label()
         Lbl_msgDOB = New Label()
@@ -54,7 +55,6 @@ Partial Class Registerform
         Registerbtn = New Button()
         userfn_txtbx = New TextBox()
         LblLastname = New Label()
-        Lbl_registeruser = New Label()
         Pnlregister.SuspendLayout()
         SuspendLayout()
         ' 
@@ -63,7 +63,7 @@ Partial Class Registerform
         LblFirstname.AutoSize = True
         LblFirstname.BackColor = Color.Transparent
         LblFirstname.FlatStyle = FlatStyle.Flat
-        LblFirstname.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LblFirstname.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         LblFirstname.ForeColor = Color.Black
         LblFirstname.Location = New Point(166, 72)
         LblFirstname.Name = "LblFirstname"
@@ -77,7 +77,7 @@ Partial Class Registerform
         LblDOB.AutoSize = True
         LblDOB.BackColor = Color.Transparent
         LblDOB.FlatStyle = FlatStyle.Flat
-        LblDOB.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LblDOB.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         LblDOB.ForeColor = Color.Black
         LblDOB.Location = New Point(606, 200)
         LblDOB.Name = "LblDOB"
@@ -90,7 +90,7 @@ Partial Class Registerform
         ' 
         LblConfirmpw.AutoSize = True
         LblConfirmpw.FlatStyle = FlatStyle.Flat
-        LblConfirmpw.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LblConfirmpw.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         LblConfirmpw.ForeColor = Color.Black
         LblConfirmpw.Location = New Point(607, 579)
         LblConfirmpw.Name = "LblConfirmpw"
@@ -104,7 +104,7 @@ Partial Class Registerform
         LblAddress.AutoSize = True
         LblAddress.BackColor = Color.Transparent
         LblAddress.FlatStyle = FlatStyle.Flat
-        LblAddress.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LblAddress.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         LblAddress.ForeColor = Color.Black
         LblAddress.Location = New Point(166, 195)
         LblAddress.Name = "LblAddress"
@@ -117,7 +117,7 @@ Partial Class Registerform
         ' 
         LblPhonenumber.AutoSize = True
         LblPhonenumber.FlatStyle = FlatStyle.Flat
-        LblPhonenumber.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LblPhonenumber.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         LblPhonenumber.ForeColor = Color.Black
         LblPhonenumber.ImageAlign = ContentAlignment.TopRight
         LblPhonenumber.Location = New Point(606, 319)
@@ -131,7 +131,7 @@ Partial Class Registerform
         ' 
         LblUsertype.AutoSize = True
         LblUsertype.FlatStyle = FlatStyle.Flat
-        LblUsertype.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LblUsertype.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         LblUsertype.ForeColor = Color.Black
         LblUsertype.Location = New Point(606, 448)
         LblUsertype.Name = "LblUsertype"
@@ -145,7 +145,7 @@ Partial Class Registerform
         LblGender.AutoSize = True
         LblGender.BackColor = Color.Transparent
         LblGender.FlatStyle = FlatStyle.Flat
-        LblGender.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LblGender.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         LblGender.ForeColor = Color.Black
         LblGender.Location = New Point(166, 315)
         LblGender.Name = "LblGender"
@@ -158,7 +158,7 @@ Partial Class Registerform
         ' 
         LblUsername.AutoSize = True
         LblUsername.FlatStyle = FlatStyle.Flat
-        LblUsername.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LblUsername.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         LblUsername.ForeColor = Color.Black
         LblUsername.Location = New Point(166, 444)
         LblUsername.Name = "LblUsername"
@@ -171,7 +171,7 @@ Partial Class Registerform
         ' 
         LblPassword.AutoSize = True
         LblPassword.FlatStyle = FlatStyle.Flat
-        LblPassword.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LblPassword.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         LblPassword.ForeColor = Color.Black
         LblPassword.Location = New Point(173, 575)
         LblPassword.Name = "LblPassword"
@@ -222,6 +222,18 @@ Partial Class Registerform
         Pnlregister.Size = New Size(1077, 777)
         Pnlregister.TabIndex = 0
         ' 
+        ' Lbl_registeruser
+        ' 
+        Lbl_registeruser.AutoSize = True
+        Lbl_registeruser.BackColor = Color.Transparent
+        Lbl_registeruser.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl_registeruser.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        Lbl_registeruser.Location = New Point(489, 20)
+        Lbl_registeruser.Name = "Lbl_registeruser"
+        Lbl_registeruser.Size = New Size(180, 31)
+        Lbl_registeruser.TabIndex = 39
+        Lbl_registeruser.Text = "REGISTER USER"
+        ' 
         ' Lbl_msggender
         ' 
         Lbl_msggender.AutoSize = True
@@ -253,7 +265,7 @@ Partial Class Registerform
         ' 
         Lbl_msglastname.AutoSize = True
         Lbl_msglastname.BackColor = Color.Transparent
-        Lbl_msglastname.Font = New Font("Segoe UI", 9F)
+        Lbl_msglastname.Font = New Font("Segoe UI", 9.0F)
         Lbl_msglastname.ForeColor = Color.Black
         Lbl_msglastname.Location = New Point(606, 162)
         Lbl_msglastname.Name = "Lbl_msglastname"
@@ -309,7 +321,7 @@ Partial Class Registerform
         ' 
         Lbl_msgfirstname.AutoSize = True
         Lbl_msgfirstname.BackColor = Color.Transparent
-        Lbl_msgfirstname.Font = New Font("Segoe UI", 9F)
+        Lbl_msgfirstname.Font = New Font("Segoe UI", 9.0F)
         Lbl_msgfirstname.ForeColor = Color.Black
         Lbl_msgfirstname.Location = New Point(166, 162)
         Lbl_msgfirstname.Name = "Lbl_msgfirstname"
@@ -436,7 +448,7 @@ Partial Class Registerform
         Registerbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         Registerbtn.FlatStyle = FlatStyle.Flat
         Registerbtn.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Registerbtn.Location = New Point(398, 711)
+        Registerbtn.Location = New Point(461, 693)
         Registerbtn.Name = "Registerbtn"
         Registerbtn.Size = New Size(219, 54)
         Registerbtn.TabIndex = 11
@@ -458,7 +470,7 @@ Partial Class Registerform
         ' 
         LblLastname.AutoSize = True
         LblLastname.FlatStyle = FlatStyle.Flat
-        LblLastname.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LblLastname.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         LblLastname.ForeColor = Color.Black
         LblLastname.Location = New Point(606, 76)
         LblLastname.Name = "LblLastname"
@@ -467,21 +479,9 @@ Partial Class Registerform
         LblLastname.Text = "Last Name"
         LblLastname.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Lbl_registeruser
-        ' 
-        Lbl_registeruser.AutoSize = True
-        Lbl_registeruser.BackColor = Color.Transparent
-        Lbl_registeruser.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lbl_registeruser.ForeColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
-        Lbl_registeruser.Location = New Point(470, 9)
-        Lbl_registeruser.Name = "Lbl_registeruser"
-        Lbl_registeruser.Size = New Size(180, 31)
-        Lbl_registeruser.TabIndex = 39
-        Lbl_registeruser.Text = "REGISTER USER"
-        ' 
         ' Registerform
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         AutoValidate = AutoValidate.Disable
         BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
@@ -529,4 +529,5 @@ Partial Class Registerform
     Friend WithEvents Lbl_msglastname As Label
     Friend WithEvents Lbl_msgphone As Label
     Friend WithEvents Lbl_registeruser As Label
+
 End Class

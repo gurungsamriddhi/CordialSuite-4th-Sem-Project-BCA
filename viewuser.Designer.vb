@@ -80,9 +80,6 @@ Partial Class viewuser
         DGV_users.AllowUserToAddRows = False
         DGV_users.AllowUserToDeleteRows = False
         DataGridViewCellStyle1.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle1.ForeColor = Color.Black
-        DataGridViewCellStyle1.SelectionBackColor = Color.White
-        DataGridViewCellStyle1.SelectionForeColor = Color.Black
         DGV_users.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         DGV_users.Anchor = AnchorStyles.None
         DGV_users.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
@@ -91,7 +88,7 @@ Partial Class viewuser
         DGV_users.BorderStyle = BorderStyle.None
         DGV_users.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DGV_users.GridColor = Color.Black
-        DGV_users.Location = New Point(29, 173)
+        DGV_users.Location = New Point(22, 142)
         DGV_users.Name = "DGV_users"
         DGV_users.ReadOnly = True
         DGV_users.RowHeadersWidth = 51
@@ -105,7 +102,7 @@ Partial Class viewuser
         searchkeyword_txtbx.BorderStyle = BorderStyle.FixedSingle
         searchkeyword_txtbx.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         searchkeyword_txtbx.ForeColor = Color.Black
-        searchkeyword_txtbx.Location = New Point(378, 72)
+        searchkeyword_txtbx.Location = New Point(378, 52)
         searchkeyword_txtbx.Multiline = True
         searchkeyword_txtbx.Name = "searchkeyword_txtbx"
         searchkeyword_txtbx.Size = New Size(361, 47)
@@ -118,10 +115,10 @@ Partial Class viewuser
         Tabcontrolusers.Controls.Add(updateusertabpage)
         Tabcontrolusers.Controls.Add(TabPagedeluser)
         Tabcontrolusers.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Tabcontrolusers.Location = New Point(12, 43)
+        Tabcontrolusers.Location = New Point(12, 58)
         Tabcontrolusers.Name = "Tabcontrolusers"
         Tabcontrolusers.SelectedIndex = 0
-        Tabcontrolusers.Size = New Size(1041, 737)
+        Tabcontrolusers.Size = New Size(1041, 697)
         Tabcontrolusers.TabIndex = 10
         ' 
         ' TabPageViewUser
@@ -133,7 +130,7 @@ Partial Class viewuser
         TabPageViewUser.Location = New Point(4, 4)
         TabPageViewUser.Name = "TabPageViewUser"
         TabPageViewUser.Padding = New Padding(3)
-        TabPageViewUser.Size = New Size(1033, 696)
+        TabPageViewUser.Size = New Size(1033, 656)
         TabPageViewUser.TabIndex = 0
         TabPageViewUser.Text = "Search User"
         TabPageViewUser.UseVisualStyleBackColor = True
@@ -144,7 +141,7 @@ Partial Class viewuser
         Lbl_anykeyword.AutoSize = True
         Lbl_anykeyword.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lbl_anykeyword.ForeColor = SystemColors.ActiveCaptionText
-        Lbl_anykeyword.Location = New Point(241, 82)
+        Lbl_anykeyword.Location = New Point(241, 62)
         Lbl_anykeyword.Name = "Lbl_anykeyword"
         Lbl_anykeyword.Size = New Size(131, 25)
         Lbl_anykeyword.TabIndex = 9
@@ -185,7 +182,7 @@ Partial Class viewuser
         updateusertabpage.Location = New Point(4, 4)
         updateusertabpage.Name = "updateusertabpage"
         updateusertabpage.Padding = New Padding(3)
-        updateusertabpage.Size = New Size(1033, 655)
+        updateusertabpage.Size = New Size(1033, 656)
         updateusertabpage.TabIndex = 1
         updateusertabpage.Text = "Update User"
         updateusertabpage.UseVisualStyleBackColor = True
@@ -558,7 +555,7 @@ Partial Class viewuser
         TabPagedeluser.Location = New Point(4, 4)
         TabPagedeluser.Name = "TabPagedeluser"
         TabPagedeluser.Padding = New Padding(3)
-        TabPagedeluser.Size = New Size(1033, 655)
+        TabPagedeluser.Size = New Size(1033, 656)
         TabPagedeluser.TabIndex = 2
         TabPagedeluser.Text = "Delete User"
         TabPagedeluser.UseVisualStyleBackColor = True
@@ -667,7 +664,7 @@ Partial Class viewuser
         AutoScaleDimensions = New SizeF(9F, 23F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Menu
-        ClientSize = New Size(1077, 792)
+        ClientSize = New Size(1077, 777)
         Controls.Add(Tabcontrolusers)
         Controls.Add(Lblguestlist)
         Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))

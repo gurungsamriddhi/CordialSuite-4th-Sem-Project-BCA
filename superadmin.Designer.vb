@@ -32,6 +32,7 @@ Partial Class superadmin
         admindashboard_btn = New Button()
         close_Btn = New Button()
         superadmindashboard_btn = New Button()
+        minimise_btn = New Button()
         Pnl_dashboard.SuspendLayout()
         SuspendLayout()
         ' 
@@ -156,11 +157,11 @@ Partial Class superadmin
         close_Btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         close_Btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
         close_Btn.FlatStyle = FlatStyle.Flat
-        close_Btn.Font = New Font("Lucida Fax", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        close_Btn.Font = New Font("Lucida Fax", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         close_Btn.ForeColor = SystemColors.Window
-        close_Btn.Location = New Point(1268, 5)
+        close_Btn.Location = New Point(1270, 7)
         close_Btn.Name = "close_Btn"
-        close_Btn.Size = New Size(43, 42)
+        close_Btn.Size = New Size(42, 39)
         close_Btn.TabIndex = 25
         close_Btn.Text = "X"
         close_Btn.UseVisualStyleBackColor = False
@@ -182,12 +183,30 @@ Partial Class superadmin
         superadmindashboard_btn.Text = "Dashboard"
         superadmindashboard_btn.UseVisualStyleBackColor = False
         ' 
+        ' minimise_btn
+        ' 
+        minimise_btn.BackColor = Color.Transparent
+        minimise_btn.FlatAppearance.BorderColor = Color.White
+        minimise_btn.FlatAppearance.BorderSize = 2
+        minimise_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        minimise_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        minimise_btn.FlatStyle = FlatStyle.Flat
+        minimise_btn.Font = New Font("Perpetua Titling MT", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        minimise_btn.ForeColor = SystemColors.Window
+        minimise_btn.Location = New Point(1216, 7)
+        minimise_btn.Name = "minimise_btn"
+        minimise_btn.Size = New Size(42, 39)
+        minimise_btn.TabIndex = 30
+        minimise_btn.Text = "-"
+        minimise_btn.UseVisualStyleBackColor = False
+        ' 
         ' superadmin
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
         ClientSize = New Size(1317, 833)
+        Controls.Add(minimise_btn)
         Controls.Add(superadmindashboard_btn)
         Controls.Add(close_Btn)
         Controls.Add(lbl_superadminname)
@@ -217,4 +236,5 @@ Partial Class superadmin
     Friend WithEvents admindashboard_btn As Button
     Friend WithEvents close_Btn As Button
     Friend WithEvents superadmindashboard_btn As Button
+    Friend WithEvents minimise_btn As Button
 End Class

@@ -59,4 +59,9 @@
         Dim defaultForm As New superadmindashboardform() ' Replace with your actual default form
         Switchpanel(defaultForm)
     End Sub
+
+    Private Sub minimise_btn_Click(sender As Object, e As EventArgs) Handles minimise_btn.Click
+
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
 End Class
