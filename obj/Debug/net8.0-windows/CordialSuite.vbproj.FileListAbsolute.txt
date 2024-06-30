@@ -218,11 +218,11 @@ E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Loginform.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Resources.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Registerform.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Reservation.resources
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.roomselectionform.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.splash.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.superadmin.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.superadmindashboardform.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.superadmin_login.resources
-E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Transaction.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.usersmodel.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.userdashboardform.resources
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.Viewemployee.resources
@@ -241,4 +241,5 @@ E:\NewCordialSuite\obj\Debug\net8.0-windows\refint\CordialSuite.dll
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.pdb
 E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.genruntimeconfig.cache
 E:\NewCordialSuite\obj\Debug\net8.0-windows\ref\CordialSuite.dll
-E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.roomselectionform.resources
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.roomsales.resources
+E:\NewCordialSuite\obj\Debug\net8.0-windows\CordialSuite.browsereservations.resources

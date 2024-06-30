@@ -42,7 +42,7 @@ Public Class Viewemployee
     End Sub
 
     Public Sub populateemployees()
-        Dim query As String = "SELECT id,FirstName,LastName,Address,PhoneNumber,Age,Gender,UserType  FROM users WHERE Usertype='user'"
+        Dim query As String = "SELECT FirstName,LastName,Address,PhoneNumber,Age,Gender,UserType  FROM users WHERE Usertype='user'"
         manageemployee.ExecuteQuery(query, DGV_employee)
 
         DGV_employee.AutoGenerateColumns = True

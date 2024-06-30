@@ -19,7 +19,7 @@
     End Sub
 
     Private Sub transactionbtn_Click(sender As Object, e As EventArgs) Handles transactionbtn.Click
-        Switchpanel(Transaction)
+        Switchpanel(roomsales)
     End Sub
 
 

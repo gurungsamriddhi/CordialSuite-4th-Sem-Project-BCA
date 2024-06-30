@@ -96,4 +96,35 @@ Public Class reservationsSql
             End Using
         End Using
     End Function
+
+
+    Public Function ExecuteQueryWithParameters(query As String, parameters As List(Of SqlParameter)) As DataTable
+        Dim dt As New DataTable()
+
+        Using conn As New SqlConnection(connectionString)
+            Using cmd As New SqlCommand(query, conn)
+                cmd.Parameters.AddRange(parameters.ToArray())
+                Dim adapter As New SqlDataAdapter(cmd)
+                adapter.Fill(dt)
+            End Using
+        End Using
+
+        Return dt
+    End Function
+
+
+    Public Function ExecuteScalarWithParameters(query As String, parameters As List(Of SqlParameter)) As Object
+        Dim result As Object = Nothing
+        Using connection As New SqlConnection(connectionString)
+            Using command As New SqlCommand(query, connection)
+                For Each param As SqlParameter In parameters
+                    command.Parameters.Add(param)
+                Next
+                connection.Open()
+                result = command.ExecuteScalar()
+            End Using
+        End Using
+        Return result
+    End Function
+
 End Class

@@ -53,6 +53,7 @@ Partial Class Guestform
         Lbl_gender = New Label()
         Lbl_firstname = New Label()
         Lblguestlist = New Label()
+        clear_btn = New Button()
         pnlguestlist.SuspendLayout()
         Tabpage_updateguest.SuspendLayout()
         tabpage_viewguest.SuspendLayout()
@@ -146,6 +147,7 @@ Partial Class Guestform
         ' 
         ' Tabpage_manageguest
         ' 
+        Tabpage_manageguest.Controls.Add(clear_btn)
         Tabpage_manageguest.Controls.Add(update_btn)
         Tabpage_manageguest.Controls.Add(Lbl_guestidshow)
         Tabpage_manageguest.Controls.Add(Lbl_guestid)
@@ -171,7 +173,7 @@ Partial Class Guestform
         Tabpage_manageguest.Location = New Point(4, 4)
         Tabpage_manageguest.Name = "Tabpage_manageguest"
         Tabpage_manageguest.Padding = New Padding(3)
-        Tabpage_manageguest.Size = New Size(1000, 662)
+        Tabpage_manageguest.Size = New Size(1018, 667)
         Tabpage_manageguest.TabIndex = 2
         Tabpage_manageguest.Text = "Manage Guests"
         Tabpage_manageguest.UseVisualStyleBackColor = True
@@ -187,7 +189,7 @@ Partial Class Guestform
         update_btn.FlatStyle = FlatStyle.Flat
         update_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
         update_btn.ForeColor = SystemColors.ControlLightLight
-        update_btn.Location = New Point(526, 588)
+        update_btn.Location = New Point(495, 588)
         update_btn.Name = "update_btn"
         update_btn.Size = New Size(154, 49)
         update_btn.TabIndex = 93
@@ -442,6 +444,24 @@ Partial Class Guestform
         Lblguestlist.TabIndex = 1
         Lblguestlist.Text = "GUEST "
         ' 
+        ' clear_btn
+        ' 
+        clear_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        clear_btn.FlatAppearance.BorderColor = SystemColors.Window
+        clear_btn.FlatAppearance.BorderSize = 2
+        clear_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        clear_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        clear_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        clear_btn.FlatStyle = FlatStyle.Flat
+        clear_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
+        clear_btn.ForeColor = SystemColors.ControlLightLight
+        clear_btn.Location = New Point(683, 588)
+        clear_btn.Name = "clear_btn"
+        clear_btn.Size = New Size(154, 49)
+        clear_btn.TabIndex = 94
+        clear_btn.Text = "Clear"
+        clear_btn.UseVisualStyleBackColor = False
+        ' 
         ' Guestform
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -499,4 +519,5 @@ Partial Class Guestform
     Friend WithEvents Lbl_gender As Label
     Friend WithEvents Lbl_firstname As Label
     Friend WithEvents update_btn As Button
+    Friend WithEvents clear_btn As Button
 End Class

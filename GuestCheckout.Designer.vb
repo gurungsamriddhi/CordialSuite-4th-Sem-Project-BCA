@@ -22,12 +22,25 @@ Partial Class GuestCheckout
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Lbl_checkout = New Label()
-        DataGridView1 = New DataGridView()
         checkout_btn = New Button()
         searchkeyword_txtbx = New TextBox()
-        Label1 = New Label()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        Lbl_anykeyword = New Label()
+        DGV_Checkout = New DataGridView()
+        Guestfirstname = New DataGridViewTextBoxColumn()
+        guestlastname = New DataGridViewTextBoxColumn()
+        roomno = New DataGridViewTextBoxColumn()
+        roomtype = New DataGridViewTextBoxColumn()
+        roombedcount = New DataGridViewTextBoxColumn()
+        NumberofGuests = New DataGridViewTextBoxColumn()
+        checkindate = New DataGridViewTextBoxColumn()
+        noofdaysreserved = New DataGridViewTextBoxColumn()
+        checkoutdate = New DataGridViewTextBoxColumn()
+        roompricepernight = New DataGridViewTextBoxColumn()
+        status = New DataGridViewTextBoxColumn()
+        Totalamount = New DataGridViewTextBoxColumn()
+        CType(DGV_Checkout, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Lbl_checkout
@@ -43,16 +56,6 @@ Partial Class GuestCheckout
         Lbl_checkout.Text = "GUEST CHECK-OUT"
         Lbl_checkout.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' DataGridView1
-        ' 
-        DataGridView1.BackgroundColor = SystemColors.Menu
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(31, 136)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(1014, 517)
-        DataGridView1.TabIndex = 25
-        ' 
         ' checkout_btn
         ' 
         checkout_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
@@ -64,7 +67,7 @@ Partial Class GuestCheckout
         checkout_btn.FlatStyle = FlatStyle.Flat
         checkout_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
         checkout_btn.ForeColor = SystemColors.ControlLightLight
-        checkout_btn.Location = New Point(455, 684)
+        checkout_btn.Location = New Point(498, 707)
         checkout_btn.Name = "checkout_btn"
         checkout_btn.Size = New Size(161, 58)
         checkout_btn.TabIndex = 116
@@ -84,17 +87,138 @@ Partial Class GuestCheckout
         searchkeyword_txtbx.Size = New Size(324, 47)
         searchkeyword_txtbx.TabIndex = 117
         ' 
-        ' Label1
+        ' Lbl_anykeyword
         ' 
-        Label1.Anchor = AnchorStyles.None
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = SystemColors.ActiveCaptionText
-        Label1.Location = New Point(281, 79)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(131, 25)
-        Label1.TabIndex = 118
-        Label1.Text = "Any Keyword:"
+        Lbl_anykeyword.Anchor = AnchorStyles.None
+        Lbl_anykeyword.AutoSize = True
+        Lbl_anykeyword.Font = New Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl_anykeyword.ForeColor = SystemColors.ActiveCaptionText
+        Lbl_anykeyword.Location = New Point(281, 79)
+        Lbl_anykeyword.Name = "Lbl_anykeyword"
+        Lbl_anykeyword.Size = New Size(131, 25)
+        Lbl_anykeyword.TabIndex = 118
+        Lbl_anykeyword.Text = "Any Keyword:"
+        ' 
+        ' DGV_Checkout
+        ' 
+        DGV_Checkout.AllowUserToAddRows = False
+        DGV_Checkout.AllowUserToDeleteRows = False
+        DGV_Checkout.AllowUserToResizeColumns = False
+        DGV_Checkout.AllowUserToResizeRows = False
+        DGV_Checkout.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells
+        DGV_Checkout.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
+        DGV_Checkout.BackgroundColor = SystemColors.Menu
+        DGV_Checkout.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DGV_Checkout.Columns.AddRange(New DataGridViewColumn() {Guestfirstname, guestlastname, roomno, roomtype, roombedcount, NumberofGuests, checkindate, noofdaysreserved, checkoutdate, roompricepernight, status, Totalamount})
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = SystemColors.Window
+        DataGridViewCellStyle1.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle1.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.False
+        DGV_Checkout.DefaultCellStyle = DataGridViewCellStyle1
+        DGV_Checkout.Location = New Point(45, 151)
+        DGV_Checkout.Name = "DGV_Checkout"
+        DGV_Checkout.RowHeadersWidth = 51
+        DGV_Checkout.Size = New Size(996, 537)
+        DGV_Checkout.TabIndex = 119
+        ' 
+        ' Guestfirstname
+        ' 
+        Guestfirstname.DataPropertyName = "Firstname"
+        Guestfirstname.HeaderText = "Guest Firstname"
+        Guestfirstname.MinimumWidth = 6
+        Guestfirstname.Name = "Guestfirstname"
+        Guestfirstname.Width = 131
+        ' 
+        ' guestlastname
+        ' 
+        guestlastname.DataPropertyName = "Lastname"
+        guestlastname.HeaderText = "Guest Lastname"
+        guestlastname.MinimumWidth = 6
+        guestlastname.Name = "guestlastname"
+        guestlastname.Width = 130
+        ' 
+        ' roomno
+        ' 
+        roomno.DataPropertyName = "Roomnumber"
+        roomno.HeaderText = "Room Number"
+        roomno.MinimumWidth = 6
+        roomno.Name = "roomno"
+        roomno.Width = 125
+        ' 
+        ' roomtype
+        ' 
+        roomtype.DataPropertyName = "Roomtype"
+        roomtype.HeaderText = "Room Type"
+        roomtype.MinimumWidth = 6
+        roomtype.Name = "roomtype"
+        roomtype.Width = 104
+        ' 
+        ' roombedcount
+        ' 
+        roombedcount.DataPropertyName = "BedCount"
+        roombedcount.HeaderText = "Bed Count"
+        roombedcount.MinimumWidth = 6
+        roombedcount.Name = "roombedcount"
+        roombedcount.Width = 99
+        ' 
+        ' NumberofGuests
+        ' 
+        NumberofGuests.DataPropertyName = "NumberofGuests"
+        NumberofGuests.HeaderText = "Number of Guests"
+        NumberofGuests.MinimumWidth = 6
+        NumberofGuests.Name = "NumberofGuests"
+        NumberofGuests.Width = 105
+        ' 
+        ' checkindate
+        ' 
+        checkindate.DataPropertyName = "CheckInDate"
+        checkindate.HeaderText = "Check In Date"
+        checkindate.MinimumWidth = 6
+        checkindate.Name = "checkindate"
+        checkindate.Width = 90
+        ' 
+        ' noofdaysreserved
+        ' 
+        noofdaysreserved.DataPropertyName = "Numberofdaysreserved"
+        noofdaysreserved.HeaderText = "No of days reserved"
+        noofdaysreserved.MinimumWidth = 6
+        noofdaysreserved.Name = "noofdaysreserved"
+        noofdaysreserved.Width = 155
+        ' 
+        ' checkoutdate
+        ' 
+        checkoutdate.DataPropertyName = "CheckOutDate"
+        checkoutdate.HeaderText = "Check Out Date"
+        checkoutdate.MinimumWidth = 6
+        checkoutdate.Name = "checkoutdate"
+        checkoutdate.Width = 101
+        ' 
+        ' roompricepernight
+        ' 
+        roompricepernight.DataPropertyName = "Pricepernight"
+        roompricepernight.HeaderText = "Price Per Night"
+        roompricepernight.MinimumWidth = 6
+        roompricepernight.Name = "roompricepernight"
+        roompricepernight.Width = 124
+        ' 
+        ' status
+        ' 
+        status.DataPropertyName = "Status"
+        status.HeaderText = "Status"
+        status.MinimumWidth = 6
+        status.Name = "status"
+        status.Width = 78
+        ' 
+        ' Totalamount
+        ' 
+        Totalamount.DataPropertyName = "TotalAmount"
+        Totalamount.HeaderText = "Total Amount"
+        Totalamount.MinimumWidth = 6
+        Totalamount.Name = "Totalamount"
+        Totalamount.Width = 118
         ' 
         ' GuestCheckout
         ' 
@@ -102,22 +226,34 @@ Partial Class GuestCheckout
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Control
         ClientSize = New Size(1077, 777)
-        Controls.Add(Label1)
+        Controls.Add(DGV_Checkout)
+        Controls.Add(Lbl_anykeyword)
         Controls.Add(searchkeyword_txtbx)
         Controls.Add(checkout_btn)
-        Controls.Add(DataGridView1)
         Controls.Add(Lbl_checkout)
         FormBorderStyle = FormBorderStyle.None
         Name = "GuestCheckout"
         Text = "GuestCheckout"
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(DGV_Checkout, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
     Friend WithEvents Lbl_checkout As Label
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents checkout_btn As Button
     Friend WithEvents searchkeyword_txtbx As TextBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Lbl_anykeyword As Label
+    Friend WithEvents DGV_Checkout As DataGridView
+    Friend WithEvents Guestfirstname As DataGridViewTextBoxColumn
+    Friend WithEvents guestlastname As DataGridViewTextBoxColumn
+    Friend WithEvents roomno As DataGridViewTextBoxColumn
+    Friend WithEvents roomtype As DataGridViewTextBoxColumn
+    Friend WithEvents roombedcount As DataGridViewTextBoxColumn
+    Friend WithEvents NumberofGuests As DataGridViewTextBoxColumn
+    Friend WithEvents checkindate As DataGridViewTextBoxColumn
+    Friend WithEvents noofdaysreserved As DataGridViewTextBoxColumn
+    Friend WithEvents checkoutdate As DataGridViewTextBoxColumn
+    Friend WithEvents roompricepernight As DataGridViewTextBoxColumn
+    Friend WithEvents status As DataGridViewTextBoxColumn
+    Friend WithEvents Totalamount As DataGridViewTextBoxColumn
 End Class

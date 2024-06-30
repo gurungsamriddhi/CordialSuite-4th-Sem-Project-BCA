@@ -3,52 +3,36 @@
   "WorkspaceRootPath": "E:\\NewCordialSuite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\roomselectionform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:roomselectionform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\reservation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:reservation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\superadminlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:superadminlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\reservation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:reservation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\splash.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:splash.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\billing.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:billing.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\browsereservations.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:browsereservations.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\roomselectionform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:roomselectionform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\splash.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:splash.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\sqlqueries\\reservationsql.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:sqlqueries\\reservationsql.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\superadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:superadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\superadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:superadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\superadmindashboardform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:superadmindashboardform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\superadminlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:superadminlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\userdashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:userdashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\billing.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:billing.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,97 +42,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Admin.vb [Design]",
-              "DocumentMoniker": "E:\\NewCordialSuite\\Admin.vb",
-              "RelativeDocumentMoniker": "Admin.vb",
-              "ToolTip": "E:\\NewCordialSuite\\Admin.vb [Design]",
-              "RelativeToolTip": "Admin.vb [Design]",
+              "DocumentIndex": 6,
+              "Title": "reservationsql.vb",
+              "DocumentMoniker": "E:\\NewCordialSuite\\sqlqueries\\reservationsql.vb",
+              "RelativeDocumentMoniker": "sqlqueries\\reservationsql.vb",
+              "ToolTip": "E:\\NewCordialSuite\\sqlqueries\\reservationsql.vb",
+              "RelativeToolTip": "sqlqueries\\reservationsql.vb",
+              "ViewState": "AQIAACsAAAAAAAAAAAArwD8AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-30T02:05:28.692Z",
+              "WhenOpened": "2024-06-30T03:04:22.878Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Reservation.vb",
+              "DocumentMoniker": "E:\\NewCordialSuite\\Reservation.vb",
+              "RelativeDocumentMoniker": "Reservation.vb",
+              "ToolTip": "E:\\NewCordialSuite\\Reservation.vb",
+              "RelativeToolTip": "Reservation.vb",
+              "ViewState": "AQIAADwBAAAAAAAAAAAuwHEAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-30T03:04:29.651Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "roomselectionform.vb",
+              "DocumentMoniker": "E:\\NewCordialSuite\\roomselectionform.vb",
+              "RelativeDocumentMoniker": "roomselectionform.vb",
+              "ToolTip": "E:\\NewCordialSuite\\roomselectionform.vb",
+              "RelativeToolTip": "roomselectionform.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-30T13:24:03.915Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "roomselectionform.vb [Design]",
+              "DocumentMoniker": "E:\\NewCordialSuite\\roomselectionform.vb",
+              "RelativeDocumentMoniker": "roomselectionform.vb",
+              "ToolTip": "E:\\NewCordialSuite\\roomselectionform.vb [Design]",
+              "RelativeToolTip": "roomselectionform.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-30T13:18:46.456Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "browsereservations.vb",
+              "DocumentMoniker": "E:\\NewCordialSuite\\browsereservations.vb",
+              "RelativeDocumentMoniker": "browsereservations.vb",
+              "ToolTip": "E:\\NewCordialSuite\\browsereservations.vb",
+              "RelativeToolTip": "browsereservations.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-30T13:22:01.222Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "billing.vb [Design]",
+              "DocumentMoniker": "E:\\NewCordialSuite\\billing.vb",
+              "RelativeDocumentMoniker": "billing.vb",
+              "ToolTip": "E:\\NewCordialSuite\\billing.vb [Design]",
+              "RelativeToolTip": "billing.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-30T11:49:41.289Z",
               "IsPinned": true,
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "splash.vb [Design]",
-              "DocumentMoniker": "E:\\NewCordialSuite\\splash.vb",
-              "RelativeDocumentMoniker": "splash.vb",
-              "ToolTip": "E:\\NewCordialSuite\\splash.vb [Design]",
-              "RelativeToolTip": "splash.vb [Design]",
+              "Title": "billing.vb",
+              "DocumentMoniker": "E:\\NewCordialSuite\\billing.vb",
+              "RelativeDocumentMoniker": "billing.vb",
+              "ToolTip": "E:\\NewCordialSuite\\billing.vb",
+              "RelativeToolTip": "billing.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-30T02:05:40.561Z",
+              "WhenOpened": "2024-06-30T11:54:03.374Z",
               "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "loginform.vb [Design]",
-              "DocumentMoniker": "E:\\NewCordialSuite\\loginform.vb",
-              "RelativeDocumentMoniker": "loginform.vb",
-              "ToolTip": "E:\\NewCordialSuite\\loginform.vb [Design]*",
-              "RelativeToolTip": "loginform.vb [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-30T02:05:50.735Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "superadminlogin.vb [Design]",
-              "DocumentMoniker": "E:\\NewCordialSuite\\superadminlogin.vb",
-              "RelativeDocumentMoniker": "superadminlogin.vb",
-              "ToolTip": "E:\\NewCordialSuite\\superadminlogin.vb [Design]",
-              "RelativeToolTip": "superadminlogin.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-30T02:06:00.886Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "userdashboard.vb [Design]",
-              "DocumentMoniker": "E:\\NewCordialSuite\\userdashboard.vb",
-              "RelativeDocumentMoniker": "userdashboard.vb",
-              "ToolTip": "E:\\NewCordialSuite\\userdashboard.vb [Design]",
-              "RelativeToolTip": "userdashboard.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-30T02:06:05.451Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "superadmin.vb [Design]",
-              "DocumentMoniker": "E:\\NewCordialSuite\\superadmin.vb",
-              "RelativeDocumentMoniker": "superadmin.vb",
-              "ToolTip": "E:\\NewCordialSuite\\superadmin.vb [Design]",
-              "RelativeToolTip": "superadmin.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-30T02:06:10.499Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Admin.vb",
-              "DocumentMoniker": "E:\\NewCordialSuite\\Admin.vb",
-              "RelativeDocumentMoniker": "Admin.vb",
-              "ToolTip": "E:\\NewCordialSuite\\Admin.vb",
-              "RelativeToolTip": "Admin.vb",
-              "ViewState": "AQIAADkAAAAAAAAAAIAywEUAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-30T02:58:54.477Z",
               "EditorCaption": ""
             },
             {
@@ -193,67 +182,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "loginform.vb",
-              "DocumentMoniker": "E:\\NewCordialSuite\\loginform.vb",
-              "RelativeDocumentMoniker": "loginform.vb",
-              "ToolTip": "E:\\NewCordialSuite\\loginform.vb*",
-              "RelativeToolTip": "loginform.vb*",
-              "ViewState": "AQIAADIAAAAAAAAAAAAhwDwAAAAyAAAA",
+              "DocumentIndex": 2,
+              "Title": "Reservation.vb [Design]",
+              "DocumentMoniker": "E:\\NewCordialSuite\\Reservation.vb",
+              "RelativeDocumentMoniker": "Reservation.vb",
+              "ToolTip": "E:\\NewCordialSuite\\Reservation.vb [Design]",
+              "RelativeToolTip": "Reservation.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-30T02:42:15.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "splash.vb",
-              "DocumentMoniker": "E:\\NewCordialSuite\\splash.vb",
-              "RelativeDocumentMoniker": "splash.vb",
-              "ToolTip": "E:\\NewCordialSuite\\splash.vb",
-              "RelativeToolTip": "splash.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-30T02:17:34.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "superadmin.vb",
-              "DocumentMoniker": "E:\\NewCordialSuite\\superadmin.vb",
-              "RelativeDocumentMoniker": "superadmin.vb",
-              "ToolTip": "E:\\NewCordialSuite\\superadmin.vb",
-              "RelativeToolTip": "superadmin.vb",
-              "ViewState": "AQIAABEAAAAAAAAAAAArwCgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-30T02:47:01.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "superadmindashboardform.vb [Design]",
-              "DocumentMoniker": "E:\\NewCordialSuite\\superadmindashboardform.vb",
-              "RelativeDocumentMoniker": "superadmindashboardform.vb",
-              "ToolTip": "E:\\NewCordialSuite\\superadmindashboardform.vb [Design]",
-              "RelativeToolTip": "superadmindashboardform.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-30T02:46:52.438Z",
+              "WhenOpened": "2024-06-30T13:36:27.891Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "superadminlogin.vb",
-              "DocumentMoniker": "E:\\NewCordialSuite\\superadminlogin.vb",
-              "RelativeDocumentMoniker": "superadminlogin.vb",
-              "ToolTip": "E:\\NewCordialSuite\\superadminlogin.vb",
-              "RelativeToolTip": "superadminlogin.vb",
-              "ViewState": "AQIAABwAAAAAAAAAAAArwCYAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-30T02:45:10.261Z",
-              "EditorCaption": ""
             }
           ]
         }

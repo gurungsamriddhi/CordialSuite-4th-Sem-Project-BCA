@@ -137,7 +137,7 @@ Partial Class Admin
         transactionbtn.Name = "transactionbtn"
         transactionbtn.Size = New Size(205, 45)
         transactionbtn.TabIndex = 7
-        transactionbtn.Text = "Transaction"
+        transactionbtn.Text = "Room Sales"
         transactionbtn.UseVisualStyleBackColor = False
         ' 
         ' viewempbtn

@@ -347,4 +347,21 @@ Public Class Guestform
             MessageBox.Show("Error updating guest: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
+    Private Sub clear_btn_Click(sender As Object, e As EventArgs) Handles clear_btn.Click
+        gfirstname_txtbx.Clear()
+        glastname_txtbx.Clear()
+        gaddress_txtbx.Clear()
+        cmbbx_genderG.SelectedIndex = -1
+        contact_txtbx.Clear()
+        Gemail_txtbx.Clear()
+        Lbl_msgcontactno.Text = String.Empty
+        Lbl_msggaddress.Text = String.Empty
+        Lbl_msggfirstname.Text = String.Empty
+        Lbl_msgglastname.Text = String.Empty
+        Lbl_msgggender.Text = String.Empty
+        Lbl_guestid.Text = String.Empty
+        Lbl_guestidshow.Text = String.Empty
+        Lbl_msgemail.Text = String.Empty
+    End Sub
 End Class

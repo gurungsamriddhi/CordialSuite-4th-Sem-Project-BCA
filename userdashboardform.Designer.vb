@@ -24,8 +24,8 @@ Partial Class userdashboardform
     Private Sub InitializeComponent()
         Lbl_userdashboard = New Label()
         Pnl_Rooms = New Panel()
-        Label4 = New Label()
-        Label3 = New Label()
+        Lbl_roomsavailableshow = New Label()
+        lbl_Reservedroomshow = New Label()
         Lbl_roomsavailable = New Label()
         Lbl_roomsreserved = New Label()
         Lbl_totrooms = New Label()
@@ -58,41 +58,41 @@ Partial Class userdashboardform
         ' Pnl_Rooms
         ' 
         Pnl_Rooms.BackColor = Color.FromArgb(CByte(31), CByte(150), CByte(190))
-        Pnl_Rooms.Controls.Add(Label4)
-        Pnl_Rooms.Controls.Add(Label3)
+        Pnl_Rooms.Controls.Add(Lbl_roomsavailableshow)
+        Pnl_Rooms.Controls.Add(lbl_Reservedroomshow)
         Pnl_Rooms.Controls.Add(Lbl_roomsavailable)
         Pnl_Rooms.Controls.Add(Lbl_roomsreserved)
         Pnl_Rooms.Controls.Add(Lbl_totrooms)
         Pnl_Rooms.Controls.Add(Lbl_nroomsshow)
         Pnl_Rooms.Controls.Add(rooms_lbl)
-        Pnl_Rooms.Location = New Point(141, 171)
+        Pnl_Rooms.Location = New Point(117, 270)
         Pnl_Rooms.Name = "Pnl_Rooms"
         Pnl_Rooms.Size = New Size(296, 236)
         Pnl_Rooms.TabIndex = 49
         ' 
-        ' Label4
+        ' Lbl_roomsavailableshow
         ' 
-        Label4.AutoSize = True
-        Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = SystemColors.ControlLightLight
-        Label4.Location = New Point(237, 185)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(36, 31)
-        Label4.TabIndex = 9
-        Label4.Text = "12"
+        Lbl_roomsavailableshow.AutoSize = True
+        Lbl_roomsavailableshow.BackColor = Color.Transparent
+        Lbl_roomsavailableshow.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Lbl_roomsavailableshow.ForeColor = SystemColors.ControlLightLight
+        Lbl_roomsavailableshow.Location = New Point(237, 185)
+        Lbl_roomsavailableshow.Name = "Lbl_roomsavailableshow"
+        Lbl_roomsavailableshow.Size = New Size(36, 31)
+        Lbl_roomsavailableshow.TabIndex = 9
+        Lbl_roomsavailableshow.Text = "12"
         ' 
-        ' Label3
+        ' lbl_Reservedroomshow
         ' 
-        Label3.AutoSize = True
-        Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.ForeColor = SystemColors.ControlLightLight
-        Label3.Location = New Point(237, 127)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(36, 31)
-        Label3.TabIndex = 8
-        Label3.Text = "12"
+        lbl_Reservedroomshow.AutoSize = True
+        lbl_Reservedroomshow.BackColor = Color.Transparent
+        lbl_Reservedroomshow.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbl_Reservedroomshow.ForeColor = SystemColors.ControlLightLight
+        lbl_Reservedroomshow.Location = New Point(237, 127)
+        lbl_Reservedroomshow.Name = "lbl_Reservedroomshow"
+        lbl_Reservedroomshow.Size = New Size(36, 31)
+        lbl_Reservedroomshow.TabIndex = 8
+        lbl_Reservedroomshow.Text = "12"
         ' 
         ' Lbl_roomsavailable
         ' 
@@ -164,7 +164,7 @@ Partial Class userdashboardform
         Pnl_guests.Controls.Add(Lbl_totguests)
         Pnl_guests.Controls.Add(Lbl_totguestshow)
         Pnl_guests.Controls.Add(guests_lbl)
-        Pnl_guests.Location = New Point(688, 171)
+        Pnl_guests.Location = New Point(664, 270)
         Pnl_guests.Name = "Pnl_guests"
         Pnl_guests.Size = New Size(296, 229)
         Pnl_guests.TabIndex = 46
@@ -275,8 +275,8 @@ Partial Class userdashboardform
 
     Friend WithEvents Lbl_userdashboard As Label
     Friend WithEvents Pnl_Rooms As Panel
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents Lbl_roomsavailableshow As Label
+    Friend WithEvents lbl_Reservedroomshow As Label
     Friend WithEvents Lbl_roomsavailable As Label
     Friend WithEvents Lbl_roomsreserved As Label
     Friend WithEvents Lbl_totrooms As Label

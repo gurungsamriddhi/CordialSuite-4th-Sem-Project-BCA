@@ -13,17 +13,9 @@
         Dim query As String = "SELECT * FROM guests"
         guestssql.ExecuteQuery(query, DGV_Guests)
         DGV_Guests.AutoGenerateColumns = True
-        DGV_Guests.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells
-        DGV_Guests.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
         DGV_Guests.DefaultCellStyle.BackColor = Color.White
         DGV_Guests.DefaultCellStyle.ForeColor = Color.Black
         DGV_Guests.AlternatingRowsDefaultCellStyle = Nothing
-        ' Loop through columns and set the AutoSizeMode property
-        For Each column As DataGridViewColumn In DGV_Guests.Columns
-            column.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-        Next
-        ' Adjust the height of the header row to display the full content
-        DGV_Guests.AutoResizeRowHeadersWidth(DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders)
     End Sub
 
     Private Sub DGV_Guests_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_Guests.CellDoubleClick
@@ -38,4 +30,6 @@
             Me.Close()
         End If
     End Sub
+
+ 
 End Class
