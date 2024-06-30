@@ -41,6 +41,22 @@ Public Class billingSql
         Return dt
     End Function
 
+    Public Sub ExecuteQuery(query As String, dgv As DataGridView)
+        Using connection As New SqlConnection(connectionString)
+            Dim command As New SqlCommand(query, connection)
+            Dim adapter As New SqlDataAdapter(command)
+            Dim table As New DataTable()
+
+            Try
+                connection.Open()
+                adapter.Fill(table)
+                dgv.DataSource = table
+            Catch ex As Exception
+                MessageBox.Show("An error occurred: " & ex.Message)
+            End Try
+        End Using
+    End Sub
+
     Public Function ExecuteScalarWithParameters(query As String, parameters As List(Of SqlParameter)) As Object
         Dim result As Object = Nothing
         Using connection As New SqlConnection(connectionString)

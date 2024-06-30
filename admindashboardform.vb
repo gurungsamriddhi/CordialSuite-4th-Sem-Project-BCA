@@ -13,6 +13,7 @@
         Lbl_nfemaleshow.Text = GetFemaleGuestCount().ToString()
         lbl_nmaleshow.Text = GetMaleGuestCount().ToString()
         Lbl_totguestshow.Text = GetTotalGuestCount().ToString()
+
     End Sub
 
     Private Function GetUserCount() As Integer

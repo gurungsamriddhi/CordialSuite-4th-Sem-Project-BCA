@@ -42,7 +42,7 @@ Public Class Viewemployee
     End Sub
 
     Public Sub populateemployees()
-        Dim query As String = "SELECT FirstName,LastName,Address,PhoneNumber,Age,Gender,UserType  FROM users WHERE Usertype='user'"
+        Dim query As String = "SELECT id,FirstName,LastName,Address,PhoneNumber,Age,Gender,UserType  FROM users WHERE Usertype='user'"
         manageemployee.ExecuteQuery(query, DGV_employee)
 
         DGV_employee.AutoGenerateColumns = True
@@ -199,7 +199,7 @@ Public Class Viewemployee
             Dim address As String = selectedRow.Cells("Address").Value.ToString()
             Dim phone As String = selectedRow.Cells("PhoneNumber").Value.ToString()
 
-            Dim userid As Integer = selectedRow.Cells("id").Value.ToString()
+            Dim userid As Integer = Convert.ToInt32(selectedRow.Cells("id").Value)
 
 
             Lbl_useridshow.Text = userid

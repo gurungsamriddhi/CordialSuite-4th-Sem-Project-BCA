@@ -65,7 +65,7 @@ Public Class AdminRoom
         Dim roomnumber As Integer
         If String.IsNullOrEmpty(roomnumber) AndAlso Not Integer.TryParse(roomnumber_txtbx.Text.Trim(), roomnumber) OrElse roomnumber <= 0 OrElse roomnumber < 100 OrElse roomnumber > 1000 Then
             isValid = False
-            Lbl_msgroomno.Text = "Invalid Room Number. It must be between 100 and 1000."
+            Lbl_msgroomno.Text = "Invalid Room Number."
             Lbl_msgroomno.ForeColor = Color.Red
             roomnumber_txtbx.Focus()
 

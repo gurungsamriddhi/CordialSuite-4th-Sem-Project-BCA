@@ -27,13 +27,13 @@
             Dim userType = usercontroller.authenticateuser(loginusername, loginpassword)
 
             If userType = "Admin" Then
-                Me.Close()
+                Me.Hide()
                 Dim admindashboard As New Admin
                 admindashboard.Show()
                 admindashboard.Labeladminname.Text = loginusername
 
             ElseIf userType = "User" Then
-                Me.Close()
+                Me.Hide()
                 Dim userdashboard As New usersmodel
                 userdashboard.Show()
                 userdashboard.Labelusername.Text = loginusername
@@ -53,10 +53,10 @@
     End Sub
 
     Private Sub admin_btn_Click(sender As Object, e As EventArgs) Handles admin_btn.Click
-        Me.Close()
+
         Dim superadminlogin As New superadmin_login()
         superadminlogin.Show()
-
+        Me.Hide()
     End Sub
 
     Private Sub minimise_btn_Click(sender As Object, e As EventArgs) Handles minimise_btn.Click

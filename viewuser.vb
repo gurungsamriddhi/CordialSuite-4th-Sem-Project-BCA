@@ -48,7 +48,7 @@ Public Class viewuser
     End Sub
 
     Public Sub populateUsers()
-        Dim query As String = "SELECT * FROM users WHERE Usertype IN ('admin', 'user')"
+        Dim query As String = "SELECT * FROM users WHERE Usertype IN ('Admin', 'User')"
         manageusers.ExecuteQuery(query, DGV_users)
 
         DGV_users.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells
@@ -64,7 +64,7 @@ Public Class viewuser
     End Sub
 
     Private Sub viewuser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TabPageViewUser_Enter(sender, e)
+        populateUsers()
     End Sub
 
     Private Sub DGV_users_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_users.CellClick

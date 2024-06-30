@@ -26,10 +26,6 @@ Partial Class admindashboardform
         lbl_nusersshow = New Label()
         users_lbl = New Label()
         Pnl_Rooms = New Panel()
-        Label4 = New Label()
-        Label3 = New Label()
-        Lbl_roomsavailable = New Label()
-        Lbl_roomsreserved = New Label()
         Lbl_totrooms = New Label()
         Lbl_nroomsshow = New Label()
         rooms_lbl = New Label()
@@ -41,14 +37,10 @@ Partial Class admindashboardform
         Lbl_totguests = New Label()
         Lbl_totguestshow = New Label()
         guests_lbl = New Label()
-        pnl_roomsales = New Panel()
-        Lbl_nadminsshow = New Label()
-        roomsales_lbl = New Label()
         Lbl_admindashboard = New Label()
         Pnl_users.SuspendLayout()
         Pnl_Rooms.SuspendLayout()
         Pnl_guests.SuspendLayout()
-        pnl_roomsales.SuspendLayout()
         SuspendLayout()
         ' 
         ' Pnl_users
@@ -88,10 +80,6 @@ Partial Class admindashboardform
         ' Pnl_Rooms
         ' 
         Pnl_Rooms.BackColor = Color.FromArgb(CByte(31), CByte(150), CByte(190))
-        Pnl_Rooms.Controls.Add(Label4)
-        Pnl_Rooms.Controls.Add(Label3)
-        Pnl_Rooms.Controls.Add(Lbl_roomsavailable)
-        Pnl_Rooms.Controls.Add(Lbl_roomsreserved)
         Pnl_Rooms.Controls.Add(Lbl_totrooms)
         Pnl_Rooms.Controls.Add(Lbl_nroomsshow)
         Pnl_Rooms.Controls.Add(rooms_lbl)
@@ -100,61 +88,13 @@ Partial Class admindashboardform
         Pnl_Rooms.Size = New Size(296, 236)
         Pnl_Rooms.TabIndex = 44
         ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = SystemColors.ControlLightLight
-        Label4.Location = New Point(237, 185)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(36, 31)
-        Label4.TabIndex = 9
-        Label4.Text = "12"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.ForeColor = SystemColors.ControlLightLight
-        Label3.Location = New Point(237, 127)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(36, 31)
-        Label3.TabIndex = 8
-        Label3.Text = "12"
-        ' 
-        ' Lbl_roomsavailable
-        ' 
-        Lbl_roomsavailable.AutoSize = True
-        Lbl_roomsavailable.BackColor = Color.Transparent
-        Lbl_roomsavailable.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lbl_roomsavailable.ForeColor = SystemColors.HighlightText
-        Lbl_roomsavailable.Location = New Point(23, 185)
-        Lbl_roomsavailable.Name = "Lbl_roomsavailable"
-        Lbl_roomsavailable.Size = New Size(192, 31)
-        Lbl_roomsavailable.TabIndex = 5
-        Lbl_roomsavailable.Text = "Rooms Available:"
-        ' 
-        ' Lbl_roomsreserved
-        ' 
-        Lbl_roomsreserved.AutoSize = True
-        Lbl_roomsreserved.BackColor = Color.Transparent
-        Lbl_roomsreserved.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lbl_roomsreserved.ForeColor = SystemColors.HighlightText
-        Lbl_roomsreserved.Location = New Point(23, 127)
-        Lbl_roomsreserved.Name = "Lbl_roomsreserved"
-        Lbl_roomsreserved.Size = New Size(192, 31)
-        Lbl_roomsreserved.TabIndex = 4
-        Lbl_roomsreserved.Text = "Rooms Reserved:"
-        ' 
         ' Lbl_totrooms
         ' 
         Lbl_totrooms.AutoSize = True
         Lbl_totrooms.BackColor = Color.Transparent
         Lbl_totrooms.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lbl_totrooms.ForeColor = SystemColors.HighlightText
-        Lbl_totrooms.Location = New Point(23, 71)
+        Lbl_totrooms.Location = New Point(29, 89)
         Lbl_totrooms.Name = "Lbl_totrooms"
         Lbl_totrooms.Size = New Size(148, 31)
         Lbl_totrooms.TabIndex = 3
@@ -166,7 +106,7 @@ Partial Class admindashboardform
         Lbl_nroomsshow.BackColor = Color.Transparent
         Lbl_nroomsshow.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lbl_nroomsshow.ForeColor = SystemColors.ControlLightLight
-        Lbl_nroomsshow.Location = New Point(237, 71)
+        Lbl_nroomsshow.Location = New Point(240, 89)
         Lbl_nroomsshow.Name = "Lbl_nroomsshow"
         Lbl_nroomsshow.Size = New Size(36, 31)
         Lbl_nroomsshow.TabIndex = 2
@@ -194,7 +134,7 @@ Partial Class admindashboardform
         Pnl_guests.Controls.Add(Lbl_totguests)
         Pnl_guests.Controls.Add(Lbl_totguestshow)
         Pnl_guests.Controls.Add(guests_lbl)
-        Pnl_guests.Location = New Point(132, 414)
+        Pnl_guests.Location = New Point(391, 425)
         Pnl_guests.Name = "Pnl_guests"
         Pnl_guests.Size = New Size(296, 229)
         Pnl_guests.TabIndex = 45
@@ -283,40 +223,6 @@ Partial Class admindashboardform
         guests_lbl.TabIndex = 1
         guests_lbl.Text = "Guests"
         ' 
-        ' pnl_roomsales
-        ' 
-        pnl_roomsales.BackColor = Color.FromArgb(CByte(30), CByte(110), CByte(150))
-        pnl_roomsales.Controls.Add(Lbl_nadminsshow)
-        pnl_roomsales.Controls.Add(roomsales_lbl)
-        pnl_roomsales.ForeColor = SystemColors.GradientActiveCaption
-        pnl_roomsales.Location = New Point(666, 400)
-        pnl_roomsales.Name = "pnl_roomsales"
-        pnl_roomsales.Size = New Size(296, 229)
-        pnl_roomsales.TabIndex = 46
-        ' 
-        ' Lbl_nadminsshow
-        ' 
-        Lbl_nadminsshow.AutoSize = True
-        Lbl_nadminsshow.BackColor = Color.Transparent
-        Lbl_nadminsshow.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lbl_nadminsshow.ForeColor = SystemColors.ControlLightLight
-        Lbl_nadminsshow.Location = New Point(73, 61)
-        Lbl_nadminsshow.Name = "Lbl_nadminsshow"
-        Lbl_nadminsshow.Size = New Size(0, 31)
-        Lbl_nadminsshow.TabIndex = 3
-        ' 
-        ' roomsales_lbl
-        ' 
-        roomsales_lbl.AutoSize = True
-        roomsales_lbl.BackColor = Color.Transparent
-        roomsales_lbl.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        roomsales_lbl.ForeColor = SystemColors.HighlightText
-        roomsales_lbl.Location = New Point(82, 12)
-        roomsales_lbl.Name = "roomsales_lbl"
-        roomsales_lbl.Size = New Size(143, 31)
-        roomsales_lbl.TabIndex = 0
-        roomsales_lbl.Text = "Room Sales:"
-        ' 
         ' Lbl_admindashboard
         ' 
         Lbl_admindashboard.AutoSize = True
@@ -335,7 +241,6 @@ Partial Class admindashboardform
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1077, 777)
         Controls.Add(Lbl_admindashboard)
-        Controls.Add(pnl_roomsales)
         Controls.Add(Pnl_guests)
         Controls.Add(Pnl_Rooms)
         Controls.Add(Pnl_users)
@@ -349,8 +254,6 @@ Partial Class admindashboardform
         Pnl_Rooms.PerformLayout()
         Pnl_guests.ResumeLayout(False)
         Pnl_guests.PerformLayout()
-        pnl_roomsales.ResumeLayout(False)
-        pnl_roomsales.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -363,18 +266,11 @@ Partial Class admindashboardform
     Friend WithEvents Pnl_guests As Panel
     Friend WithEvents Lbl_totguestshow As Label
     Friend WithEvents guests_lbl As Label
-    Friend WithEvents Lbl_roomsavailable As Label
-    Friend WithEvents Lbl_roomsreserved As Label
     Friend WithEvents Lbl_totrooms As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents lbl_nmaleshow As Label
     Friend WithEvents Lbl_nfemaleshow As Label
     Friend WithEvents Lbl_maleguests As Label
     Friend WithEvents Lbl_femaleguests As Label
     Friend WithEvents Lbl_totguests As Label
-    Friend WithEvents pnl_roomsales As Panel
-    Friend WithEvents Lbl_nadminsshow As Label
-    Friend WithEvents roomsales_lbl As Label
     Friend WithEvents Lbl_admindashboard As Label
 End Class
