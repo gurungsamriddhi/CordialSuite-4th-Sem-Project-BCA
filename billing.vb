@@ -55,7 +55,7 @@ Public Class Billing
         Dim paymentDate As Date = paymentdate_DTP.Value ' Get payment date from DateTimePicker
 
 
-            Dim discount As Decimal = Decimal.Parse(discount_txtbx.Text)
+        Dim discount As Decimal = Decimal.Parse(discount_txtbx.Text)
         Dim services As String = services_txtbx.Text ' Get services from TextBox
         Dim servicesTotal As Decimal = Decimal.Parse(servicestotal_txtbx.Text)
 
@@ -103,6 +103,24 @@ Public Class Billing
     End Sub
 
     Private Sub clear_btn_Click(sender As Object, e As EventArgs) Handles clear_btn.Click
+        reservationid_txtbx.Clear()
+        roomno_txtbx.Clear()
+        roomtype_txtbx.Clear()
+        totalamt_txtbx.Clear()
+        servicestotal_txtbx.Clear()
+        services_txtbx.Clear()
+        pricepernight_txtbx.Clear()
+        paymentmethod_cmbbx.SelectedIndex = -1
+        paymentstatus_cmbbx.SelectedIndex = -1
+        paymentdate_DTP.Value = Date.Today
+        guestname_txtbx.Clear()
+        discount_txtbx.Clear()
+        Reserveddays_txtbx.Clear()
+        roomtotal_txtbx.Clear()
 
+    End Sub
+
+    Private Sub billing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        paymentdate_DTP.Value = Date.Today
     End Sub
 End Class

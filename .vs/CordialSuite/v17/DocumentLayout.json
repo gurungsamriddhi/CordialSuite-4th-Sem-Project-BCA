@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:billing.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\browsereservations.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:browsereservations.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\billing.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:billing.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\browsereservations.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|solutionrelative:browsereservations.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A5E99AE-420A-4B64-B61E-8641A18DDF23}|CordialSuite.vbproj|e:\\newcordialsuite\\sqlqueries\\billingssql.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -95,13 +95,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "browsereservations.vb",
               "DocumentMoniker": "E:\\NewCordialSuite\\browsereservations.vb",
               "RelativeDocumentMoniker": "browsereservations.vb",
               "ToolTip": "E:\\NewCordialSuite\\browsereservations.vb",
               "RelativeToolTip": "browsereservations.vb",
-              "ViewState": "AQIAABMAAAAAAAAAAAAwwCMAAAAAAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAADwvyMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-30T13:22:01.222Z",
               "IsPinned": true,
@@ -109,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "billing.vb [Design]",
               "DocumentMoniker": "E:\\NewCordialSuite\\billing.vb",
               "RelativeDocumentMoniker": "billing.vb",
@@ -128,7 +128,7 @@
               "RelativeDocumentMoniker": "billing.vb",
               "ToolTip": "E:\\NewCordialSuite\\billing.vb*",
               "RelativeToolTip": "billing.vb*",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAowGUAAAAOAAAA",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAhwHYAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-30T11:54:03.374Z",
               "IsPinned": true,
@@ -175,19 +175,6 @@
               "EditorCaption": " [Design]"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Reservation.vb",
-              "DocumentMoniker": "E:\\NewCordialSuite\\Reservation.vb",
-              "RelativeDocumentMoniker": "Reservation.vb",
-              "ToolTip": "E:\\NewCordialSuite\\Reservation.vb",
-              "RelativeToolTip": "Reservation.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-30T16:19:17.526Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
@@ -226,6 +213,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Reservation.vb",
+              "DocumentMoniker": "E:\\NewCordialSuite\\Reservation.vb",
+              "RelativeDocumentMoniker": "Reservation.vb",
+              "ToolTip": "E:\\NewCordialSuite\\Reservation.vb",
+              "RelativeToolTip": "Reservation.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-06-30T16:19:17.526Z",
+              "EditorCaption": ""
             }
           ]
         }
