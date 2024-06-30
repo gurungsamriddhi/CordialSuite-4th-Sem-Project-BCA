@@ -1,6 +1,12 @@
 ﻿Public Class GuestSelectionForm
-    ' Event to pass the selected guest details
-    Public Event GuestSelected(guestid As Integer, firstName As String, lastName As String)
+    Private reservationform As Reservation
+
+    ' Constructor to accept Reservation form instance
+    Public Sub New(reservation As Reservation)
+        InitializeComponent()
+        Me.reservationForm = reservation
+    End Sub
+
 
     Dim guestssql As New guestssql()
 
@@ -26,7 +32,7 @@
             Dim lastName As String = selectedRow.Cells("LastName").Value.ToString()
 
             ' Raise the GuestSelected event
-            RaiseEvent GuestSelected(guestid, firstName, lastName)
+            reservationform.OnGuestSelected(guestid, firstName, lastName)
             Me.Close()
         End If
     End Sub

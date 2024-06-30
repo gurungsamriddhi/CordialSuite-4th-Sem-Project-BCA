@@ -44,12 +44,12 @@ Partial Class browsereservations
         DGV_reservations.AllowUserToDeleteRows = False
         DGV_reservations.AllowUserToResizeColumns = False
         DGV_reservations.AllowUserToResizeRows = False
-        DGV_reservations.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        DGV_reservations.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells
         DGV_reservations.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
         DGV_reservations.BackgroundColor = SystemColors.Menu
         DGV_reservations.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DGV_reservations.Columns.AddRange(New DataGridViewColumn() {Guestfirstname, guestlastname, roomno, roomtype, roombedcount, NumberofGuests, checkindate, noofdaysreserved, checkoutdate, roompricepernight, status, Totalamount})
-        DGV_reservations.Location = New Point(12, 21)
+        DGV_reservations.Location = New Point(12, 12)
         DGV_reservations.Name = "DGV_reservations"
         DGV_reservations.RowHeadersWidth = 51
         DGV_reservations.Size = New Size(673, 388)
@@ -61,6 +61,7 @@ Partial Class browsereservations
         Guestfirstname.HeaderText = "Guest Firstname"
         Guestfirstname.MinimumWidth = 6
         Guestfirstname.Name = "Guestfirstname"
+        Guestfirstname.Width = 131
         ' 
         ' guestlastname
         ' 
@@ -68,6 +69,7 @@ Partial Class browsereservations
         guestlastname.HeaderText = "Guest Lastname"
         guestlastname.MinimumWidth = 6
         guestlastname.Name = "guestlastname"
+        guestlastname.Width = 130
         ' 
         ' roomno
         ' 
@@ -75,6 +77,7 @@ Partial Class browsereservations
         roomno.HeaderText = "Room Number"
         roomno.MinimumWidth = 6
         roomno.Name = "roomno"
+        roomno.Width = 125
         ' 
         ' roomtype
         ' 
@@ -82,6 +85,7 @@ Partial Class browsereservations
         roomtype.HeaderText = "Room Type"
         roomtype.MinimumWidth = 6
         roomtype.Name = "roomtype"
+        roomtype.Width = 104
         ' 
         ' roombedcount
         ' 
@@ -89,6 +93,7 @@ Partial Class browsereservations
         roombedcount.HeaderText = "Bed Count"
         roombedcount.MinimumWidth = 6
         roombedcount.Name = "roombedcount"
+        roombedcount.Width = 99
         ' 
         ' NumberofGuests
         ' 
@@ -96,6 +101,7 @@ Partial Class browsereservations
         NumberofGuests.HeaderText = "Number of Guests"
         NumberofGuests.MinimumWidth = 6
         NumberofGuests.Name = "NumberofGuests"
+        NumberofGuests.Width = 105
         ' 
         ' checkindate
         ' 
@@ -103,6 +109,7 @@ Partial Class browsereservations
         checkindate.HeaderText = "Check In Date"
         checkindate.MinimumWidth = 6
         checkindate.Name = "checkindate"
+        checkindate.Width = 90
         ' 
         ' noofdaysreserved
         ' 
@@ -110,6 +117,7 @@ Partial Class browsereservations
         noofdaysreserved.HeaderText = "No of days reserved"
         noofdaysreserved.MinimumWidth = 6
         noofdaysreserved.Name = "noofdaysreserved"
+        noofdaysreserved.Width = 155
         ' 
         ' checkoutdate
         ' 
@@ -117,6 +125,7 @@ Partial Class browsereservations
         checkoutdate.HeaderText = "Check Out Date"
         checkoutdate.MinimumWidth = 6
         checkoutdate.Name = "checkoutdate"
+        checkoutdate.Width = 101
         ' 
         ' roompricepernight
         ' 
@@ -124,6 +133,7 @@ Partial Class browsereservations
         roompricepernight.HeaderText = "Price Per Night"
         roompricepernight.MinimumWidth = 6
         roompricepernight.Name = "roompricepernight"
+        roompricepernight.Width = 124
         ' 
         ' status
         ' 
@@ -131,6 +141,7 @@ Partial Class browsereservations
         status.HeaderText = "Status"
         status.MinimumWidth = 6
         status.Name = "status"
+        status.Width = 78
         ' 
         ' Totalamount
         ' 
@@ -138,6 +149,7 @@ Partial Class browsereservations
         Totalamount.HeaderText = "Total Amount"
         Totalamount.MinimumWidth = 6
         Totalamount.Name = "Totalamount"
+        Totalamount.Width = 118
         ' 
         ' browsereservations
         ' 
@@ -147,6 +159,7 @@ Partial Class browsereservations
         Controls.Add(DGV_reservations)
         FormBorderStyle = FormBorderStyle.SizableToolWindow
         Name = "browsereservations"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Double Click to select"
         CType(DGV_reservations, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)

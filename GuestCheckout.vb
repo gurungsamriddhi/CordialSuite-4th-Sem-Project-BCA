@@ -65,9 +65,8 @@ Public Class GuestCheckout
         checkout.ExecuteNonQueryWithParameters(query, parameters)
     End Sub
 
-    Private Sub DGV_Checkout_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_Checkout.CellClick
-        ' Additional logic can be implemented here if needed
-    End Sub
+
+
 
 End Class
 

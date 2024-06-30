@@ -7,10 +7,7 @@ Public Class Reservation
 
     Private Sub browse_btn_Click(sender As Object, e As EventArgs) Handles browse_btn.Click
 
-        Dim guestSelectionForm As New guestselectionform
-
-        ' Handle the GuestSelected event
-        AddHandler guestSelectionForm.GuestSelected, AddressOf OnGuestSelected
+        Dim guestSelectionForm As New guestselectionform(Me)
         guestname_txtbx.Text = "" ' Clear previous guest name
         Lbl_guestidshow.Text = String.Empty
 
@@ -18,7 +15,7 @@ Public Class Reservation
 
     End Sub
 
-    Private Sub OnGuestSelected(guestid As Integer, firstName As String, lastName As String)
+    Public Sub OnGuestSelected(guestid As Integer, firstName As String, lastName As String)
         ' Concatenate the first name and last name and display in guestname_txtbx
         guestname_txtbx.Text = firstName & " " & lastName
         Lbl_guestidshow.Text = guestid.ToString()
@@ -297,12 +294,14 @@ Public Class Reservation
             ' Get the selected row
             Dim selectedRow As DataGridViewRow = DGV_reservations.Rows(e.RowIndex)
             Dim reservationid As Integer = Convert.ToInt32(selectedRow.Cells("ReservationID").Value)
-            ' Extract data from the selected row
             Dim guestID As Integer = Convert.ToInt32(selectedRow.Cells("GuestId").Value)
             Dim guestName As String = selectedRow.Cells("guestfirstname").Value.ToString() & " " & selectedRow.Cells("guestlastname").Value.ToString()
             Dim roomtype As String = selectedRow.Cells("roomtype").Value.ToString()
             Dim bedcount As String = selectedRow.Cells("roombedcount").Value.ToString()
-            Dim pricepernight As Decimal = selectedRow.Cells("roompricepernight").Value.ToString()
+            Dim pricepernight As Decimal = Convert.ToDecimal(selectedRow.Cells("roompricepernight").Value).ToString("F2")
+
+
+            lbl_roomidshow.Text = selectedRow.Cells("roomID").Value.ToString()
             roomtype_txtbx.Text = roomtype
             bedcount_txtbx.Text = bedcount
             pricepernight_txtbx.Text = pricepernight
@@ -310,7 +309,6 @@ Public Class Reservation
             Lbl_reservationidshow.Text = reservationid
             Lbl_guestidshow.Text = guestID.ToString()
             guestname_txtbx.Text = guestName
-            lbl_roomidshow.Text = selectedRow.Cells("roomID").Value.ToString()
             roomno_txtbx.Text = selectedRow.Cells("roomno").Value.ToString()
             Reserveddays_txtbx.Text = selectedRow.Cells("noofdaysreserved").Value.ToString()
             guestnumber_NUD.Value = Convert.ToInt32(selectedRow.Cells("NumberofGuests").Value)
@@ -318,6 +316,8 @@ Public Class Reservation
             arrivaldate_DTP.Value = Convert.ToDateTime(selectedRow.Cells("Checkindate").Value)
             checkoutdate_DTP.Value = Convert.ToDateTime(selectedRow.Cells("Checkoutdate").Value)
             totalamt_txtbx.Text = Convert.ToDecimal(selectedRow.Cells("Totalamount").Value).ToString("F2")
+
+
 
             ' Disable editing for certain fields if needed
             guestname_txtbx.ReadOnly = True
@@ -456,17 +456,17 @@ Public Class Reservation
         End If
         Dim query As String = "
                              UPDATE r
-SET
-    r.CheckInDate = @CheckInDate,
-    r.CheckOutDate = @CheckOutDate,
-    r.NumberOfGuests = @NumberOfGuests,
-    r.TotalAmount = @TotalAmount,
-    r.Status = @Status,
-    r.Numberofdaysreserved = @Numberofdaysreserved
-FROM reservations r
-INNER JOIN rooms rm ON r.RoomID = rm.RoomID
-WHERE
-    r.GuestID = @GuestID AND r.RoomID = @RoomID;"
+                            SET
+                          r.CheckInDate = @CheckInDate,
+                          r.CheckOutDate = @CheckOutDate,
+                         r.NumberOfGuests = @NumberOfGuests,
+                        r.TotalAmount = @TotalAmount,
+                        r.Status = @Status,
+                        r.Numberofdaysreserved = @Numberofdaysreserved
+                        FROM reservations r
+                        INNER JOIN rooms rm ON r.RoomID = rm.RoomID
+                           WHERE
+                       r.GuestID = @GuestID AND r.RoomID = @RoomID;"
 
         ' Set up parameters for the query
         Dim parameters As New List(Of SqlParameter)()

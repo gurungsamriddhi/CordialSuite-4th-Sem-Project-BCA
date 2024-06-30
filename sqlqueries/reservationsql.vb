@@ -66,26 +66,6 @@ Public Class reservationsSql
         End Using
     End Sub
 
-    ' Method to check if a reservation exists for a given guest ID and room ID
-    Public Function ReservationExists(guestID As Integer, roomID As Integer) As Boolean
-        Dim exists As Boolean = False
-
-        Using conn As New SqlConnection(connectionString)
-            conn.Open()
-            Dim query As String = "SELECT COUNT(*) FROM reservations WHERE GuestID = @GuestID AND RoomID = @RoomID"
-
-            Using cmd As New SqlCommand(query, conn)
-                cmd.Parameters.AddWithValue("@GuestID", guestID)
-                cmd.Parameters.AddWithValue("@RoomID", roomID)
-                Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
-                If count > 0 Then
-                    exists = True
-                End If
-            End Using
-        End Using
-
-        Return exists
-    End Function
 
     ' Method to execute a scalar query and return a single value for reservations
     Public Function ExecuteScalar(query As String) As Integer

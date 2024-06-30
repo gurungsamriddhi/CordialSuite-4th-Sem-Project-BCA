@@ -28,8 +28,6 @@ Partial Class userdashboardform
         lbl_Reservedroomshow = New Label()
         Lbl_roomsavailable = New Label()
         Lbl_roomsreserved = New Label()
-        Lbl_totrooms = New Label()
-        Lbl_nroomsshow = New Label()
         rooms_lbl = New Label()
         Pnl_guests = New Panel()
         lbl_nmaleshsow = New Label()
@@ -62,8 +60,6 @@ Partial Class userdashboardform
         Pnl_Rooms.Controls.Add(lbl_Reservedroomshow)
         Pnl_Rooms.Controls.Add(Lbl_roomsavailable)
         Pnl_Rooms.Controls.Add(Lbl_roomsreserved)
-        Pnl_Rooms.Controls.Add(Lbl_totrooms)
-        Pnl_Rooms.Controls.Add(Lbl_nroomsshow)
         Pnl_Rooms.Controls.Add(rooms_lbl)
         Pnl_Rooms.Location = New Point(117, 270)
         Pnl_Rooms.Name = "Pnl_Rooms"
@@ -76,7 +72,7 @@ Partial Class userdashboardform
         Lbl_roomsavailableshow.BackColor = Color.Transparent
         Lbl_roomsavailableshow.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lbl_roomsavailableshow.ForeColor = SystemColors.ControlLightLight
-        Lbl_roomsavailableshow.Location = New Point(237, 185)
+        Lbl_roomsavailableshow.Location = New Point(238, 129)
         Lbl_roomsavailableshow.Name = "Lbl_roomsavailableshow"
         Lbl_roomsavailableshow.Size = New Size(36, 31)
         Lbl_roomsavailableshow.TabIndex = 9
@@ -88,7 +84,7 @@ Partial Class userdashboardform
         lbl_Reservedroomshow.BackColor = Color.Transparent
         lbl_Reservedroomshow.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbl_Reservedroomshow.ForeColor = SystemColors.ControlLightLight
-        lbl_Reservedroomshow.Location = New Point(237, 127)
+        lbl_Reservedroomshow.Location = New Point(238, 71)
         lbl_Reservedroomshow.Name = "lbl_Reservedroomshow"
         lbl_Reservedroomshow.Size = New Size(36, 31)
         lbl_Reservedroomshow.TabIndex = 8
@@ -100,7 +96,7 @@ Partial Class userdashboardform
         Lbl_roomsavailable.BackColor = Color.Transparent
         Lbl_roomsavailable.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lbl_roomsavailable.ForeColor = SystemColors.HighlightText
-        Lbl_roomsavailable.Location = New Point(23, 185)
+        Lbl_roomsavailable.Location = New Point(24, 129)
         Lbl_roomsavailable.Name = "Lbl_roomsavailable"
         Lbl_roomsavailable.Size = New Size(192, 31)
         Lbl_roomsavailable.TabIndex = 5
@@ -112,35 +108,11 @@ Partial Class userdashboardform
         Lbl_roomsreserved.BackColor = Color.Transparent
         Lbl_roomsreserved.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Lbl_roomsreserved.ForeColor = SystemColors.HighlightText
-        Lbl_roomsreserved.Location = New Point(23, 127)
+        Lbl_roomsreserved.Location = New Point(24, 71)
         Lbl_roomsreserved.Name = "Lbl_roomsreserved"
         Lbl_roomsreserved.Size = New Size(192, 31)
         Lbl_roomsreserved.TabIndex = 4
         Lbl_roomsreserved.Text = "Rooms Reserved:"
-        ' 
-        ' Lbl_totrooms
-        ' 
-        Lbl_totrooms.AutoSize = True
-        Lbl_totrooms.BackColor = Color.Transparent
-        Lbl_totrooms.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lbl_totrooms.ForeColor = SystemColors.HighlightText
-        Lbl_totrooms.Location = New Point(23, 71)
-        Lbl_totrooms.Name = "Lbl_totrooms"
-        Lbl_totrooms.Size = New Size(148, 31)
-        Lbl_totrooms.TabIndex = 3
-        Lbl_totrooms.Text = "Total Rooms:"
-        ' 
-        ' Lbl_nroomsshow
-        ' 
-        Lbl_nroomsshow.AutoSize = True
-        Lbl_nroomsshow.BackColor = Color.Transparent
-        Lbl_nroomsshow.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Lbl_nroomsshow.ForeColor = SystemColors.ControlLightLight
-        Lbl_nroomsshow.Location = New Point(237, 71)
-        Lbl_nroomsshow.Name = "Lbl_nroomsshow"
-        Lbl_nroomsshow.Size = New Size(36, 31)
-        Lbl_nroomsshow.TabIndex = 2
-        Lbl_nroomsshow.Text = "12"
         ' 
         ' rooms_lbl
         ' 
@@ -279,8 +251,6 @@ Partial Class userdashboardform
     Friend WithEvents lbl_Reservedroomshow As Label
     Friend WithEvents Lbl_roomsavailable As Label
     Friend WithEvents Lbl_roomsreserved As Label
-    Friend WithEvents Lbl_totrooms As Label
-    Friend WithEvents Lbl_nroomsshow As Label
     Friend WithEvents rooms_lbl As Label
     Friend WithEvents Pnl_guests As Panel
     Friend WithEvents lbl_nmaleshsow As Label

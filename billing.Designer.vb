@@ -27,16 +27,16 @@ Partial Class billing
         guestname_txtbx = New TextBox()
         Lblroomno = New Label()
         roomno_txtbx = New TextBox()
-        Label1 = New Label()
+        Lbl_Reservationid = New Label()
         reservationid_txtbx = New TextBox()
         browsereservation_btn = New Button()
         Lbl_status = New Label()
         paymentstatus_cmbbx = New ComboBox()
-        Label2 = New Label()
+        Lbl_paymentmethod = New Label()
         paymentmethod_cmbbx = New ComboBox()
         Lbl_totalamount = New Label()
         totalamt_txtbx = New TextBox()
-        Label3 = New Label()
+        Lbl_Services = New Label()
         Lblpaymentdate = New Label()
         paymentdate_DTP = New DateTimePicker()
         Lblroomtype = New Label()
@@ -45,15 +45,19 @@ Partial Class billing
         pricepernight_txtbx = New TextBox()
         Lbldaysreserved = New Label()
         Reserveddays_txtbx = New TextBox()
-        Label4 = New Label()
+        Lbl_roomtotal = New Label()
         roomtotal_txtbx = New TextBox()
-        Label5 = New Label()
+        Lbl_discount = New Label()
         discount_txtbx = New TextBox()
-        TextBox1 = New TextBox()
+        services_txtbx = New TextBox()
         Lbl_Servicestotal = New Label()
         servicestotal_txtbx = New TextBox()
         paymentsave_btn = New Button()
         clear_btn = New Button()
+        calculate_btn = New Button()
+        Lbl_msgtotal = New Label()
+        Lbl_msgpaysttaus = New Label()
+        lbl_msgpaymethod = New Label()
         SuspendLayout()
         ' 
         ' Lbl_billing
@@ -114,16 +118,16 @@ Partial Class billing
         roomno_txtbx.Size = New Size(227, 41)
         roomno_txtbx.TabIndex = 137
         ' 
-        ' Label1
+        ' Lbl_Reservationid
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
-        Label1.ForeColor = Color.Black
-        Label1.Location = New Point(39, 104)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(144, 28)
-        Label1.TabIndex = 139
-        Label1.Text = "Reservation ID"
+        Lbl_Reservationid.AutoSize = True
+        Lbl_Reservationid.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        Lbl_Reservationid.ForeColor = Color.Black
+        Lbl_Reservationid.Location = New Point(39, 104)
+        Lbl_Reservationid.Name = "Lbl_Reservationid"
+        Lbl_Reservationid.Size = New Size(144, 28)
+        Lbl_Reservationid.TabIndex = 139
+        Lbl_Reservationid.Text = "Reservation ID"
         ' 
         ' reservationid_txtbx
         ' 
@@ -163,22 +167,22 @@ Partial Class billing
         paymentstatus_cmbbx.Font = New Font("Segoe UI", 13.8F)
         paymentstatus_cmbbx.ForeColor = Color.Black
         paymentstatus_cmbbx.FormattingEnabled = True
-        paymentstatus_cmbbx.Items.AddRange(New Object() {"Pending", "Paid"})
+        paymentstatus_cmbbx.Items.AddRange(New Object() {"Paid"})
         paymentstatus_cmbbx.Location = New Point(754, 490)
         paymentstatus_cmbbx.Name = "paymentstatus_cmbbx"
         paymentstatus_cmbbx.Size = New Size(227, 39)
         paymentstatus_cmbbx.TabIndex = 143
         ' 
-        ' Label2
+        ' Lbl_paymentmethod
         ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
-        Label2.ForeColor = Color.Black
-        Label2.Location = New Point(594, 590)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(174, 28)
-        Label2.TabIndex = 144
-        Label2.Text = "Payment Method:"
+        Lbl_paymentmethod.AutoSize = True
+        Lbl_paymentmethod.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        Lbl_paymentmethod.ForeColor = Color.Black
+        Lbl_paymentmethod.Location = New Point(594, 590)
+        Lbl_paymentmethod.Name = "Lbl_paymentmethod"
+        Lbl_paymentmethod.Size = New Size(174, 28)
+        Lbl_paymentmethod.TabIndex = 144
+        Lbl_paymentmethod.Text = "Payment Method:"
         ' 
         ' paymentmethod_cmbbx
         ' 
@@ -198,7 +202,7 @@ Partial Class billing
         Lbl_totalamount.AutoSize = True
         Lbl_totalamount.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lbl_totalamount.ForeColor = Color.Black
-        Lbl_totalamount.Location = New Point(635, 425)
+        Lbl_totalamount.Location = New Point(69, 517)
         Lbl_totalamount.Name = "Lbl_totalamount"
         Lbl_totalamount.Size = New Size(60, 28)
         Lbl_totalamount.TabIndex = 148
@@ -208,21 +212,21 @@ Partial Class billing
         ' 
         totalamt_txtbx.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         totalamt_txtbx.ForeColor = Color.Black
-        totalamt_txtbx.Location = New Point(747, 415)
+        totalamt_txtbx.Location = New Point(185, 507)
         totalamt_txtbx.Name = "totalamt_txtbx"
         totalamt_txtbx.Size = New Size(227, 38)
         totalamt_txtbx.TabIndex = 149
         ' 
-        ' Label3
+        ' Lbl_Services
         ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
-        Label3.ForeColor = Color.Black
-        Label3.Location = New Point(69, 436)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(91, 28)
-        Label3.TabIndex = 150
-        Label3.Text = "Services:"
+        Lbl_Services.AutoSize = True
+        Lbl_Services.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        Lbl_Services.ForeColor = Color.Black
+        Lbl_Services.Location = New Point(626, 348)
+        Lbl_Services.Name = "Lbl_Services"
+        Lbl_Services.Size = New Size(91, 28)
+        Lbl_Services.TabIndex = 150
+        Lbl_Services.Text = "Services:"
         ' 
         ' Lblpaymentdate
         ' 
@@ -259,6 +263,7 @@ Partial Class billing
         ' 
         ' roomtype_txtbx
         ' 
+        roomtype_txtbx.BackColor = SystemColors.ControlLightLight
         roomtype_txtbx.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         roomtype_txtbx.ForeColor = Color.Black
         roomtype_txtbx.Location = New Point(185, 252)
@@ -273,7 +278,7 @@ Partial Class billing
         Lbl_pricepernight.AutoSize = True
         Lbl_pricepernight.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lbl_pricepernight.ForeColor = Color.Black
-        Lbl_pricepernight.Location = New Point(39, 346)
+        Lbl_pricepernight.Location = New Point(581, 265)
         Lbl_pricepernight.Name = "Lbl_pricepernight"
         Lbl_pricepernight.Size = New Size(150, 28)
         Lbl_pricepernight.TabIndex = 155
@@ -281,9 +286,10 @@ Partial Class billing
         ' 
         ' pricepernight_txtbx
         ' 
+        pricepernight_txtbx.BackColor = SystemColors.ControlLightLight
         pricepernight_txtbx.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         pricepernight_txtbx.ForeColor = Color.Black
-        pricepernight_txtbx.Location = New Point(195, 333)
+        pricepernight_txtbx.Location = New Point(751, 252)
         pricepernight_txtbx.Multiline = True
         pricepernight_txtbx.Name = "pricepernight_txtbx"
         pricepernight_txtbx.ReadOnly = True
@@ -310,72 +316,72 @@ Partial Class billing
         Reserveddays_txtbx.Size = New Size(227, 38)
         Reserveddays_txtbx.TabIndex = 158
         ' 
-        ' Label4
+        ' Lbl_roomtotal
         ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
-        Label4.ForeColor = Color.Black
-        Label4.Location = New Point(612, 263)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(119, 28)
-        Label4.TabIndex = 159
-        Label4.Text = "Room Total:"
+        Lbl_roomtotal.AutoSize = True
+        Lbl_roomtotal.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        Lbl_roomtotal.ForeColor = Color.Black
+        Lbl_roomtotal.Location = New Point(48, 353)
+        Lbl_roomtotal.Name = "Lbl_roomtotal"
+        Lbl_roomtotal.Size = New Size(119, 28)
+        Lbl_roomtotal.TabIndex = 159
+        Lbl_roomtotal.Text = "Room Total:"
         ' 
         ' roomtotal_txtbx
         ' 
         roomtotal_txtbx.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         roomtotal_txtbx.ForeColor = Color.Black
-        roomtotal_txtbx.Location = New Point(747, 250)
+        roomtotal_txtbx.Location = New Point(185, 343)
         roomtotal_txtbx.Name = "roomtotal_txtbx"
         roomtotal_txtbx.Size = New Size(227, 38)
         roomtotal_txtbx.TabIndex = 160
         ' 
-        ' Label5
+        ' Lbl_discount
         ' 
-        Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
-        Label5.ForeColor = Color.Black
-        Label5.Location = New Point(69, 513)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(97, 28)
-        Label5.TabIndex = 161
-        Label5.Text = "Discount:"
+        Lbl_discount.AutoSize = True
+        Lbl_discount.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        Lbl_discount.ForeColor = Color.Black
+        Lbl_discount.Location = New Point(620, 430)
+        Lbl_discount.Name = "Lbl_discount"
+        Lbl_discount.Size = New Size(97, 28)
+        Lbl_discount.TabIndex = 161
+        Lbl_discount.Text = "Discount:"
         ' 
         ' discount_txtbx
         ' 
         discount_txtbx.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         discount_txtbx.ForeColor = Color.Black
-        discount_txtbx.Location = New Point(185, 508)
+        discount_txtbx.Location = New Point(747, 420)
         discount_txtbx.Name = "discount_txtbx"
         discount_txtbx.Size = New Size(233, 38)
         discount_txtbx.TabIndex = 162
         ' 
-        ' TextBox1
+        ' services_txtbx
         ' 
-        TextBox1.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.ForeColor = Color.Black
-        TextBox1.Location = New Point(185, 426)
-        TextBox1.Multiline = True
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(233, 38)
-        TextBox1.TabIndex = 163
+        services_txtbx.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        services_txtbx.ForeColor = Color.Black
+        services_txtbx.Location = New Point(751, 333)
+        services_txtbx.Multiline = True
+        services_txtbx.Name = "services_txtbx"
+        services_txtbx.Size = New Size(230, 38)
+        services_txtbx.TabIndex = 163
         ' 
         ' Lbl_Servicestotal
         ' 
         Lbl_Servicestotal.AutoSize = True
         Lbl_Servicestotal.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
         Lbl_Servicestotal.ForeColor = Color.Black
-        Lbl_Servicestotal.Location = New Point(591, 343)
+        Lbl_Servicestotal.Location = New Point(39, 435)
         Lbl_Servicestotal.Name = "Lbl_Servicestotal"
-        Lbl_Servicestotal.Size = New Size(135, 28)
+        Lbl_Servicestotal.Size = New Size(140, 28)
         Lbl_Servicestotal.TabIndex = 164
-        Lbl_Servicestotal.Text = "Services Total"
+        Lbl_Servicestotal.Text = "Services Total:"
         ' 
         ' servicestotal_txtbx
         ' 
         servicestotal_txtbx.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         servicestotal_txtbx.ForeColor = Color.Black
-        servicestotal_txtbx.Location = New Point(747, 333)
+        servicestotal_txtbx.Location = New Point(185, 425)
         servicestotal_txtbx.Multiline = True
         servicestotal_txtbx.Name = "servicestotal_txtbx"
         servicestotal_txtbx.Size = New Size(227, 38)
@@ -392,7 +398,7 @@ Partial Class billing
         paymentsave_btn.FlatStyle = FlatStyle.Flat
         paymentsave_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
         paymentsave_btn.ForeColor = SystemColors.ControlLightLight
-        paymentsave_btn.Location = New Point(400, 704)
+        paymentsave_btn.Location = New Point(536, 704)
         paymentsave_btn.Name = "paymentsave_btn"
         paymentsave_btn.Size = New Size(152, 51)
         paymentsave_btn.TabIndex = 166
@@ -410,12 +416,60 @@ Partial Class billing
         clear_btn.FlatStyle = FlatStyle.Flat
         clear_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
         clear_btn.ForeColor = SystemColors.ControlLightLight
-        clear_btn.Location = New Point(578, 704)
+        clear_btn.Location = New Point(705, 704)
         clear_btn.Name = "clear_btn"
         clear_btn.Size = New Size(137, 51)
         clear_btn.TabIndex = 167
         clear_btn.Text = "Clear"
         clear_btn.UseVisualStyleBackColor = False
+        ' 
+        ' calculate_btn
+        ' 
+        calculate_btn.BackColor = Color.FromArgb(CByte(32), CByte(114), CByte(175))
+        calculate_btn.FlatAppearance.BorderColor = SystemColors.Window
+        calculate_btn.FlatAppearance.BorderSize = 2
+        calculate_btn.FlatAppearance.CheckedBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        calculate_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        calculate_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(48), CByte(144), CByte(220))
+        calculate_btn.FlatStyle = FlatStyle.Flat
+        calculate_btn.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold)
+        calculate_btn.ForeColor = SystemColors.ControlLightLight
+        calculate_btn.Location = New Point(370, 704)
+        calculate_btn.Name = "calculate_btn"
+        calculate_btn.Size = New Size(152, 51)
+        calculate_btn.TabIndex = 168
+        calculate_btn.Text = "Calculate"
+        calculate_btn.UseVisualStyleBackColor = False
+        ' 
+        ' Lbl_msgtotal
+        ' 
+        Lbl_msgtotal.AutoSize = True
+        Lbl_msgtotal.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Lbl_msgtotal.ForeColor = Color.Red
+        Lbl_msgtotal.Location = New Point(69, 553)
+        Lbl_msgtotal.Name = "Lbl_msgtotal"
+        Lbl_msgtotal.Size = New Size(0, 20)
+        Lbl_msgtotal.TabIndex = 169
+        ' 
+        ' Lbl_msgpaysttaus
+        ' 
+        Lbl_msgpaysttaus.AutoSize = True
+        Lbl_msgpaysttaus.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Lbl_msgpaysttaus.ForeColor = Color.Red
+        Lbl_msgpaysttaus.Location = New Point(605, 538)
+        Lbl_msgpaysttaus.Name = "Lbl_msgpaysttaus"
+        Lbl_msgpaysttaus.Size = New Size(0, 20)
+        Lbl_msgpaysttaus.TabIndex = 170
+        ' 
+        ' lbl_msgpaymethod
+        ' 
+        lbl_msgpaymethod.AutoSize = True
+        lbl_msgpaymethod.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lbl_msgpaymethod.ForeColor = Color.Red
+        lbl_msgpaymethod.Location = New Point(605, 618)
+        lbl_msgpaymethod.Name = "lbl_msgpaymethod"
+        lbl_msgpaymethod.Size = New Size(0, 20)
+        lbl_msgpaymethod.TabIndex = 171
         ' 
         ' billing
         ' 
@@ -423,15 +477,19 @@ Partial Class billing
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Menu
         ClientSize = New Size(1077, 777)
+        Controls.Add(lbl_msgpaymethod)
+        Controls.Add(Lbl_msgpaysttaus)
+        Controls.Add(Lbl_msgtotal)
+        Controls.Add(calculate_btn)
         Controls.Add(clear_btn)
         Controls.Add(paymentsave_btn)
         Controls.Add(servicestotal_txtbx)
         Controls.Add(Lbl_Servicestotal)
-        Controls.Add(TextBox1)
+        Controls.Add(services_txtbx)
         Controls.Add(discount_txtbx)
-        Controls.Add(Label5)
+        Controls.Add(Lbl_discount)
         Controls.Add(roomtotal_txtbx)
-        Controls.Add(Label4)
+        Controls.Add(Lbl_roomtotal)
         Controls.Add(Reserveddays_txtbx)
         Controls.Add(Lbldaysreserved)
         Controls.Add(pricepernight_txtbx)
@@ -440,16 +498,16 @@ Partial Class billing
         Controls.Add(Lblroomtype)
         Controls.Add(paymentdate_DTP)
         Controls.Add(Lblpaymentdate)
-        Controls.Add(Label3)
+        Controls.Add(Lbl_Services)
         Controls.Add(totalamt_txtbx)
         Controls.Add(Lbl_totalamount)
         Controls.Add(paymentmethod_cmbbx)
-        Controls.Add(Label2)
+        Controls.Add(Lbl_paymentmethod)
         Controls.Add(paymentstatus_cmbbx)
         Controls.Add(Lbl_status)
         Controls.Add(browsereservation_btn)
         Controls.Add(reservationid_txtbx)
-        Controls.Add(Label1)
+        Controls.Add(Lbl_Reservationid)
         Controls.Add(roomno_txtbx)
         Controls.Add(Lblroomno)
         Controls.Add(guestname_txtbx)
@@ -466,16 +524,16 @@ Partial Class billing
     Friend WithEvents guestname_txtbx As TextBox
     Friend WithEvents Lblroomno As Label
     Friend WithEvents roomno_txtbx As TextBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Lbl_Reservationid As Label
     Friend WithEvents reservationid_txtbx As TextBox
     Friend WithEvents browsereservation_btn As Button
     Friend WithEvents Lbl_status As Label
     Friend WithEvents paymentstatus_cmbbx As ComboBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents Lbl_paymentmethod As Label
     Friend WithEvents paymentmethod_cmbbx As ComboBox
     Friend WithEvents Lbl_totalamount As Label
     Friend WithEvents totalamt_txtbx As TextBox
-    Friend WithEvents Label3 As Label
+    Friend WithEvents Lbl_Services As Label
     Friend WithEvents Lblpaymentdate As Label
     Friend WithEvents paymentdate_DTP As DateTimePicker
     Friend WithEvents Lblroomtype As Label
@@ -484,13 +542,17 @@ Partial Class billing
     Friend WithEvents pricepernight_txtbx As TextBox
     Friend WithEvents Lbldaysreserved As Label
     Friend WithEvents Reserveddays_txtbx As TextBox
-    Friend WithEvents Label4 As Label
+    Friend WithEvents Lbl_roomtotal As Label
     Friend WithEvents roomtotal_txtbx As TextBox
-    Friend WithEvents Label5 As Label
+    Friend WithEvents Lbl_discount As Label
     Friend WithEvents discount_txtbx As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents services_txtbx As TextBox
     Friend WithEvents Lbl_Servicestotal As Label
     Friend WithEvents servicestotal_txtbx As TextBox
     Friend WithEvents paymentsave_btn As Button
     Friend WithEvents clear_btn As Button
+    Friend WithEvents calculate_btn As Button
+    Friend WithEvents Lbl_msgtotal As Label
+    Friend WithEvents Lbl_msgpaysttaus As Label
+    Friend WithEvents lbl_msgpaymethod As Label
 End Class

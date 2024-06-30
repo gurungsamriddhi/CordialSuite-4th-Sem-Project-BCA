@@ -4,7 +4,7 @@ Public Class roomselectionform
     Dim managerooms As New roomsSql()
     Private reservationForm As Reservation
 
-    ' Constructor to accept Reservation form instance
+    ' Constructor to accept Reservation form instance to send the values to reservationform
     Public Sub New(reservation As Reservation)
         InitializeComponent()
         Me.reservationForm = reservation
