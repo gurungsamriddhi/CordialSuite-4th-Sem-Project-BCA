@@ -10,14 +10,14 @@
 
 
     Private Sub Logoutbtn_Click(sender As Object, e As EventArgs) Handles logoutbtn.Click
-        ' Display a MessageBox asking the user if they want to logout
         Dim result As DialogResult = MessageBox.Show("Do you want to logout?", "Logout Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
         If result = DialogResult.Yes Then
-            ' Close the current form (Userdashboard)
-            Me.Close()
-
-            ' Show the Loginform and clear text boxes
+            For Each frm As Form In Application.OpenForms.OfType(Of Form).ToList()
+                If frm IsNot Loginform Then
+                    frm.Hide()
+                End If
+            Next
             Loginform.Show()
             Loginform.txtbxusername.Clear()
             Loginform.txtbxpassword.Clear()

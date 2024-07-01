@@ -23,9 +23,5 @@
 
     End Sub
 
-    Private Sub Lbl_displayfp_Click(sender As Object, e As EventArgs) Handles Lbl_displayfp.Click
-        Me.Hide()
-        Dim Loginform As New Loginform()
-        Loginform.Show()
-    End Sub
+
 End Class

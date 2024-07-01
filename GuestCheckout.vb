@@ -65,8 +65,26 @@ Public Class GuestCheckout
         checkout.ExecuteNonQueryWithParameters(query, parameters)
     End Sub
 
+    Private Sub searchkeyword_txtbx_TextChanged(sender As Object, e As EventArgs) Handles searchkeyword_txtbx.TextChanged
+        Filtercheckinsbykeyword(searchkeyword_txtbx.Text.Trim)
+    End Sub
 
-
-
+    Private Sub filtercheckinsbykeyword(keyword As String)
+        Dim query As String = "
+        SELECT r.*, ro.Roomnumber,ro.RoomType, ro.BedCount, ro.PricePerNight,g.Firstname,g.Lastname
+        FROM reservations r
+        INNER JOIN rooms ro ON r.RoomID = ro.RoomID
+        inner join guests g on r.GuestId = g.GuestId
+        WHERE r.status='Check-In' and (
+           r.Numberofdaysreserved like @keyword OR
+            ro.Roomnumber LIKE @Keyword OR
+            ro.RoomType LIKE @Keyword OR
+            ro.BedCount LIKE @Keyword OR
+            r.Status LIKE @Keyword OR
+            ro.Pricepernight LIKE @Keyword or
+            g.Firstname like @keyword or
+            g.lastname like @keyword)"
+        checkout.SearchReservations(query, keyword, DGV_Checkout)
+    End Sub
 End Class
 

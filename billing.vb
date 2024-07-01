@@ -54,10 +54,23 @@ Public Class Billing
         Dim reservationID As Integer = Integer.Parse(reservationid_txtbx.Text)
         Dim paymentDate As Date = paymentdate_DTP.Value ' Get payment date from DateTimePicker
 
+        Dim discount As Decimal
+        If String.IsNullOrWhiteSpace(discount_txtbx.Text) Then
+            discount = 0 ' Set default value if the text box is empty
+        Else
+            discount = Decimal.Parse(discount_txtbx.Text)
+        End If
 
-        Dim discount As Decimal = Decimal.Parse(discount_txtbx.Text)
-        Dim services As String = services_txtbx.Text ' Get services from TextBox
-        Dim servicesTotal As Decimal = Decimal.Parse(servicestotal_txtbx.Text)
+        ' Get services from TextBox (no need to check for empty as string can be empty)
+        Dim services As String = services_txtbx.Text
+
+        ' Check if the servicesTotal text box is empty and parse the value if it's not
+        Dim servicesTotal As Decimal
+        If String.IsNullOrWhiteSpace(servicestotal_txtbx.Text) Then
+            servicesTotal = 0 ' Set default value if the text box is empty
+        Else
+            servicesTotal = Decimal.Parse(servicestotal_txtbx.Text)
+        End If
 
         ' Construct the SQL query using parameterized query to avoid SQL injection
         Dim query As String = "INSERT INTO payments (ReservationID, PaymentDate, Amount, PaymentMethod, Status, Discount, Services, Servicestotal) " &

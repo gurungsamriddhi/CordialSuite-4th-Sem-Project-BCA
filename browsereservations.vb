@@ -9,29 +9,33 @@
     End Sub
 
     Private Sub populatereservations()
-        Dim query As String = "SELECT " &
-    "    guests.GuestID, " &
-    "    guests.FirstName, " &
-    "    guests.LastName, " &
-    "    rooms.roomID, " &
-    "    rooms.RoomNumber, " &
-    "    rooms.RoomType, " &
-    "    rooms.BedCount, " &
-    "    rooms.PricePerNight, " &
-    "    reservations.ReservationID, " &
-    "    reservations.CheckInDate, " &
-    "    reservations.CheckOutDate, " &
-    "    reservations.NumberOfDaysReserved, " &
-    "    reservations.NumberOfGuests, " &
-    "    reservations.TotalAmount, " &
-    "    reservations.Status " &
-    "FROM " &
-    "    reservations " &
-    "    INNER JOIN guests ON reservations.GuestID = guests.GuestID " &
-    "    INNER JOIN rooms ON reservations.RoomID = rooms.RoomID " &
-    "WHERE " &
-    "    reservations.Status = 'Check-out';"
-
+        Dim query As String = "SELECT 
+        guests.GuestID, 
+        guests.FirstName, 
+        guests.LastName, 
+        rooms.roomID, 
+        rooms.RoomNumber, 
+        rooms.RoomType,
+        rooms.BedCount, 
+        rooms.PricePerNight, 
+        reservations.ReservationID,
+        reservations.CheckInDate, 
+        reservations.CheckOutDate, 
+        reservations.NumberOfDaysReserved,
+        reservations.NumberOfGuests, 
+        reservations.TotalAmount, 
+        reservations.Status 
+    FROM
+     reservations 
+      INNER JOIN guests ON reservations.GuestID = guests.GuestID 
+    INNER JOIN rooms On reservations.RoomID = rooms.RoomID 
+    WHERE 
+     reservations.Status = 'Check-out' AND
+    reservations.ReservationID NOT IN (
+        SELECT ReservationID 
+        FROM payments 
+        WHERE Status = 'Paid'
+    );"
 
         managereservation.ExecuteQuery(query, DGV_reservations)
 

@@ -16,7 +16,11 @@
         Dim result As DialogResult = MessageBox.Show("Do you want to logout?", "Logout Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
         If result = DialogResult.Yes Then
-            Me.Close()
+            For Each frm As Form In Application.OpenForms.OfType(Of Form).ToList()
+                If frm IsNot Loginform Then
+                    frm.Hide()
+                End If
+            Next
             Loginform.Show()
             Loginform.txtbxusername.Clear()
             Loginform.txtbxpassword.Clear()
